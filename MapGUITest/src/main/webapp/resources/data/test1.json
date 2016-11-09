@@ -1,0 +1,17 @@
+  {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry":{
+        "coordinates":[106.52087,10.94943],
+        "type":"Point"
+      },
+      "id":0,
+      "type":"Feature",
+      "properties":{
+        "date":"2012-11-10 15:30:29",
+        "icon":"http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=0|FF0000|000000"
+      }
+    }
+  ]
+}
