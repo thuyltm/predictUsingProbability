@@ -19,16 +19,24 @@ import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 
 public class DBUtil {
-    public static final String HOST = "192.168.1.104";
+    public static final String HOST = "192.168.1.102";
     public static void findLocationDeviceByTime(String fromISODate, String toISODate,
                             String deviceId, String exportJsonFile, String exportCsvFile) {
         try {
             MongoClient mongoClient = new MongoClient( HOST , 27017 );
             DB db = mongoClient.getDB("bus");
             DBCollection table = db.getCollection("bus");
-            BasicDBObject query = new BasicDBObject("date", new BasicDBObject("$gte",fromISODate)
+            BasicDBObject dateQuery = new BasicDBObject("date", new BasicDBObject("$gte",fromISODate)
             .append("$lte", toISODate));
-            query.put("deviceId", deviceId);
+
+            final BasicDBObject deviceQuery = new BasicDBObject("deviceId", deviceId);
+
+
+            BasicDBList and = new BasicDBList();
+            and.add(deviceQuery);
+            and.add(dateQuery);
+
+            DBObject query = new BasicDBObject("$and", and);
 
             DBCursor cursor = table.find(query);
             cursor.sort(new BasicDBObject("date",1));

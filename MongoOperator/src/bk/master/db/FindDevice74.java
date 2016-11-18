@@ -15,18 +15,30 @@ import bk.master.input.model.Location;
 import bk.master.input.model.Move;
 
 public class FindDevice74 {
-    private static String SCHEDULE_FOLDER = "/home/thuy/workspace/MongoOperator/schedule/";
-    private static String SWITCH_SCHEDULE_FOLDER = "/home/thuy/workspace/MongoOperator/merge_schedule/";
-    private static String ROUTE_FOLDER = "/home/thuy/workspace/MongoOperator/route/";
-    private static String LOCATION_CSV_FOLDER = "/home/thuy/workspace/MongoOperator/location/";
-    private static String LOCATION_JSON_FOLDER = "/home/thuy/workspace/MongoOperator/location-json/";
+    private static String SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/schedule/02/";
+    private static String SWITCH_SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/merge_schedule/02/";
+    private static String ROUTE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/route/02/";
+    private static String LOCATION_CSV_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location/02/";
+    private static String LOCATION_JSON_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location-json/02/";
+    private static String DEPART_STATION = "benXeAnSuong";
+    private static String DEST_STATION = "benXeCuChi";
+    private static String INVOKE_DATE = "2016-09-02";
+    private static String DEVICE_LIST = "result.txt";
     public static void main(String[] args) {
+        //getCandidate();
+        //checkCandidateByMap();
+        getSchedule();
+    }
+    public static void getSchedule() {
+        getTimeInStation(DEPART_STATION,INVOKE_DATE);
+        getTimeInStation(DEST_STATION,INVOKE_DATE);
+        mergeSchedule();
         getLocationData();
     }
     public static void getLocationData() {
-        List<String> deviceList = InputUtil.loadInput("result.txt");
+        List<String> deviceList = InputUtil.loadInput(DEVICE_LIST);
         for (String device : deviceList) {
-            List<Move> moveList = InputUtil.loadCsvDate(SWITCH_SCHEDULE_FOLDER + device + "_18.csv");
+            List<Move> moveList = InputUtil.loadCsvDate(SWITCH_SCHEDULE_FOLDER + device + ".csv");
             int length = moveList.size();
             for (int i = 0; i < length; i++) {
                 Move mv = moveList.get(i);
@@ -34,79 +46,79 @@ public class FindDevice74 {
                 String endTime = mv.getDestTime();
                 long duration = TimeTranslatorUtil.substractDate(mv.getOrginalDestTime(), mv.getOrginalDepartTime());
                 String durationText = TimeTranslatorUtil.covertToReadableFormat(duration);
-                String newFileName = device + "_18_"+ i + "_" + durationText;
+                String newFileName = device + "_02_"+ i + "_" + durationText;
                 DBUtil.findLocationDeviceByTime(TimeTranslatorUtil.convertDateToISODate(startTime),
                         TimeTranslatorUtil.convertDateToISODate(endTime), device,
-                        //LOCATION_JSON_FOLDER + newFileName + ".json",
-                        null,
+                        LOCATION_JSON_FOLDER + newFileName + ".json",
+                        //null,
                         LOCATION_CSV_FOLDER + newFileName + ".csv");
             }
         }
     }
-    public static void mergeSchedule(String deviceFile, String date,
-            String departName, String destName) {
-        List<String> deviceList = InputUtil.loadInput(deviceFile);
+    public static void mergeSchedule() {
+        List<String> deviceList = InputUtil.loadInput(DEVICE_LIST);
         for (String device : deviceList) {
             List<Move> result = TimeTranslatorUtil.mergeSchedule(
-                    SCHEDULE_FOLDER + device + date + departName + ".csv",
-                    SCHEDULE_FOLDER + device + date + destName + ".csv",
-                    departName, destName);
-            ExportUtil.exportToScheduleFile(result, SWITCH_SCHEDULE_FOLDER + device + date + ".csv");
+                    SCHEDULE_FOLDER + device + DEPART_STATION + ".csv",
+                    SCHEDULE_FOLDER + device + DEST_STATION + ".csv",
+                    DEPART_STATION, DEST_STATION);
+            ExportUtil.exportToScheduleFile(result, SWITCH_SCHEDULE_FOLDER + device + ".csv");
         }
     }
-    public static void getTimeInStation(String stationLatLng, String deviceFile, String date) {
-        String startTime = TimeTranslatorUtil.convertDateToISODate(date + " 00:00:00");
-        String endTime = TimeTranslatorUtil.convertDateToISODate(date + " 04:00:00");
-        List<Location> cs2LngLat = InputUtil.loadInputLocation(stationLatLng+".txt");
-        List<String> deviceList = InputUtil.loadInput(deviceFile);
+    public static void getTimeInStation(String stationFile, String INVOKE_DATE) {
+        String startTime = TimeTranslatorUtil.convertDateToISODate(INVOKE_DATE + " 04:00:00");
+        String endTime = TimeTranslatorUtil.convertDateToISODate(INVOKE_DATE + " 22:00:00");
+        List<Location> stationLngLat = InputUtil.loadInputLocation(stationFile+".txt");
+        List<String> deviceList = InputUtil.loadInput(DEVICE_LIST);
         int length = deviceList.size();
         for (int i = 0; i < length; i++) {
             String device = deviceList.get(i);
-            DBUtil.findTimeDeviceWithinLocation(cs2LngLat, device, startTime, endTime, SCHEDULE_FOLDER + device +
-                                date + stationLatLng +".csv");
+            DBUtil.findTimeDeviceWithinLocation(stationLngLat, device, startTime, endTime, SCHEDULE_FOLDER + device + stationFile +".csv");
         }
     }
-    public static void checkCandidateByMap(String date) {
-        String startTime = TimeTranslatorUtil.convertDateToISODate(date + " 04:00:00");
-        String endTime = TimeTranslatorUtil.convertDateToISODate(date + " 22:00:00");
-        List<String> deviceList = InputUtil.loadInput("result.txt");
+    public static void checkCandidateByMap() {
+        String startTime = TimeTranslatorUtil.convertDateToISODate(INVOKE_DATE + " 04:00:00");
+        String endTime = TimeTranslatorUtil.convertDateToISODate(INVOKE_DATE + " 22:00:00");
+        List<String> deviceList = InputUtil.loadInput(DEVICE_LIST);
         int length = deviceList.size();
         for (int i = 0; i < length; i++) {
             String device = deviceList.get(i);
-            DBUtil.findLocationDeviceByTime(startTime, endTime, device, ROUTE_FOLDER + device+".json", null);
+            DBUtil.findLocationDeviceByTime(startTime, endTime, device,
+                    ROUTE_FOLDER + device+".json", null);
         }
     }
-    public static void getCandidate(String date, String departStationLatLng, String destStationLatLng) {
-        getCandidateStopInStation(date, departStationLatLng, destStationLatLng);
-        getCandidateRunToStation(date, departStationLatLng, destStationLatLng);
-        getCandidateDevice("device_" + departStationLatLng + "00:04.txt",
-                  "device_" + destStationLatLng + "04:23.txt", "result1.txt");
-        getCandidateDevice("device_" + destStationLatLng + "00:04.txt",
-                "device_" + departStationLatLng + "04:23.txt", "result2.txt");
+    public static void getCandidate() {
+        getCandidateStopInStation();
+        getCandidateRunToStation();
+        getCandidateDevice("device" + DEPART_STATION + "00:04.txt",
+                  "device" + DEST_STATION + "04:23.txt", "result1.txt");
+        getCandidateDevice("device" + DEST_STATION + "00:04.txt",
+                "device" + DEPART_STATION + "04:23.txt", "result2.txt");
+        getCandidateDevice("result2.txt", "result1.txt", DEVICE_LIST);
     }
-    private static void getCandidateStopInStation(String date, String departStationLatLng, String destStationLatLng) {
-        String startTime = TimeTranslatorUtil.convertDateToISODate(date + " 00:00:00");
-        String endTime = TimeTranslatorUtil.convertDateToISODate(date + " 04:00:00");
+    private static void getCandidateStopInStation() {
+        String startTime = TimeTranslatorUtil.convertDateToISODate(INVOKE_DATE + " 00:00:00");
+        String endTime = TimeTranslatorUtil.convertDateToISODate(INVOKE_DATE + " 04:00:00");
 
-        List<Location> bKLngLat = InputUtil.loadInputLocation(departStationLatLng + ".txt");
-        DBUtil.findDistinctDeviceWithinLocation(bKLngLat, startTime, endTime, "device_" + departStationLatLng + "00:04.txt");
+        List<Location> departLngLat = InputUtil.loadInputLocation(DEPART_STATION + ".txt");
+        DBUtil.findDistinctDeviceWithinLocation(departLngLat, startTime, endTime, "device" + DEPART_STATION + "00:04.txt");
 
-        List<Location> cs2LngLat = InputUtil.loadInputLocation(destStationLatLng + ".txt");
-        DBUtil.findDistinctDeviceWithinLocation(cs2LngLat, startTime, endTime, "device" + destStationLatLng + "00:04.txt");
+        List<Location> destLngLat = InputUtil.loadInputLocation(DEST_STATION + ".txt");
+        DBUtil.findDistinctDeviceWithinLocation(destLngLat, startTime, endTime, "device" + DEST_STATION + "00:04.txt");
     }
-    private static void getCandidateRunToStation(String date, String departStationLatLng, String destStationLatLng) {
-        String startTime = TimeTranslatorUtil.convertDateToISODate(date + " 04:00:00");
-        String endTime = TimeTranslatorUtil.convertDateToISODate(date + " 23:00:00");
+    private static void getCandidateRunToStation() {
+        String startTime = TimeTranslatorUtil.convertDateToISODate(INVOKE_DATE + " 04:00:00");
+        String endTime = TimeTranslatorUtil.convertDateToISODate(INVOKE_DATE + " 23:00:00");
 
-        List<Location> bKLngLat = InputUtil.loadInputLocation(departStationLatLng + ".txt");
-        DBUtil.findDistinctDeviceWithinLocation(bKLngLat, startTime, endTime, "device_" + departStationLatLng + "04:23.txt");
+        List<Location> departLatLng = InputUtil.loadInputLocation(DEPART_STATION + ".txt");
+        DBUtil.findDistinctDeviceWithinLocation(departLatLng, startTime, endTime, "device" + DEPART_STATION + "04:23.txt");
 
-        List<Location> cs2LngLat = InputUtil.loadInputLocation(destStationLatLng  + ".txt");
-        DBUtil.findDistinctDeviceWithinLocation(cs2LngLat, startTime, endTime, "device_" + destStationLatLng + "04:23.txt");
+        List<Location> destLngLat = InputUtil.loadInputLocation(DEST_STATION  + ".txt");
+        DBUtil.findDistinctDeviceWithinLocation(destLngLat, startTime, endTime, "device" + DEST_STATION + "04:23.txt");
     }
-    private static void getCandidateDevice(String departStation, String destStation, String candidateFile) {
-        HashMap<String, String> deviceDepartList = createHashMap(departStation);
-        HashMap<String, String> deviceRunningList = createHashMap(destStation);
+    private static void getCandidateDevice(String compareFile1, String compareFile2, String resultFile) {
+        HashMap<String, String> deviceDepartList = createHashMap(compareFile1);
+        HashMap<String, String> deviceRunningList = createHashMap(compareFile2);
 
         Iterator<String> iterator = deviceDepartList.keySet().iterator();
         List<String> result = new ArrayList<String>();
@@ -116,7 +128,7 @@ public class FindDevice74 {
                 result.add(candidate);
             }
         }
-        ExportUtil.exportToFile(result, candidateFile);
+        ExportUtil.exportToFile(result, resultFile);
     }
     private static HashMap<String, String> createHashMap(String inputFile) {
         List<String> result = new ArrayList<String>();
