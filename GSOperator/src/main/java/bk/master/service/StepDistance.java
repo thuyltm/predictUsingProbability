@@ -27,34 +27,26 @@ import bk.master.input.model.Location;
 public class StepDistance {
     private static final String DISTANCE_API_KEY = "AIzaSyDtt2dNdvWREWfvLuntTma-FDAU8g431oE";
     private static final String USER_AGENT = "Mozilla/5.0";
-    private static final String INPUT_FOLDER = "/home/thuy/workspace/MongoOperator/location/18/";
-    private static final String OUTPUT_FOLDER = "/home/thuy/workspace/GSOperator/newLeg/";
+    private static final String INPUT_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location/19/limit/";
+    private static final String OUTPUT_FOLDER = "/home/thuy1/git/predictUsingProbability/GSOperator/newLeg/19/";
 
     public static void main(String[] args) {
-        File file = new File(INPUT_FOLDER+"53N4663_18_0_45:00.csv");
-        try {
-            List<Location> travelPointList = InputUtil.loadInputDateLocation(file.getAbsolutePath());
-            sendGet(travelPointList, OUTPUT_FOLDER + "distance_" + file.getName() + ".csv");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
        // Pattern p = Pattern.compile("_\\d+_\\d+:\\d+:\\d+");
-       /* File dir = new File(INPUT_FOLDER);
+        File dir = new File(INPUT_FOLDER);
         File[] directoryList = dir.listFiles();
         try {
             for (File file : directoryList) {
-                Matcher m = p.matcher(file.getName());
+                /*Matcher m = p.matcher(file.getName());
                 String endName = "NO_FOUND";
                 while (m.find()) {
                     endName = m.group();
-                }
+                }*/
                 List<Location> travelPointList = InputUtil.loadInputDateLocation(file.getAbsolutePath());
                 sendGet(travelPointList, OUTPUT_FOLDER + "distance_" + file.getName() + ".csv");
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
+        }
     }
     public static void sendGet(List<Location> travelPointList, String outputFile) throws ClientProtocolException, IOException {
           List<Leg> legList = new ArrayList<Leg>();
