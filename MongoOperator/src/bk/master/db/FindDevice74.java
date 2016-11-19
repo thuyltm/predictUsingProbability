@@ -15,11 +15,11 @@ import bk.master.input.model.Location;
 import bk.master.input.model.Move;
 
 public class FindDevice74 {
-    private static String SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/schedule/03/";
-    private static String SWITCH_SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/merge_schedule/03/";
-    private static String ROUTE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/route/03/";
-    private static String LOCATION_CSV_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location/03/";
-    private static String LOCATION_JSON_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location-json/03/";
+    private static String SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/schedule/05/";
+    private static String SWITCH_SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/merge_schedule/05/";
+    private static String ROUTE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/route/05/";
+    private static String LOCATION_CSV_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location/05/";
+    private static String LOCATION_JSON_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location-json/05/";
     private static String DEPART_STATION = "benXeAnSuong";
     private static String DEST_STATION = "benXeCuChi";
     private static String INVOKE_DATE = "2016-09-05";
