@@ -15,18 +15,19 @@ import bk.master.input.model.Location;
 import bk.master.input.model.Move;
 
 public class FindDevice74 {
-    private static String SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/schedule/05/";
-    private static String SWITCH_SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/merge_schedule/05/";
-    private static String ROUTE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/route/05/";
-    private static String LOCATION_CSV_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location/05/";
-    private static String LOCATION_JSON_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location-json/05/";
+    private static String NUMBER = "17";
+    private static String SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/schedule/"+NUMBER+"/";
+    private static String SWITCH_SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/merge_schedule/"+NUMBER+"/";
+    private static String ROUTE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/route/"+NUMBER+"/";
+    private static String LOCATION_CSV_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location/"+NUMBER+"/";
+    private static String LOCATION_JSON_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location-json/"+NUMBER+"/";
     private static String DEPART_STATION = "benXeAnSuong";
     private static String DEST_STATION = "benXeCuChi";
-    private static String INVOKE_DATE = "2016-09-05";
+    private static String INVOKE_DATE = "2016-09-"+NUMBER;
     private static String DEVICE_LIST = "result.txt";
     public static void main(String[] args) {
         //getCandidate();
-        checkCandidateByMap();
+        //checkCandidateByMap();
         getSchedule();
     }
     public static void getSchedule() {
@@ -58,11 +59,15 @@ public class FindDevice74 {
     public static void mergeSchedule() {
         List<String> deviceList = InputUtil.loadInput(DEVICE_LIST);
         for (String device : deviceList) {
-            List<Move> result = TimeTranslatorUtil.mergeSchedule(
-                    SCHEDULE_FOLDER + device + DEPART_STATION + ".csv",
-                    SCHEDULE_FOLDER + device + DEST_STATION + ".csv",
-                    DEPART_STATION, DEST_STATION);
-            ExportUtil.exportToScheduleFile(result, SWITCH_SCHEDULE_FOLDER + device + ".csv");
+            try {
+                List<Move> result = TimeTranslatorUtil.mergeSchedule(
+                        SCHEDULE_FOLDER + device + DEPART_STATION + ".csv",
+                        SCHEDULE_FOLDER + device + DEST_STATION + ".csv",
+                        DEPART_STATION, DEST_STATION);
+                ExportUtil.exportToScheduleFile(result, SWITCH_SCHEDULE_FOLDER + device + ".csv");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
     public static void getTimeInStation(String stationFile, String INVOKE_DATE) {
