@@ -15,18 +15,18 @@ import bk.master.input.model.Location;
 import bk.master.input.model.Move;
 
 public class FindDevice74 {
-    private static String SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/schedule/02/";
-    private static String SWITCH_SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/merge_schedule/02/";
-    private static String ROUTE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/route/02/";
-    private static String LOCATION_CSV_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location/02/";
-    private static String LOCATION_JSON_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location-json/02/";
+    private static String SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/schedule/03/";
+    private static String SWITCH_SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/merge_schedule/03/";
+    private static String ROUTE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/route/03/";
+    private static String LOCATION_CSV_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location/03/";
+    private static String LOCATION_JSON_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location-json/03/";
     private static String DEPART_STATION = "benXeAnSuong";
     private static String DEST_STATION = "benXeCuChi";
-    private static String INVOKE_DATE = "2016-09-02";
+    private static String INVOKE_DATE = "2016-09-05";
     private static String DEVICE_LIST = "result.txt";
     public static void main(String[] args) {
         //getCandidate();
-        //checkCandidateByMap();
+        checkCandidateByMap();
         getSchedule();
     }
     public static void getSchedule() {
@@ -88,11 +88,11 @@ public class FindDevice74 {
         }
     }
     public static void getCandidate() {
-        getCandidateStopInStation();
+       // getCandidateStopInStation();
         getCandidateRunToStation();
-        getCandidateDevice("device" + DEPART_STATION + "00:04.txt",
+        getCandidateDevice("device" + DEPART_STATION + "04:23.txt",
                   "device" + DEST_STATION + "04:23.txt", "result1.txt");
-        getCandidateDevice("device" + DEST_STATION + "00:04.txt",
+        getCandidateDevice("device" + DEST_STATION + "04:23.txt",
                 "device" + DEPART_STATION + "04:23.txt", "result2.txt");
         getCandidateDevice("result2.txt", "result1.txt", DEVICE_LIST);
     }
