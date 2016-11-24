@@ -27,7 +27,7 @@ import bk.master.input.model.Location;
 public class StepDistance {
     private static final String DISTANCE_API_KEY = "AIzaSyDtt2dNdvWREWfvLuntTma-FDAU8g431oE";
     private static final String USER_AGENT = "Mozilla/5.0";
-    private static final String NUMBER = "02";
+    private static final String NUMBER = "03";
     private static final String INPUT_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location/"+NUMBER+"/limit/";
     private static final String OUTPUT_FOLDER = "/home/thuy1/git/predictUsingProbability/GSOperator/newLeg/"+NUMBER+"/";
 
