@@ -68,8 +68,7 @@ public class TransformUtil {
                     firstLeg.getStartLat(), firstLeg.getStartLng(),
                        lastLeg.getEndLat(), lastLeg.getEndLng(), firstLeg.getStartPlace(),
                        lastLeg.getEndPlace(), distance, distance+"m", duration,
-                       TimeTranslatorUtil.covertToReadableFormat(duration),
-                       Float.valueOf(df2.format(duration/(float)totalDuration))));
+                       TimeTranslatorUtil.covertToReadableFormat(duration)));
             i = j+1;
             j = i+1;
             distance = 0;

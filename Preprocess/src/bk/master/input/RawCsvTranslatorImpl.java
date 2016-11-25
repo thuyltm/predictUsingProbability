@@ -11,7 +11,6 @@ import au.com.bytecode.opencsv.CSVReader;
 import bk.master.input.model.Location;
 
 public class RawCsvTranslatorImpl implements RawCsvTranslator{
-
     @Override
     public void translateDBToJson(String filePath, String outputPath) {
         CSVReader reader;
@@ -33,6 +32,7 @@ public class RawCsvTranslatorImpl implements RawCsvTranslator{
 
     @Override
     public void translateCsvToJson(String filePath, String outputPath) {
+        List<String> candidateList = InputUtil.loadInput("deviceList.txt");
         CSVReader reader;
         int i = 1;
         try {
@@ -40,14 +40,18 @@ public class RawCsvTranslatorImpl implements RawCsvTranslator{
             List<String[]> allRows = reader.readAll();
             List<Location> data = new ArrayList<Location>();
             for(String[] row : allRows){
-              Double lng = Double.valueOf(row[5]);
-              Double lat = Double.valueOf(row[6]);
-              long miliseconds = Double.valueOf(row[4]).longValue()*1000;
-              Location loc = new Location(row[0],lat,lng,miliseconds);
-              data.add(loc);
+              if (candidateList.contains(row[0])) {
+                  Double lng = Double.valueOf(row[5]);
+                  Double lat = Double.valueOf(row[6]);
+                  long miliseconds = Double.valueOf(row[4]).longValue()*1000;
+                  Location loc = new Location(row[0],lat,lng,miliseconds);
+                  data.add(loc);
+              }
               i++;
             }
-            writeToJsonFile(data, outputPath);
+            if (data.size()>0) {
+                writeToJsonFile(data, outputPath);
+            }
         } catch (Exception e) {
             System.out.println("error in " + filePath+"line="+i);
             e.printStackTrace();
@@ -72,10 +76,15 @@ public class RawCsvTranslatorImpl implements RawCsvTranslator{
             }
             file.createNewFile();
             FileWriter writer = new FileWriter(file, true);
-            for (Location obj : data) {
-               // System.out.println(obj.getDate());
-                writer.write(obj.toString()+"\n");
+            writer.write("[\n");
+            int max = data.size() - 1;
+            for (int i = 0; i < max; i++) {
+                Location obj = data.get(i);
+                writer.write(obj.toString()+",\n");
             }
+            Location obj = data.get(max);
+            writer.write(obj.toString()+"\n");
+            writer.write("]");
             writer.flush();
             writer.close();
         } catch (IOException e) {

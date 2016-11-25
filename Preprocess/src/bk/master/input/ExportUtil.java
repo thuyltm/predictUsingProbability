@@ -192,28 +192,6 @@ public class ExportUtil {
             e.printStackTrace();
         }
     }
-    public static void exportPercentTime(String newLegFolder, String outputFile) {
-        try {
-            BufferedWriter bw = createBufferWriter(outputFile);
-
-            File dir = new File(newLegFolder);
-            File[] directoryList = dir.listFiles();
-            for (File legFile : directoryList) {
-                List<Leg> legList = InputUtil.loadLegList(legFile.getAbsolutePath());
-                StringBuilder valueList = new StringBuilder();
-                for (Leg leg: legList) {
-                    valueList.append(leg.getPercentTime()+",");
-                }
-                valueList.append("100");
-                bw.write(valueList.toString());
-                bw.newLine();
-            }
-            bw.flush();
-            bw.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
     public static void exportTimeText(String newLegFolder, String outputFile) {
         try {
             BufferedWriter bw = createBufferWriter(outputFile);
@@ -266,9 +244,7 @@ public class ExportUtil {
                 bw.write(valueList.toString());
                 bw.newLine();
                 valueList = new StringBuilder("   ");
-                for (Leg leg: legList) {
-                    valueList.append(leg.getPercentTime()+",");
-                }
+
                 valueList.append("100");
                 bw.write(valueList.toString());
                 bw.newLine();
@@ -300,8 +276,8 @@ public class ExportUtil {
                 valueList = new StringBuilder();
                 int i = 1;
                 for (Leg leg: legList) {
-                    valueList.append(leg.getDistance()+","+leg.getDuration()/1000+","+
-                                     leg.getPercentTime()+",V"+i+"\n");
+                    valueList.append(leg.getDistance()+","+leg.getDuration()/1000+","
+                                        +",V"+i+"\n");
                     i++;
                 }
                 bw.write(valueList.toString());

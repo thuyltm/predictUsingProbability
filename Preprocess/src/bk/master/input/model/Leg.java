@@ -16,7 +16,6 @@ public class Leg {
     String distanceText;
     Long duration;
     String durationText;
-    float percentTime;
     public Leg() {
         super();
     }
@@ -36,26 +35,6 @@ public class Leg {
         this.distanceText = distanceText;
         this.duration = duration;
         this.durationText = durationText;
-    }
-
-    public Leg(int startIndex, int endIndex, double startLat, double startLng,
-            double endLat, double endLng, String startPlace, String endPlace,
-            Integer distance, String distanceText, Long duration,
-            String durationText, float percentTime) {
-        super();
-        this.startIndex = startIndex;
-        this.endIndex = endIndex;
-        this.startLat = startLat;
-        this.startLng = startLng;
-        this.endLat = endLat;
-        this.endLng = endLng;
-        this.startPlace = startPlace;
-        this.endPlace = endPlace;
-        this.distance = distance;
-        this.distanceText = distanceText;
-        this.duration = duration;
-        this.durationText = durationText;
-        this.percentTime = Float.valueOf(df2.format(percentTime*100));
     }
 
     public double getStartLat() {
@@ -130,17 +109,11 @@ public class Leg {
     public void setEndIndex(int endIndex) {
         this.endIndex = endIndex;
     }
-    public float getPercentTime() {
-        return percentTime;
-    }
-    public void setPercentTime(float percentTime) {
-        this.percentTime = percentTime;
-    }
     @Override
     public String toString() {
         return startIndex + "|" + endIndex + "|" + startLat + "|" +
                startLng + "|" + endLat + "|" + endLng + "|" + startPlace +
                "|" + endPlace + "|" + distance + "|" + distanceText + "|" +
-               duration + "|" + durationText + "|" + percentTime;
+               duration + "|" + durationText;
     }
 }
