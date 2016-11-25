@@ -6,9 +6,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
@@ -20,14 +20,13 @@ import org.json.JSONObject;
 import bk.master.input.ExportUtil;
 import bk.master.input.InputUtil;
 import bk.master.input.TimeTranslatorUtil;
-import bk.master.input.TransformUtil;
 import bk.master.input.model.Leg;
 import bk.master.input.model.Location;
 
 public class StepDistance {
     private static final String DISTANCE_API_KEY = "AIzaSyDtt2dNdvWREWfvLuntTma-FDAU8g431oE";
     private static final String USER_AGENT = "Mozilla/5.0";
-    private static final String NUMBER = "03";
+    private static final String NUMBER = "06";
     private static final String INPUT_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location/"+NUMBER+"/limit/";
     private static final String OUTPUT_FOLDER = "/home/thuy1/git/predictUsingProbability/GSOperator/newLeg/"+NUMBER+"/";
 
@@ -43,12 +42,13 @@ public class StepDistance {
                     endName = m.group();
                 }*/
                 List<Location> travelPointList = InputUtil.loadInputDateLocation(file.getAbsolutePath());
-                sendGet(travelPointList, OUTPUT_FOLDER + "distance_" + file.getName() + ".csv");
+                sendGet(travelPointList, OUTPUT_FOLDER + "distance_" + FilenameUtils.getBaseName(file.getName())+".csv");
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     public static void sendGet(List<Location> travelPointList, String outputFile) throws ClientProtocolException, IOException {
           List<Leg> legList = new ArrayList<Leg>();
           Location firstLoc, nextLoc;
