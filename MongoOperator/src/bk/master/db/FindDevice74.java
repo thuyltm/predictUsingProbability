@@ -15,15 +15,21 @@ import bk.master.input.model.Location;
 import bk.master.input.model.Move;
 
 public class FindDevice74 {
-    private static String NUMBER = "17";
-    private static String SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/schedule/"+NUMBER+"/";
-    private static String SWITCH_SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/merge_schedule/"+NUMBER+"/";
-    private static String ROUTE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/route/"+NUMBER+"/";
-    private static String LOCATION_CSV_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location/"+NUMBER+"/";
-    private static String LOCATION_JSON_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/location-json/"+NUMBER+"/";
+    private static String MONTH = "10";
+    private static String DAY = "05";
+    private static String SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/"
+                            +MONTH+"/schedule/"+DAY+"/";
+    private static String SWITCH_SCHEDULE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/"
+                            +MONTH+"merge_schedule/"+DAY+"/";
+    private static String ROUTE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/"
+                            +MONTH+"route/"+DAY+"/";
+    private static String LOCATION_CSV_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/"
+                            +MONTH+"location/"+DAY+"/";
+    private static String LOCATION_JSON_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/"
+                            +MONTH+"location-json/"+DAY+"/";
     private static String DEPART_STATION = "benXeAnSuong";
     private static String DEST_STATION = "benXeCuChi";
-    private static String INVOKE_DATE = "2016-09-"+NUMBER;
+    private static String INVOKE_DATE = "2016-10-"+DAY;
     private static String DEVICE_LIST = "result.txt";
     public static void main(String[] args) {
         //getCandidate();
