@@ -30,8 +30,8 @@ public class StepDistance {
     private static final String DAY = "09";
     private static final String INPUT_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/"+
                                                 MONTH+"/location/"+DAY+"/limit/";
-    private static final String OUTPUT_FOLDER = "/home/thuy1/git/predictUsingProbability/GSOperator/"
-                                                +MONTH+"/newLeg/"+DAY+"/";
+    private static final String OUTPUT_FOLDER = "/home/thuy1/git/predictUsingProbability/GSOperator/newLeg/"
+                                                +MONTH+"/"+DAY+"/";
 
     public static void main(String[] args) {
        // Pattern p = Pattern.compile("_\\d+_\\d+:\\d+:\\d+");

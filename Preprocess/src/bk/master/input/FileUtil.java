@@ -37,4 +37,10 @@ public class FileUtil {
             e.printStackTrace();
         }
     }
+    public static void deleteFile() {
+
+    }
+    public static void deleteFolder() {
+
+    }
 }

@@ -10,9 +10,10 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class SplitFile {
-    private static String DATA_FOLDER = "/home/thuy1/gpsdata/2016-09-17.txt";
-    private static String SPLIT_DATA_FOLDER = "/home/thuy1/split/17/";
-    private static String JSON_DATA_FOLDER = "/home/thuy1/json/17/";
+    private static String DATA_FOLDER = "/mnt/thuy/data/2016-10-16.txt";
+    private static int NUMBER = 11;
+    private static String SPLIT_DATA_FOLDER = "/mnt/thuy/split/10/"+NUMBER+"/";
+    private static String JSON_DATA_FOLDER = "/mnt/thuy/json/10/"+NUMBER+"/";
     public static void splitFile(File f, String outputPath) {
         String name = f.getName();
         int partCounter = 1;
@@ -44,21 +45,28 @@ public class SplitFile {
             e.printStackTrace();
         }
     }
-    public static void exportToJson() {
+    public static void exportToJson(String splitDataFolder, String jsonDataFolder) {
         RawCsvTranslator translator = new RawCsvTranslatorImpl();
         try {
-            File folderPath = new File(SPLIT_DATA_FOLDER);
+            File folderPath = new File(splitDataFolder);
             File[] fileList = folderPath.listFiles();
             for (File file : fileList) {
                 translator.translateCsvToJson(file.getAbsolutePath(),
-                        JSON_DATA_FOLDER+file.getName()+".json");
+                        jsonDataFolder+file.getName()+".json");
             }
         } catch (Exception e) {
             // TODO: handle exception
         }
     }
     public static void main(String[] args) throws IOException {
-        splitFile(new File(DATA_FOLDER), SPLIT_DATA_FOLDER);
-        exportToJson();
+        int j = 16;
+        for (int i = 18; i <= 19; i++) {
+            String dataFolder = "/mnt/thuy/data/2016-09-"+i+".txt";
+            String splitDataFolder = "/mnt/thuy/split/09/"+j+"/";
+            String jsonDataFolder = "/mnt/thuy/json/09/"+j+"/";
+            splitFile(new File(dataFolder), splitDataFolder);
+            exportToJson(splitDataFolder,jsonDataFolder);
+            j++;
+        }
     }
 }
