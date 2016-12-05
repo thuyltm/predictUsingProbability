@@ -21,10 +21,10 @@ public class FindDevice74 {
     public static void main(String[] args) {
         //getCandidate();
         //checkCandidateByMap();
-        int month = 10;
-        for (int i = 14; i <=14; i++) {
-            String day = String.valueOf(i);
-            //String day ="31";
+        int month = 11;
+        for (int i = 6; i <=6; i++) {
+            //String day = String.valueOf(i);
+            String day ="0"+i;
             String scheduleFolder = "/home/thuy1/git/predictUsingProbability/MongoOperator/"
                     +month+"/schedule/"+day+"/";
             String switchScheduleFolder = "/home/thuy1/git/predictUsingProbability/MongoOperator/"
