@@ -14,11 +14,30 @@ import java.util.List;
 import bk.master.input.model.Leg;
 import bk.master.input.model.Location;
 import bk.master.input.model.Move;
+import bk.master.input.model.Route;
 
 public class ExportUtil {
     static private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-    static private SimpleDateFormat isoFormatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
 
+    public static void exportFinishTime(String departure, String destination,
+                             List<Route> data, String outputFile) {
+         try
+         {
+             BufferedWriter bw = createAccumulateBuffer(outputFile);
+             for (Route route: data) {
+                 if (departure.equalsIgnoreCase(route.getDeparture())
+                    && destination.equalsIgnoreCase(route.getDestination())) {
+                     bw.write(route.getFinishTime()+","+route.getFinishTimeText());
+                     bw.newLine();
+                 }
+             }
+             bw.flush();
+             bw.close();
+         }
+         catch (UnsupportedEncodingException e) {}
+         catch (FileNotFoundException e){}
+         catch (IOException e){}
+    }
     public static void exportToDateFile(List<Date> data, String outputFile) {
         try
         {

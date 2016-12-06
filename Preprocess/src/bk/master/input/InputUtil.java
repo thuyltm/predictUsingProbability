@@ -15,6 +15,7 @@ import au.com.bytecode.opencsv.bean.CsvToBean;
 import bk.master.input.model.Leg;
 import bk.master.input.model.Location;
 import bk.master.input.model.Move;
+import bk.master.input.model.Route;
 
 public class InputUtil {
     static private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -33,6 +34,25 @@ public class InputUtil {
             List<Leg> legList = csv.parse(strat, csvReader);
             csvReader.close();
             return legList;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    public static List<Route> loadFinishTime(String inputFile) {
+        try {
+            ColumnPositionMappingStrategy<Route> strat = new ColumnPositionMappingStrategy<Route>();
+            strat.setType(Route.class);
+            String[] columns = new String[] {"index","departure","destination", "departTime",
+                    "destTime", "finishTime", "finishTimeText"};
+            strat.setColumnMapping(columns);
+
+            CsvToBean<Route> csv = new CsvToBean<Route>();
+
+            CSVReader csvReader = new CSVReader(new FileReader(inputFile), ',');
+            List<Route> routeList = csv.parse(strat, csvReader);
+            csvReader.close();
+            return routeList;
         } catch (Exception e) {
             e.printStackTrace();
         }

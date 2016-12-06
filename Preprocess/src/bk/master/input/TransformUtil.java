@@ -12,8 +12,17 @@ import java.util.regex.Pattern;
 import au.com.bytecode.opencsv.CSVReader;
 import au.com.bytecode.opencsv.CSVWriter;
 import bk.master.input.model.Leg;
+import bk.master.input.model.Route;
 
 public class TransformUtil {
+    public static void getFinishTimeFromCCToAS(String departure, String destination,
+                                           File inputFolder, String outputFile){
+        File[] fileList = inputFolder.listFiles();
+        for (File inputFile : fileList) {
+            List<Route> routeList = InputUtil.loadFinishTime(inputFile.getAbsolutePath());
+            ExportUtil.exportFinishTime(departure, destination, routeList, outputFile);
+        }
+    }
     public static void mergeToMoveCSV(String[] sourceFileList, String destinateFile,
                                     String source, String destination) {
         try {

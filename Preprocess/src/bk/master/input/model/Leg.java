@@ -1,9 +1,7 @@
 package bk.master.input.model;
 
-import java.text.DecimalFormat;
 
 public class Leg {
-    private DecimalFormat df2 = new DecimalFormat("##.##");
     int startIndex;
     int endIndex;
     double startLat;
