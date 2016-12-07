@@ -27,7 +27,7 @@ public class StepDistance {
     private static final String DISTANCE_API_KEY = "AIzaSyDtt2dNdvWREWfvLuntTma-FDAU8g431oE";
     private static final String USER_AGENT = "Mozilla/5.0";
     private static final String MONTH = "09";
-    private static final String DAY = "09";
+    private static final String DAY = "10";
     private static final String INPUT_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/"+
                                                 MONTH+"/location/"+DAY+"/limit/";
     private static final String OUTPUT_FOLDER = "/home/thuy1/git/predictUsingProbability/GSOperator/newLeg/"
