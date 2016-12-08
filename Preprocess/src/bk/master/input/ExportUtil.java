@@ -9,7 +9,10 @@ import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import bk.master.input.model.Leg;
 import bk.master.input.model.Location;
@@ -18,7 +21,26 @@ import bk.master.input.model.Route;
 
 public class ExportUtil {
     static private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-
+    public static void exportFrequenceFinishTime(HashMap<Integer, List<String>> finishTimeList,
+                        String outputFile) {
+        try
+        {
+            BufferedWriter bw = createBufferWriter(outputFile);
+            Set<Integer> keyList = finishTimeList.keySet();
+            Iterator<Integer> keyIterator = keyList.iterator();
+            while(keyIterator.hasNext()){
+                Integer key = keyIterator.next();
+                List<String> valueList = finishTimeList.get(key);
+                bw.write(key+"|"+valueList.size()+"|"+valueList.toString());
+                bw.newLine();
+            }
+            bw.flush();
+            bw.close();
+        }
+        catch (UnsupportedEncodingException e) {}
+        catch (FileNotFoundException e){}
+        catch (IOException e){}
+    }
     public static void exportFinishTime(String departure, String destination,
                              List<Route> data, String outputFile) {
          try

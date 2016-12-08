@@ -67,4 +67,11 @@ public class Route {
     public void setFinishTimeText(String finishTimeText) {
         this.finishTimeText = finishTimeText;
     }
+    @Override
+    public String toString() {
+        return "Route [index=" + index + ", departure=" + departure
+                + ", destination=" + destination + ", departTime=" + departTime
+                + ", destTime=" + destTime + ", finishTime=" + finishTime
+                + ", finishTimeText=" + finishTimeText + "]";
+    }
 }

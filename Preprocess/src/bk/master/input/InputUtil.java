@@ -79,7 +79,6 @@ public class InputUtil {
         try {
             CSVReader reader = new CSVReader(new FileReader(inputFile), ',');
             String[] nextLine;
-            nextLine = reader.readNext();
             while ((nextLine = reader.readNext()) != null) {
                 Date departTime = formatter.parse(nextLine[3].trim());
                 Date destTime = formatter.parse(nextLine[4].trim());
@@ -160,6 +159,33 @@ public class InputUtil {
                 }
                 data.add(line.trim());
                 result.put(destTime, data);
+                line = br.readLine();
+            }
+            br.close();
+        }  catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    public static HashMap<Integer, List<String>> mapFinishTime(String inputFile) {
+        HashMap<Integer,List<String>> result = new HashMap<Integer,List<String>>();
+        BufferedReader br;
+        try {
+            br = new BufferedReader(new FileReader(inputFile));
+            String line = br.readLine();
+            while (line != null) {
+                String[] data = line.trim().split(",");
+                String finishTime = data[1];
+                int hour = Integer.valueOf(finishTime.trim().split(":")[0]);
+                if (result.get(hour) == null) {
+                    List<String> valueList = new ArrayList<String>();
+                    valueList.add(finishTime);
+                    result.put(hour, valueList);
+                } else {
+                    result.get(hour).add(finishTime);
+                }
+                //continue read new line
                 line = br.readLine();
             }
             br.close();
