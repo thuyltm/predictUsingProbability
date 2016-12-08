@@ -21,8 +21,8 @@ public class FindDevice74 {
     public static void main(String[] args) {
         //getCandidate();
         //checkCandidateByMap();
-        int month = 11;
-        for (int i = 6; i <=6; i++) {
+        String month = "09";
+        for (int i = 3; i <=3; i++) {
             //String day = String.valueOf(i);
             String day ="0"+i;
             String scheduleFolder = "/home/thuy1/git/predictUsingProbability/MongoOperator/"
@@ -33,7 +33,7 @@ public class FindDevice74 {
                      +month+"/location/"+day+"/";
             String locationJSonFolder = "/home/thuy1/git/predictUsingProbability/MongoOperator/"
                      +month+"/location-json/"+day+"/";
-            String invokeDate = "2016-10-"+day;
+            String invokeDate = "2016-09-"+day;
             getSchedule(invokeDate, scheduleFolder, switchScheduleFolder);
             getLocationData(switchScheduleFolder, day, locationJSonFolder, locationCsvFolder);
         }
@@ -58,8 +58,8 @@ public class FindDevice74 {
                 String newFileName = device + "_"+day+"_"+ i + "_" + durationText;
                 DBUtil.findLocationDeviceByTime(TimeTranslatorUtil.convertDateToISODate(startTime),
                         TimeTranslatorUtil.convertDateToISODate(endTime), device,
-                        locationJSonFolder + newFileName + ".json",
-                        //null,
+                        //locationJSonFolder + newFileName + ".json",
+                        null,
                         locationCsvFolder + newFileName + ".csv");
             }
         }
