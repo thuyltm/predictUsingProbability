@@ -1,18 +1,13 @@
 package bk.master.input;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import org.apache.commons.io.FilenameUtils;
+import java.util.Arrays;
 
 
 
 public class Test {
     public static void main(String[] args) {
-        File folder = new File("/home/thuy1/git/predictUsingProbability/MongoOperator/09/location/18");
+        ExportUtil.sort("CC_AS_Freq.csv", "CC_AS_Freq_Sort.csv");
+        /*File folder = new File("/home/thuy1/git/predictUsingProbability/MongoOperator/09/location/18");
         File[] dataFile = folder.listFiles();
         for (File file : dataFile) {
             String fileName = FilenameUtils.getBaseName(file.getAbsolutePath());
@@ -29,8 +24,7 @@ public class Test {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
-        }
-
+        }*/
 
         /*File dataFolder = new File("/home/thuy1/git/predictUsingProbability/GSOperator/newLeg/09/02/");
         File[] dataList = dataFolder.listFiles();

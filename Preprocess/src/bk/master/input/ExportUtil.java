@@ -4,16 +4,20 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import au.com.bytecode.opencsv.CSVReader;
 import bk.master.input.model.Leg;
 import bk.master.input.model.Location;
 import bk.master.input.model.Move;
@@ -21,6 +25,65 @@ import bk.master.input.model.Route;
 
 public class ExportUtil {
     static private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    public static void sort(String inputFile, String outputFile) {
+        try {
+            HashMap<Integer, String> data = new HashMap<Integer, String>();
+            List<Integer> valueList = new ArrayList<Integer>();
+            CSVReader reader = new CSVReader(new FileReader(inputFile), '|');
+            String[] nextLine;
+            while ((nextLine = reader.readNext()) != null) {
+                data.put(Integer.valueOf(nextLine[1]), nextLine[0]);
+                valueList.add(Integer.valueOf(nextLine[1]));
+            }
+            int length = valueList.size();
+            int[] sortedValueList = new int[length];
+            int sum = 0;
+            for(int i = 0; i < length; i++) {
+                sortedValueList[i] = valueList.get(i);
+                sum += sortedValueList[i];
+            }
+            Arrays.sort(sortedValueList);
+            BufferedWriter bw = createBufferWriter(outputFile);
+            float accValue = 0L;
+            for(int i = length-1; i >= 0; i--) {
+                int key = sortedValueList[i];
+                accValue += key;
+                bw.write(data.get(key)+"|"+key+"|"+(float)accValue/sum);
+                bw.newLine();
+            }
+            bw.flush();
+            bw.close();
+            reader.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public static void replicate(String inputFile, String outputFile) {
+        try {
+            HashMap<String, Integer> data = new HashMap<String, Integer>();
+            CSVReader reader = new CSVReader(new FileReader(inputFile), '|');
+            String[] nextLine;
+            while ((nextLine = reader.readNext()) != null) {
+                data.put(nextLine[0], Integer.valueOf(nextLine[1]));
+            }
+            BufferedWriter bw = createBufferWriter(outputFile);
+            Set<String> keyList = data.keySet();
+            Iterator<String> keyIterator = keyList.iterator();
+            while(keyIterator.hasNext()){
+                String key = keyIterator.next();
+                Integer rep = data.get(key);
+                for (int i = 0; i < rep; i++) {
+                    bw.write(key);
+                    bw.newLine();
+                }
+            }
+            bw.flush();
+            bw.close();
+            reader.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     public static void exportFrequenceFinishTime(HashMap<Integer, List<String>> finishTimeList,
                         String outputFile) {
         try
