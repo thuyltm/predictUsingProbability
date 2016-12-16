@@ -35,6 +35,20 @@ public class Leg {
         this.durationText = durationText;
     }
 
+    public Leg(int startIndex, int endIndex, double startLat, double startLng,
+            double endLat, double endLng, Integer distance, Long duration,
+            String durationText) {
+        this.startIndex = startIndex;
+        this.endIndex = endIndex;
+        this.startLat = startLat;
+        this.startLng = startLng;
+        this.endLat = endLat;
+        this.endLng = endLng;
+        this.distance = distance;
+        this.duration = duration;
+        this.durationText = durationText;
+    }
+
     public double getStartLat() {
         return startLat;
     }
@@ -109,9 +123,16 @@ public class Leg {
     }
     @Override
     public String toString() {
-        return startIndex + "|" + endIndex + "|" + startLat + "|" +
-               startLng + "|" + endLat + "|" + endLng + "|" + startPlace +
-               "|" + endPlace + "|" + distance + "|" + distanceText + "|" +
-               duration + "|" + durationText;
+        StringBuilder result = new StringBuilder(startIndex + "|" + endIndex + "|" + startLat + "|" +
+                startLng + "|" + endLat + "|" + endLng + "|");
+        if (startPlace != null) {
+            result.append(startPlace + "|" + endPlace + "|");
+        }
+        result.append(distance + "|");
+        if (distanceText != null) {
+            result.append(distanceText + "|");
+        }
+        result.append(duration + "|" + durationText);
+        return result.toString();
     }
 }

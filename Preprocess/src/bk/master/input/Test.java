@@ -1,30 +1,24 @@
 package bk.master.input;
 
-import java.util.Arrays;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.apache.commons.io.FilenameUtils;
 
 
 
 public class Test {
+
     public static void main(String[] args) {
-        ExportUtil.sort("CC_AS_Freq.csv", "CC_AS_Freq_Sort.csv");
-        /*File folder = new File("/home/thuy1/git/predictUsingProbability/MongoOperator/09/location/18");
+        File folder = new File("/home/thuy1/git/predictUsingProbability/MongoOperator/09/location/02");
+        String outputFolder = "/home/thuy1/git/predictUsingProbability/MongoOperator/09/distance/02";
         File[] dataFile = folder.listFiles();
         for (File file : dataFile) {
-            String fileName = FilenameUtils.getBaseName(file.getAbsolutePath());
-            String remainName = fileName.substring(0, fileName.lastIndexOf("_")+1);
-            String newName = remainName+"CC-AS";
-            if (fileName.contains("An Suong-Cu Chi")) {
-                newName = remainName+"AS-CC";
-            }
-            //System.out.println(newName);
-            Path source = Paths.get(file.getAbsolutePath());
-            try {
-                Files.move(source, source.resolveSibling(newName+".csv"));
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-        }*/
+            Calculate.calculateDistance(file, outputFolder);
+        }
 
         /*File dataFolder = new File("/home/thuy1/git/predictUsingProbability/GSOperator/newLeg/09/02/");
         File[] dataList = dataFolder.listFiles();

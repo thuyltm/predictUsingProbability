@@ -190,4 +190,8 @@ public class TimeTranslatorUtil {
             return Math.abs(date1.getTime()-date2.getTime());
         }
     }
+    public static long convertToMillionSeconds(String time) {
+        String[] data = time.split(":");
+        return (Integer.valueOf(data[0])*60+Integer.valueOf(data[1]))*1000;
+    }
 }

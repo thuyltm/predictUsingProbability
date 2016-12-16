@@ -39,6 +39,25 @@ public class InputUtil {
         }
         return null;
     }
+    public static List<Leg> loadLegNoPlaceList(String inputFile) {
+        try {
+            ColumnPositionMappingStrategy<Leg> strat = new ColumnPositionMappingStrategy<Leg>();
+            strat.setType(Leg.class);
+            String[] columns = new String[] {"startIndex","endIndex","startLat", "startLng", "endLat", "endLng",
+                                "distance", "duration", "durationText"};
+            strat.setColumnMapping(columns);
+
+            CsvToBean<Leg> csv = new CsvToBean<Leg>();
+
+            CSVReader csvReader = new CSVReader(new FileReader(inputFile), '|');
+            List<Leg> legList = csv.parse(strat, csvReader);
+            csvReader.close();
+            return legList;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
     public static List<Route> loadFinishTime(String inputFile) {
         try {
             ColumnPositionMappingStrategy<Route> strat = new ColumnPositionMappingStrategy<Route>();
@@ -63,7 +82,6 @@ public class InputUtil {
         try {
             CSVReader reader = new CSVReader(new FileReader(inputFile), ',');
             String[] nextLine;
-            nextLine = reader.readNext();
             while ((nextLine = reader.readNext()) != null) {
                 locationList.add(new Location(Double.valueOf(nextLine[0]), Double.valueOf(nextLine[1]),
                         formatter.parse(nextLine[2])));
