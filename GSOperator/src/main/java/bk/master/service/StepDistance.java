@@ -24,12 +24,12 @@ import bk.master.input.model.Leg;
 import bk.master.input.model.Location;
 
 public class StepDistance {
-    private static final String DISTANCE_API_KEY = "AIzaSyDtt2dNdvWREWfvLuntTma-FDAU8g431oE";
+    private static final String DISTANCE_API_KEY = "AIzaSyA_Zm07U2PRT9p8kQ3VlNfmXVTnhTinriw";
     private static final String USER_AGENT = "Mozilla/5.0";
     private static final String MONTH = "09";
-    private static final String DAY = "11";
+    private static final String DAY = "16";
     private static final String INPUT_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/"+
-                                                MONTH+"/location/"+DAY+"/limit/";
+                                                MONTH+"/location/"+DAY+"/";
     private static final String OUTPUT_FOLDER = "/home/thuy1/git/predictUsingProbability/GSOperator/newLeg/"
                                                 +MONTH+"/"+DAY+"/";
 

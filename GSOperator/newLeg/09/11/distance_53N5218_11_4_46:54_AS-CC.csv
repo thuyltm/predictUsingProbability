@@ -1,0 +1,580 @@
+0|1|10.8438266666667|106.61457|10.843475|106.614778333333|1C QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|45|45 m|10000|10
+1|2|10.843475|106.614778333333|10.843475|106.614778333333|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+2|3|10.843475|106.614778333333|10.8431283333333|106.614991666667|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|45|45 m|10000|10
+3|4|10.8431283333333|106.614991666667|10.8431283333333|106.614991666667|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+4|5|10.8431283333333|106.614991666667|10.8429833333333|106.615045|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|17|17 m|7000|07
+5|6|10.8429833333333|106.615045|10.8429833333333|106.615045|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+6|7|10.8429833333333|106.615045|10.84288|106.61507|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|13|13 m|6000|06
+7|8|10.84288|106.61507|10.84288|106.61507|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+8|9|10.84288|106.61507|10.8425433333333|106.615111666667|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|10 QL1A, Tân Thới Nhất, Quận 12, Hồ Chí Minh, Vietnam|1651|1.7 km|10000|10
+9|10|10.8425433333333|106.615111666667|10.8425433333333|106.615111666667|10 QL1A, Tân Thới Nhất, Quận 12, Hồ Chí Minh, Vietnam|10 QL1A, Tân Thới Nhất, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+10|11|10.8425433333333|106.615111666667|10.8424066666667|106.615426666667|10 QL1A, Tân Thới Nhất, Quận 12, Hồ Chí Minh, Vietnam|738/26/4 Trường Chinh, Tân Hưng Thuận, Quận 12, Hồ Chí Minh, Vietnam|2963|3.0 km|10000|10
+11|12|10.8424066666667|106.615426666667|10.8424066666667|106.615426666667|738/26/4 Trường Chinh, Tân Hưng Thuận, Quận 12, Hồ Chí Minh, Vietnam|738/26/4 Trường Chinh, Tân Hưng Thuận, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+12|13|10.8424066666667|106.615426666667|10.84257|106.615623333333|738/26/4 Trường Chinh, Tân Hưng Thuận, Quận 12, Hồ Chí Minh, Vietnam|738/26/4 Trường Chinh, Tân Hưng Thuận, Quận 12, Hồ Chí Minh, Vietnam|35|35 m|10000|10
+13|14|10.84257|106.615623333333|10.84257|106.615623333333|738/26/4 Trường Chinh, Tân Hưng Thuận, Quận 12, Hồ Chí Minh, Vietnam|738/26/4 Trường Chinh, Tân Hưng Thuận, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+14|15|10.84257|106.615623333333|10.84276|106.615618333333|738/26/4 Trường Chinh, Tân Hưng Thuận, Quận 12, Hồ Chí Minh, Vietnam|Xa lộ Hà Nội, Đông Hưng Thuận, Quận 12, Hồ Chí Minh, Vietnam|24|24 m|10000|10
+15|16|10.84276|106.615618333333|10.84276|106.615618333333|10 QL1A, Tân Thới Nhất, Quận 12, Hồ Chí Minh, Vietnam|10 QL1A, Tân Thới Nhất, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+16|17|10.84276|106.615618333333|10.8428583333333|106.615503333333|Xa lộ Hà Nội, Đông Hưng Thuận, Quận 12, Hồ Chí Minh, Vietnam|Xa lộ Đại Hàn, Bà Điểm, Hóc Môn, Hồ Chí Minh, Vietnam|1443|1.4 km|10000|10
+17|18|10.8428583333333|106.615503333333|10.8428583333333|106.615503333333|Xa lộ Đại Hàn, Bà Điểm, Hóc Môn, Hồ Chí Minh, Vietnam|Xa lộ Đại Hàn, Bà Điểm, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+18|19|10.8428583333333|106.615503333333|10.84303|106.615266666667|Xa lộ Đại Hàn, Bà Điểm, Hóc Môn, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3139|3.1 km|10000|10
+19|20|10.84303|106.615266666667|10.84303|106.615266666667|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+20|21|10.84303|106.615266666667|10.843305|106.615055|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|38|38 m|10000|10
+21|22|10.843305|106.615055|10.843305|106.615055|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+22|23|10.843305|106.615055|10.8435916666667|106.614888333333|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|37|37 m|10000|10
+23|24|10.8435916666667|106.614888333333|10.8435916666667|106.614888333333|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+24|25|10.8435916666667|106.614888333333|10.8438416666667|106.614733333333|5 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|16 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|34|34 m|10000|10
+25|26|10.8438416666667|106.614733333333|10.8438416666667|106.614733333333|16 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|16 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+26|27|10.8438416666667|106.614733333333|10.8439933333333|106.614651666667|16 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|16 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|19|19 m|7000|07
+27|28|10.8439933333333|106.614651666667|10.8439933333333|106.614651666667|16 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|16 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+28|29|10.8439933333333|106.614651666667|10.8439933333333|106.614651666667|16 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|16 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|5000|05
+29|30|10.8439933333333|106.614651666667|10.8439933333333|106.614651666667|16 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|16 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+30|31|10.8439933333333|106.614651666667|10.8441483333333|106.614548333333|16 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|2/752 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|21|21 m|9000|09
+31|32|10.8441483333333|106.614548333333|10.8441483333333|106.614548333333|2/752 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|2/752 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+32|33|10.8441483333333|106.614548333333|10.84434|106.61443|2/752 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|7B QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|25|25 m|11000|11
+33|34|10.84434|106.61443|10.84434|106.61443|7B QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|7B QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+34|35|10.84434|106.61443|10.8448733333333|106.614055|7B QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|1 Quán Tre, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|72|72 m|25000|25
+35|36|10.8448733333333|106.614055|10.8448733333333|106.614055|1 Quán Tre, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|1 Quán Tre, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+36|37|10.8448733333333|106.614055|10.8450266666667|106.613966666667|1 Quán Tre, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|17|17 m|13000|13
+37|38|10.8450266666667|106.613966666667|10.8450266666667|106.613966666667|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+38|39|10.8450266666667|106.613966666667|10.8450816666667|106.613946666667|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|6|6 m|10000|10
+39|40|10.8450816666667|106.613946666667|10.8450816666667|106.613946666667|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+40|41|10.8450816666667|106.613946666667|10.8454583333333|106.613701666667|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|50|50 m|30000|30
+41|42|10.8454583333333|106.613701666667|10.8454583333333|106.613701666667|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+42|43|10.8454583333333|106.613701666667|10.845625|106.613595|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5A QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|22|22 m|10000|10
+43|44|10.845625|106.613595|10.845625|106.613595|5A QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5A QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+44|45|10.845625|106.613595|10.8458016666667|106.613468333333|5A QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|24|24 m|10000|10
+45|46|10.8458016666667|106.613468333333|10.8458016666667|106.613468333333|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+46|47|10.8458016666667|106.613468333333|10.8458583333333|106.61343|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|8|8 m|7000|07
+47|48|10.8458583333333|106.61343|10.8458583333333|106.61343|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+48|49|10.8458583333333|106.61343|10.8462516666667|106.613186666667|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5B QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|51|51 m|40000|40
+49|50|10.8462516666667|106.613186666667|10.8462516666667|106.613186666667|5B QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|5B QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+50|51|10.8462516666667|106.613186666667|10.8464983333333|106.61302|5B QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|33|33 m|10000|10
+51|52|10.8464983333333|106.61302|10.8464983333333|106.61302|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+52|53|10.8464983333333|106.61302|10.8467983333333|106.612816666667|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|40|40 m|10000|10
+53|54|10.8467983333333|106.612816666667|10.8467983333333|106.612816666667|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+54|55|10.8467983333333|106.612816666667|10.8469233333333|106.612738333333|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|16|16 m|8000|08
+55|56|10.8469233333333|106.612738333333|10.8469233333333|106.612738333333|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+56|57|10.8469233333333|106.612738333333|10.8469233333333|106.612738333333|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+57|58|10.8469233333333|106.612738333333|10.8469233333333|106.612738333333|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+58|59|10.8469233333333|106.612738333333|10.8469233333333|106.612738333333|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+59|60|10.8469233333333|106.612738333333|10.8469233333333|106.612738333333|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+60|61|10.8469233333333|106.612738333333|10.8470116666667|106.612673333333|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|12|12 m|5000|05
+61|62|10.8470116666667|106.612673333333|10.8470116666667|106.612673333333|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+62|63|10.8470116666667|106.612673333333|10.8473633333333|106.612425|3 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|33 A Tổ 49 Khu Phố 4, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|48|48 m|10000|10
+63|64|10.8473633333333|106.612425|10.8473633333333|106.612425|166 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|166 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+64|65|10.8473633333333|106.612425|10.8478083333333|106.612135|166 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|166 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|59|59 m|10000|10
+65|66|10.8478083333333|106.612135|10.8478083333333|106.612135|33 A Tổ 49 Khu Phố 4, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|33 A Tổ 49 Khu Phố 4, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+66|67|10.8478083333333|106.612135|10.84834|106.611778333333|166 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|166 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|71|71 m|10000|10
+67|68|10.84834|106.611778333333|10.84834|106.611778333333|166 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|166 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+68|69|10.84834|106.611778333333|10.8488683333333|106.611438333333|166 QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|166 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|69|69 m|10000|10
+69|70|10.8488683333333|106.611438333333|10.8488683333333|106.611438333333|166 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|166 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+70|71|10.8488683333333|106.611438333333|10.8493883333333|106.611103333333|166 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|166 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|68|68 m|10000|10
+71|72|10.8493883333333|106.611103333333|10.8493883333333|106.611103333333|166 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|166 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+72|73|10.8493883333333|106.611103333333|10.85|106.610683333333|166 Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|29 Xuyên Á, Bà Điểm, Hóc Môn, Hồ Chí Minh, Vietnam|82|82 m|10000|10
+73|74|10.85|106.610683333333|10.85|106.610683333333|29 Xuyên Á, Bà Điểm, Hóc Môn, Hồ Chí Minh, Vietnam|29 Xuyên Á, Bà Điểm, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+74|75|10.85|106.610683333333|10.8507083333333|106.610236666667|29 Xuyên Á, Bà Điểm, Hóc Môn, Hồ Chí Minh, Vietnam|29 Xuyên Á, Bà Điểm, Hóc Môn, Hồ Chí Minh, Vietnam|93|93 m|10000|10
+75|76|10.8507083333333|106.610236666667|10.8507083333333|106.610236666667|29 Xuyên Á, Bà Điểm, Hóc Môn, Hồ Chí Minh, Vietnam|29 Xuyên Á, Bà Điểm, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+76|77|10.8507083333333|106.610236666667|10.8514866666667|106.609781666667|29 Xuyên Á, Bà Điểm, Hóc Môn, Hồ Chí Minh, Vietnam|15D Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|100|0.1 km|10000|10
+77|78|10.8514866666667|106.609781666667|10.8514866666667|106.609781666667|15D Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|15D Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+78|79|10.8514866666667|106.609781666667|10.8521716666667|106.609333333333|15D Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|15D Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|91|91 m|10000|10
+79|80|10.8521716666667|106.609333333333|10.8521716666667|106.609333333333|15D Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|15D Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+80|81|10.8521716666667|106.609333333333|10.8528|106.608945|15D Xuyên Á, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|194D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|82|82 m|10000|10
+81|82|10.8528|106.608945|10.8528|106.608945|194D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|194D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+82|83|10.8528|106.608945|10.8533733333333|106.6086|16A QL22 - KP3, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|194D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|74|74 m|10000|10
+83|84|10.8533733333333|106.6086|10.8533733333333|106.6086|194D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|194D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+84|85|10.8533733333333|106.6086|10.8539766666667|106.608225|194D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|Lâm Văn Tết, Trung Mỹ Tây, Hóc Môn, Hồ Chí Minh, Vietnam|79|79 m|10000|10
+85|86|10.8539766666667|106.608225|10.8539766666667|106.608225|Lâm Văn Tết, Trung Mỹ Tây, Hóc Môn, Hồ Chí Minh, Vietnam|Lâm Văn Tết, Trung Mỹ Tây, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+86|87|10.8539766666667|106.608225|10.8545066666667|106.607916666667|Lâm Văn Tết, Trung Mỹ Tây, Hóc Môn, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|68|68 m|10000|10
+87|88|10.8545066666667|106.607916666667|10.8545066666667|106.607916666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+88|89|10.8545066666667|106.607916666667|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|12|12 m|7000|07
+89|90|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+90|91|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|18000|18
+91|92|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+92|93|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+93|94|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+94|95|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+95|96|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+96|97|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+97|98|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+98|99|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+99|100|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+100|101|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|11000|11
+101|102|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+102|103|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+103|104|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+104|105|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+105|106|10.8545916666667|106.607853333333|10.8545916666667|106.607853333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+106|107|10.8545916666667|106.607853333333|10.8547716666667|106.607765|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|22|22 m|10000|10
+107|108|10.8547716666667|106.607765|10.8547716666667|106.607765|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+108|109|10.8547716666667|106.607765|10.8548283333333|106.607691666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|10|10 m|4000|04
+109|110|10.8548283333333|106.607691666667|10.8548283333333|106.607691666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+110|111|10.8548283333333|106.607691666667|10.855065|106.60751|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|33|33 m|10000|10
+111|112|10.855065|106.60751|10.855065|106.60751|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+112|113|10.855065|106.60751|10.8551416666667|106.607466666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|10|10 m|6000|06
+113|114|10.8551416666667|106.607466666667|10.8551416666667|106.607466666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+114|115|10.8551416666667|106.607466666667|10.8551416666667|106.607466666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+115|116|10.8551416666667|106.607466666667|10.8551416666667|106.607466666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+116|117|10.8551416666667|106.607466666667|10.8551416666667|106.607466666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+117|118|10.8551416666667|106.607466666667|10.8551416666667|106.607466666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+118|119|10.8551416666667|106.607466666667|10.8551416666667|106.607466666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+119|120|10.8551416666667|106.607466666667|10.8551416666667|106.607466666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+120|121|10.8551416666667|106.607466666667|10.8551416666667|106.607466666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+121|122|10.8551416666667|106.607466666667|10.8551416666667|106.607466666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+122|123|10.8551416666667|106.607466666667|10.8551416666667|106.607466666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+123|124|10.8551416666667|106.607466666667|10.8551416666667|106.607466666667|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+124|125|10.8551416666667|106.607466666667|10.855275|106.60734|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|20|20 m|9000|09
+125|126|10.855275|106.60734|10.855275|106.60734|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|0|1 m|0|null
+126|127|10.855275|106.60734|10.8556933333333|106.607048333333|193D QL22, Trung Mỹ Tây, Quận 12, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|56|56 m|10000|10
+127|128|10.8556933333333|106.607048333333|10.8556933333333|106.607048333333|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+128|129|10.8556933333333|106.607048333333|10.8563333333333|106.606641666667|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|2782|2.8 km|10000|10
+129|130|10.8563333333333|106.606641666667|10.8563333333333|106.606641666667|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+130|131|10.8563333333333|106.606641666667|10.8569366666667|106.606265|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|79|79 m|10000|10
+131|132|10.8569366666667|106.606265|10.8569366666667|106.606265|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+132|133|10.8569366666667|106.606265|10.8569566666667|106.60625|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|3|3 m|5000|05
+133|134|10.8569566666667|106.60625|10.8569566666667|106.60625|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+134|135|10.8569566666667|106.60625|10.857015|106.606213333333|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|8|8 m|5000|05
+135|136|10.857015|106.606213333333|10.857015|106.606213333333|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+136|137|10.857015|106.606213333333|10.8574783333333|106.605871666667|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|64|64 m|10000|10
+137|138|10.8574783333333|106.605871666667|10.8574783333333|106.605871666667|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+138|139|10.8574783333333|106.605871666667|10.8581916666667|106.60536|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|97|0.1 km|10000|10
+139|140|10.8581916666667|106.60536|10.8581916666667|106.60536|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+140|141|10.8581916666667|106.60536|10.8590866666667|106.604718333333|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Hẻm 39 QL22, Trung Chánh 2, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|122|0.1 km|10000|10
+141|142|10.8590866666667|106.604718333333|10.8590866666667|106.604718333333|Hẻm 39 QL22, Trung Chánh 2, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Hẻm 39 QL22, Trung Chánh 2, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+142|143|10.8590866666667|106.604718333333|10.8598883333333|106.604163333333|Hẻm 39 QL22, Trung Chánh 2, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|108|0.1 km|10000|10
+143|144|10.8598883333333|106.604163333333|10.8598883333333|106.604163333333|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+144|145|10.8598883333333|106.604163333333|10.8599083333333|106.604145|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|3|3 m|5000|05
+145|146|10.8599083333333|106.604145|10.8599083333333|106.604145|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+146|147|10.8599083333333|106.604145|10.860005|106.604063333333|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|14|14 m|5000|05
+147|148|10.860005|106.604063333333|10.860005|106.604063333333|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+148|149|10.860005|106.604063333333|10.8605133333333|106.603703333333|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|69|69 m|10000|10
+149|150|10.8605133333333|106.603703333333|10.8605133333333|106.603703333333|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+150|151|10.8605133333333|106.603703333333|10.8609683333333|106.603386666667|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|61|61 m|10000|10
+151|152|10.8609683333333|106.603386666667|10.8609683333333|106.603386666667|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+152|153|10.8609683333333|106.603386666667|10.8610016666667|106.603353333333|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|5|5 m|5000|05
+153|154|10.8610016666667|106.603353333333|10.8610016666667|106.603353333333|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+154|155|10.8610016666667|106.603353333333|10.8610016666667|106.603353333333|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+155|156|10.8610016666667|106.603353333333|10.8610016666667|106.603353333333|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+156|157|10.8610016666667|106.603353333333|10.863895|106.601315|37/3 QL22, Trung Chánh, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|391|0.4 km|50000|50
+157|158|10.863895|106.601315|10.863895|106.601315|QL22, Trung Chánh, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|QL22, Trung Chánh, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+158|159|10.863895|106.601315|10.86496|106.600555|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|145|0.1 km|10000|10
+159|160|10.86496|106.600555|10.86496|106.600555|QL22, Trung Chánh, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|QL22, Trung Chánh, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+160|161|10.86496|106.600555|10.8660616666667|106.599775|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|149|0.1 km|10000|10
+161|162|10.8660616666667|106.599775|10.8660616666667|106.599775|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+162|163|10.8660616666667|106.599775|10.86705|106.599071666667|Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|73/3C QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|134|0.1 km|10000|10
+163|164|10.86705|106.599071666667|10.86705|106.599071666667|73/3C QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|73/3C QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+164|165|10.86705|106.599071666667|10.867965|106.59842|73/3C QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|73/3C QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|124|0.1 km|10000|10
+165|166|10.867965|106.59842|10.867965|106.59842|73/3C QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|73/3C QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+166|167|10.867965|106.59842|10.8687866666667|106.597841666667|73/3C QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|13 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|111|0.1 km|11000|11
+167|168|10.8687866666667|106.597841666667|10.8687866666667|106.597841666667|13 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|13 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+168|169|10.8687866666667|106.597841666667|10.86929|106.597476666667|13 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|13/1A QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|69|69 m|10000|10
+169|170|10.86929|106.597476666667|10.86929|106.597476666667|13/1A QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|13/1A QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+170|171|10.86929|106.597476666667|10.8697183333333|106.597226666667|13/1A QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/6 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|55|55 m|10000|10
+171|172|10.8697183333333|106.597226666667|10.8697183333333|106.597226666667|1/6 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/6 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+172|173|10.8697183333333|106.597226666667|10.8700416666667|106.597013333333|1/6 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|43|43 m|10000|10
+173|174|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+174|175|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|3000|03
+175|176|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+176|177|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+177|178|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+178|179|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+179|180|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+180|181|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+181|182|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+182|183|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+183|184|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+184|185|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+185|186|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+186|187|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+187|188|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+188|189|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+189|190|10.8700416666667|106.597013333333|10.8700416666667|106.597013333333|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+190|191|10.8700416666667|106.597013333333|10.870325|106.596786666667|1/1 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1B QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|40|40 m|6000|06
+191|192|10.870325|106.596786666667|10.870325|106.596786666667|1/1B QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|1/1B QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+192|193|10.870325|106.596786666667|10.8708|106.596416666667|1/1B QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|3 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|74|74 m|12000|12
+193|194|10.8708|106.596416666667|10.8708|106.596416666667|3 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|3 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+194|195|10.8708|106.596416666667|10.871535|106.595896666667|3 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|46/6 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|100|0.1 km|10000|10
+195|196|10.871535|106.595896666667|10.871535|106.595896666667|46/6 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|46/6 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+196|197|10.871535|106.595896666667|10.8725033333333|106.595201666667|46/6 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|43/3 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|132|0.1 km|10000|10
+197|198|10.8725033333333|106.595201666667|10.8725033333333|106.595201666667|43/3 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|43/3 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+198|199|10.8725033333333|106.595201666667|10.8736066666667|106.59442|3 Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|3 Xuyên Á, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|149|0.1 km|10000|10
+199|200|10.8736066666667|106.59442|10.8736066666667|106.59442|42/6 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|42/6 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+200|201|10.8736066666667|106.59442|10.8747633333333|106.593595|42/6 QL22, Tân Xuân, Hóc Môn, Hồ Chí Minh, Vietnam|42/2F QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|157|0.2 km|10000|10
+201|202|10.8747633333333|106.593595|10.8747633333333|106.593595|42/2F QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|42/2F QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+202|203|10.8747633333333|106.593595|10.875665|106.592995|42/2F QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|42/1B QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|120|0.1 km|10000|10
+203|204|10.875665|106.592995|10.875665|106.592995|42/1B QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|42/1B QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+204|205|10.875665|106.592995|10.8763883333333|106.59249|42/1B QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|98|0.1 km|10000|10
+205|206|10.8763883333333|106.59249|10.8763883333333|106.59249|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+206|207|10.8763883333333|106.59249|10.8771183333333|106.59198|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|98|0.1 km|10000|10
+207|208|10.8771183333333|106.59198|10.8771183333333|106.59198|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+208|209|10.8771183333333|106.59198|10.8774716666667|106.591716666667|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|49|49 m|10000|10
+209|210|10.8774716666667|106.591716666667|10.8774716666667|106.591716666667|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+210|211|10.8774716666667|106.591716666667|10.8774716666667|106.591716666667|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+211|212|10.8774716666667|106.591716666667|10.8774716666667|106.591716666667|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+212|213|10.8774716666667|106.591716666667|10.8774716666667|106.591716666667|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+213|214|10.8774716666667|106.591716666667|10.8774716666667|106.591716666667|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+214|215|10.8774716666667|106.591716666667|10.8774716666667|106.591716666667|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+215|216|10.8774716666667|106.591716666667|10.8774716666667|106.591716666667|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+216|217|10.8774716666667|106.591716666667|10.8776266666667|106.591593333333|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|22|22 m|10000|10
+217|218|10.8776266666667|106.591593333333|10.8776266666667|106.591593333333|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+218|219|10.8776266666667|106.591593333333|10.8780133333333|106.591315|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|64|64 m|10000|10
+219|220|10.8780133333333|106.591315|10.8780133333333|106.591315|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+220|221|10.8780133333333|106.591315|10.87851|106.590945|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|68|68 m|10000|10
+221|222|10.87851|106.590945|10.87851|106.590945|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+222|223|10.87851|106.590945|10.8793|106.590401666667|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|106|0.1 km|10000|10
+223|224|10.8793|106.590401666667|10.8793|106.590401666667|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+224|225|10.8793|106.590401666667|10.880285|106.589733333333|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|132|0.1 km|10000|10
+225|226|10.880285|106.589733333333|10.880285|106.589733333333|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+226|227|10.880285|106.589733333333|10.8814166666667|106.588933333333|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|153|0.2 km|10000|10
+227|228|10.8814166666667|106.588933333333|10.8814166666667|106.588933333333|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+228|229|10.8814166666667|106.588933333333|10.8824883333333|106.588168333333|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|146|0.1 km|10000|10
+229|230|10.8824883333333|106.588168333333|10.8824883333333|106.588168333333|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+230|231|10.8824883333333|106.588168333333|10.88333|106.587573333333|27 QL22, Xuân Thới Đông, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|112|0.1 km|10000|10
+231|232|10.88333|106.587573333333|10.88333|106.587573333333|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+232|233|10.88333|106.587573333333|10.8837116666667|106.587303333333|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|52|52 m|10000|10
+233|234|10.8837116666667|106.587303333333|10.8837116666667|106.587303333333|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+234|235|10.8837116666667|106.587303333333|10.8841833333333|106.586991666667|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|71|71 m|10000|10
+235|236|10.8841833333333|106.586991666667|10.8841833333333|106.586991666667|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+236|237|10.8841833333333|106.586991666667|10.8844233333333|106.586846666667|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|31|31 m|6000|06
+237|238|10.8844233333333|106.586846666667|10.8844233333333|106.586846666667|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+238|239|10.8844233333333|106.586846666667|10.884535|106.586786666667|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|14|14 m|5000|05
+239|240|10.884535|106.586786666667|10.884535|106.586786666667|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+240|241|10.884535|106.586786666667|10.8845416666667|106.586778333333|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|1|1 m|4000|04
+241|242|10.8845416666667|106.586778333333|10.8845416666667|106.586778333333|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+242|243|10.8845416666667|106.586778333333|10.88465|106.5867|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|15|15 m|8000|08
+243|244|10.88465|106.5867|10.88465|106.5867|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+244|245|10.88465|106.5867|10.8850933333333|106.58632|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|2282|2.3 km|10000|10
+245|246|10.8850933333333|106.58632|10.8850933333333|106.58632|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+246|247|10.8850933333333|106.58632|10.88584|106.585778333333|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|102|0.1 km|10000|10
+247|248|10.88584|106.585778333333|10.88584|106.585778333333|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+248|249|10.88584|106.585778333333|10.8868133333333|106.585075|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|133|0.1 km|10000|10
+249|250|10.8868133333333|106.585075|10.8868133333333|106.585075|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+250|251|10.8868133333333|106.585075|10.887905|106.5843|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|148|0.1 km|10000|10
+251|252|10.887905|106.5843|10.887905|106.5843|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+252|253|10.887905|106.5843|10.8890933333333|106.583475|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|160|0.2 km|10000|10
+253|254|10.8890933333333|106.583475|10.8890933333333|106.583475|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+254|255|10.8890933333333|106.583475|10.8903266666667|106.582611666667|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|166|0.2 km|10000|10
+255|256|10.8903266666667|106.582611666667|10.8903266666667|106.582611666667|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+256|257|10.8903266666667|106.582611666667|10.8915216666667|106.581763333333|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|162|0.2 km|10000|10
+257|258|10.8915216666667|106.581763333333|10.8915216666667|106.581763333333|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+258|259|10.8915216666667|106.581763333333|10.8925633333333|106.581048333333|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|140|0.1 km|10000|10
+259|260|10.8925633333333|106.581048333333|10.8925633333333|106.581048333333|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+260|261|10.8925633333333|106.581048333333|10.8937116666667|106.58024|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|155|0.2 km|11000|11
+261|262|10.8937116666667|106.58024|10.8937116666667|106.58024|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+262|263|10.8937116666667|106.58024|10.894855|106.57944|88/1B QL22, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|154|0.2 km|10000|10
+263|264|10.894855|106.57944|10.894855|106.57944|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+264|265|10.894855|106.57944|10.8956333333333|106.578928333333|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|103|0.1 km|9000|09
+265|266|10.8956333333333|106.578928333333|10.8956333333333|106.578928333333|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+266|267|10.8956333333333|106.578928333333|10.8958016666667|106.578846666667|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|22|22 m|7000|07
+267|268|10.8958016666667|106.578846666667|10.8958016666667|106.578846666667|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+268|269|10.8958016666667|106.578846666667|10.895885|106.578771666667|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|12|12 m|8000|08
+269|270|10.895885|106.578771666667|10.895885|106.578771666667|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+270|271|10.895885|106.578771666667|10.8962983333333|106.578425|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|59|59 m|10000|10
+271|272|10.8962983333333|106.578425|10.8962983333333|106.578425|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+272|273|10.8962983333333|106.578425|10.897005|106.577928333333|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|95|0.1 km|10000|10
+273|274|10.897005|106.577928333333|10.897005|106.577928333333|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+274|275|10.897005|106.577928333333|10.8979533333333|106.577258333333|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|128|0.1 km|10000|10
+275|276|10.8979533333333|106.577258333333|10.8979533333333|106.577258333333|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+276|277|10.8979533333333|106.577258333333|10.89907|106.576461666667|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|152|0.2 km|10000|10
+277|278|10.89907|106.576461666667|10.89907|106.576461666667|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+278|279|10.89907|106.576461666667|10.8999333333333|106.575871666667|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|116|0.1 km|10000|10
+279|280|10.8999333333333|106.575871666667|10.8999333333333|106.575871666667|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+280|281|10.8999333333333|106.575871666667|10.900105|106.57577|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|22|22 m|7000|07
+281|282|10.900105|106.57577|10.900105|106.57577|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+282|283|10.900105|106.57577|10.9001583333333|106.575713333333|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|8|8 m|10000|10
+283|284|10.9001583333333|106.575713333333|10.9001583333333|106.575713333333|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+284|285|10.9001583333333|106.575713333333|10.9006366666667|106.575335|Xuyên Á, Thống Nhất 1, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|2975|3.0 km|10000|10
+285|286|10.9006366666667|106.575335|10.9006366666667|106.575335|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+286|287|10.9006366666667|106.575335|10.901455|106.574765|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|238|0.2 km|10000|10
+287|288|10.901455|106.574765|10.901455|106.574765|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+288|289|10.901455|106.574765|10.90257|106.573993333333|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|150|0.2 km|10000|10
+289|290|10.90257|106.573993333333|10.90257|106.573993333333|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+290|291|10.90257|106.573993333333|10.9036433333333|106.573236666667|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|145|0.1 km|10000|10
+291|292|10.9036433333333|106.573236666667|10.9036433333333|106.573236666667|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+292|293|10.9036433333333|106.573236666667|10.90399|106.573003333333|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|46|46 m|9000|09
+293|294|10.90399|106.573003333333|10.90399|106.573003333333|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+294|295|10.90399|106.573003333333|10.9040716666667|106.572936666667|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|12|12 m|4000|04
+295|296|10.9040716666667|106.572936666667|10.9040716666667|106.572936666667|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+296|297|10.9040716666667|106.572936666667|10.90462|106.572515|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|1905|1.9 km|10000|10
+297|298|10.90462|106.572515|10.90462|106.572515|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+298|299|10.90462|106.572515|10.905465|106.571916666667|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|2920|2.9 km|10000|10
+299|300|10.905465|106.571916666667|10.905465|106.571916666667|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+300|301|10.905465|106.571916666667|10.9064833333333|106.571208333333|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|2898|2.9 km|10000|10
+301|302|10.9064833333333|106.571208333333|10.9064833333333|106.571208333333|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+302|303|10.9064833333333|106.571208333333|10.907615|106.570475|Xuyên Á, Tân Thới Nhì, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|1859|1.9 km|10000|10
+303|304|10.907615|106.570475|10.907615|106.570475|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+304|305|10.907615|106.570475|10.90874|106.569711666667|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|150|0.2 km|10000|10
+305|306|10.90874|106.569711666667|10.90874|106.569711666667|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+306|307|10.90874|106.569711666667|10.9098633333333|106.568928333333|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|151|0.2 km|10000|10
+307|308|10.9098633333333|106.568928333333|10.9098633333333|106.568928333333|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+308|309|10.9098633333333|106.568928333333|10.9109566666667|106.568185|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|146|0.1 km|10000|10
+309|310|10.9109566666667|106.568185|10.9109566666667|106.568185|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+310|311|10.9109566666667|106.568185|10.91207|106.567376666667|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|152|0.2 km|10000|10
+311|312|10.91207|106.567376666667|10.91207|106.567376666667|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+312|313|10.91207|106.567376666667|10.9132016666667|106.56658|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|153|0.2 km|10000|10
+313|314|10.9132016666667|106.56658|10.9132016666667|106.56658|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+314|315|10.9132016666667|106.56658|10.9143166666667|106.565811666667|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|150|0.2 km|10000|10
+315|316|10.9143166666667|106.565811666667|10.9143166666667|106.565811666667|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+316|317|10.9143166666667|106.565811666667|10.9154316666667|106.565041666667|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|150|0.2 km|10000|10
+317|318|10.9154316666667|106.565041666667|10.9154316666667|106.565041666667|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+318|319|10.9154316666667|106.565041666667|10.916555|106.564256666667|Xuyên Á, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|151|0.2 km|10000|10
+319|320|10.916555|106.564256666667|10.916555|106.564256666667|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+320|321|10.916555|106.564256666667|10.917635|106.563495|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|146|0.1 km|10000|10
+321|322|10.917635|106.563495|10.917635|106.563495|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|0|1 m|0|null
+322|323|10.917635|106.563495|10.918565|106.562843333333|Xuyên Á, Tân Thới 3, Tân Hiệp, Hóc Môn, Hồ Chí Minh, Vietnam|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|126|0.1 km|10000|10
+323|324|10.918565|106.562843333333|10.918565|106.562843333333|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+324|325|10.918565|106.562843333333|10.9195983333333|106.562138333333|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|138|0.1 km|10000|10
+325|326|10.9195983333333|106.562138333333|10.9195983333333|106.562138333333|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+326|327|10.9195983333333|106.562138333333|10.92074|106.56133|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|155|0.2 km|10000|10
+327|328|10.92074|106.56133|10.92074|106.56133|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+328|329|10.92074|106.56133|10.92188|106.56052|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|155|0.2 km|10000|10
+329|330|10.92188|106.56052|10.92188|106.56052|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+330|331|10.92188|106.56052|10.9230183333333|106.559733333333|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|153|0.2 km|10000|10
+331|332|10.9230183333333|106.559733333333|10.9230183333333|106.559733333333|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+332|333|10.9230183333333|106.559733333333|10.92413|106.55896|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|150|0.2 km|10000|10
+333|334|10.92413|106.55896|10.92413|106.55896|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+334|335|10.92413|106.55896|10.92512|106.558291666667|Xuyên Á, ấp Chợ, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|132|0.1 km|10000|10
+335|336|10.92512|106.558291666667|10.92512|106.558291666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+336|337|10.92512|106.558291666667|10.9260216666667|106.55769|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|120|0.1 km|10000|10
+337|338|10.9260216666667|106.55769|10.9260216666667|106.55769|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+338|339|10.9260216666667|106.55769|10.926675|106.557295|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|84|84 m|10000|10
+339|340|10.926675|106.557295|10.926675|106.557295|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+340|341|10.926675|106.557295|10.926745|106.557246666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|9|9 m|5000|05
+341|342|10.926745|106.557246666667|10.926745|106.557246666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+342|343|10.926745|106.557246666667|10.926745|106.557246666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+343|344|10.926745|106.557246666667|10.926745|106.557246666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+344|345|10.926745|106.557246666667|10.926835|106.557171666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|13|13 m|5000|05
+345|346|10.926835|106.557171666667|10.926835|106.557171666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+346|347|10.926835|106.557171666667|10.9272666666667|106.55687|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|65|65 m|10000|10
+347|348|10.9272666666667|106.55687|10.9272666666667|106.55687|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+348|349|10.9272666666667|106.55687|10.9273366666667|106.556825|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|9|9 m|6000|06
+349|350|10.9273366666667|106.556825|10.9273366666667|106.556825|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+350|351|10.9273366666667|106.556825|10.9273366666667|106.556825|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+351|352|10.9273366666667|106.556825|10.9273366666667|106.556825|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+352|353|10.9273366666667|106.556825|10.92738|106.556783333333|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|7|7 m|6000|06
+353|354|10.92738|106.556783333333|10.92738|106.556783333333|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+354|355|10.92738|106.556783333333|10.9278983333333|106.556361666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|74|74 m|10000|10
+355|356|10.9278983333333|106.556361666667|10.9278983333333|106.556361666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+356|357|10.9278983333333|106.556361666667|10.928705|106.55579|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|109|0.1 km|10000|10
+357|358|10.928705|106.55579|10.928705|106.55579|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+358|359|10.928705|106.55579|10.9296516666667|106.555111666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|126|0.1 km|10000|10
+359|360|10.9296516666667|106.555111666667|10.9296516666667|106.555111666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+360|361|10.9296516666667|106.555111666667|10.930595|106.55429|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|138|0.1 km|10000|10
+361|362|10.930595|106.55429|10.930595|106.55429|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+362|363|10.930595|106.55429|10.9311483333333|106.553818333333|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|80|80 m|10000|10
+363|364|10.9311483333333|106.553818333333|10.9311483333333|106.553818333333|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+364|365|10.9311483333333|106.553818333333|10.9311483333333|106.553818333333|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|3000|03
+365|366|10.9311483333333|106.553818333333|10.9311483333333|106.553818333333|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+366|367|10.9311483333333|106.553818333333|10.93122|106.553761666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|10|10 m|10000|10
+367|368|10.93122|106.553761666667|10.93122|106.553761666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+368|369|10.93122|106.553761666667|10.93163|106.553355|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|64|64 m|10000|10
+369|370|10.93163|106.553355|10.93163|106.553355|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+370|371|10.93163|106.553355|10.93227|106.55277|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|96|0.1 km|10000|10
+371|372|10.93227|106.55277|10.93227|106.55277|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+372|373|10.93227|106.55277|10.9330583333333|106.552051666667|59 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|135 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|118|0.1 km|10000|10
+373|374|10.9330583333333|106.552051666667|10.9330583333333|106.552051666667|135 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|135 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+374|375|10.9330583333333|106.552051666667|10.9338416666667|106.551228333333|135 QL22, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|125|0.1 km|10000|10
+375|376|10.9338416666667|106.551228333333|10.9338416666667|106.551228333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+376|377|10.9338416666667|106.551228333333|10.9345416666667|106.550213333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|136|0.1 km|10000|10
+377|378|10.9345416666667|106.550213333333|10.9345416666667|106.550213333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+378|379|10.9345416666667|106.550213333333|10.934915|106.549563333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|82|82 m|10000|10
+379|380|10.934915|106.549563333333|10.934915|106.549563333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+380|381|10.934915|106.549563333333|10.9349183333333|106.549546666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|2|2 m|2000|02
+381|382|10.9349183333333|106.549546666667|10.9349183333333|106.549546666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+382|383|10.9349183333333|106.549546666667|10.9349183333333|106.549546666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+383|384|10.9349183333333|106.549546666667|10.9349183333333|106.549546666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+384|385|10.9349183333333|106.549546666667|10.93503|106.54939|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|21|21 m|4000|04
+385|386|10.93503|106.54939|10.93503|106.54939|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+386|387|10.93503|106.54939|10.9352116666667|106.548816666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|65|65 m|10000|10
+387|388|10.9352116666667|106.548816666667|10.9352116666667|106.548816666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+388|389|10.9352116666667|106.548816666667|10.9356216666667|106.548006666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|100|0.1 km|10000|10
+389|390|10.9356216666667|106.548006666667|10.9356216666667|106.548006666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+390|391|10.9356216666667|106.548006666667|10.9361466666667|106.546976666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|127|0.1 km|10000|10
+391|392|10.9361466666667|106.546976666667|10.9361466666667|106.546976666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+392|393|10.9361466666667|106.546976666667|10.9367583333333|106.545723333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|152|0.2 km|10000|10
+393|394|10.9367583333333|106.545723333333|10.9367583333333|106.545723333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+394|395|10.9367583333333|106.545723333333|10.9373966666667|106.544426666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|159|0.2 km|10000|10
+395|396|10.9373966666667|106.544426666667|10.9373966666667|106.544426666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+396|397|10.9373966666667|106.544426666667|10.9379983333333|106.543213333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|148|0.1 km|10000|10
+397|398|10.9379983333333|106.543213333333|10.9379983333333|106.543213333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+398|399|10.9379983333333|106.543213333333|10.9385466666667|106.54213|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|133|0.1 km|10000|10
+399|400|10.9385466666667|106.54213|10.9385466666667|106.54213|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+400|401|10.9385466666667|106.54213|10.9389633333333|106.541275|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|104|0.1 km|10000|10
+401|402|10.9389633333333|106.541275|10.9389633333333|106.541275|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+402|403|10.9389633333333|106.541275|10.9392483333333|106.540718333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|69|69 m|10000|10
+403|404|10.9392483333333|106.540718333333|10.9392483333333|106.540718333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+404|405|10.9392483333333|106.540718333333|10.9395333333333|106.540176666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|67|67 m|10000|10
+405|406|10.9395333333333|106.540176666667|10.9395333333333|106.540176666667|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+406|407|10.9395333333333|106.540176666667|10.9397366666667|106.539788333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|48|48 m|10000|10
+407|408|10.9397366666667|106.539788333333|10.9397366666667|106.539788333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+408|409|10.9397366666667|106.539788333333|10.9397366666667|106.539788333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|1000|01
+409|410|10.9397366666667|106.539788333333|10.9397366666667|106.539788333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+410|411|10.9397366666667|106.539788333333|10.9397366666667|106.539788333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+411|412|10.9397366666667|106.539788333333|10.9397366666667|106.539788333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+412|413|10.9397366666667|106.539788333333|10.93982|106.539678333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|15|15 m|7000|07
+413|414|10.93982|106.539678333333|10.93982|106.539678333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+414|415|10.93982|106.539678333333|10.94008|106.539063333333|280 Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|73|73 m|10000|10
+415|416|10.94008|106.539063333333|10.94008|106.539063333333|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+416|417|10.94008|106.539063333333|10.9405766666667|106.538051666667|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|123|0.1 km|11000|11
+417|418|10.9405766666667|106.538051666667|10.9405766666667|106.538051666667|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+418|419|10.9405766666667|106.538051666667|10.9410933333333|106.536918333333|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|136|0.1 km|10000|10
+419|420|10.9410933333333|106.536918333333|10.9410933333333|106.536918333333|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+420|421|10.9410933333333|106.536918333333|10.941785|106.535525|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|170|0.2 km|12000|12
+421|422|10.941785|106.535525|10.941785|106.535525|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+422|423|10.941785|106.535525|10.9423033333333|106.534436666667|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|132|0.1 km|10000|10
+423|424|10.9423033333333|106.534436666667|10.9423033333333|106.534436666667|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+424|425|10.9423033333333|106.534436666667|10.9427683333333|106.53349|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|9A Đường 84, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|140|0.1 km|10000|10
+425|426|10.9427683333333|106.53349|10.9427683333333|106.53349|9A Đường 84, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|9A Đường 84, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+426|427|10.9427683333333|106.53349|10.94293|106.533186666667|9A Đường 84, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|42|42 m|10000|10
+427|428|10.94293|106.533186666667|10.94293|106.533186666667|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+428|429|10.94293|106.533186666667|10.9431616666667|106.532608333333|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|69|69 m|10000|10
+429|430|10.9431616666667|106.532608333333|10.9431616666667|106.532608333333|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+430|431|10.9431616666667|106.532608333333|10.943605|106.531691666667|Xuyên Á, Tân Phú Trung, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|111|0.1 km|10000|10
+431|432|10.943605|106.531691666667|10.943605|106.531691666667|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+432|433|10.943605|106.531691666667|10.9440533333333|106.530788333333|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|111|0.1 km|10000|10
+433|434|10.9440533333333|106.530788333333|10.9440533333333|106.530788333333|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+434|435|10.9440533333333|106.530788333333|10.9441|106.530688333333|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|12|12 m|5000|05
+435|436|10.9441|106.530688333333|10.9441|106.530688333333|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+436|437|10.9441|106.530688333333|10.9440016666667|106.530723333333|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|1362|1.4 km|8000|08
+437|438|10.9440016666667|106.530723333333|10.9440016666667|106.530723333333|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+438|439|10.9440016666667|106.530723333333|10.9442916666667|106.530076666667|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|78|78 m|10000|10
+439|440|10.9442916666667|106.530076666667|10.9442916666667|106.530076666667|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+440|441|10.9442916666667|106.530076666667|10.9447533333333|106.529121666667|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|116|0.1 km|10000|10
+441|442|10.9447533333333|106.529121666667|10.9447533333333|106.529121666667|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+442|443|10.9447533333333|106.529121666667|10.9453416666667|106.527916666667|Xuyên Á, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|147|0.1 km|10000|10
+443|444|10.9453416666667|106.527916666667|10.9453416666667|106.527916666667|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+444|445|10.9453416666667|106.527916666667|10.94603|106.526513333333|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|171|0.2 km|10000|10
+445|446|10.94603|106.526513333333|10.94603|106.526513333333|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+446|447|10.94603|106.526513333333|10.94672|106.525141666667|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|168|0.2 km|10000|10
+447|448|10.94672|106.525141666667|10.94672|106.525141666667|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+448|449|10.94672|106.525141666667|10.9471033333333|106.524541666667|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|78|78 m|10000|10
+449|450|10.9471033333333|106.524541666667|10.9471033333333|106.524541666667|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+450|451|10.9471033333333|106.524541666667|10.9471033333333|106.524541666667|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|2000|02
+451|452|10.9471033333333|106.524541666667|10.9471033333333|106.524541666667|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+452|453|10.9471033333333|106.524541666667|10.9471033333333|106.524541666667|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|10000|10
+453|454|10.9471033333333|106.524541666667|10.9471033333333|106.524541666667|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+454|455|10.9471033333333|106.524541666667|10.9471416666667|106.524498333333|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|6|6 m|5000|05
+455|456|10.9471416666667|106.524498333333|10.9471416666667|106.524498333333|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+456|457|10.9471416666667|106.524498333333|10.94732|106.52415|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|43|43 m|10000|10
+457|458|10.94732|106.52415|10.94732|106.52415|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+458|459|10.94732|106.52415|10.94758|106.523781666667|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|49|49 m|10000|10
+459|460|10.94758|106.523781666667|10.94758|106.523781666667|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+460|461|10.94758|106.523781666667|10.9480166666667|106.523143333333|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|85|85 m|10000|10
+461|462|10.9480166666667|106.523143333333|10.9480166666667|106.523143333333|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+462|463|10.9480166666667|106.523143333333|10.9486766666667|106.522223333333|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|124|0.1 km|10000|10
+463|464|10.9486766666667|106.522223333333|10.9486766666667|106.522223333333|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+464|465|10.9486766666667|106.522223333333|10.9494566666667|106.521096666667|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|150|0.2 km|10000|10
+465|466|10.9494566666667|106.521096666667|10.9494566666667|106.521096666667|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+466|467|10.9494566666667|106.521096666667|10.950275|106.51992|114 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|157|0.2 km|10000|10
+467|468|10.950275|106.51992|10.950275|106.51992|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+468|469|10.950275|106.51992|10.9508716666667|106.519078333333|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|113|0.1 km|10000|10
+469|470|10.9508716666667|106.519078333333|10.9508716666667|106.519078333333|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+470|471|10.9508716666667|106.519078333333|10.9508933333333|106.51905|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|4|4 m|4000|04
+471|472|10.9508933333333|106.51905|10.9508933333333|106.51905|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+472|473|10.9508933333333|106.51905|10.9509233333333|106.518981666667|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|8|8 m|10000|10
+473|474|10.9509233333333|106.518981666667|10.9509233333333|106.518981666667|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+474|475|10.9509233333333|106.518981666667|10.9512533333333|106.518448333333|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|69|69 m|10000|10
+475|476|10.9512533333333|106.518448333333|10.9512533333333|106.518448333333|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+476|477|10.9512533333333|106.518448333333|10.951805|106.517628333333|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|109|0.1 km|10000|10
+477|478|10.951805|106.517628333333|10.951805|106.517628333333|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+478|479|10.951805|106.517628333333|10.9525266666667|106.516585|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|139|0.1 km|10000|10
+479|480|10.9525266666667|106.516585|10.9525266666667|106.516585|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+480|481|10.9525266666667|106.516585|10.9533466666667|106.515405|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|158|0.2 km|10000|10
+481|482|10.9533466666667|106.515405|10.9533466666667|106.515405|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+482|483|10.9533466666667|106.515405|10.9540733333333|106.514318333333|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|144|0.1 km|10000|10
+483|484|10.9540733333333|106.514318333333|10.9540733333333|106.514318333333|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+484|485|10.9540733333333|106.514318333333|10.9545033333333|106.513656666667|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|87|87 m|10000|10
+485|486|10.9545033333333|106.513656666667|10.9545033333333|106.513656666667|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+486|487|10.9545033333333|106.513656666667|10.95479|106.513168333333|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|62|62 m|10000|10
+487|488|10.95479|106.513168333333|10.95479|106.513168333333|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+488|489|10.95479|106.513168333333|10.9553183333333|106.512391666667|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|103|0.1 km|10000|10
+489|490|10.9553183333333|106.512391666667|10.9553183333333|106.512391666667|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+490|491|10.9553183333333|106.512391666667|10.9560366666667|106.511375|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|137|0.1 km|10000|10
+491|492|10.9560366666667|106.511375|10.9560366666667|106.511375|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+492|493|10.9560366666667|106.511375|10.9567533333333|106.510298333333|126 QL22, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|142|0.1 km|10000|10
+493|494|10.9567533333333|106.510298333333|10.9567533333333|106.510298333333|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+494|495|10.9567533333333|106.510298333333|10.9570516666667|106.509826666667|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|61|61 m|6000|06
+495|496|10.9570516666667|106.509826666667|10.9570516666667|106.509826666667|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+496|497|10.9570516666667|106.509826666667|10.9571183333333|106.509725|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|13|13 m|6000|06
+497|498|10.9571183333333|106.509725|10.9571183333333|106.509725|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+498|499|10.9571183333333|106.509725|10.9571516666667|106.509678333333|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|6|6 m|6000|06
+499|500|10.9571516666667|106.509678333333|10.9571516666667|106.509678333333|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+500|501|10.9571516666667|106.509678333333|10.95926|106.505543333333|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|508|0.5 km|50000|50
+501|502|10.95926|106.505543333333|10.95926|106.505543333333|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+502|503|10.95926|106.505543333333|10.9592816666667|106.505503333333|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|4000|04
+503|504|10.9592816666667|106.505503333333|10.9592816666667|106.505503333333|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+504|505|10.9592816666667|106.505503333333|10.9593033333333|106.505423333333|Xuyên Á, Tân Thông Hội, Củ Chi, Hồ Chí Minh, Vietnam|16 Trần Tử Bình, Ấp Tân Định, Củ Chi, Hồ Chí Minh, Vietnam|18|18 m|10000|10
+505|506|10.9593033333333|106.505423333333|10.9593033333333|106.505423333333|16 Trần Tử Bình, Ấp Tân Định, Củ Chi, Hồ Chí Minh, Vietnam|16 Trần Tử Bình, Ấp Tân Định, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+506|507|10.9593033333333|106.505423333333|10.9593183333333|106.505378333333|16 Trần Tử Bình, Ấp Tân Định, Củ Chi, Hồ Chí Minh, Vietnam|16 Trần Tử Bình, Ấp Tân Định, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|1000|01
+507|508|10.9593183333333|106.505378333333|10.9593183333333|106.505378333333|16 Trần Tử Bình, Ấp Tân Định, Củ Chi, Hồ Chí Minh, Vietnam|16 Trần Tử Bình, Ấp Tân Định, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+508|509|10.9593183333333|106.505378333333|10.9596316666667|106.504703333333|16 Trần Tử Bình, Ấp Tân Định, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|89|89 m|10000|10
+509|510|10.9596316666667|106.504703333333|10.9596316666667|106.504703333333|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+510|511|10.9596316666667|106.504703333333|10.9601016666667|106.50378|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|114|0.1 km|10000|10
+511|512|10.9601016666667|106.50378|10.9601016666667|106.50378|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+512|513|10.9601016666667|106.50378|10.9604133333333|106.503173333333|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|75|75 m|10000|10
+513|514|10.9604133333333|106.503173333333|10.9604133333333|106.503173333333|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+514|515|10.9604133333333|106.503173333333|10.9604833333333|106.503028333333|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|18|18 m|9000|09
+515|516|10.9604833333333|106.503028333333|10.9604833333333|106.503028333333|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+516|517|10.9604833333333|106.503028333333|10.96058|106.502946666667|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|13|13 m|5000|05
+517|518|10.96058|106.502946666667|10.96058|106.502946666667|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+518|519|10.96058|106.502946666667|10.9606283333333|106.502836666667|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|13|13 m|7000|07
+519|520|10.9606283333333|106.502836666667|10.9606283333333|106.502836666667|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+520|521|10.9606283333333|106.502836666667|10.9606666666667|106.50274|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|11|11 m|4000|04
+521|522|10.9606666666667|106.50274|10.9606666666667|106.50274|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+522|523|10.9606666666667|106.50274|10.9608566666667|106.502331666667|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|49|49 m|10000|10
+523|524|10.9608566666667|106.502331666667|10.9608566666667|106.502331666667|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+524|525|10.9608566666667|106.502331666667|10.96123|106.501601666667|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|90|90 m|10000|10
+525|526|10.96123|106.501601666667|10.96123|106.501601666667|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+526|527|10.96123|106.501601666667|10.9618383333333|106.500513333333|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|137|0.1 km|10000|10
+527|528|10.9618383333333|106.500513333333|10.9618383333333|106.500513333333|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+528|529|10.9618383333333|106.500513333333|10.9626016666667|106.499191666667|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|167|0.2 km|10000|10
+529|530|10.9626016666667|106.499191666667|10.9626016666667|106.499191666667|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+530|531|10.9626016666667|106.499191666667|10.96335|106.49791|500 QL22, Củ Chi, Hồ Chí Minh, Vietnam|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|163|0.2 km|10000|10
+531|532|10.96335|106.49791|10.96335|106.49791|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+532|533|10.96335|106.49791|10.9639516666667|106.496868333333|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|132|0.1 km|10000|10
+533|534|10.9639516666667|106.496868333333|10.9639516666667|106.496868333333|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+534|535|10.9639516666667|106.496868333333|10.9642966666667|106.49631|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|72|72 m|10000|10
+535|536|10.9642966666667|106.49631|10.9642966666667|106.49631|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+536|537|10.9642966666667|106.49631|10.964455|106.496055|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|33|33 m|10000|10
+537|538|10.964455|106.496055|10.964455|106.496055|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+538|539|10.964455|106.496055|10.9647483333333|106.4955|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|69|69 m|10000|10
+539|540|10.9647483333333|106.4955|10.9647483333333|106.4955|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+540|541|10.9647483333333|106.4955|10.9651666666667|106.494561666667|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|112|0.1 km|10000|10
+541|542|10.9651666666667|106.494561666667|10.9651666666667|106.494561666667|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+542|543|10.9651666666667|106.494561666667|10.9655766666667|106.493513333333|519 AH1, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|123|0.1 km|10000|10
+543|544|10.9655766666667|106.493513333333|10.9655766666667|106.493513333333|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+544|545|10.9655766666667|106.493513333333|10.9657916666667|106.492978333333|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|63|63 m|10000|10
+545|546|10.9657916666667|106.492978333333|10.9657916666667|106.492978333333|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+546|547|10.9657916666667|106.492978333333|10.9657916666667|106.492978333333|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|2000|02
+547|548|10.9657916666667|106.492978333333|10.9657916666667|106.492978333333|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+548|549|10.9657916666667|106.492978333333|10.9658166666667|106.4929|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|9|9 m|5000|05
+549|550|10.9658166666667|106.4929|10.9658166666667|106.4929|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+550|551|10.9658166666667|106.4929|10.966045|106.492291666667|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|71|71 m|10000|10
+551|552|10.966045|106.492291666667|10.966045|106.492291666667|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+552|553|10.966045|106.492291666667|10.96644|106.491256666667|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|121|0.1 km|11000|11
+553|554|10.96644|106.491256666667|10.96644|106.491256666667|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+554|555|10.96644|106.491256666667|10.966905|106.490095|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|137|0.1 km|10000|10
+555|556|10.966905|106.490095|10.966905|106.490095|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+556|557|10.966905|106.490095|10.9673683333333|106.488875|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|141|0.1 km|10000|10
+557|558|10.9673683333333|106.488875|10.9673683333333|106.488875|Ninh Tốn, Củ Chi, Hồ Chí Minh, Vietnam|Ninh Tốn, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+558|559|10.9673683333333|106.488875|10.9675566666667|106.488391666667|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|58|58 m|7000|07
+559|560|10.9675566666667|106.488391666667|10.9675566666667|106.488391666667|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+560|561|10.9675566666667|106.488391666667|10.9676666666667|106.488241666667|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|20|20 m|7000|07
+561|562|10.9676666666667|106.488241666667|10.9676666666667|106.488241666667|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+562|563|10.9676666666667|106.488241666667|10.9676833333333|106.488108333333|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|12|12 m|5000|05
+563|564|10.9676833333333|106.488108333333|10.9676833333333|106.488108333333|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+564|565|10.9676833333333|106.488108333333|10.967865|106.487428333333|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|79|79 m|10000|10
+565|566|10.967865|106.487428333333|10.967865|106.487428333333|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+566|567|10.967865|106.487428333333|10.9681983333333|106.48657|700 QL22, Củ Chi, Hồ Chí Minh, Vietnam|719-Quèc QL22, Củ Chi, Hồ Chí Minh, Vietnam|101|0.1 km|10000|10
+567|568|10.9681983333333|106.48657|10.9681983333333|106.48657|719-Quèc QL22, Củ Chi, Hồ Chí Minh, Vietnam|719-Quèc QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+568|569|10.9681983333333|106.48657|10.96863|106.485628333333|719-Quèc QL22, Củ Chi, Hồ Chí Minh, Vietnam|719-Quèc QL22, Củ Chi, Hồ Chí Minh, Vietnam|114|0.1 km|10000|10
+569|570|10.96863|106.485628333333|10.96863|106.485628333333|719-Quèc QL22, Củ Chi, Hồ Chí Minh, Vietnam|719-Quèc QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+570|571|10.96863|106.485628333333|10.96929|106.48449|719-Quèc QL22, Củ Chi, Hồ Chí Minh, Vietnam|770 QL22, Củ Chi, Hồ Chí Minh, Vietnam|144|0.1 km|10000|10
+571|572|10.96929|106.48449|10.96929|106.48449|770 QL22, Củ Chi, Hồ Chí Minh, Vietnam|770 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+572|573|10.96929|106.48449|10.9700933333333|106.483305|770 QL22, Củ Chi, Hồ Chí Minh, Vietnam|770/1 QL22, Củ Chi, Hồ Chí Minh, Vietnam|157|0.2 km|10000|10
+573|574|10.9700933333333|106.483305|10.9700933333333|106.483305|770/1 QL22, Củ Chi, Hồ Chí Minh, Vietnam|770/1 QL22, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+574|575|10.9700933333333|106.483305|10.970715|106.482466666667|770/1 QL22, Củ Chi, Hồ Chí Minh, Vietnam|934 Xuyên Á, Khu phố 8, Tân An Hội, Củ Chi, Hồ Chí Minh, Vietnam|115|0.1 km|10000|10
+575|576|10.970715|106.482466666667|10.970715|106.482466666667|934 Xuyên Á, Khu phố 8, Tân An Hội, Củ Chi, Hồ Chí Minh, Vietnam|934 Xuyên Á, Khu phố 8, Tân An Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+576|577|10.970715|106.482466666667|10.9709633333333|106.482195|934 Xuyên Á, Khu phố 8, Tân An Hội, Củ Chi, Hồ Chí Minh, Vietnam|934 Xuyên Á, Khu phố 8, Tân An Hội, Củ Chi, Hồ Chí Minh, Vietnam|40|40 m|10000|10
+577|578|10.9709633333333|106.482195|10.9709633333333|106.482195|934 Xuyên Á, Khu phố 8, Tân An Hội, Củ Chi, Hồ Chí Minh, Vietnam|934 Xuyên Á, Khu phố 8, Tân An Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
+578|579|10.9709633333333|106.482195|10.9711183333333|106.482025|934 Xuyên Á, Khu phố 8, Tân An Hội, Củ Chi, Hồ Chí Minh, Vietnam|934 Xuyên Á, Khu phố 8, Tân An Hội, Củ Chi, Hồ Chí Minh, Vietnam|26|26 m|10000|10
+579|580|10.9711183333333|106.482025|10.9711183333333|106.482025|934 Xuyên Á, Khu phố 8, Tân An Hội, Củ Chi, Hồ Chí Minh, Vietnam|934 Xuyên Á, Khu phố 8, Tân An Hội, Củ Chi, Hồ Chí Minh, Vietnam|0|1 m|0|null
