@@ -4,24 +4,17 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-import org.apache.commons.io.FilenameUtils;
-
-import au.com.bytecode.opencsv.CSVReader;
 import bk.master.input.model.Leg;
 import bk.master.input.model.Location;
 import bk.master.input.model.Move;
@@ -136,12 +129,27 @@ public class ExportUtil {
         catch (FileNotFoundException e){}
         catch (IOException e){}
     }
-    public static void exportToFile(List<String> data, String outputFile){
+    public static <K> void exportToFile(List<K> data, String outputFile){
         try
         {
             BufferedWriter bw = createBufferWriter(outputFile);
-            for (String sentence : data) {
-                bw.write(sentence);
+            for (K sentence : data) {
+                bw.write(sentence.toString());
+                bw.newLine();
+            }
+            bw.flush();
+            bw.close();
+        }
+        catch (UnsupportedEncodingException e) {}
+        catch (FileNotFoundException e){}
+        catch (IOException e){}
+    }
+    public static <K,V> void exportToFile(Map<K,V> data, String outputFile) {
+        try
+        {
+            BufferedWriter bw = createBufferWriter(outputFile);
+            for (Map.Entry<K, V> entry : data.entrySet()) {
+                bw.write(entry.getKey()+"|"+entry.getValue().toString());
                 bw.newLine();
             }
             bw.flush();

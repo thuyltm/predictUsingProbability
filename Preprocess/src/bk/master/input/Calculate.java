@@ -52,8 +52,8 @@ public class Calculate {
                         + FilenameUtils.getBaseName(file.getName())+".csv", true);
     }
     public static HashMap<String,List<String>> classify(Integer standardFinishTime, File mainFolder, String regex) {
-        List<String> onTime = new ArrayList<String>();
-        List<String> lateTime = new ArrayList<String>();
+        List<String> onTimeFileList = new ArrayList<String>();
+        List<String> lateTimeFileList = new ArrayList<String>();
         //String regex = "\\d+:\\d+_CC-AS$";
         Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         File[] folderList = mainFolder.listFiles();
@@ -66,16 +66,16 @@ public class Calculate {
                      String data = matcher.group();
                      Integer finishTime = Integer.valueOf(data.substring(0, data.indexOf(":")));
                      if (finishTime<=standardFinishTime) {
-                         onTime.add(fileName);
+                         onTimeFileList.add(fileName);
                      } else {
-                         lateTime.add(fileName);
+                         lateTimeFileList.add(fileName);
                      }
                 }
             }
         }
         HashMap<String,List<String>> data = new HashMap<String,List<String>>();
-        data.put("onTime", onTime);
-        data.put("lateTime", lateTime);
+        data.put("onTime", onTimeFileList);
+        data.put("lateTime", lateTimeFileList);
         return data;
     }
     public static void sort(String inputFile, String outputFile) {
