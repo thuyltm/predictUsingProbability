@@ -3,7 +3,7 @@ package bk.master.input.model;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import bk.master.input.TimeTranslatorUtil;
+import bk.master.util.TimeTranslatorUtil;
 
 public class Move {
     private static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

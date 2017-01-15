@@ -1,4 +1,4 @@
-package bk.master.input;
+package bk.master.classify;
 
 import java.util.ArrayList;
 import java.util.Collections;

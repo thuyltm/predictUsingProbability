@@ -1,4 +1,4 @@
-package bk.master.input;
+package bk.master.translator;
 
 import java.io.File;
 import java.io.FileReader;
@@ -9,6 +9,7 @@ import java.util.List;
 
 import au.com.bytecode.opencsv.CSVReader;
 import bk.master.input.model.Location;
+import bk.master.util.InputUtil;
 
 public class RawCsvTranslatorImpl implements RawCsvTranslator{
     @Override

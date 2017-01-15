@@ -1,4 +1,4 @@
-package bk.master.input;
+package bk.master.util;
 
 import java.io.File;
 import java.io.IOException;

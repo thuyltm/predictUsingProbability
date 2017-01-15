@@ -1,4 +1,4 @@
-package bk.master.input;
+package bk.master.translator;
 
 public interface RawCsvTranslator {
    void translateCsvToJson(String filePath, String outputPath);

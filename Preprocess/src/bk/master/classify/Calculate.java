@@ -1,4 +1,4 @@
-package bk.master.input;
+package bk.master.classify;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -17,8 +17,24 @@ import org.apache.commons.io.FilenameUtils;
 import au.com.bytecode.opencsv.CSVReader;
 import bk.master.input.model.Leg;
 import bk.master.input.model.Location;
+import bk.master.util.ExportUtil;
+import bk.master.util.InputUtil;
+import bk.master.util.TimeTranslatorUtil;
 
 public class Calculate {
+    private static Integer LOWER_VERY_SMALL_FREQ = 2;
+    private static Integer UPPER_VERY_SMALL_FREQ = 88;
+    private static Integer LOWER_SMALL_FREQ = 88;
+    private static Integer UPPER_SMALL_FREQ = 175;
+    private static Integer LOWER_MEDIUM_FREQ = 175;
+    private static Integer UPPER_MEDIUM_FREQ = 254;
+    private static Integer LOWER_HIGH_FREQ = 254;
+    private static Integer UPPER_HIGH_FREQ = 354;
+    private static Integer LOWER_VERY_HIGH_FREQ = 354;
+    private static Integer UPPER_VERY_HIGH_FREQ = 2578;
+    public static void getClassifiedDistance(String inputFile) {
+
+    }
     public static float distFrom(double lat1, double lng1, double lat2, double lng2) {
         double earthRadius = 6371000; //meters
         double dLat = Math.toRadians(lat2-lat1);
