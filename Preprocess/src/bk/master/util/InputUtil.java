@@ -18,6 +18,7 @@ import bk.master.input.model.Move;
 import bk.master.input.model.Route;
 
 public class InputUtil {
+
     static private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     public static List<Leg> loadLegList(String inputFile) {

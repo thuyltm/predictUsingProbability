@@ -93,6 +93,7 @@ public class BatchJob {
             detailList.add(precentDurationTextList.toString());
             detailList.add(percentDurationList.toString());
             detailList.add(percentDistanceList.toString());
+            GroupDuration.groupToStandardDuration(legList,detailList);
             GroupDuration.groupToStandardDuration(percentLegList,detailList);
         }
         return detailList;
@@ -100,13 +101,15 @@ public class BatchJob {
     public static void getClassify(String pattern) {
         HashMap<String,List<String>> classifyFile = Calculate.classify(Integer.valueOf(45),
                             new File(LOCATION_FOLDER), "\\d+:\\d+_"+pattern+"$");
-       // List<String> onTimeFileList = classifyFile.get("onTime");
-        List<String> lateTimeList = classifyFile.get("lateTime");
+        //onTime
+        List<String> onTimeFileList = classifyFile.get("onTime");
+        List<String> onTimeDetailList = getDetail(onTimeFileList, 80);
+        ExportUtil.exportToFile(onTimeDetailList, "onTimeDetail_"+pattern+"_80_5.csv");
 
-        List<String> lateTimeDetailList = getDetail(lateTimeList, 80);
-       // List<String> onTimeDetailList = getDetail(onTimeFileList, 80);
-       // ExportUtil.exportToFile(onTimeDetailList, "onTimeDetail_"+pattern+"_80_1.csv");
-        ExportUtil.exportToFile(lateTimeDetailList, "lateTime_"+pattern+"_80.csv");
+        //lateTime
+        List<String> lateTimeFileList = classifyFile.get("lateTime");
+        List<String> lateTimeDetailList = getDetail(lateTimeFileList, 80);
+        ExportUtil.exportToFile(lateTimeDetailList, "lateTimeDetail_"+pattern+"_80_5.csv");
     }
 
     public static void main(String[] args) {
