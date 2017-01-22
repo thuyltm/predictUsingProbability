@@ -13,27 +13,26 @@ import bk.master.util.InputUtil;
 import bk.master.util.TimeTranslatorUtil;
 
 public class BatchJob {
-    private static String MONTH = "09";
-    private static String LOCATION_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/"+MONTH+"/location/";
-    private static String DISTANCE_FOLDER = "/home/thuy1/git/predictUsingProbability/MongoOperator/"+MONTH+"/distance/";
 
     public static void getDistance() {
-        //int i = 3;
-        for (int i = 12; i <= 19; i++) {
+        String month = "10";
+        String locationFolder = "/home/thuy1/git/predictUsingProbability/MongoOperator/"+month+"/location/";
+        String distanceFolder = "/home/thuy1/git/predictUsingProbability/MongoOperator/"+month+"/distance/";
+        for (int i = 10; i <= 13; i++) {
             String numberFolder = String.valueOf(i);
             if (i<10) {
                 numberFolder = "0"+i;
             }
-            File folder = new File(LOCATION_FOLDER + numberFolder);
+            File folder = new File(locationFolder + numberFolder);
             File[] dataFile = folder.listFiles();
             if (dataFile != null) {
                 for (File file : dataFile) {
-                    Calculate.calculateDistance(file, DISTANCE_FOLDER+numberFolder+"/");
+                    Calculate.calculateDistance(file, distanceFolder+numberFolder+"/");
                 }
             }
         }
     }
-    public static List<String> getDetail(List<String> fileList, Integer percentFTime) {
+    public static List<String> getDetail(List<String> fileList, Integer percentFTime, String distanceFolder) {
         List<String> detailList = new ArrayList<String>();
         Pattern folderPattern = Pattern.compile("\\d+_\\d+_\\d+:\\d+", Pattern.CASE_INSENSITIVE);
         long thresholdDuration = -1L;
@@ -50,7 +49,7 @@ public class BatchJob {
                     thresholdDuration = (percentFTime * finishTime)/100;
                 }
             }
-            File file = new File(DISTANCE_FOLDER + numberFolder + "/distance_" + fileName +".csv");
+            File file = new File(distanceFolder + numberFolder + "/distance_" + fileName +".csv");
             List<Leg> legList = InputUtil.loadLegNoPlaceList(file.getAbsolutePath());
             List<Leg> percentLegList = new ArrayList<Leg>();
             StringBuilder percentDistanceList = new StringBuilder();
@@ -98,21 +97,38 @@ public class BatchJob {
         }
         return detailList;
     }
-    public static void getClassify(String pattern) {
+    public static void getClassify(String pattern, String locationFolder, String distanceFolder) {
         HashMap<String,List<String>> classifyFile = Calculate.classify(Integer.valueOf(45),
-                            new File(LOCATION_FOLDER), "\\d+:\\d+_"+pattern+"$");
+                            new File(locationFolder), "\\d+:\\d+_"+pattern+"$");
         //onTime
         List<String> onTimeFileList = classifyFile.get("onTime");
-        List<String> onTimeDetailList = getDetail(onTimeFileList, 80);
-        ExportUtil.exportToFile(onTimeDetailList, "onTimeDetail_"+pattern+"_80_5.csv");
+        List<String> onTimeDetailList = getDetail(onTimeFileList, 80, distanceFolder);
+        ExportUtil.exportAccumulateFile(onTimeDetailList, "onTimeDetail_"+pattern+"_80_5.csv");
 
         //lateTime
         List<String> lateTimeFileList = classifyFile.get("lateTime");
-        List<String> lateTimeDetailList = getDetail(lateTimeFileList, 80);
-        ExportUtil.exportToFile(lateTimeDetailList, "lateTimeDetail_"+pattern+"_80_5.csv");
+        List<String> lateTimeDetailList = getDetail(lateTimeFileList, 80, distanceFolder);
+        ExportUtil.exportAccumulateFile(lateTimeDetailList, "lateTimeDetail_"+pattern+"_80_5.csv");
+    }
+    public static void getClassifyAllMonth() {
+        String pattern = "CC-AS";
+        File file = new File("onTimeDetail_"+pattern+"_80_5.csv");
+        if (file.exists()) {
+            file.delete();
+        }
+        file = new File("lateTimeDetail_"+pattern+"_80_5.csv");
+        if (file.exists()) {
+            file.delete();
+        }
+        String[] monthList = {"09","10","11"};
+        for (String month : monthList) {
+            String locationFolder = "/home/thuy1/git/predictUsingProbability/MongoOperator/"+month+"/location/";
+            String distanceFolder = "/home/thuy1/git/predictUsingProbability/MongoOperator/"+month+"/distance/";
+            getClassify(pattern,locationFolder,distanceFolder);
+        }
     }
 
     public static void main(String[] args) {
-        getClassify("CC-AS");
+        getDistance();
     }
 }
