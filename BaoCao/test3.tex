@@ -1,0 +1,780 @@
+\documentclass[a4paper, 13pt]{report}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{lipsum} %This package just generates Lorem Ipsum filler text. 
+\usepackage{fullpage} % changes the margin
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{floatrow}
+\floatsetup[figure]{capposition=bottom}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{array}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\newenvironment{steps}[1]{\begin{enumerate}[label=#1 \arabic*]}{\end{enumerate}}
+\usepackage{placeins}
+\usepackage{pbox}
+\newcommand\SLASH{\char`\\}
+\usepackage{fancybox}
+\usepackage{placeins}
+\usepackage[document]{ragged2e}
+\usepackage{relsize}
+\usepackage{amssymb}
+\usepackage{ctable} % for \specialrule command
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+
+\makeatletter% http://tex.stackexchange.com/questions/29517/forcing-new-line-after-item-number-in-enumerate-environment/29518#29518
+\def\step{%
+   \@ifnextchar[ \@step{\@noitemargtrue\@step[\@itemlabel]}}
+\def\@step[#1]{\item[#1]\mbox{}}
+\makeatother
+
+\begin{document}
+
+\newpage
+\pagenumbering{gobble}  % ------- bỏ đánh số trang----------------
+% trang bìa 1-----------------------------------------------------
+	%\thispagestyle{empty}
+	\thisfancypage{
+		\doublebox}
+	{}
+	
+	\begin{center}
+		\vspace*{0.2cm}
+		ĐẠI HỌC QUỐC GIA TP. HỒ CHÍ MINH\\
+		{\fontsize{14pt}{1}\textbf{		TRƯỜNG ĐẠI HỌC BÁCH KHOA }}\\
+		-------------------------------\\
+		\includegraphics[width=3cm]{images/bk}\\
+		\vspace*{2cm}
+		{\fontsize{14pt}{1}\selectfont LÊ THỊ MINH THÙY}\\
+		\vspace*{2cm}
+		{\fontsize{16pt}{1}\selectfont \textbf{DỰ ĐOÁN XÁC SUẤT \\ THỜI GIAN XE BUÝT VỀ ĐÚNG TRẠM}}\\
+		\vspace*{2cm}
+		\begin{flushleft}
+		\large
+		\begin{tabular}{ ll } 
+        \hspace{1cm} Chuyên ngành: & Khoa học máy tính\\
+		\hspace{1cm} Mã số: & 60.48.01\\
+		\end{tabular}
+		\end{flushleft}
+		\vspace*{2cm}
+		{\fontsize{14pt}{1}\selectfont LUẬN VĂN THẠC SĨ}\\
+		\vspace*{2cm}
+		{\fontsize{12pt}{1}	TP.Hồ Chí Minh, \today}\\
+		\vspace*{2cm}
+		{\fontsize{12pt}{1}	Công trình được hoàn thành tại:\\ Trường Đại Học Bách Khoa - ĐHQG - TPHCM}
+	\end{center}
+%----------------------------------------------------------------------------------------	
+\pagebreak
+Công trình được hoàn thành tại: \textbf{Trường Đại Học Bách Khoa - ĐHQG - TPHCM}\\
+Cán bộ hướng dẫn khoa học: TS. Huỳnh Tường Nguyên	\\
+	(Ghi rõ họ, tên, học hàm, học vị và chữ  ký)\\
+
+\vspace*{4cm}Cán bộ chấm nhận xét 1: 	\\
+	(Ghi rõ họ, tên, học hàm, học vị và chữ  ký)\\
+
+\vspace*{4cm}Cán bộ chấm nhận xét 2:	\\
+	(Ghi rõ họ, tên, học hàm, học vị và chữ  ký)\\
+
+\vspace*{4cm}Luận văn thạc sĩ được bảo vệ tại Trường Đại học Bách Khoa, ĐHQG Tp. HCM \\
+\today.
+
+\vspace*{0.5cm}Thành phần đánh giá hội đồng luận văn thạc sĩ bao gồm: \\
+1.  (Chủ tịch)\\
+2.  (Thư ký)	\\
+3.  (Phản biện 1)\\
+4.  (Phản biện 2)\\
+5.  (Uỷ viên)\\
+Xác nhận của Chủ tịch Hội đồng đánh giá luận văn và Trưởng khoa quản lý chuyên ngành sau khi luận văn đã được sửa chữa (nếu có).\\
+\begin{tabular}{ p{7cm}p{9cm}}
+ \hspace{1cm} CHỦ TỊCH HỘI ĐỒNG & TRƯỞNG KHOA KH$\&$KT Máy Tính\\
+ \hspace{1cm}  (Họ tên và chữ ký) & (Họ tên và chữ ký)\\
+\end{tabular}\\
+\pagebreak
+%----------------------------------------------------------------------------------------
+\begin{tabular}{ p{7cm}p{9cm}}
+ ĐẠI HỌC QUỐC GIA TP. HỒ CHÍ MINH & \textbf{CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM}\\
+ \hspace{0.5cm}TRƯỜNG ĐẠI HỌC BÁCH KHOA & \hspace{2cm}\textbf{Độc lập - Tự do - Hạnh phúc}\\
+\end{tabular}\\
+\vspace*{1cm}
+\begin{center}{\fontsize{16pt}{1}\selectfont \textbf{NHIỆM VỤ LUẬN VĂN THẠC SĨ}}\\\end{center}
+\begin{tabular}{ ll}
+\vspace*{0.1cm}Họ tên học viên: Lê Thị Minh Thùy&\vspace*{0.1cm} MSHV: 13070269\\
+\vspace*{0.1cm} Ngày, tháng, năm sinh: 22/01/1986 &\vspace*{0.1cm} Nơi sinh: Đồng Nai\\
+\vspace*{0.1cm} Ngành: Khoa học máy tính & \vspace*{0.1cm} Mã số: 60.48.01\\
+\multicolumn{2}{l}{\vspace*{1cm}I. TÊN ĐỀ TÀI: Dự đoán xác suất thời gian xe buýt về trạm đúng giờ} \\
+\vspace*{0.1cm} II.  NHIỆM VỤ VÀ NỘI DUNG: \\
+\multicolumn{2}{l}{\vspace*{0.1cm}1. Tìm thuật toán đơn giản, phù hợp để giải bài toán} \\
+\multicolumn{2}{l}{\vspace*{3cm}2. Hiện thực để chứng minh thuật toán đã chọn lập trình được} \\
+
+\vspace*{0.1cm} III.  NGÀY GIAO NHIỆM VỤ: & \\
+\vspace*{0.1cm} IV.  NGÀY HOÀN THÀNH NHIỆM VỤ: & \\
+\vspace*{0.1cm}V. CÁN BỘ HƯỚNG DẪN: TS. Huỳnh Tường Nguyên & \\
+\end{tabular}\\
+\vspace*{1cm}
+\hfill Tp. HCM, \today. 
+\begin{tabular}{ p{7cm}p{9cm}}
+ \hspace{1cm} CÁN BỘ HƯỚNG DẪN & TRƯỞNG KHOA KH$\&$KT Máy Tính\\
+ \hspace{1cm}  (Họ tên và chữ ký) & (Họ tên và chữ ký)\\
+\end{tabular}\\
+%----------------------------------------------------------------------------------------
+\pagebreak
+\begin{center}{\fontsize{16pt}{1}\selectfont \textbf{LỜI NÓI ĐẦU}}\\\end{center}
+Để hoàn thành được Luận Văn Thạc Sĩ ngày hôm nay, tôi chân thành cảm ơn 4 năm được học tập chương trình Thạc Sĩ Khoa Học Máy Tính tại trường Đại Học Bách Khoa cùng với sự giảng dạy tận tình của thầy cô và cơ hội trao đổi kinh nghiệm quý báu với các bạn cùng khóa.\\
+Trong chương Cơ sở lý thuyết của Luận Văn Thạc Sĩ của mình, tôi có sao chép một phần nội dung trong sách dịch tiếng Việt tên là "Thống kê Công nghiệp hiện đại với ứng dụng viết trên R, MINITAB và JMP", bản quyền tiếng Việt của Viện Nghiên cứu cao cấp về Toán. Tôi xin phép không trả tiền bản quyền sử dụng, do Luận Văn Thạc Sĩ của mình chỉ sử dụng chúng như là bằng chứng kham khảo cho ngày bảo vệ hội đồng Thạc Sĩ, không dùng mục đích thương mại hay bất kỳ hoạt động khoa học nào, nghĩa là, tôi cam đoan không đem nội dung Luận Văn này để mua bán, đăng báo hay thuyết trình bất cứ đâu.\\
+Đồng thời, tôi khuyến cáo người đọc nên tiếp cận nội dung lý thuyết phiên bản tiếng Anh.
+\begin{flushright}
+\today\\
+Lê Thị Minh Thùy
+\end{flushright}
+%-----------------------------------------------------------------------------------------
+\pagebreak
+\begin{center}{\fontsize{16pt}{1}\selectfont \textbf{TÓM TẮT LUẬN VĂN}}\\\end{center}
+%-----------------------------------------------------------------------------------------
+\pagebreak
+\begin{center}{\fontsize{16pt}{1}\selectfont \textbf{ABSTRACT}}\\\end{center}
+%-------------------------------------------------------------------------------------------
+\pagebreak
+\begin{center}{\fontsize{16pt}{1}\selectfont \textbf{LỜI CAM ĐOAN}}\\\end{center}
+Tôi cam đoan rằng, ngoại trừ các kết quả tham khảo từ các công trình khác như đã ghi rõ trong luận văn, các công việc trình bày trong luận văn này do chính tôi thực hiện và không nội dung nào của luận văn này đã được nộp để lấy một bằng cấp ở trường này hoặc trường khác.\\
+\begin{flushright}
+\today\\
+Lê Thị Minh Thùy
+\end{flushright}
+\iffalse
+%comment
+\fi
+\tableofcontents
+\pagebreak
+\pagenumbering{arabic}
+\chapter{GIỚI THIỆU ĐỀ TÀI} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Giới thiệu đề tài}
+Theo kinh nghiệm lái xe lâu năm trên một tuyến giống nhau, khi đi được một quãng đường, ví dụ 2/3 chặng, các bác tài xế có thể nhắm chừng thời gian về bến đích. Bài toán của Luận Văn: định lượng kinh nghiệm nhắm chừng này, chi tiết cụ thể, sử dụng 351 mẫu ngẫu nhiên chuyến xe buýt của cùng tuyến 74, cộng với công thức Toán xác suất Bayes chủ đạo để tính xác suất về trạm đích đúng giờ sau khi đi được 2/3 quãng đường.\\
+Theo nghiệp vụ xe buýt, các bác tài xế chỉ có khoảng thời gian cố định cộng thêm linh động trễ thêm vài phút để hoàn tất một lộ trình đã vạch sẵn. Khi lái xe lâu năm trên một lộ trình giống nhau, các bác tài xế khi đi được một phần đoạn đường, họ sẽ ước lượng quãng thời gian còn lại có hoàn thành kịp tiến độ cho quãng đường còn lại hay không. Mục đích Luận Văn: dùng Toán định lượng kinh nghiệm nhắm chừng này.\\
+Quan sát kích thước mẫu giới hạn, ngẫu nhiên các chuyến di chuyển từ bến xe An Sương đến bến xe Củ Chi (tuyến xe buýt 74 ngẫu nhiên được chọn) kèm theo kết quả về trạm đích đúng giờ hay trễ giờ tương ứng. Mục đích Luận Văn: dùng Toán tạo mô hình cho dữ liệu quan sát được, sau đó dùng mô hình này kiểm tra, nhập vào thông tin của 2/3 chặng mới, xuất ra xác suất về trạm đích đúng giờ hay không.\\
+Có dữ liệu di chuyển 2/3 chặng đi từ bến xe An Sương đến bến xe Củ Chi của tuyến xe buýt 74 và kết quả tương ứng về trạm đích: đúng giờ hay trễ giờ. Sử dụng thao tác khai phá dữ liệu học có quan sát, phân chia dữ liệu thành 2 phần: phần để học có kèm theo kết quả về trạm đích, phần để kiểm tra đã loại bỏ kết quả về trạm đích. Dùng Toán thống kê vì ta chấp nhận giải trên dữ liệu có tính ngẫu nhiên do ta biết trên thực tế rất hiếm hai chuyến xe cùng lộ trình có những bước di chuyển cách nhau 30 giây giống nhau hoàn toàn, nó giống như câu ngạn ngữ "Không ai rửa chân hai lần trên cùng một dòng sông". Mục đích Luận Văn: dùng Toán thống kê mô hình dữ liệu học, dùng mô hình này để dán nhãn đúng giờ hay trễ giờ cho dữ liệu kiểm tra.\\
+công thức Toán xác suất Bayes
+\section{Động cơ}
+Hiện nay, có nhiều ứng dụng hay nghiên cứu khoa học khai thác thông tin GPS của các chuyến xe buýt di chuyển trên địa bàn TP. Hồ Chí Minh để rút trích thông tin có ích với mong muốn với tri thức mới tìm được trong dữ liệu thô có thể giúp ích và cải thiện dịch vụ phục vụ của phương tiện giao thông công cộng này.\\
+
+Luận Văn bó hẹp với đề bài cụ thể: Dùng toán Thống kê định lượng kinh nghiệm di chuyển trên cùng một lộ trình.
+Kết quả của Luận Văn đóng góp cho nghiên cứu sau này:  
+\section{Mục tiêu}
+Luận Văn không đặt mục tiêu tham vọng giải bài toán này có thể đem ra ứng dụng thực tế được vì nhiều lý do sau đây:
+\begin{itemize}
+\item Kết quả của Luận Văn phụ thuộc nhiều và thay đổi theo nội dung và kích thước mẫu dữ liệu. Hiện tại Luận Văn đang cụ thể thao tác 351 mẫu ngẫu nhiên tháng 9 năm 2016 chuyến xe buýt của cùng tuyến 74. Muốn khắc phục được hạn chế này, phải có kiến thức thống kê vững chắc giúp ước lượng tổng thể từ mẫu với xác suất xảy ra cao hoặc phải làm việc trên dữ liệu siêu lớn. Cả hai điều này đều vượt quá giới hạn mục tiêu của Luận Văn này là tìm công cụ phù hợp để giải bài toán "Dự đoán xác suất xe về trạm đúng giờ" với dữ liệu nhỏ, nạp được vào bộ nhớ RAM khi đang thao tác. 
+\item Ví dụ, với một mẫu dữ liệu kiểm tra, sau khi đi được 2/3 chặng, máy đưa ra xác suất xe về trạm đúng giờ là 98.5\%. Nhưng gặp sự cố tại 1/3 chặng đường cuối, tình trạng kẹt xe nặng, xe về trạm không đúng giờ như con số 98.5\% thông báo xe về trạm đúng giờ sau khi đi được 2/3 chặng. Các bác tài xế không thể điều khiển tình trạng xe chạy tại 1/3 chặng đường cuối. Vậy, con số 98.5\% thật sự có ý nghĩa sử dụng trên thực tế hay không? Câu trả lời đầu tiên, người đọc phải hiểu định nghĩa "xác suất". Xác suất để dự báo điều không chắc chắn xảy ra. Khi đã hiểu được bản chất định nghĩa "xác suất", người đọc có thể chấp nhận bài toán được giải trong Luận Văn này phần nào có ý nghĩa. 
+\end{itemize}
+Tóm lại, tác giả nhắc lại mục tiêu rất nhỏ và rất cụ thể của Luận Văn này: tìm được và chứng minh một cách giải hợp lý cho bài toán "Dự đoán xác suất thời gian về trạm đúng giờ" khi đi được 2/3 chặng đường.
+\section{Phương pháp nghiên cứu}
+\section{Một số kết quả thu được}
+\section{Cấu trúc luận văn}
+\pagebreak
+\chapter{CƠ SỞ LÝ THUYẾT}
+\section{Lý thuyết xác suất cơ bản}
+\subsection*{Tổng thể và mẫu}
+Kham khảo trang 19, 24, 25 chương 2 từ sách \cite{TKCNUDR}
+\begin{itemize}
+\item Một \textbf{tổng thể} (còn được gọi là quần thể) thống kê là một tập các phần tử có một thuộc tính chung nhất định. 
+\\Ví dụ, tập hợp tất cả các chuyến xe buýt từ Bến xe An Sương - Bến xe Củ Chi của tuyến 74 vào ngày 17 tháng 10 năm 2016 là một tổng thể hữu hạn và có thực.\\
+Một ví dụ khác, tập tất cả các chuyến xe buýt từ Bến xe An Sương - Bến xe Củ Chi của tuyến 74 có thể về trạm trễ trong điều kiện: mưa nhiều, đường ngập, hẹp, rào chắn lô cốt, quá tải xe máy xuyên suốt cả ngày và va chạm xe máy thường xuyên. Tổng thể này là vô hạn và giả định.
+\item Một \textbf{mẫu} là một tập hợp các phần tử trong một tổng thể nhất định. Một mẫu thường được chọn ra từ một tổng thể với mục tiêu quan sát các đặc tính của tổng thể ấy và đưa ra các quyết định thống kê có liên quan đến các đặc trưng tương ứng. \\
+Chẳng hạn, xét một mẫu 1000 dữ liệu các chuyến xe từ Bến xe An Sương - Bến xe Củ Chi của tuyến 74, luận văn này tìm ra được quy luật cảnh báo sớm tình trạng đến đích trễ cho các bác tài xế. Như ta đã biết trong nghiệp vụ, các bác tài xế phải hoàn thành mỗi chuyến đó trong một khoảng thời gian cho phép. Nhưng với điều kiện thực tế, sẽ có những chuyến hoàn thành sớm hơn hay trễ hơn so với thời gian quy định. \\
+\end{itemize}
+Chúng ta chỉ dự đoán được một phần trong nhiều hiện tượng mà ta gặp phải. Chẳng hạn, rất khó dự đoán chuyến xe đó có hoàn thành đúng thời gian về trạm đích hay không cho tất cả các tháng, các năm, các điều kiện khác nhau. Trong Luận Văn này, tôi tập trung vào đo lường xác suất xe về trạm trong một khoảng thời gian cụ thể, tháng 9 năm 2016, để dự đoán xe về trạm đúng giờ trong tương lai gần.\\
+Ngoài ra, người đọc cần biết thêm, nếu lấy hết tất cả dữ liệu lịch sử các chuyến xe cụ thể đó (mặc dù nó hữu hạn và có thực), xem xét tất cả các chuyến xe trên mọi điều kiện không thể kiểm soát được trên thực tế để tìm quy luật cảnh báo sớm là quá tốn kém và không thực tế. Cho nên Luận Văn giới hạn giải trên mẫu, tháng 9 năm 2016, được coi là ngẫu nhiên, các yếu tố bên ngoài như thời gian, thời tiết, điều kiện mặt đường,... được coi là các yếu tố độc lập để giảm sự phức tạp giải bài toán, rút ra từ tổng thể.\\ 
+Chú ý, trong Toán Thống Kê, tồn tại các phương pháp như phương pháp thí nghiệm thống kê, phương pháp lấy mẫu chấp nhận, phương pháp kiểm định giả thuyết,.. để từ mẫu ngẫu nhiên đủ rút ra đặc trưng của tổng thể với xác suất xảy ra cao. Nhưng để thực hiện được điều này, nó vượt quá kiến thức kỹ sư máy tính. Cho nên Luận Văn này không đặt tham vọng, giải trên mẫu có thể kết luận trên tổng thể với xác suất xảy ra cao.
+\subsection*{Biến cố và không gian mẫu: Diễn tả hình thức của thí nghiệm}
+Kham khảo trang 52, 55, 59, 60, 61, 63 chương 3 từ sách \cite{TKCNUDR}
+Ta thấy cùng một tuyến đường xe buýt 74 cố định, từ bến xe An Sương - bến xe Củ Chi, các chuyến xe trong cùng tháng 9 có thời gian hoàn thành khác nhau, không biết trước được một cách chắc chắn. Nguyên nhân là do những yếu tố bên ngoài như mặt đường, thời tiết, giờ cao điểm, thấp điểm,..đều có ảnh hưởng đến kết quả. Toán thống kê giúp ta có phương pháp làm việc trên dữ liệu có tính ngẫu nhiên như vậy.\\
+\textbf{Không gian mẫu} là tập hợp của tất cả các kết cục có thể của một thí nghiệm cụ thể. Chẳng hạn, thí nghiệm tung một đồng xu, kết quả ngẫu nhiên là ngửa (Head, $\mathcal{H}$) hoặc sấp (Tail, $\mathcal{T}$), cho ta không gian mẫu $\mathcal{S= \{H,T}\}$. Các \textbf{biến cố sơ cấp} hay \textbf{điểm mẫu} là những phần tử của $\mathcal{S}$.\\
+\subsection*{Xác suất của biến cố}
+Thông thường chúng ta gộp tất cả các biến cố vào một tập $\mathcal{Q}$ := $\{ A: A \subset \mathcal{S}$ là một biến cố$\}$, gọi là tập các biến cố.\\
+Xét một hàm $\mathbb{P}: \mathcal{Q} \rightarrow \mathbb{R}$ xác định trên $\mathcal{Q}$, gán cho mỗi biến cố A một số thực, ký hiệu A $\mapsto$ $\mathbb{P}$[A], $\mathbb{P}$[A] (hay $\mathbb{P}$(A)) là khả năng hoặc cơ hội mà biến cố A xảy ra. $\mathbb{P}$ được gọi là hàm xác suất khi thỏa mãn những tiên đề cơ bản sau đây:\\
+\begin{itemize}
+\item $\textbf{A1}$ Xác suất là không âm, $\mathbb{P}$(A) $\geq$ 0
+\item $\textbf{A2}$ Không gian mẫu $\mathcal{S}$ có xác suất 1, $\mathbb{P}(\mathcal{S})$=1
+\item $\textbf{A3}$ Xác suất của các biến cố rời nhau. Khi có hai biến cố A, B mà A $\cap$ B = $\emptyset$ thì\\
+\begin{center}
+$ \mathbb{P}(A \cup B) = \mathbb{P}(A $ hay $B) = \mathbb{P}(A) + \mathbb{P}(B)$
+\end{center}
+Tổng quát hơn, nếu ta có $E_{1}, E_{2},...,E_{n}$ (n $\geq$ 1) là các biến cố rời nhau từng đôi một thì\\
+\[
+\mathbb{P}\left[\bigcup_{i=1}^n E_{i}\right]=\sum_{i=1}^n \mathbb{P}[E_i]
+\]
+\end{itemize}
+\subsection*{Xác suất có điều kiện và sự độc lập của các biến cố}
+Khi các biến cố khác nhau có liên quan, việc thực hiện một biến cố có thể cung cấp cho ta thông tin liên quan để cải thiện, nâng cao khả năng đánh giá của ta về các biến cố khác. Biến cố B đã xảy ra, tức là $\mathbb{P}[B]$ > 0, xác suất biến cố A cũng xảy ra là gì? Suy nghĩ một cách tích cực, ta thấy nên thu hẹp không gian mẫu S tới không gian trong đó B đã xảy ra (nhằm mục đích so sánh giữa A $\cap$ B và B)
+\textbf{Xác suất có điều kiện} của biến cố A cho biết biến cố B đã xảy ra, $\mathbb{P}[B]$ > 0 là
+\[
+\mathbb{P}(A|B)=\frac{\mathbb{P}(AB)}{\mathbb{P}(B)}=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}
+\]
+Theo đó xác suất đồng thời của hai biến cố A và B là
+\[
+\mathbb{P}(AB)=\mathbb{P}(A\cap B)=\mathbb{P}(B)\cdot \mathbb{P}(A|B)
+\]
+Ví dụ: Thí nghiệm đo chiều dài của một thanh thép. Không gian mẫu là $\mathcal{S}$ = (19.5, 20.5)[cm]. Hàm xác suất gán bất kỳ một khoảng tập con của S một xác suất bằng chiều dài của nó. Cho A = (19.5,20.1), nghĩa là $\mathcal{P}(A)$ = 20.1-19.6=0.6 và B = (19.8,20.5), nghĩa là $\mathcal{P}(B)$ = 20.5-19.8=0.7. Khoảng tập con chung giữa A$\cap$B=(19.8,20.1), nghĩa là $\mathcal{P}(A\cap B)$ = 20.1-19.8=0.3.\\
+Cho một độ dài và biết thêm điều kiện độ dài này thuộc khoảng B, và chúng ta phải đoán xem nó có thuộc về A không? Ta tính xác suất có điều kiện
+\[
+\mathbb{P}(A|B)=\frac{\mathbb{P}(AB)}{\mathbb{P}(B)}=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}=\frac{0.3}{0.7}=0.4286
+\]
+Mặt khác, nếu thông tin độ dài thuộc về B không biết trước, thì với độ dài của câu hỏi trên, xác suất nó thuộc về A bằng $\mathbb{P}(A)$=0.6. Vậy có một sự khác biệt giữa xác suất có điều kiện và không điều kiện. Điểu này cho thấy hai biến cố A và B là phụ thuộc.\\
+Hai biến cố A và B được gọi là \textbf{độc lập} nếu
+\[
+\mathbb{P}(A|B)=\mathbb{P}(A)
+\]
+Nói khác đi, biến cố A và B độc lập nếu sự xuất hiện của A không có liên quan theo bất kỳ cách nào đến sự xuất hiện của B: $\mathbb{P}(A|B)=\mathbb{P}(A)$ và $\mathbb{P}(B|A)=\mathbb{P}(B)$\\
+Nếu A và B là các biến cố độc lập thì 
+\[
+\mathbb{P}(A)=\mathbb{P}(A|B)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}
+\]
+hay tương đương với 
+\[
+\mathbb{P}(AB)=\mathbb{P}(A\cap B)=\mathbb{P}(A)\cdot\mathbb{P}(B_j)
+\]
+nghĩa là xác suất hai biến cố độc lâp đồng thời xảy ra bằng tích các xác suất riêng lẻ.\\
+Tổng quát, các biến cố $A_{1}, A_{2},..., A_{n}$ là n biến cố \textbf{độc lập lẫn nhau} thì
+\[
+\mathbb{P}\left[\bigcap_{i=1}^n A_j \right] = \prod_{i=1}^n \mathbb{P}[A_i]
+\]
+
+\subsection*{Công thức Bayes và ứng dụng của nó}
+Công thức Bayes cho ta cách thức cơ bản để đánh giá bằng chứng trong các dữ liệu liên quan đến các thông số chưa biết, hoặc một số biến cố không quan sát được. Giả sử rằng một thí nghiệm ngẫu nhiên cho kết quả trong một biến cố A (hoặc phần bù của nó), ngoài ra các kết quả này phụ thuộc vào một biến cố B mà ta không trực tiếp quan sát được, nhưng xác suất có điều kiện $\mathbb{P}$(A|B) là được biết trước.\\
+Bayes nói biến cố quan sát được A có liên quan đến biến cố B không quan sát được thông qua các xác suất có điều kiện. Để cân nhắc bằng chứng cho thấy A có ảnh hưởng trên B, diễn đạt bởi $\mathbb{P}(B|A)$ đầu tiên chúng ta giả định một xác suất $\mathbb{P}$(B) mà được gọi là xác suất tiên nghiệm. Xác suất tiên nghiệm $\mathbb{P}(B)$ thể hiện mức độ tin tưởng của chúng ta vào sự xảy ra của biến cố B. Ta luôn có điều kiện sau, cho phép tính xác suất hậu nghiệm $\mathbb{P}(B|A)$, là xác suất B xảy ra sau khi quan sát A (nên có mẫu số $\mathbb{P}$(A))\\
+\[
+\mathbb{P}(B|A) = \frac{\mathbb{P}(B) \cdot \mathbb{P}(A|B)}{\mathbb{P}(A)}
+\]
+Tổng quát, giả sử $\{$B$_1$,...,B$_m\}$ là một phân vùng của không gian mẫu. Các biến cố B$_1$,...,B$_m$ không trực tiếp quan sát hay kiểm chứng được, nhưng các xác suất có điều kiện $\mathbb{P}(A|B_i)$ là được biết trước. Giả định các xác suất tiên nghiêm là $\mathbb{P}(B_i)$, thể hiện mức độ tin tưởng của ta vào sự xảy ra của biến cố B$_i$. Sau khi quan sát A ta chuyển đổi các xác suất tiên nghiệm của B$_{i}$ thành các xác suất hậu nghiệm $\mathbb{P}(B_i|A)$, theo trên\\
+\[
+\mathbb{P}(B_i|A) = \frac{\mathbb{P}(B_i) \cdot \mathbb{P}(A|B_i)}{\mathbb{P}(A)}
+\]
+Vì $\{$B$_1$,...,B$_m\}$là một phân vùng 	của $\mathcal{S}$, $\mathcal{S}=\bigcup_{j=1}^m $B$_j$, nên A = A$\mathcal{S}$ = $\bigcup_{j=1}^m$ AB$_j$, vậy\\
+\[
+\mathbb{P}(A)=\sum_{j=1}^m \mathbb{P}(AB_j) = \sum_{j=1}^m \mathbb{P}(B_j)\cdot \mathbb{P}(A|B_j)
+\]
+Công thức Bayes tổng quát là:\\
+\[ %\mathlarger{
+  \mathbb{P}(B_{i}|A)= \dfrac{\mathbb{P}(B_{i})\cdot \mathbb{P}(A|B_{i})}{\mathbb{P}(A)}
+            =\dfrac{\mathbb{P}(B_{i})\cdot \mathbb{P}(A|B_{i})}{\sum_{j=1}^{m} \mathbb{P}(B_j) \cdot \mathbb{P}(A|B_j)}
+%}
+\]
+\subsection*{Biến ngẫu nhiên}
+Kham khảo trang 62, 63 chương 3 từ sách \cite{TKCNUDR}\\
+\textbf{Định nghĩa biến ngẫu nhiên}: Một biến ngẫu nhiên là một hàm giá trị thực $X(\omega)$ (hay X) xác định trên một không gian mẫu $\mathcal{S}$, sao cho các biến cố $\{\omega \in \mathcal{S}: X(\omega) \leq x\}$ có thể được gán các xác suất, với mọi  $-\infty < x < \infty$. Ta ghi $X: \mathcal{S} \rightarrow \mathbb{R}$. Thật vậy, với bất kỳ $x \in \mathbb{R}$, tập tiền ảnh $\{\omega \in \mathcal{S}:X(\omega) \leq x\}\subseteq \mathcal{S}$ rõ ràng là một biến cố, và được ký hiệu là A = X $\leq$ x hay $\{X \leq x\}$. Vậy xác suất $\mathbb{P}[A]$=$\mathbb{P}[X \leq x]$ luôn tồn tại.\\
+Kham khảo ví dụ trang 20 chương 2 từ \cite{TKCNUDR}\\
+Xét một thí nghiệm trong đó ta tung một đồng xu một lần. Giả sử đồng xu là cân đối và đồng chất để khả năng xuất hiện một trong hai mặt là như nhau. Hơn nữa, giả định rằng hai mặt của đồng xu được gán nhãn bởi "0" và "1". Nói chung, chúng ta không thể dự đoán chắc mặt nào sẽ hiện ra. Nếu mặt "0" xuất hiện thì chúng ta gán cho một biến X giá trị 0; nếu mặt "1" xuất hiện, ta gán cho X giá trị 1. Vì những giá trị mà X sẽ nhận được trong một chuỗi các thử nghiệm như vậy là không thể dự đoán được một cách chắc chắn, nên chúng ta gọi là X một biến ngẫu nhiên. Một ví dụ cụ thể cho chuỗi ngẫu nhiên gồm các giá trị 0, 1 được tạo ra bằng cách này là như sau: 0,1,1,0,1,0,1,1,1,1,1,1,0,1,1,1,1\\
+\subsection*{Biến ngẫu nhiên rời rạc}
+\textbf{Định nghĩa biến ngẫu nhiên rời rạc} X(.) là biến có một phạm vi $\mathcal{S}_X = X(\mathcal{S})$ là tập giá trị rời rạc (hữu hạn hoặc vô hạn đếm được, nghĩa là có lượng số không quá lượng số tập tự nhiên $\mathbb{N}$)\\
+Trường hợp hữu hạn phần tử thì ta thường ghi tập giá trị\\
+\[
+\mathcal{S}_X = \{x_0, x_1, x_2, ..., x_{m-1}, x_m\}, m \in \mathbb{N}
+\]
+Trường hợp X(.) có phạm vi vô hạn đếm được thì ta ghi\\
+\[
+\mathcal{S}_X = \{x_0, x_1, x_2, ..., x_{m-1}, x_m, ...\}, 
+\]
+tập này có cùng lượng số với tập $\mathbb{N}$.\\
+Đối với một biến ngẫu nhiên X rời rạc, ta có các khái niệm sau\\
+\textbf{Hàm mật độ xác suất} là\\
+\[
+p(x) = \mathbb{P}[X=x]= \mathbb{P}[\{\omega: X(\omega)=x\}], x \in \mathcal{S}_X
+\]
+$p(x)$ là xác suất mà X nhận một giá trị cụ thể x $\in$ $\mathcal{S}_X$. Ta phải có\\
+\begin{center}
+$p(x) \geq 0$ và $\sum_{x \in \mathcal{S}_X} p(x) = 1$
+\end{center}
+\textbf{Phân phối xác suất} của một biến ngẫu nhiên mô tả cách các xác suất được phân phối trên các giá trị của biến ấy. Tập giá trị $\mathcal{S}_X$ = $\{x_0,x_1,x_2,...,x_{m-1}, x_{m}\}$(còn được gọi không gian mẫu của X là hữu hạn), cho ta \textbf{bảng phân phối xác suất} của X, được cho bởi\\
+\begin{center}
+\begin{tabular}{ rccccc }
+\specialrule{.1em}{.05em}{.05em} 
+X & $x_0$ & $x_1$ & ... & $x_{m-1}$ & $x_{m}$\\
+\hline
+p$_k$:=$p(x_k$)=$\mathbb{P}$[X=$x_k$] & $p_0$ & $p_1$ & ... & $p_{m-1}$ & $p_m$\\
+\specialrule{.1em}{.05em}{.05em} 
+\end{tabular}
+\end{center}
+
+\subsection*{Ví dụ phân loại dựa vào công thức Bayes}
+\begin{center}
+\begin{tabular}{ cccccc }
+\specialrule{.2em}{.1em}{.1em} 
+RID & age & income & student & credit\_rating & Class: buys\_computer\\
+\specialrule{.2em}{.1em}{.1em} 
+1 & youth &	high	 & no & 	fair & no\\
+2 & 	youth &	high	 & no & 	excellent & 	no\\
+3 & middle\_aged & high & no & fair & yes\\
+4 & 	senior & medium & no & fair & yes\\
+5 & 	senior & low & yes & fair & yes\\
+6 & 	senior & low	 & yes & excellent & no\\
+7 & 	middle\_aged & low & 	yes & excellent & yes\\
+8 & 	youth & 	medium & no & fair & no\\
+9 & 	youth & 	low & yes & fair & yes\\
+10 & senior & medium & yes & fair & yes\\
+11 & youth & medium & yes & excellent & yes\\
+12 & middle\_aged & medium & no & excellent & yes\\
+13 & middle\_aged	 & high & yes & fair & yes\\
+14 & senior & medium	 & no & 	excellent & 	no\\
+\specialrule{.2em}{.1em}{.1em}
+\end{tabular}\\
+\captionof{table}{Bảng dữ liệu} 
+\end{center}
+\begin{table}[ht]
+\begin{tabular}{ |c|c|c| }
+\specialrule{.1em}{.05em}{.05em} 
+\multirow{2}{*}{age} & \multicolumn{2}{c|}{buys\_computer} \\
+& yes & no \\
+\hline
+youth & 2 & 3  \\
+middle\_aged & 4 & 0 \\
+senior & 3 & 2 \\
+\specialrule{.1em}{.05em}{.05em} 
+\end{tabular}
+\hspace{7mm}
+\vspace{1mm}
+\begin{tabular}{|c|c|c|}
+\specialrule{.1em}{.05em}{.05em} 
+\multirow{2}{*}{income} & \multicolumn{2}{c|}{buys\_computer} \\
+& yes & no \\
+\hline
+low & 3 & 1  \\
+middle & 4 & 2 \\
+high & 2 & 2 \\
+\specialrule{.1em}{.05em}{.05em} 
+\end{tabular}\\
+\begin{tabular}{ |c|c|c| }
+\specialrule{.1em}{.05em}{.05em} 
+\multirow{2}{*}{credit\_rating} & \multicolumn{2}{c|}{buys\_computer} \\
+& yes & no \\
+\hline
+fair & 6 & 2  \\
+excellent & 3 & 3 \\
+\specialrule{.1em}{.05em}{.05em} 
+\end{tabular}
+\hspace{7mm}
+\vspace{1mm}
+\begin{tabular}{ |c|c|c| }
+\specialrule{.1em}{.05em}{.05em} 
+\multirow{2}{*}{student} & \multicolumn{2}{c|}{buys\_computer} \\
+& yes & no \\
+\hline
+yes & 6 & 1  \\
+no & 3 & 4 \\
+\specialrule{.1em}{.05em}{.05em} 
+\end{tabular}
+\captionof{table}{Bảng thông tin tóm tắt (từ bảng 2.1)}
+\end{table}
+Gọi x$_i$ tương ứng là một dòng dữ liệu ở bảng 2.1\\
+Cho dòng dữ liệu\\ 
+x$_{15}$ = (age = youth, income = medium, student = yes, credit\_rating = fair)\\ 
+Câu hỏi: x$_{15}$ được phân loại vào \textit{buys\_computer = yes} hay \textit{buys\_computer = no}?\\
+Từ bảng 2.2, ta tính thêm thông tin xác suất
+\[
+\begin{aligned}
+\mathbb{P}(\text{buys\_computer = yes}) & =  \frac{\sum_{\mathcal{S}=\{\text{buys\_computer = yes}\}} x_i}
+{\sum_{\mathcal{S}=\{\text{buys\_computer = yes, buys\_computer = no }\}} x_i} \\
+         							& = \frac{9}{14} = 0.643\\
+\mathbb{P}(\text{buys\_computer = no}) & =  \frac{\sum_{\mathcal{S}=\{\text{buys\_computer = no}\}} x_i}
+{\sum_{\mathcal{S}=\{\text{buys\_computer = yes, buys\_computer = no }\}} x_i} \\
+									&=\frac{5}{14} = 0.357\\
+\end{aligned}
+\]
+Sử dụng xác suất có điều kiện, 
+\[
+\mathbb{P}(A|B)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}
+\]
+Ta tính
+\[
+\begin{aligned}
+\mathbb{P}(\text{age = youth | buys\_computer = yes}) & =  \frac{\sum_{\mathcal{S}=\{\text{age=youth}\}\cap\mathcal{S}=\{\text{buys\_computer = yes}\}} x_i}
+{\sum_{\mathcal{S}=\{\text{buys\_computer = yes }\}} x_i} \\
+									&= \frac{2}{9} = 0.222\\
+\mathbb{P}(\text{age = youth | buys\_computer = no}) & =  \frac{\sum_{\mathcal{S}=\{\text{age=youth}\}\cap\mathcal{S}=\{\text{buys\_computer = no}\}} x_i}
+{\sum_{\mathcal{S}=\{\text{buys\_computer = no }\}} x_i} \\
+									&= \frac{3}{5} = 0.600\\
+\mathbb{P}(\text{income = medium | buys\_computer = yes}) & =  \frac{\sum_{\mathcal{S}=\{\text{income = medium}\}\cap\mathcal{S}=\{\text{buys\_computer = yes}\}} x_i}
+{\sum_{\mathcal{S}=\{\text{buys\_computer = yes}\}} x_i} \\
+&= \frac{4}{9} = 0.444\\
+\mathbb{P}(\text{income = medium | buys\_computer = no}) & =  \frac{\sum_{\mathcal{S}=\{\text{income = medium}\}\cap\mathcal{S}=\{\text{buys\_computer = no}\}} x_i}
+{\sum_{\mathcal{S}=\{\text{buys\_computer = no }\}} x_i} \\
+&= \frac{2}{5} = 0.400\\
+\mathbb{P}(\text{student = yes | buys\_computer = yes}) & =  \frac{\sum_{\mathcal{S}=\{\text{student = yes}\}\cap\mathcal{S}=\{\text{buys\_computer = yes}\}} x_i}
+{\sum_{\mathcal{S}=\{\text{buys\_computer = yes}\}} x_i} \\
+&= \frac{6}{9} = 0.667\\
+\mathbb{P}(\text{student = yes | buys\_computer = no}) & =  \frac{\sum_{\mathcal{S}=\{\text{student = yes}\}\cap\mathcal{S}=\{\text{buys\_computer = no}\}} x_i}
+{\sum_{\mathcal{S}=\{\text{buys\_computer = no }\}} x_i} \\
+&= \frac{1}{5} = 0.200\\
+\mathbb{P}(\text{credit\_rating = fair | buys\_computer = yes}) & =  \frac{\sum_{\mathcal{S}=\{\text{credit\_rating = fair}\}\cap\mathcal{S}=\{\text{buys\_computer = yes}\}} x_i}
+{\sum_{\mathcal{S}=\{\text{buys\_computer = yes }\}} x_i} \\
+&= \frac{6}{9} = 0.667\\
+\mathbb{P}(\text{credit\_rating = fair | buys\_computer = no}) & =  \frac{\sum_{\mathcal{S}=\{\text{credit\_rating = fair}\}\cap\mathcal{S}=\{\text{buys\_computer = no}\}} x_i}
+{\sum_{\mathcal{S}=\{\text{buys\_computer = no }\}} x_i} \\
+&= \frac{2}{5} = 0.400\\
+\end{aligned}
+\]
+Sử dụng các công thứ sau
+\[
+\mathbb{P}(AB)=\mathbb{P}(A\cap B)=\mathbb{P}(B)\cdot\mathbb{P}(A|B)
+\]
+\[
+\mathbb{P}\left[\bigcap_{i=1}^n A_j \right]=\prod_{i=1}^n \mathbb{P}(A_j)
+\]
+Ta tính\\
+Do các biến cố age, income, student, credit\_rating là các biến cố độc lập với nhau, cho nên\\
+$\mathbb{P}$((age = youth, income = medium, student = yes, credit\_rating = fair)|buys\_computer = yes) \\
+= $\mathbb{P}$(age = youth | buys\_computer = yes) $\times$ $\mathbb{P}$(income = medium | buys\_computer = yes)\\
+$\times$ $\mathbb{P}$(student = yes | buys\_computer = yes) $\times$ $\mathbb{P}$(credit\_rating = fair | buys\_computer = yes)\\
+= 0.222 $\times$ 0.444 $\times$ 0.667 $\times$ 0.667 = 0.044.\\
+$\mathbb{P}$((age = youth, income = medium, student = yes, credit\_rating = fair)|buys\_computer = no) \\
+= $\mathbb{P}$(age = youth | buys\_computer = no) $\times$ $\mathbb{P}$(income = medium | buys\_computer = no)\\
+$\times$ $\mathbb{P}$(student = yes | buys\_computer = no) $\times$ $\mathbb{P}$(credit\_rating = fair | buys\_computer = no)\\
+= 0.600 $\times$ 0.400 $\times$ 0.200 $\times$ 0.400 = 0.019.\\
+Cuối cùng, ta tính\\
+$\mathbb{P}$((age = youth, income = medium, student = yes, credit\_rating = fair, buys\_computer = yes))\\
+= $\mathbb{P}$((age = youth, income = medium, student = yes, credit\_rating = fair)|buys\_computer = yes) \\
+$\times$ $\mathbb{P}$(buys\_computer = yes)\\
+= 0.044 $\times$ 0.643 = 0.028\\
+$\mathbb{P}$((age = youth, income = medium, student = yes, credit\_rating = fair, buys\_computer = no)) \\
+= $\mathbb{P}$((age = youth, income = medium, student = yes, credit\_rating = fair)|buys\_computer = no) \\
+$\times$ $\mathbb{P}$(buys\_computer = no)\\
+= 0.019 $\times$ 0.357 = 0.007\\
+Ta thấy xác suất biến cố (age = youth, income = medium, student = yes, credit\_rating = fair,buys\_computer = yes) xảy ra cao hơn so với xác suất biến cố (age = youth, income = medium, student = yes, credit\_rating = fair, buys\_computer = no). Do đó x$_{15}$ = (age = youth, income = medium, student = yes, credit\_rating = fair) được phân loại vào \textit{buys\_computer = yes}\\
+\section{Thuật toán Jenks natural breaks optimization (Tùy chọn)}
+Kham khảo từ \cite{JNBO}
+\section{Thuật toán Kernel Density Estimation (Tùy chọn)}
+\chapter{HIỆN THỰC VÀ THỬ NGHIỆM}
+\section{Dữ liệu nghiên cứu}
+Trích ngẫu nhiên 80\% thời gian di chuyển của 24 chuyến xe trong 351 chuyến xe BX Củ Chi - BX An Sương. Trong một chuyến xe, mỗi giá trị tính bằng mét, mỗi bước di chuyển giữa các giá trị được ghi nhận sau 20 giây.\\
+\textbf{\underline{Chuyến 1}}: 
+71, 71, 86, 86, 145, 145, 136, 136, 104, 104, 277, 277, 240, 240, 145, 145, 97, 97, 0, 0, 171, 171, 283, 283, 283, 283, 0, 0, 214, 214, 166, 166, 307, 307, 259, 259, 208, 208, 43, 43, 144, 144, 286, 286, 287, 287, 126, 126, 152, 152, 254, 254, 139, 139, 255, 255, 294, 294, 293, 293, 269, 269, 283, 283, 267, 267, 221, 221, 165, 165, 266, 266, 259, 259, 220, 220, 168, 168, 0, 0, 226, 226, 337, 337, 394, 394, 224, 224, 208, 208, 340, 340, 359, 359, 259, 259, 297, 297, 325, 325, 303, 303, 302, 302, 284, 284, 287, 287, 268, 268, 199, 199, 112, 112, 179, 179, 279, 279, 270, 270, 139, 139, 72, 72, 195, 195, 345, 345, 332, 332, 151, 151, 149, 149, 230, 230, 261, 261, 186, 186, 170, 170, 236, 236, 243, 243, 265, 265, 151, 151, 201, 201, 29, 29, 125, 125, 121, 121, 35, 35, 29, 29, 80, 80, 46, 46, 36, 36, 132, 132, 52, 52, 44, 44, 63, 63, 63, 46, 46, 46, 40, 40, 23\\
+\textbf{\underline{Chuyến 2}}:...\\
+...\\
+\textbf{\underline{Chuyến 12}}: 104, 104, 145, 145, 124, 124, 166, 166, 194, 194, 205, 205, 188, 188, 158, 158, 107, 107, 121, 121, 91, 91, 152, 152, 218, 218, 93, 93, 100, 100, 0, 0, 167, 167, 167, 167, 250, 250, 160, 160, 144, 144, 223, 223, 215, 215, 131, 131, 114, 114, 241, 241, 206, 206, 193, 193, 0, 0, 0, 0, 169, 169, 212, 212, 192, 192, 200, 200, 257, 257, 223, 223, 198, 198, 166, 166, 135, 135, 184, 184, 105, 105, 90, 90, 151, 151, 202, 202, 192, 192, 168, 168, 177, 177, 217, 217, 168, 168, 243, 243, 211, 211, 109, 109, 161, 161, 272, 272, 287, 287, 281, 281, 248, 248, 257, 257, 166, 166, 261, 261, 250, 250, 152, 152, 238, 238, 267, 267, 190, 190, 111, 111, 0, 0, 117, 117, 138, 138, 209, 209, 182, 182, 123, 123, 58, 58, 151, 151, 222, 222, 248, 248, 218, 218, 110, 110, 0, 0, 0, 0, 111, 111, 211, 211, 61, 61, 114, 114, 83, 83, 109, 109, 26, 26, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 96, 96, 37, 37, 110, 110, 48, 48, 34, 34, 121, 121, 121, 46, 46, 33, 33, 88, 88, 64, 64, 235, 235, 183, 183, 125, 125, 220, 22\\
+\textbf{\underline{Chuyến 13}}:...\\
+...\\
+\textbf{\underline{Chuyến 24}}: 279, 279, 17, 17, 52, 52, 48, 48, 67, 67, 141, 141, 131, 131, 131, 131, 95, 95, 157, 157, 155, 155, 196, 196, 242, 242, 219, 219, 50, 50, 172, 172, 219, 219, 243, 243, 148, 148, 74, 74, 5, 5, 105, 105, 194, 194, 68, 68, 216, 216, 224, 224, 231, 231, 61, 61, 76, 76, 228, 228, 295, 295, 306, 306, 293, 293, 260, 260, 236, 236, 279, 279, 284, 284, 232, 232, 174, 174, 75, 75, 205, 205, 103, 103, 98, 98, 232, 232, 266, 266, 257, 257, 188, 188, 60, 60, 192, 192, 228, 228, 256, 256, 236, 236, 215, 215, 23, 23, 10, 10, 100, 100, 44, 44, 132, 132, 255, 255, 290, 290, 272, 272, 216, 216, 237, 237, 281, 281, 274, 274, 272, 272, 294, 294, 189, 189, 0, 0, 41, 41, 84, 84, 65, 65, 197, 197, 247, 247, 221, 221, 121, 121, 83, 83, 138, 138, 252, 252, 223, 223, 195, 195, 135, 135, 17, 17, 0, 0, 6, 6, 15, 15, 44, 44, 121, 121, 61, 61, 206, 206, 220, 220, 148, 148, 52, 52, 164, 164, 208, 208, 248, 248, 203, 203, 179, 179, 11, 11, 0, 0, 62, 62, 112, 112, 252, 252, 307, 307, 316, 316, 168, 168, 104, 104, 87, 87, 192, 192, 148, 148, 131, 131, 91, 91, 215, 215, 215, 143, 143, 126, 126, 279, 279, 27\\
+Trực quan hóa giá trị các bước di chuyển của 24 chuyến dữ liệu ngẫu nhiên, ta có\\
+\FloatBarrier
+\begin{figure}
+		% 4 first row data
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test1}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 1-đúng giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test2}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 2-trễ giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test3}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 3-đúng giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test4}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 4-trễ giờ}
+        \end{subfigure}
+		% 4 second row data
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test5}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 5-đúng giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test6}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 6-trễ giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test7}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 7-đúng giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test8}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 8-trễ giờ}
+        \end{subfigure}
+        % 4 third row data
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test9}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 9-đúng giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test10}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 10-trễ giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test11}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 11-đúng giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test12}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 12-trễ giờ}
+        \end{subfigure}
+		% 4 fourth row data
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test13}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 13-đúng giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test14}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 14-trễ giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test15}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 15-đúng giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test16}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 16-trễ giờ}
+        \end{subfigure}
+        % 4 fifth row data
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test17}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 17-đúng giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test18}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 18-trễ giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test19}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 19-đúng giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test20}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 20-trễ giờ}
+        \end{subfigure}
+\end{figure}
+\begin{figure}\ContinuedFloat
+% 4 sixth row data
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test21}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 21-đúng giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test22}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 22-trễ giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test23}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 23-đúng giờ}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.25\textwidth}
+                \includegraphics[width=\linewidth]{test24}
+                \caption*{80\% thời gian di chuyển\\Chuyến xe 24-trễ giờ}
+        \end{subfigure}
+	\caption{Trực quan hóa 24 dòng dữ liệu ngẫu nhiên}
+\end{figure}
+\FloatBarrier
+Hình vẽ sắp xếp thời gian hoàn thành lộ trình BX Củ Chi - BX An Sương xác suất xuất hiện tăng dần.\\
+\begin{figure}[h!]
+        \begin{subfigure}[b]{0.5\textwidth}
+                \label{tab:example}
+                \includegraphics[width=\linewidth]{finishTime_CC_AS_Order}
+        \end{subfigure}%
+\end{figure}
+Hình vẽ cho thấy xác suất tích lũy thời gian hoàn thành lộ trình BX Củ Chi - BX An Sương \\
+\begin{figure}[h!]
+        \begin{subfigure}[b]{0.7\textwidth}
+        		\label{tab:example2}
+                \includegraphics[width=\linewidth]{finishTime_CC_AS_ACC_Line}
+        \end{subfigure}%
+\end{figure}
+
+\section{Thu thập thông tin rút ra từ dữ liệu lịch sử}
+Theo bài toán đặt ra, ta sẽ lấy thông tin dữ liệu 2/3 chuyến và phân loại thời gian đến trạm đích: đúng giờ và trễ.
+\section{Tiến hành dự đoán xác suất xe buýt về trạm đúng thời gian}
+\section{Kết luận}
+\chapter{KẾT LUẬN}
+\section{Tổng kết}
+\section{Đóng góp của đề tài}
+Vì các giá trị xác suất ... được tính trên mẫu và Luận Văn này chưa chứng minh được các xác suất đấy có thể đúng trên tổng thể với xác suất xảy ra cao, cho nên kết quả của Luận Văn này không sử dụng được trên thực tế. Nhưng đóng góp của Luận Văn này là tìm được một trong nhiều phương pháp giải có thể cho câu hỏi "Dự báo xác suất xe về trạm đúng giờ khi xe đã đi được một 2/3 khoảng đường"
+\section{Hướng phát triển}
+Để giải quyết bài toán của Luận Văn này triệt để hơn có hai cách tiếp cận:
+\begin{itemize}
+\item Cách 1: Giải bài toán này với dữ liệu cực lớn để tìm gần chính xác các xác suất .....Khi đó, tôi dự đoán sẽ nảy sinh thêm bài toán mới, xử lý các vấn đề khi làm việc trên dữ liệu cực lớn.
+\item Cách 2: Vẫn xử lý trên dữ liệu mẫu nhỏ hơn rất nhiều so với tổng thể, người giải phải học thêm kiến thức Toán Thống Kê như các phương pháp thiết kế thí nghiệm, xác định phương pháp lấy mẫu chấp nhận được, phương pháp kiểm định giả thuyết, ..., để đủ tự tin chứng minh rằng kết quả thu được từ mẫu cũng phản ánh đúng trên tổng thể với xác suất xảy ra cao.
+\end{itemize}
+\pagebreak
+\chapter{PHỤ LỤC}
+\begin{enumerate}
+\item Source code R chạy giải thuật Jenks Natural breaks optimization
+\begin{flushleft}
+\begin{tabular}{ |l| }
+\hline 
+\textit{\#set your working directory where your file data locates}\\
+setwd("/home/thuy/workspace/Preprocess")\\
+mydata = read.csv("Freq\_CC-AS\_80.csv",header = FALSE, sep = ",")[,1]\\
+\textit{\#use library classInt to run algorithm Jenks Natural breaks optimization}\\
+library("classInt")\\
+classIntervals(mydata, n=3, style="jenks")\\
+\textit{\#returned result}\\
+\textit{\#[2,170]  (170,345] (345,2578]}\\
+\textit{\#118         99          1}\\
+\textit{\#or use library BAMMtools to run algorithm Jenks Natural breaks optimization}\\
+library("BAMMtools")\\
+getJenksBreaks(mydata, 3)\\
+\textit{\#returned result}\\
+\textit{\#2  345 2578}\\
+\hline
+\end{tabular}
+\end{flushleft}
+\item Source code R trực quan hóa giá trị các bước di chuyển của 24 chuyến xe trên\\
+\begin{flushleft}
+\begin{tabular}{ |l| }
+\hline 
+\textit{\#set your working directory where your file data locates}\\
+setwd("/home/thuy/workspace/Preprocess")\\
+\textit{\#count maximum column length}\\
+count.fields("data.txt", sep = ",")\\
+maxCol <- max(count.fields("data.txt", sep = ","))\\
+\textit{\#load data with different column length}\\
+dat=read.table("data.txt", header = FALSE, \\
+\hspace{2cm} col.names = 1:maxCol, \textit{\#maxCol is maximum column length in your data row}\\ 				
+\hspace{2cm} sep = ",",\\ 
+\hspace{2cm} fill = TRUE) \textit{\#set value NA for empty column}\\
+i=1\\
+for (i in 1:nrow(dat)) \{ \\
+  \hspace{1cm} d=dat[i,] \textit{\# get row data}\\
+  \hspace{1cm} d=d[!is.na(d)] \textit{\#remove column NA}\\
+  \hspace{1cm} x=length(d)\\
+  \hspace{1cm} \textit{\#capture image}\\
+  \hspace{1cm} png(filename=paste("capture", i, ".png", sep = ""))\\
+  \hspace{1cm} \textit{\#remove axes}\\
+  \hspace{1cm} temp <- plot(1:x, d, type='b', axes=FALSE, xlab = "step", ylab = "length (meters)")\\
+  \hspace{1cm} \textit{\#adjust axes length}\\  
+  \hspace{1cm} temp <- axis(side=1, at=c(1:x))\\
+  \hspace{1cm} temp <- axis(side=2, at=seq(min(d), max(d), by=100))\\
+  \hspace{1cm} temp <- box()\\
+  \hspace{1cm} print(temp)\\
+  \hspace{1cm} dev.off()\\
+  \}
+\\
+\hline
+\end{tabular}
+\end{flushleft}
+\item Source code R xuất hình thể hiện xác suất tích lũy thời gian hoàn thành BX Củ Chi - BX An Sương\\
+\begin{flushleft}
+\begin{tabular}{ |l| }
+\hline
+\textit{\#set your working directory where your file data locates}\\
+setwd("/home/thuy/workspace/Preprocess")\\
+y = read.csv("CC\_AS\_Rep.csv",header=FALSE)\$V1\\
+p = ecdf(y)\\
+plot(p,\\
+\hspace{1cm} xlab = 'Thời gian hoàn thành', \\
+\hspace{1cm} ylab = 'Xác suất tích lũy', \\
+\hspace{1cm} main = 'Xác suất tích lũy thời gian hoàn thành từ BX Củ Chi đến BX An Sương'
+)\\
+abline(v = 45, h = 0.83773583,col="red",lwd=2, lty=2)\\
+legend(45, 0.83773583, '84\% tại điểm 45', box.lwd = 0)\\
+abline(v = 48, h = 0.9554717,col="blue",lwd=2, lty=2)\\
+legend(48, 0.9554717, '96\% tại điểm 48', box.lwd = 0)\\ 
+\hline
+\end{tabular}
+\end{flushleft}
+\item Source code R sắp xếp tăng dần xác suất thời gian hoàn thành BX Củ Chi - BX An Sương\\
+\begin{flushleft}
+\begin{tabular}{ |l| }
+\hline
+\textit{\#set your working directory where your file data locates}\\
+setwd("/home/thuy1/git/predictUsingProbability/Preprocess/")\\
+mydata = read.csv("CC\_AS\_Freq.csv",sep = "|",header=FALSE)[ ,1:2]\\
+\textit{\#set column name for your data}\\
+colnames(mydata) <- c("X1","X2")\\
+X1=mydata\$X1\\
+X2=mydata\$X2\\
+mydata\$X1 <- factor(mydata\$X1, levels = mydata\$X1[order(mydata\$X2)])\\
+library(ggplot2)\\
+ggplot(mydata, aes(x = mydata\$X1, y = mydata\$X2)) +\\
+\hspace{1cm} theme\_bw() + geom\_bar(stat = "identity") + \\
+\hspace{1cm} xlab("Thời gian hoàn thành ") +\\
+\hspace{1cm} ylab("Tần số xuất hiện") \\
+\hline
+\end{tabular}
+\end{flushleft}
+
+
+\item Ứng dụng bản demo "Drag And Drop data layer GeoJSON" \footnote{https://developers.google.com/maps/documentation/javascript/examples/layer-data-dragndrop} của Google Map API để kiểm tra lộ trình\\
+\FloatBarrier
+\begin{figure}[h]
+\caption{Ứng dụng bản demo "Drag And Drop data layer GeoJSON"}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{dragAndDrop1.png}
+        \caption{Thả file có định dạng lớp dữ liệu GeoJSon vào bản đồ}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{dragAndDrop2.png}
+        \caption{Lớp dữ liệu GeoJson vừa thả xuất hiện trên bản đồ}
+    \end{subfigure}
+\end{figure}
+\FloatBarrier
+
+\end{enumerate}
+
+
+\clearpage
+\newpage
+\begin{center}{\fontsize{16pt}{1}\selectfont \textbf{LÝ LỊCH TRÍCH NGANG}}\\\end{center}
+\vspace*{0.1cm}Họ và tên: Lê Thị Minh Thùy \\
+\vspace*{0.1cm}Ngày sinh: 22/01/1986 \\
+\vspace*{0.1cm}Nơi sinh: Đồng Nai \\
+\vspace*{0.1cm}Địa chỉ liên lạc: 741 Trương Công Định Phường 9, TP Vũng Tàu \\
+\vspace*{0.1cm}Email: thuyltm2201@gmail.com \\
+\vspace*{0.1cm}\textbf{QUÁ TRÌNH ĐÀO TẠO}\\
+\vspace*{0.5cm}\begin{tabular}{ |c|c|c|c| } 
+\hline
+ Thời gian & Trường đào tạo & Chuyên ngành & Trình độ đào tạo\\
+\hline
+ 2004 – 2009 & Trường Đại học Bách Khoa TP.HCM & Công nghệ thông tin & Cử nhân\\
+\hline 
+ 2013 – 2017 & Trường Đại học Bách Khoa TP.HCM & Khoa học máy tính & Thạc sĩ\\
+\hline
+\end{tabular}\\
+\vspace*{0.5cm}\textbf{QUÁ TRÌNH CÔNG TÁC}\\
+\vspace*{0.5cm}\begin{tabular}{ |c|p{9.8cm}|c| } 
+\hline
+ Thời gian & Đơn vị công tác & Chuyên ngành\\
+\hline
+ 2014 – 2016 & Công ty gia công phần mềm Tường Minh & Lập trình viên\\
+\hline 
+\end{tabular}
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{DANH MỤC KHAM KHẢO}
+\begin{thebibliography}{9}
+\section*{Tài liệu trong nước}
+\bibitem{TKCNUDR}	
+	Người dịch: Nguyễn Văn Minh Mẫn, 
+	\emph{Thống kê Công nghiệp hiện đại với ứng dụng viết trên R, MINITAB và JMP},
+	Nhà xuất bản Bách Khoa Hà Nội,2016, pp.19-131
+\section*{Tài liệu nước ngoài}
+\bibitem{Brockwell_intro}
+	Jiawei Han, Micheline Kamber, Jian Pei (2012),
+	\emph{Data Mining: Concepts and Techniques (3rd ed.)},
+	Morgan Kaufmann Publishers, USA.
+\section*{Website}
+\bibitem{JNBO}
+	\emph{Jenks natural breaks optimization}, truy cập ngày 23 tháng 10 năm 2016,
+	địa chỉ \emph{https://en.wikipedia.org/wiki/Jenks\_natural\_breaks\_optimization}.\\
+	\emph{Jenks natural breaks optimization example}, truy cập ngày 18 tháng 2 năm 2017,
+	địa chỉ \emph{https://www.ehdp.com/vitalnet/breaks-1.htm}.
+\section*{Developer's Website}
+\bibitem{GeoJSON}
+	\emph{Google Maps 3 API - Data Layer: GeoJSON}, truy cập ngày 6 tháng 11 năm 2016,
+	địa chỉ \emph{https://developers.google.com/maps/documentation/javascript/examples/layer-data-style}.	
+\bibitem{DADG}
+	\emph{Google Maps 3 API - Click on feature (from geojson)}, truy cập ngày 6 tháng 11 năm 2016,
+	địa chỉ \emph{http://stackoverflow.com/questions/29309856/google-maps-3-api-click-on-feature-from-geojson-and-check-if-it-contains-loc}.
+\bibitem{DADG}
+	\emph{Google Maps 3 API - Data Layer: Drag and Drop GeoJSON}, truy cập ngày 6 tháng 11 năm 2016,
+	địa chỉ \emph{https://developers.google.com/maps/documentation/javascript/examples/layer-data-dragndrop}.		
+\bibitem{WID}
+	\emph{Google Maps 3 API - Waypoints in directions}, truy cập ngày 6 tháng 11 năm 2016,
+	địa chỉ \emph{https://developers.google.com/maps/documentation/javascript/examples/directions-waypoints}.	
+\bibitem{DM}
+	\emph{Google Maps 3 API - Distance Matrix}, truy cập ngày 6 tháng 11 năm 2016,
+	địa chỉ \emph{https://developers.google.com/maps/documentation/javascript/examples/distance-matrix}.	
+\end{thebibliography}
+\pagebreak
+\end{document}
+
