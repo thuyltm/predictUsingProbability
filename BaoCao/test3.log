@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  19 FEB 2017 21:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  20 FEB 2017 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1025,30 +1025,43 @@ Overfull \hbox (26.27618pt too wide) in paragraph at lines 118--122
 ]
 Ch\uhorn \ohorn ng 1.
 
-Overfull \hbox (6.50323pt too wide) in paragraph at lines 156--156
+Overfull \hbox (6.50323pt too wide) in paragraph at lines 155--155
 \T5/cmr/m/n/10 kàp ti¸n ^^_ë cho qu¢ng ^^_÷íng cán l¤i hay khæng. Möc ^^_½ch Lu
 ªn V«n: dòng To¡n ^^_ành l÷ñng kinh nghi»m 
+ []
+
+
+Overfull \hbox (4.03162pt too wide) in paragraph at lines 160--160
+\T5/cmr/m/n/10 ^^_½ch ^^_óng gií hay tr¹ gií (bi¸n cè B) cho di chuyºn 2/3 ch°n
+g cõa tuy¸n ^^_i cè ^^_ành tø b¸n xe An S÷ìng 
+ []
+
+
+Overfull \hbox (0.15508pt too wide) in paragraph at lines 160--160
+\T5/cmr/m/n/10 ^^_¸n b¸n xe Cõ Chi (bi¸n cè A), v¼ khi ta quan s¡t bi¸n cè A x£
+y ra v  câ x¡c su§t câ ^^_i·u ki»n $\U/msb/m/n/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/
+it/10 A\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 )$ 
  []
 
 [1
 
 ] [2]
 Ch\uhorn \ohorn ng 2.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 178.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 180.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 178.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 180.
 
-Overfull \hbox (2.20486pt too wide) in paragraph at lines 180--181
+Overfull \hbox (2.20486pt too wide) in paragraph at lines 182--183
 []\T5/cmr/m/n/10 Mët v½ dö kh¡c, tªp t§t c£ c¡c chuy¸n xe buþt tø B¸n xe An S÷ì
 ng ^^_¸n B¸n xe Cõ Chi cõa tuy¸n 
  []
 
 
-Overfull \hbox (8.61383pt too wide) in paragraph at lines 184--184
+Overfull \hbox (8.61383pt too wide) in paragraph at lines 186--186
 \T5/cmr/m/n/10 Nh÷ vªy, trong To¡n Thèng K¶, tçn t¤i c¡c ph÷ìng ph¡p nh÷ ph÷ìng
  ph¡p th½ nghi»m thèng k¶, ph÷ìng 
  []
@@ -1056,182 +1069,182 @@ Overfull \hbox (8.61383pt too wide) in paragraph at lines 184--184
 [3
 
 ]
-Overfull \hbox (10.0857pt too wide) in paragraph at lines 218--219
+Overfull \hbox (10.0857pt too wide) in paragraph at lines 220--221
 \T5/cmr/m/n/10 x¡c su§t g¡n b§t ký mët kho£ng tªp con cõa S mët x¡c su§t b¬ng c
 hi·u d i cõa nâ. Cho A = (19.5,20.1), 
  []
 
 [4]
-Overfull \hbox (7.63538pt too wide) in paragraph at lines 249--250
+Overfull \hbox (7.63538pt too wide) in paragraph at lines 251--252
 \T5/cmr/m/n/10 cè B$[]$. Sau khi quan s¡t A ta chuyºn ^^_êi c¡c x¡c su§t ti¶n n
 ghi»m cõa B$[]$ th nh c¡c x¡c su§t hªu nghi»m 
  []
 
 [5] [6] [7] [8]
-Overfull \hbox (35.30176pt too wide) in paragraph at lines 443--443
+Overfull \hbox (35.30176pt too wide) in paragraph at lines 445--445
 []\T5/cmr/m/n/10 Ta th§y x¡c su§t bi¸n cè (age = youth, in-come = medium, stu-d
 ent = yes, credit_rating = fair,buys_computer 
  []
 
 
-Overfull \hbox (24.77655pt too wide) in paragraph at lines 443--443
+Overfull \hbox (24.77655pt too wide) in paragraph at lines 445--445
 \T5/cmr/m/n/10 = yes) x£y ra cao hìn so vîi x¡c su§t bi¸n cè (age = youth, in-c
 ome = medium, stu-dent = yes, credit_rating 
  []
 
 
-Overfull \hbox (16.64175pt too wide) in paragraph at lines 443--443
+Overfull \hbox (16.64175pt too wide) in paragraph at lines 445--445
 \T5/cmr/m/n/10 = fair, buys_computer = no). Do ^^_â x$[]$ = (age = youth, in-co
 me = medium, stu-dent = yes, credit_rating 
  []
 
 [9]
 Ch\uhorn \ohorn ng 3.
-<images/test1.png, id=74, 481.8pt x 481.8pt>
+<images/test1.png, id=75, 481.8pt x 481.8pt>
 File: images/test1.png Graphic file (type png)
  <use images/test1.png>
-Package pdftex.def Info: images/test1.png used on input line 463.
+Package pdftex.def Info: images/test1.png used on input line 465.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test2.png, id=75, 481.8pt x 481.8pt>
+<images/test2.png, id=76, 481.8pt x 481.8pt>
 File: images/test2.png Graphic file (type png)
  <use images/test2.png>
-Package pdftex.def Info: images/test2.png used on input line 467.
+Package pdftex.def Info: images/test2.png used on input line 469.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test3.png, id=76, 481.8pt x 481.8pt>
+<images/test3.png, id=77, 481.8pt x 481.8pt>
 File: images/test3.png Graphic file (type png)
  <use images/test3.png>
-Package pdftex.def Info: images/test3.png used on input line 471.
+Package pdftex.def Info: images/test3.png used on input line 473.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test4.png, id=77, 481.8pt x 481.8pt>
+<images/test4.png, id=78, 481.8pt x 481.8pt>
 File: images/test4.png Graphic file (type png)
  <use images/test4.png>
-Package pdftex.def Info: images/test4.png used on input line 475.
+Package pdftex.def Info: images/test4.png used on input line 477.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test5.png, id=78, 481.8pt x 481.8pt>
+<images/test5.png, id=79, 481.8pt x 481.8pt>
 File: images/test5.png Graphic file (type png)
  <use images/test5.png>
-Package pdftex.def Info: images/test5.png used on input line 480.
+Package pdftex.def Info: images/test5.png used on input line 482.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test6.png, id=79, 481.8pt x 481.8pt>
+<images/test6.png, id=80, 481.8pt x 481.8pt>
 File: images/test6.png Graphic file (type png)
  <use images/test6.png>
-Package pdftex.def Info: images/test6.png used on input line 484.
+Package pdftex.def Info: images/test6.png used on input line 486.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test7.png, id=80, 481.8pt x 481.8pt>
+<images/test7.png, id=81, 481.8pt x 481.8pt>
 File: images/test7.png Graphic file (type png)
  <use images/test7.png>
-Package pdftex.def Info: images/test7.png used on input line 488.
+Package pdftex.def Info: images/test7.png used on input line 490.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test8.png, id=81, 481.8pt x 481.8pt>
+<images/test8.png, id=82, 481.8pt x 481.8pt>
 File: images/test8.png Graphic file (type png)
  <use images/test8.png>
-Package pdftex.def Info: images/test8.png used on input line 492.
+Package pdftex.def Info: images/test8.png used on input line 494.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test9.png, id=82, 481.8pt x 481.8pt>
+<images/test9.png, id=83, 481.8pt x 481.8pt>
 File: images/test9.png Graphic file (type png)
  <use images/test9.png>
-Package pdftex.def Info: images/test9.png used on input line 497.
+Package pdftex.def Info: images/test9.png used on input line 499.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test10.png, id=83, 481.8pt x 481.8pt>
+<images/test10.png, id=84, 481.8pt x 481.8pt>
 File: images/test10.png Graphic file (type png)
  <use images/test10.png>
-Package pdftex.def Info: images/test10.png used on input line 501.
+Package pdftex.def Info: images/test10.png used on input line 503.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test11.png, id=84, 481.8pt x 481.8pt>
+<images/test11.png, id=85, 481.8pt x 481.8pt>
 File: images/test11.png Graphic file (type png)
  <use images/test11.png>
-Package pdftex.def Info: images/test11.png used on input line 505.
+Package pdftex.def Info: images/test11.png used on input line 507.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test12.png, id=85, 481.8pt x 481.8pt>
+<images/test12.png, id=86, 481.8pt x 481.8pt>
 File: images/test12.png Graphic file (type png)
  <use images/test12.png>
-Package pdftex.def Info: images/test12.png used on input line 509.
+Package pdftex.def Info: images/test12.png used on input line 511.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test13.png, id=86, 481.8pt x 481.8pt>
+<images/test13.png, id=87, 481.8pt x 481.8pt>
 File: images/test13.png Graphic file (type png)
  <use images/test13.png>
-Package pdftex.def Info: images/test13.png used on input line 514.
+Package pdftex.def Info: images/test13.png used on input line 516.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test14.png, id=87, 481.8pt x 481.8pt>
+<images/test14.png, id=88, 481.8pt x 481.8pt>
 File: images/test14.png Graphic file (type png)
  <use images/test14.png>
-Package pdftex.def Info: images/test14.png used on input line 518.
+Package pdftex.def Info: images/test14.png used on input line 520.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test15.png, id=88, 481.8pt x 481.8pt>
+<images/test15.png, id=89, 481.8pt x 481.8pt>
 File: images/test15.png Graphic file (type png)
  <use images/test15.png>
-Package pdftex.def Info: images/test15.png used on input line 522.
+Package pdftex.def Info: images/test15.png used on input line 524.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test16.png, id=89, 481.8pt x 481.8pt>
+<images/test16.png, id=90, 481.8pt x 481.8pt>
 File: images/test16.png Graphic file (type png)
  <use images/test16.png>
-Package pdftex.def Info: images/test16.png used on input line 526.
+Package pdftex.def Info: images/test16.png used on input line 528.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test17.png, id=90, 481.8pt x 481.8pt>
+<images/test17.png, id=91, 481.8pt x 481.8pt>
 File: images/test17.png Graphic file (type png)
  <use images/test17.png>
-Package pdftex.def Info: images/test17.png used on input line 531.
+Package pdftex.def Info: images/test17.png used on input line 533.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test18.png, id=91, 481.8pt x 481.8pt>
+<images/test18.png, id=92, 481.8pt x 481.8pt>
 File: images/test18.png Graphic file (type png)
  <use images/test18.png>
-Package pdftex.def Info: images/test18.png used on input line 535.
+Package pdftex.def Info: images/test18.png used on input line 537.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test19.png, id=92, 481.8pt x 481.8pt>
+<images/test19.png, id=93, 481.8pt x 481.8pt>
 File: images/test19.png Graphic file (type png)
  <use images/test19.png>
-Package pdftex.def Info: images/test19.png used on input line 539.
+Package pdftex.def Info: images/test19.png used on input line 541.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test20.png, id=93, 481.8pt x 481.8pt>
+<images/test20.png, id=94, 481.8pt x 481.8pt>
 File: images/test20.png Graphic file (type png)
  <use images/test20.png>
-Package pdftex.def Info: images/test20.png used on input line 543.
+Package pdftex.def Info: images/test20.png used on input line 545.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
 
-LaTeX Warning: Float too large for page by 40.89098pt on input line 546.
+LaTeX Warning: Float too large for page by 40.89098pt on input line 548.
 
-<images/test21.png, id=94, 481.8pt x 481.8pt>
+<images/test21.png, id=95, 481.8pt x 481.8pt>
 File: images/test21.png Graphic file (type png)
  <use images/test21.png>
-Package pdftex.def Info: images/test21.png used on input line 550.
+Package pdftex.def Info: images/test21.png used on input line 552.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test22.png, id=95, 481.8pt x 481.8pt>
+<images/test22.png, id=96, 481.8pt x 481.8pt>
 File: images/test22.png Graphic file (type png)
  <use images/test22.png>
-Package pdftex.def Info: images/test22.png used on input line 554.
+Package pdftex.def Info: images/test22.png used on input line 556.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test23.png, id=96, 481.8pt x 481.8pt>
+<images/test23.png, id=97, 481.8pt x 481.8pt>
 File: images/test23.png Graphic file (type png)
  <use images/test23.png>
-Package pdftex.def Info: images/test23.png used on input line 558.
+Package pdftex.def Info: images/test23.png used on input line 560.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test24.png, id=97, 481.8pt x 481.8pt>
+<images/test24.png, id=98, 481.8pt x 481.8pt>
 File: images/test24.png Graphic file (type png)
  <use images/test24.png>
-Package pdftex.def Info: images/test24.png used on input line 562.
+Package pdftex.def Info: images/test24.png used on input line 564.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
  [10
 
@@ -1242,27 +1255,27 @@ es/test8.png> <./images/test9.png> <./images/test10.png> <./images/test11.png>
 <./images/test12.png> <./images/test13.png> <./images/test14.png> <./images/tes
 t15.png> <./images/test16.png> <./images/test17.png> <./images/test18.png> <./i
 mages/test19.png> <./images/test20.png>]
-<images/finishTime_CC_AS_Order.png, id=126, 440.39531pt x 371.88937pt>
+<images/finishTime_CC_AS_Order.png, id=127, 440.39531pt x 371.88937pt>
 File: images/finishTime_CC_AS_Order.png Graphic file (type png)
 
 <use images/finishTime_CC_AS_Order.png>
 Package pdftex.def Info: images/finishTime_CC_AS_Order.png used on input line 5
-72.
+74.
 (pdftex.def)             Requested size: 226.48395pt x 191.24994pt.
 
-<images/finishTime_CC_AS_ACC_Line.png, id=127, 550.30594pt x 371.88937pt>
+<images/finishTime_CC_AS_ACC_Line.png, id=128, 550.30594pt x 371.88937pt>
 File: images/finishTime_CC_AS_ACC_Line.png Graphic file (type png)
 
 <use images/finishTime_CC_AS_ACC_Line.png>
 Package pdftex.def Info: images/finishTime_CC_AS_ACC_Line.png used on input lin
-e 579.
+e 581.
 (pdftex.def)             Requested size: 317.07614pt x 214.283pt.
  [12 <./images/test21.png> <./images/test22.png> <./images/test23.png> <./image
 s/test24.png> <./images/finishTime_CC_AS_Order.png> <./images/finishTime_CC_AS_
 ACC_Line.png (PNG copy)>] [13]
 Ch\uhorn \ohorn ng 4.
 
-Overfull \hbox (5.47571pt too wide) in paragraph at lines 590--591
+Overfull \hbox (5.47571pt too wide) in paragraph at lines 592--593
 \T5/cmr/m/n/10 gi£i câ thº cho c¥u häi "Dü b¡o x¡c su§t xe v· tr¤m ^^_óng gií k
 hi xe ^^_¢ ^^_i ^^_÷ñc mët 2/3 kho£ng ^^_÷íng"  
  []
@@ -1273,41 +1286,41 @@ hi xe ^^_¢ ^^_i ^^_÷ñc mët 2/3 kho£ng ^^_÷íng"
 Ch\uhorn \ohorn ng 5.
 [15
 
-] [16] <images/dragAndDrop1.png, id=148, 1149.29375pt x 656.4525pt>
+] [16] <images/dragAndDrop1.png, id=149, 1149.29375pt x 656.4525pt>
 File: images/dragAndDrop1.png Graphic file (type png)
 
 <use images/dragAndDrop1.png>
-Package pdftex.def Info: images/dragAndDrop1.png used on input line 702.
+Package pdftex.def Info: images/dragAndDrop1.png used on input line 704.
 (pdftex.def)             Requested size: 181.18439pt x 103.48196pt.
 
-<images/dragAndDrop2.png, id=149, 792.9625pt x 675.52374pt>
+<images/dragAndDrop2.png, id=150, 792.9625pt x 675.52374pt>
 File: images/dragAndDrop2.png Graphic file (type png)
 
 <use images/dragAndDrop2.png>
-Package pdftex.def Info: images/dragAndDrop2.png used on input line 706.
+Package pdftex.def Info: images/dragAndDrop2.png used on input line 708.
 (pdftex.def)             Requested size: 181.18439pt x 154.34673pt.
  [17 <./images/dragAndDrop1.png> <./images/dragAndDrop2.png>] [18
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 757--758
+Underfull \hbox (badness 10000) in paragraph at lines 759--760
 []\T5/cmr/m/it/10 Jenks nat-u-ral breaks op-ti-miza-tion\T5/cmr/m/n/10 , truy c
 ªp ng y 23 th¡ng 10 n«m 2016, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 759--761
+Underfull \hbox (badness 2103) in paragraph at lines 761--763
 []\T5/cmr/m/it/10 Jenks nat-u-ral breaks op-ti-miza-tion ex-am-ple\T5/cmr/m/n/1
 0 , truy cªp ng y 18 th¡ng 2 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 763--765
+Underfull \hbox (badness 1087) in paragraph at lines 765--767
 []\T5/cmr/m/it/10 Google Maps 3 API - Data Layer: Geo-J-SON\T5/cmr/m/n/10 , tru
 y cªp ng y 6 th¡ng 11 n«m 2016, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 4805) in paragraph at lines 775--777
+Underfull \hbox (badness 4805) in paragraph at lines 777--779
 []\T5/cmr/m/it/10 Google Maps 3 API - Dis-tance Ma-trix\T5/cmr/m/n/10 , truy cª
 p ng y 6 th¡ng 11 n«m 2016, ^^_àa ch¿ 
  []
@@ -1336,18 +1349,19 @@ f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/
-vnbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/vntex/vnr/vnr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/
-vnr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb></usr/share/texlive/texmf
--dist/fonts/type1/vntex/vnr/vnti10.pfb>
-Output written on test3.pdf (27 pages, 1213502 bytes).
+sfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/symbols/msbm7.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vn
+bx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/vntex/vnr/vnr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vn
+r7.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/vntex/vnr/vnti10.pfb>
+Output written on test3.pdf (27 pages, 1217503 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
+ 224 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
