@@ -25,6 +25,8 @@
 \usepackage{multirow}
 \usepackage{wrapfig}
 \usepackage{subcaption}
+\setcounter{tocdepth}{1} % for \tableofcontents
+
 
 \makeatletter% http://tex.stackexchange.com/questions/29517/forcing-new-line-after-item-number-in-enumerate-environment/29518#29518
 \def\step{%
@@ -153,11 +155,11 @@ Lê Thị Minh Thùy
 \chapter{GIỚI THIỆU ĐỀ TÀI} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Giới thiệu đề tài}
 Theo nghiệp vụ xe buýt, các bác tài xế chỉ có khoảng thời gian cố định cộng thêm linh động trễ thêm vài phút để hoàn tất một lộ trình đã vạch sẵn. Khi lái xe lâu năm trên một lộ trình giống nhau, các bác tài xế khi đi được một phần đoạn đường, họ sẽ ước lượng quãng thời gian còn lại có hoàn thành kịp tiến độ cho quãng đường còn lại hay không. Mục đích Luận Văn: dùng Toán định lượng kinh nghiệm nhắm chừng này.\\
-Có dữ liệu di chuyển 2/3 chặng đi từ bến xe An Sương đến bến xe Củ Chi của tuyến xe buýt 74 và kết quả tương ứng về trạm đích: đúng giờ hay trễ giờ. Sử dụng thao tác khai phá dữ liệu học có quan sát, phân chia dữ liệu thành 2 phần: phần để học có kèm theo kết quả về trạm đích, phần để kiểm tra đã loại bỏ nhãn đúng giờ hay trễ giờ tại trạm đích.\\
-Do quan sát kích thước mẫu giới hạn, ngẫu nhiên các chuyến di chuyển từ bến xe An Sương đến bến xe Củ Chi (tuyến xe buýt 74 ngẫu nhiên được chọn) kèm theo kết quả về trạm đích đúng giờ hay trễ giờ tương ứng. Vì kích thước mẫu giới hạn, không sử dụng sức mạnh tính toán hiệu năng cao trên kích thước dữ liệu siêu lớn, Luận Văn dùng kiến thức Thống Kê, làm việc trên kích thước mẫu chấp nhận được so với trên tổng thể quá to lớn nhưng  đủ rút ra đặc trưng cho tổng thể để giải quyết bài toán trên.\\
+Có dữ liệu di chuyển 2/3 chặng đi từ BX Củ Chi - BX An Sương của tuyến xe buýt 74 và kết quả tương ứng về trạm đích: đúng giờ hay trễ giờ. Sử dụng thao tác khai phá dữ liệu học có quan sát, phân chia dữ liệu thành 2 phần: phần để học có kèm theo kết quả về trạm đích, phần để kiểm tra đã loại bỏ nhãn đúng giờ hay trễ giờ tại trạm đích.\\
+Do quan sát kích thước mẫu giới hạn, ngẫu nhiên các chuyến di chuyển từ BX Củ Chi - BX An Sương (tuyến xe buýt 74 ngẫu nhiên được chọn) kèm theo kết quả về trạm đích đúng giờ hay trễ giờ tương ứng. Vì kích thước mẫu giới hạn, không sử dụng sức mạnh tính toán hiệu năng cao trên kích thước dữ liệu siêu lớn, Luận Văn dùng kiến thức Thống Kê, làm việc trên kích thước mẫu chấp nhận được so với trên tổng thể quá to lớn nhưng  đủ rút ra đặc trưng cho tổng thể để giải quyết bài toán trên.\\
 Ngoài ra, Luận Văn dùng kiến thức xác suất, con số đo khả năng một sự kiện xảy ra vì ta chấp nhận dự đoán dựa trên 2/3 chặng đường ban đầu, trong khi đó 1/3 chặng đường sau vẫn có tác động đến kết quả dự đoán. Khi dùng xác suất, ta chấp nhận bài toán có sự tham gia không chắc chắn, có thay đổi do ngẫu nhiên.\\
 Trên thực tế rất hiếm hai chuyến xe cùng lộ trình có những bước di chuyển cách nhau 20 giây giống nhau hoàn toàn, do đó Luận Văn dùng ước lượng tham số trong kiến thức Thống Kê để mô hình hóa di chuyển.\\  
-Công thức xác suất Bayes $\mathbb{P}(B|A) = \frac{\mathbb{P}(B) \cdot \mathbb{P}(A|B)}{\mathbb{P}(A)}$ phù hợp để giải bài toán dán nhãn dự đoán về trạm đích đúng giờ hay trễ giờ (biến cố B) cho di chuyển 2/3 chặng của tuyến đi cố định từ bến xe An Sương đến bến xe Củ Chi (biến cố A), vì khi ta quan sát biến cố A xảy ra và có xác suất có điều kiện $\mathbb{P}(A|B)$ được biết trước, lý thuyết Bayes cho ta cách tính để đánh giá xác suất một sự kiện B chưa quan sát được xảy ra sau khi biến cố A đã xảy ra.\\
+Công thức xác suất Bayes $\mathbb{P}(B|A) = \frac{\mathbb{P}(B) \cdot \mathbb{P}(A|B)}{\mathbb{P}(A)}$ phù hợp để giải bài toán dán nhãn dự đoán về trạm đích đúng giờ hay trễ giờ (biến cố B) cho di chuyển 2/3 chặng của tuyến đi cố định từ BX Củ Chi - BX An Sương (biến cố A), vì khi ta quan sát biến cố A xảy ra và có xác suất có điều kiện $\mathbb{P}(A|B)$ được biết trước, lý thuyết Bayes cho ta cách tính để đánh giá xác suất một sự kiện B chưa quan sát được xảy ra sau khi biến cố A đã xảy ra.\\
 Tổng kết lại, mục đích Luận Văn: dùng kiến thức Thống kê, xác suất, công thức xác suất Bayes để mô hình dữ liệu học, dùng mô hình này để dán nhãn đúng giờ hay trễ giờ cho dữ liệu kiểm tra.\\
 
 \section{Động cơ}
@@ -168,7 +170,7 @@ Luận Văn không đặt mục tiêu tham vọng giải bài toán này có th�
 Ngoài ra, người lái xe phải hiểu rằng kết quả dự đoán về trạm đích đúng giờ chỉ mang tính xác suất. Ví dụ, sau khi đi được 2/3 chặng, bác tài xế nhận được kết quả xác suất 98.5\% xe về trạm đúng giờ. Nhưng gặp sự cố tại 1/3 chặng đường cuối, tình trạng kẹt xe nặng, xe về trạm không đúng giờ như kết quả thông báo trên với con số xác suất đúng giờ xảy ra rất lớn 98.5\%. Bác tài xế phải chấp nhận xác suất 1.5\% về trạm trễ giờ vẫn có khả năng xảy ra do bác tài xế không thể điều khiển tình trạng xe chạy tại 1/3 chặng đường cuối. Nhưng các con số xác suất được thông báo cho bác tài vẫn có ý nghĩa chừng mực nếu bác tài xế biết rằng các con số xác suất này định lượng kinh nghiệm những chuyến di chuyển trong quá khứ để dự báo tương lai cho chuyến đi hiện tại. Khi đã hiểu được định nghĩa xác suất, hiểu được các sự kiện xảy ra trên thực tế không bao giờ được dự đoán chắc chắn 100\% xảy ra, mà chỉ dự đoán khả năng có thể xảy ra, người đọc chấp nhận bài toán được giải trong Luận Văn này phần nào có ý nghĩa.\\
 Tóm lại, tác giả nhắc lại mục tiêu rất cụ thể của Luận Văn này: Dùng Toán Thống Kê định lượng kinh nghiệm di chuyển trên cùng một lộ trình để dán nhãn về trạm đúng giờ hay trễ giờ.
 \section{Phương pháp nghiên cứu}
-Phương pháp nghiên cứu là thu thập dữ liệu di chuyển hữu hạn, quan sát các bước di chuyển được ghi nhận cách nhau 20 giây trên 2/3 lộ trình đi từ bến xe An Sương đến bến xe Củ Chi, trực quan hóa dữ liệu này, cộng thêm kiến thức quan sát thực tế, nếu có nhiều bước di chuyển dài trong từng khoảng 20 giây thì chuyến đi đó có khả năng về trạm đúng giờ cộng thêm kết quả dán nhãn về trạm đúng giờ hay trễ giờ chỉ cho ta biết khả năng xảy ra, chứ không phải chắc chắn. Những kiến thức này giúp ta nghĩ đến kiến thức Thống Kê, xác suất chủ đạo và từ đó từng bước tìm thuật toán, công thức phù hợp để giải. Tóm lại, nhờ quan sát dữ liệu cho ta định hướng cách tiếp cận, cách nghiên cứu.  
+Phương pháp nghiên cứu là thu thập dữ liệu di chuyển hữu hạn, quan sát các bước di chuyển được ghi nhận cách nhau 20 giây trên 2/3 lộ trình đi từ BX Củ Chi - BX An Sương, trực quan hóa dữ liệu này, cộng thêm kiến thức quan sát thực tế, nếu có nhiều bước di chuyển dài trong từng khoảng 20 giây thì chuyến đi đó có khả năng về trạm đúng giờ cộng thêm kết quả dán nhãn về trạm đúng giờ hay trễ giờ chỉ cho ta biết khả năng xảy ra, chứ không phải chắc chắn. Những kiến thức này giúp ta nghĩ đến kiến thức Thống Kê, xác suất chủ đạo và từ đó từng bước tìm thuật toán, công thức phù hợp để giải. Tóm lại, nhờ quan sát dữ liệu cho ta định hướng cách tiếp cận, cách nghiên cứu.  
 \section{Một số kết quả thu được}
 \section{Cấu trúc luận văn}
 \pagebreak
@@ -178,10 +180,10 @@ Phương pháp nghiên cứu là thu thập dữ liệu di chuyển hữu hạn,
 Kham khảo trang 19, 24, 25 chương 2 từ sách \cite{TKCNUDR}
 \begin{itemize}
 \item Một \textbf{tổng thể} (còn được gọi là quần thể) thống kê là một tập các phần tử có một thuộc tính chung nhất định. 
-\\Ví dụ, tập hợp tất cả các chuyến xe buýt từ Bến xe An Sương đến Bến xe Củ Chi của tuyến 74 vào ngày 17 tháng 10 năm 2016 là một tổng thể hữu hạn và có thực.\\
-Một ví dụ khác, tập tất cả các chuyến xe buýt từ Bến xe An Sương đến Bến xe Củ Chi của tuyến 74 có thể về trạm trễ trong điều kiện: mưa nhiều, đường ngập, hẹp, rào chắn lô cốt, quá tải xe máy xuyên suốt cả ngày và va chạm xe máy thường xuyên. Tổng thể này là vô hạn và giả định.
+\\Ví dụ, tập hợp tất cả các chuyến xe buýt từ BX Củ Chi - BX An Sương của tuyến 74 vào ngày 17 tháng 10 năm 2016 là một tổng thể hữu hạn và có thực.\\
+Một ví dụ khác, tập tất cả các chuyến xe buýt từ BX Củ Chi - BX An Sương của tuyến 74 có thể về trạm trễ trong điều kiện: mưa nhiều, đường ngập, hẹp, rào chắn lô cốt, quá tải xe máy xuyên suốt cả ngày và va chạm xe máy thường xuyên. Tổng thể này là vô hạn và giả định.
 \item Một \textbf{mẫu} là một tập hợp các phần tử trong một tổng thể nhất định. Một mẫu thường được chọn ra từ một tổng thể với mục tiêu quan sát các đặc tính của tổng thể ấy và đưa ra các quyết định thống kê có liên quan đến các đặc trưng tương ứng. \\
-Chẳng hạn, xét vài trăm triệu chuyến xe từ Bến xe An Sương đến Bến xe Củ Chi của tuyến 74, công ty quản lý muốn tìm ra được đặc trưng tình trạng di chuyển 2/3 chặng đường như thế nào để cảnh báo sớm tình trạng đến đích trễ cho các bác tài xế. Nếu không sử dụng sức mạnh tính toán của điện toán đám mây, chỉ có giới hạn sức tính toán của con người, những nhà thống kê sẽ rút ra đặc trưng của vài trăm triệu dữ liệu bằng cách làm việc trên mẫu ngẫu nhiên rút ra từ vài trăm triệu dữ liệu trên. Những thủ tục lấy mẫu như vậy để đưa ra các quyết định thống kê được gọi là phương pháp lấy mẫu chấp nhận. Ngoài ra, Toán Thống Kê cung cấp phương pháp ước lượng bằng cách sử dụng các mẫu chọn ra từ các tổng thể hữu hạn, bao gồm cả việc lấy mẫu ngẫu nhiên có hoàn lại và lấy mẫu ngẫu nhiên không hoàn lại.\\
+Chẳng hạn, xét vài trăm triệu chuyến xe từ BX Củ Chi - BX An Sương của tuyến 74, công ty quản lý muốn tìm ra được đặc trưng tình trạng di chuyển 2/3 chặng đường như thế nào để cảnh báo sớm tình trạng đến đích trễ cho các bác tài xế. Nếu không sử dụng sức mạnh tính toán của điện toán đám mây, chỉ có giới hạn sức tính toán của con người, những nhà thống kê sẽ rút ra đặc trưng của vài trăm triệu dữ liệu bằng cách làm việc trên mẫu ngẫu nhiên rút ra từ vài trăm triệu dữ liệu trên. Những thủ tục lấy mẫu như vậy để đưa ra các quyết định thống kê được gọi là phương pháp lấy mẫu chấp nhận. Ngoài ra, Toán Thống Kê cung cấp phương pháp ước lượng bằng cách sử dụng các mẫu chọn ra từ các tổng thể hữu hạn, bao gồm cả việc lấy mẫu ngẫu nhiên có hoàn lại và lấy mẫu ngẫu nhiên không hoàn lại.\\
 \end{itemize}
 Như vậy, trong Toán Thống Kê, tồn tại các phương pháp như phương pháp thí nghiệm thống kê, phương pháp lấy mẫu chấp nhận, phương pháp kiểm định giả thuyết,.. để từ mẫu ngẫu nhiên đủ rút ra đặc trưng của tổng thể với xác suất xảy ra cao. Nhưng để thực hiện được điều này, nó vượt quá kiến thức kỹ sư máy tính. Cho nên Luận Văn này không đặt tham vọng, giải trên mẫu có thể kết luận trên tổng thể với xác suất xảy ra cao.\\
 Ngoài ra, tôi có đưa thêm một số giả định trong khi xem xét mẫu được lấy ngẫu nhiên trong Luận Văn: 
@@ -191,7 +193,7 @@ Ngoài ra, tôi có đưa thêm một số giả định trong khi xem xét mẫ
 \end{itemize}  
 \subsection*{Biến cố và không gian mẫu: Diễn tả hình thức của thí nghiệm}
 Kham khảo trang 52, 55, 59, 60, 61, 63 chương 3 từ sách \cite{TKCNUDR}
-Ta thấy cùng một tuyến đường xe buýt 74 cố định, từ bến xe An Sương - bến xe Củ Chi, các chuyến xe trong cùng tháng 9 có thời gian hoàn thành khác nhau, không biết trước được một cách chắc chắn. Nguyên nhân là do những yếu tố bên ngoài như mặt đường, thời tiết, giờ cao điểm, thấp điểm,..đều có ảnh hưởng đến kết quả. Toán Thống Kê giúp ta có phương pháp làm việc trên dữ liệu có tính ngẫu nhiên như vậy.\\
+Ta thấy cùng một tuyến đường xe buýt 74 cố định, từ BX Củ Chi - BX An Sương, các chuyến xe trong cùng tháng 9 có thời gian hoàn thành khác nhau, không biết trước được một cách chắc chắn. Nguyên nhân là do những yếu tố bên ngoài như mặt đường, thời tiết, giờ cao điểm, thấp điểm,..đều có ảnh hưởng đến kết quả. Toán Thống Kê giúp ta có phương pháp làm việc trên dữ liệu có tính ngẫu nhiên như vậy.\\
 \textbf{Không gian mẫu} là tập hợp của tất cả các kết cục có thể của một thí nghiệm cụ thể. Chẳng hạn, thí nghiệm tung một đồng xu, kết quả ngẫu nhiên là ngửa (Head, $\mathcal{H}$) hoặc sấp (Tail, $\mathcal{T}$), cho ta không gian mẫu $\mathcal{S= \{H,T}\}$. Các \textbf{biến cố sơ cấp} hay \textbf{điểm mẫu} là những phần tử của $\mathcal{S}$.\\
 \subsection*{Xác suất của biến cố}
 Thông thường chúng ta gộp tất cả các biến cố vào một tập $\mathcal{Q}$ := $\{ A: A \subset \mathcal{S}$ là một biến cố$\}$, gọi là tập các biến cố.\\
@@ -298,7 +300,52 @@ p$_k$:=$p(x_k$)=$\mathbb{P}$[X=$x_k$] & $p_0$ & $p_1$ & ... & $p_{m-1}$ & $p_m$\
 \specialrule{.1em}{.05em}{.05em} 
 \end{tabular}
 \end{center}
-
+\textbf{Hàm tích lũy xác suất} của X được tính bằng cách lấy tổng các xác suất của các giá trị $x_k \in \mathcal{S}_X$ mà $x_k \leq x$, đó là 
+\[
+F_{X}(x) = \mathbb{P}[X\leq x] = \mathbb{P}[{\omega \in S: X(\omega) \leq x}]=\sum_{x_k\leq x} p(x_k)
+ = \sum_{x_k\leq x} p_k,   x \in \mathbb{R}
+\] 
+\textbf{Tham số đặc trưng của biến rời rạc} X với hàm mật độ $p_k = p(x_k)$, tập giá trị $\mathcal{S}_X$:
+\begin{itemize}
+\item Kỳ vọng (hay trung bình) $\mu$ và phương sai V[X] = $\sigma^2$ của X cho bởi
+\[
+\mu = \mathbb{E}[X] = \sum_{x_k \in \mathcal{S}_X} x_k p_k
+\]
+\[
+\sigma^2 = \mathbb{E}[(X-\mu)^2] = \sum_{x_k \in \mathcal{S}_X} [x_k - \mu]^2 p_k
+\]
+\item Độ lệch chuẩn của biến X là $\sigma_{X} = \sigma = \sqrt{Var(X)}$
+\end{itemize}
+\subsection*{Biến ngẫu nhiên liên tục}   
+\textbf{Định nghĩa biến ngẫu nhiên liên tục} X(.) là liên tục khi nó có phạm vi bao gồm khoảng con (hay toàn bộ) tập số thực, nghĩa là $\mathcal{S}_X \in \mathbb{R}$. Một cách toán học thì biến X liên tục thì 
+\begin{itemize}
+\item X nhận vô hạn giá trị không đếm được, $\mathcal{S}_X \subset \mathbb{R}$ và 
+\item tồn tại một hàm số không âm $f(u)$ thỏa
+\[
+F(x) = \mathbb{P}(X \leq x) = \int_{-\infty}^{x} f(u)d(u), \infty < x < -\infty 
+\]
+F(x) gọi là hàm phân phối (tích lũy) xác suất (c.d.f) của X, f(u) là hàm mật độ của X\\
+Tính chất của hàm phân phối xác suất F gồm:
+\begin{itemize}
+\item F liên tục, và
+\item $\lim_{x->-\infty}$ F(x)=0, $\lim_{x->-\infty}$F(x)=1
+\item F không giảm, nghĩa là nếu $x$ thì F($x_1$) $\leq$ F($x_2$), và
+\item Quan hệ với f: hàm phân phối xác suất F(x) có đạo hàm $\frac{dF(x)}{dx}$ = f(x)     
+\end{itemize}
+\end{itemize}
+Tính chất của hàm mật độ xác suất f gồm:
+\begin{itemize}
+\item f(u) $\geq$ 0, $\forall$u, hay đường biểu diễn f nằm trên phần dương. Hơn thế $\int_{-\infty}^{\infty} f(u)du$ = 1 = F(x)
+\item Xác suất của biến cố "a $\leq$ X $\leq$ b" là diện tích giới hạn bởi hàm mật độ, trục hoành và 2 đường thẳng u = a và u = b:
+\[
+\mathbb{P}(a \leq X \leq b) = \mathbb{P}(a \le X \le b) = \mathbb{P}(a \leq X \le b) = \int_{a}^{b} f(u)du = F(b) - F(a)
+\] 
+hay là 
+\[
+\mathbb{P}(X \geq b) = \int_{b}^{\infty} f(u)du = 1 - F(b)
+\]
+\item Đạo hàm $f(x) = \frac{dF(x)}{dx}$ có thể không tồn tại ở một số hữu hạn giá trị x, trong khoảng hữu hạn bất kỳ.   
+\end{itemize}
 \subsection*{Ví dụ phân loại dựa vào công thức Bayes}
 \begin{center}
 \begin{tabular}{ cccccc }
@@ -448,6 +495,75 @@ Kham khảo từ \cite{JNBO}
 \section{Thuật toán Kernel Density Estimation (Tùy chọn)}
 \chapter{HIỆN THỰC VÀ THỬ NGHIỆM}
 \section{Dữ liệu nghiên cứu}
+\subsection{Dữ liệu thô}
+Dữ liệu thô là tọa độ vĩ độ, kinh độ và thời điểm xuất hiện tại vị trí đó của xe buýt\\
+Ví dụ 10 dữ liệu thô:\\
+\begin{flushleft}
+\begin{tabular}{ |l|l|l|l| }
+\hline
+&Vĩ độ & Kinh độ & Thời điểm xuất hiện \\ 
+\hline
+1&10.844095 & 106.613688333333 & 2016-09-02 07:25:43 \\ 
+\hline
+2&10.84298 & 106.614991666667 & 2016-09-02 07:26:02 \\
+\hline
+3&10.8424316666667 & 106.615195 & 2016-09-02 07:26:22 \\
+\hline
+4&10.8426816666667 & 106.615596666667 & 2016-09-02 07:26:42 \\
+\hline
+5&10.84309 & 106.615203333333 & 2016-09-02 07:27:02 \\
+\hline
+6&10.846395 & 106.61304 & 2016-09-02 07:30:48 \\
+\hline
+7&10.84664 & 106.612861666667 & 2016-09-02 07:31:01 \\
+\hline
+8&10.8475833333333 & 106.612253333333 & 2016-09-02 07:31:21 \\
+\hline
+9&10.8488916666667 & 106.611426666667 & 2016-09-02 07:31:41 \\
+\hline
+10&10.84932 & 106.61117 & 2016-09-02 07:31:53 \\
+\hline 
+\end{tabular}
+\end{flushleft}
+\subsection{Tiền xử lý dữ liệu} 
+Kham khảo \ref{DragAndDrop} tại mục Phụ Lục để lọc ra và kiểm tra dữ liệu đang khảo sát có phải là tuyến đi BX Củ Chi - BX An Sương không.\\ Sau đó kham khảo \ref{tinhkhoangcach} tại mục Phụ Lục để tính mỗi bước di chuyển. Sau đây là ví dụ 10 bước di chuyển đầu tiên trong moojy chuyến đi ngẫu nhiên được chọn\\
+\begin{flushleft}
+\begin{tabular}{|p{1cm}|p{1cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{1cm}|p{1cm}| }
+\hline
+Bước đầu & Bước kế tiếp & Vĩ độ đầu & Kinh độ đầu & Vĩ độ kế tiếp & Kinh độ kế tiếp & Khoảng cách (mét) & Thời gian di chuyển (seconds) \\ 
+\hline
+0 & 1 & 10.971375 & 106.481906666667 & 10.9710116666667 & 106.481858333333 & 41 & 14 \\
+\hline
+1 & 2 & 10.9710116666667 & 106.481858333333 & 10.9708933333333 & 106.482023333333 & 22 & 13 \\
+\hline
+2 & 3 & 10.9708933333333 & 106.482023333333 & 10.9708166666667 & 106.482206666667 & 22 & 06 \\
+\hline
+3 & 4 & 10.9708166666667 & 106.482206666667 & 10.9706533333333 & 106.482398333333 & 28 & 13 \\
+\hline
+4 & 5 & 10.9706533333333 & 106.482398333333 & 10.970555 & 106.48252 & 17 & 11 \\
+\hline
+5 & 6 & 10.970555 & 106.48252 & 10.9701433333333 & 106.483123333333 & 80 & 20 \\
+\hline
+6 & 7 & 10.9701433333333 & 106.483123333333 & 10.9695933333333 & 106.48386 & 101 & 20 \\
+\hline
+7 & 8 & 10.9695933333333 & 106.48386 & 10.968885 & 106.485015 & 149 & 20 \\
+\hline
+8 & 9 & 10.968885 & 106.485015 & 10.9682416666667 & 106.48598 & 127 & 20 \\
+\hline
+9 & 10 & 10.9682416666667 & 106.48598 & 10.9677616666667 & 106.487061666667 & 130 & 20 \\
+\hline
+10 & 11 & 10.9677616666667 & 106.487061666667 & 10.9674233333333 & 106.487998333333 & 109 & 20 \\
+\hline 
+\end{tabular}
+\end{flushleft}
+Khi quan sát, ta nhận thấy thông thường sau 20 giây hệ thống sẽ ghi nhận một bước chuyển mới, nhưng do trục trặc về kỹ thuật ghi nhận, vẫn thường xuyên xảy ra hiện tượng hồi đáp sớm hơn, trễ hơn so với 20 giây, cho nên ta phải làm một thao tác trung gian đồng bộ hóa 20 giây nhiều nhất có thể. Vì ta giả định những bước di chuyển hoàn toàn độc lập nhau nên ta có thể gom nhóm những bước hồi đáp không chuẩn lại thành bội số của 20 và sau đó chia đều cho 20, nếu số dư còn lại lớn hơn 15 giây thì chấp nhận hồi đáp dư đó, nếu không thì loại bỏ.\\      
+Kham khảo \ref{DragAndDrop} tại mục Phụ lục cho thao tác đồng bộ hóa 20 giây và ví dụ sau xem kết quả đồng bộ cho một chuyến được chọn ngẫu nhiên\\
+Cặp dòng sau đây có mối liên hệ với nhau, dòng trên chỉ khoảng thời gian hồi đáp, dòng dưới chỉ khoảng cách bước chuyển tương ứng với khoảng thời gian hồi đáp trên\\
+17,20,20,20,20,09,01,20,20,20,05,12,20,20,14,20,02,20,20,20,21,05,20,07,20,15,10,\\
+20,20,20,20,20,20,20,20,20,20,20,18,07,20,20,20,20,20,20,20,20,14,06,20,20,20,20,20,\\
+13,20,15,12,04,20,20,20,20,11,05,20,20,20,20,20,20,20,20,20,20,20,20,11,06,20,06,07,\\
+20,20,20,20,20,10,07,20,20,20,20,10,20,20,20,20,14,19,20,20,20,20,18,07,20,20\\
+
 Trích ngẫu nhiên 80\% thời gian di chuyển của 24 chuyến xe trong 351 chuyến xe BX Củ Chi - BX An Sương. Trong một chuyến xe, mỗi giá trị tính bằng mét, mỗi bước di chuyển giữa các giá trị được ghi nhận sau 20 giây.\\
 \textbf{\underline{Chuyến 1}}: 
 71, 71, 86, 86, 145, 145, 136, 136, 104, 104, 277, 277, 240, 240, 145, 145, 97, 97, 0, 0, 171, 171, 283, 283, 283, 283, 0, 0, 214, 214, 166, 166, 307, 307, 259, 259, 208, 208, 43, 43, 144, 144, 286, 286, 287, 287, 126, 126, 152, 152, 254, 254, 139, 139, 255, 255, 294, 294, 293, 293, 269, 269, 283, 283, 267, 267, 221, 221, 165, 165, 266, 266, 259, 259, 220, 220, 168, 168, 0, 0, 226, 226, 337, 337, 394, 394, 224, 224, 208, 208, 340, 340, 359, 359, 259, 259, 297, 297, 325, 325, 303, 303, 302, 302, 284, 284, 287, 287, 268, 268, 199, 199, 112, 112, 179, 179, 279, 279, 270, 270, 139, 139, 72, 72, 195, 195, 345, 345, 332, 332, 151, 151, 149, 149, 230, 230, 261, 261, 186, 186, 170, 170, 236, 236, 243, 243, 265, 265, 151, 151, 201, 201, 29, 29, 125, 125, 121, 121, 35, 35, 29, 29, 80, 80, 46, 46, 36, 36, 132, 132, 52, 52, 44, 44, 63, 63, 63, 46, 46, 46, 40, 40, 23\\
@@ -457,7 +573,7 @@ Trích ngẫu nhiên 80\% thời gian di chuyển của 24 chuyến xe trong 351
 \textbf{\underline{Chuyến 13}}:...\\
 ...\\
 \textbf{\underline{Chuyến 24}}: 279, 279, 17, 17, 52, 52, 48, 48, 67, 67, 141, 141, 131, 131, 131, 131, 95, 95, 157, 157, 155, 155, 196, 196, 242, 242, 219, 219, 50, 50, 172, 172, 219, 219, 243, 243, 148, 148, 74, 74, 5, 5, 105, 105, 194, 194, 68, 68, 216, 216, 224, 224, 231, 231, 61, 61, 76, 76, 228, 228, 295, 295, 306, 306, 293, 293, 260, 260, 236, 236, 279, 279, 284, 284, 232, 232, 174, 174, 75, 75, 205, 205, 103, 103, 98, 98, 232, 232, 266, 266, 257, 257, 188, 188, 60, 60, 192, 192, 228, 228, 256, 256, 236, 236, 215, 215, 23, 23, 10, 10, 100, 100, 44, 44, 132, 132, 255, 255, 290, 290, 272, 272, 216, 216, 237, 237, 281, 281, 274, 274, 272, 272, 294, 294, 189, 189, 0, 0, 41, 41, 84, 84, 65, 65, 197, 197, 247, 247, 221, 221, 121, 121, 83, 83, 138, 138, 252, 252, 223, 223, 195, 195, 135, 135, 17, 17, 0, 0, 6, 6, 15, 15, 44, 44, 121, 121, 61, 61, 206, 206, 220, 220, 148, 148, 52, 52, 164, 164, 208, 208, 248, 248, 203, 203, 179, 179, 11, 11, 0, 0, 62, 62, 112, 112, 252, 252, 307, 307, 316, 316, 168, 168, 104, 104, 87, 87, 192, 192, 148, 148, 131, 131, 91, 91, 215, 215, 215, 143, 143, 126, 126, 279, 279, 27\\
-Trực quan hóa giá trị các bước di chuyển của 24 chuyến dữ liệu ngẫu nhiên, ta có\\
+Kham khảo \ref{trucquandichuyen} tại mục Phụ Lục xuất ra trực quan hóa giá trị các bước di chuyển của 24 chuyến dữ liệu ngẫu nhiên, ta có\\
 \FloatBarrier
 \begin{figure}
 		% 4 first row data
@@ -567,21 +683,24 @@ Trực quan hóa giá trị các bước di chuyển của 24 chuyến dữ li�
 	\caption{Trực quan hóa 24 dòng dữ liệu ngẫu nhiên}
 \end{figure}
 \FloatBarrier
-Hình vẽ sắp xếp thời gian hoàn thành lộ trình BX Củ Chi - BX An Sương xác suất xuất hiện tăng dần.\\
+Kham khảo \ref{sapxepTGHT} tại mục Phụ Lục xuất ra hình vẽ sắp xếp thời gian hoàn thành lộ trình BX Củ Chi - BX An Sương xác suất xuất hiện tăng dần.\\
+\FloatBarrier
 \begin{figure}[h!]
         \begin{subfigure}[b]{0.5\textwidth}
                 \label{tab:example}
                 \includegraphics[width=\linewidth]{finishTime_CC_AS_Order}
         \end{subfigure}%
 \end{figure}
-Hình vẽ cho thấy xác suất tích lũy thời gian hoàn thành lộ trình BX Củ Chi - BX An Sương \\
+\FloatBarrier
+Kham khảo \ref{xacsuatTLTGHT} tại mục Phụ Lục xuất ra hình vẽ cho thấy xác suất tích lũy thời gian hoàn thành lộ trình BX Củ Chi - BX An Sương \\
+\FloatBarrier
 \begin{figure}[h!]
         \begin{subfigure}[b]{0.7\textwidth}
         		\label{tab:example2}
                 \includegraphics[width=\linewidth]{finishTime_CC_AS_ACC_Line}
         \end{subfigure}%
 \end{figure}
-
+\FloatBarrier
 \section{Thu thập thông tin rút ra từ dữ liệu lịch sử}
 Theo bài toán đặt ra, ta sẽ lấy thông tin dữ liệu 2/3 chuyến và phân loại thời gian đến trạm đích: đúng giờ và trễ.
 \section{Tiến hành dự đoán xác suất xe buýt về trạm đúng thời gian}
@@ -598,10 +717,10 @@ Vì các giá trị xác suất ... được tính trên mẫu và Luận Văn n
 \end{itemize}
 \pagebreak
 \chapter{PHỤ LỤC}
-\begin{enumerate}
-\item Source code R chạy giải thuật Jenks Natural breaks optimization
+\begin{enumerate}[label=\textbf{PL\arabic*}]
+\item Mã nguồn R chạy giải thuật Jenks Natural breaks optimization
 \begin{flushleft}
-\begin{tabular}{ |l| }
+\begin{tabular}{  |l| }
 \hline 
 \textit{\#set your working directory where your file data locates}\\
 setwd("/home/thuy/workspace/Preprocess")\\
@@ -620,7 +739,7 @@ getJenksBreaks(mydata, 3)\\
 \hline
 \end{tabular}
 \end{flushleft}
-\item Source code R trực quan hóa giá trị các bước di chuyển của 24 chuyến xe trên\\
+\item  \label{trucquandichuyen} Mã nguồn R trực quan hóa giá trị các bước di chuyển của 24 chuyến xe trên\\
 \begin{flushleft}
 \begin{tabular}{ |l| }
 \hline 
@@ -654,7 +773,7 @@ for (i in 1:nrow(dat)) \{ \\
 \hline
 \end{tabular}
 \end{flushleft}
-\item Source code R xuất hình thể hiện xác suất tích lũy thời gian hoàn thành BX Củ Chi - BX An Sương\\
+\item \label{xacsuatTLTGHT} Mã nguồn R xuất hình thể hiện xác suất tích lũy thời gian hoàn thành BX Củ Chi - BX An Sương\\
 \begin{flushleft}
 \begin{tabular}{ |l| }
 \hline
@@ -674,7 +793,7 @@ legend(48, 0.9554717, '96\% tại điểm 48', box.lwd = 0)\\
 \hline
 \end{tabular}
 \end{flushleft}
-\item Source code R sắp xếp tăng dần xác suất thời gian hoàn thành BX Củ Chi - BX An Sương\\
+\item \label{sapxepTGHT} Mã nguồn R sắp xếp tăng dần xác suất thời gian hoàn thành BX Củ Chi - BX An Sương\\
 \begin{flushleft}
 \begin{tabular}{ |l| }
 \hline
@@ -694,9 +813,7 @@ ggplot(mydata, aes(x = mydata\$X1, y = mydata\$X2)) +\\
 \hline
 \end{tabular}
 \end{flushleft}
-
-
-\item Ứng dụng bản demo "Drag And Drop data layer GeoJSON" \footnote{https://developers.google.com/maps/documentation/javascript/examples/layer-data-dragndrop} của Google Map API để kiểm tra lộ trình\\
+\item \label{DragAndDrop} Ứng dụng bản demo "Drag And Drop data layer GeoJSON" \footnote{https://developers.google.com/maps/documentation/javascript/examples/layer-data-dragndrop} của Google Map API để kiểm tra lộ trình\\
 \FloatBarrier
 \begin{figure}[h]
 \caption{Ứng dụng bản demo "Drag And Drop data layer GeoJSON"}
@@ -711,6 +828,24 @@ ggplot(mydata, aes(x = mydata\$X1, y = mydata\$X2)) +\\
 \end{figure}
 \FloatBarrier
 
+\item \label{tinhkhoangcach} Mã nguồn Java tính khoảng cách giữa 2 tọa độ
+\begin{flushleft}
+\begin{tabular}{ |l| }
+\hline
+public static float distFrom(double lat1, double lng1, double lat2, double lng2) \{\\
+\hspace{0.5cm} double earthRadius = 6371000; //meters\\
+\hspace{0.5cm} double dLat = Math.toRadians(lat2-lat1);\\
+\hspace{0.5cm} double dLng = Math.toRadians(lng2-lng1);\\
+\hspace{0.5cm} double a = Math.sin(dLat/2) * Math.sin(dLat/2) +\\
+\hspace{2.3cm} Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2)) *\\
+\hspace{2.3cm} Math.sin(dLng/2) * Math.sin(dLng/2);\\
+\hspace{0.5cm} double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));\\
+\hspace{0.5cm} float dist = (float) (earthRadius * c);\\
+\hspace{0.5cm} return dist;\\
+\}\\
+\hline
+\end{tabular}
+\end{flushleft}
 \end{enumerate}
 
 
