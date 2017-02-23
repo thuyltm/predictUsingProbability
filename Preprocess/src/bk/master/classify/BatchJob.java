@@ -129,6 +129,13 @@ public class BatchJob {
     }
 
     public static void main(String[] args) {
-        getDistance();
+        /*List<String> fileList = new ArrayList<String>();
+        String distanceFolder = "/home/thuy1/git/predictUsingProbability/MongoOperator/09/distance/";
+        fileList.add("53N5174_19_6_38:28_CC-AS");
+        List<String> result = BatchJob.getDetail(fileList, 80, distanceFolder);
+        for (String data : result) {
+            System.out.println(data);
+        }*/
+        getClassifyAllMonth();
     }
 }

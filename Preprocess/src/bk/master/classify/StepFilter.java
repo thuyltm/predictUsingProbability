@@ -16,151 +16,151 @@ import bk.master.util.ExportUtil;
 
 public class StepFilter {
     public enum FreqClazz {
-        VERY_SMALL_VERY_LOW(2,24) {
+        VERY_SMALL_VERY_LOW(1,13) {
             @Override
             public String toString() {
                 return "very low";
             }
         },
-        VERY_SMALL_LOW(24,45) {
+        VERY_SMALL_LOW(13,27) {
             @Override
             public String toString() {
                 return "low";
             }
         },
-        VERY_SMALL_MEDIUM(45,67) {
+        VERY_SMALL_MEDIUM(27,42) {
             @Override
             public String toString() {
                 return "medium";
             }
         },
-        VERY_SMALL_HIGH(67,89) {
+        VERY_SMALL_HIGH(42,59) {
             @Override
             public String toString() {
                 return "high";
             }
         },
-        VERY_SMALL_VERY_HIGH(89,133) {
+        VERY_SMALL_VERY_HIGH(59,83) {
             @Override
             public String toString() {
                 return "very high";
             }
         },
-        SMALL_VERY_LOW(0,25) {
+        SMALL_VERY_LOW(0,15) {
             @Override
             public String toString() {
                 return "very low";
             }
         },
-        SMALL_LOW(25,43) {
+        SMALL_LOW(15,28) {
             @Override
             public String toString() {
                 return "low";
             }
         },
-        SMALL_MEDIUM(43,61) {
+        SMALL_MEDIUM(28,41) {
             @Override
             public String toString() {
                 return "medium";
             }
         },
-        SMALL_HIGH(61,79) {
+        SMALL_HIGH(41,57) {
             @Override
             public String toString() {
                 return "high";
             }
         },
-        SMALL_VERY_HIGH(79,105) {
+        SMALL_VERY_HIGH(57,74) {
             @Override
             public String toString() {
                 return "very high";
             }
         },
-        MEDIUM_VERY_LOW(0,43) {
+        MEDIUM_VERY_LOW(0,23) {
             @Override
             public String toString() {
                 return "very low";
             }
         },
-        MEDIUM_LOW(43,62) {
+        MEDIUM_LOW(23,36) {
             @Override
             public String toString() {
                 return "low";
             }
         },
-        MEDIUM_MEDIUM(62,82) {
+        MEDIUM_MEDIUM(36,49) {
             @Override
             public String toString() {
                 return "medium";
             }
         },
-        MEDIUM_HIGH(82,102) {
+        MEDIUM_HIGH(49,63) {
             @Override
             public String toString() {
                 return "high";
             }
         },
-        MEDIUM_VERY_HIGH(102,129) {
+        MEDIUM_VERY_HIGH(63,85) {
             @Override
             public String toString() {
                 return "very high";
             }
         },
-        HIGH_VERY_LOW(0,16) {
+        HIGH_VERY_LOW(0,7) {
             @Override
             public String toString() {
                 return "very low";
             }
         },
-        HIGH_LOW(16,31) {
+        HIGH_LOW(7,15) {
             @Override
             public String toString() {
                 return "low";
             }
         },
-        HIGH_MEDIUM(31,45) {
+        HIGH_MEDIUM(15,23) {
             @Override
             public String toString() {
                 return "medium";
             }
         },
-        HIGH_HIGH(45,60) {
+        HIGH_HIGH(23,31) {
             @Override
             public String toString() {
                 return "high";
             }
         },
-        HIGH_VERY_HIGH(60,80) {
+        HIGH_VERY_HIGH(31,40) {
             @Override
             public String toString() {
                 return "very high";
             }
         },
-        VERY_HIGH_VERY_LOW(0,2) {
+        VERY_HIGH_VERY_LOW(0,1) {
             @Override
             public String toString() {
                 return "very low";
             }
         },
-        VERY_HIGH_LOW(2,6) {
+        VERY_HIGH_LOW(1,3) {
             @Override
             public String toString() {
                 return "low";
             }
         },
-        VERY_HIGH_MEDIUM(6,12) {
+        VERY_HIGH_MEDIUM(3,5) {
             @Override
             public String toString() {
                 return "medium";
             }
         },
-        VERY_HIGH_HIGH(12,16) {
+        VERY_HIGH_HIGH(5,8) {
             @Override
             public String toString() {
                 return "high";
             }
         },
-        VERY_HIGH_VERY_HIGH(16,22) {
+        VERY_HIGH_VERY_HIGH(8,11) {
             @Override
             public String toString() {
                 return "very high";
@@ -526,13 +526,13 @@ public class StepFilter {
         }
     }
     public static void discreteFreqStep() {
-        getCountStep("classifyRoute.csv", 0, "freqVerySmall.csv");
+        /*getCountStep("classifyRoute.csv", 0, "freqVerySmall.csv");
         getCountStep("classifyRoute.csv", 1, "freqSmall.csv");
         getCountStep("classifyRoute.csv", 2, "freqMedium.csv");
         getCountStep("classifyRoute.csv", 3, "freqHigh.csv");
-        getCountStep("classifyRoute.csv", 4, "freqVeryHigh.csv");
+        getCountStep("classifyRoute.csv", 4, "freqVeryHigh.csv");*/
         classifyFreqStep("classifyRoute.csv","classifyRoute_Full.csv");
-        getClassifyFreqStep("classifyRoute_Full.csv", "classifyRouteV2.csv");
+        //getClassifyFreqStep("classifyRoute_Full.csv", "classifyRouteV2.csv");
     }
     public static void kde() {
         getFreqStep("classifyRoute.csv", "freqVerySmall_OnTime.csv", 0, "onTime");
@@ -562,8 +562,8 @@ public class StepFilter {
         getClassifiedStepInRoute("lateTimeClassify_CC-AS_80.csv","lateTime","classifyRoute.csv");
     }
     public static void main(String[] args) {
-        discreteStep();
+        //discreteStep();
         discreteFreqStep();
-        kde();
+        //kde();
     }
 }

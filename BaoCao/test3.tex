@@ -526,11 +526,11 @@ Ví dụ 10 dữ liệu thô:\\
 \end{tabular}
 \end{flushleft}
 \subsection{Tiền xử lý dữ liệu} 
-Kham khảo \ref{DragAndDrop} tại mục Phụ Lục để lọc ra và kiểm tra dữ liệu đang khảo sát có phải là tuyến đi BX Củ Chi - BX An Sương không.\\ Sau đó kham khảo \ref{tinhkhoangcach} tại mục Phụ Lục để tính mỗi bước di chuyển. Sau đây là ví dụ 10 bước di chuyển đầu tiên trong moojy chuyến đi ngẫu nhiên được chọn\\
+Kham khảo \ref{DragAndDrop} tại mục Phụ Lục để lọc ra và kiểm tra dữ liệu đang khảo sát có phải là tuyến đi BX Củ Chi - BX An Sương không.\\ Sau đó kham khảo \ref{tinhkhoangcach} tại mục Phụ Lục để tính mỗi bước di chuyển. Sau đây là ví dụ 10 bước di chuyển đầu tiên trong một chuyến đi ngẫu nhiên được chọn\\
 \begin{flushleft}
 \begin{tabular}{|p{1cm}|p{1cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{1cm}|p{1cm}| }
 \hline
-Bước đầu & Bước kế tiếp & Vĩ độ đầu & Kinh độ đầu & Vĩ độ kế tiếp & Kinh độ kế tiếp & Khoảng cách (mét) & Thời gian di chuyển (seconds) \\ 
+Bước đầu & Bước kế tiếp & Vĩ độ đầu & Kinh độ đầu & Vĩ độ kế tiếp & Kinh độ kế tiếp & Khoảng cách (mét) & Thời gian di chuyển (giây) \\ 
 \hline
 0 & 1 & 10.971375 & 106.481906666667 & 10.9710116666667 & 106.481858333333 & 41 & 14 \\
 \hline
@@ -558,12 +558,550 @@ Bước đầu & Bước kế tiếp & Vĩ độ đầu & Kinh độ đầu & V�
 \end{flushleft}
 Khi quan sát, ta nhận thấy thông thường sau 20 giây hệ thống sẽ ghi nhận một bước chuyển mới, nhưng do trục trặc về kỹ thuật ghi nhận, vẫn thường xuyên xảy ra hiện tượng hồi đáp sớm hơn, trễ hơn so với 20 giây, cho nên ta phải làm một thao tác trung gian đồng bộ hóa 20 giây nhiều nhất có thể. Vì ta giả định những bước di chuyển hoàn toàn độc lập nhau nên ta có thể gom nhóm những bước hồi đáp không chuẩn lại thành bội số của 20 và sau đó chia đều cho 20, nếu số dư còn lại lớn hơn 15 giây thì chấp nhận hồi đáp dư đó, nếu không thì loại bỏ.\\      
 Kham khảo \ref{DragAndDrop} tại mục Phụ lục cho thao tác đồng bộ hóa 20 giây và ví dụ sau xem kết quả đồng bộ cho một chuyến được chọn ngẫu nhiên\\
-Cặp dòng sau đây có mối liên hệ với nhau, dòng trên chỉ khoảng thời gian hồi đáp, dòng dưới chỉ khoảng cách bước chuyển tương ứng với khoảng thời gian hồi đáp trên\\
-17,20,20,20,20,09,01,20,20,20,05,12,20,20,14,20,02,20,20,20,21,05,20,07,20,15,10,\\
-20,20,20,20,20,20,20,20,20,20,20,18,07,20,20,20,20,20,20,20,20,14,06,20,20,20,20,20,\\
-13,20,15,12,04,20,20,20,20,11,05,20,20,20,20,20,20,20,20,20,20,20,20,11,06,20,06,07,\\
-20,20,20,20,20,10,07,20,20,20,20,10,20,20,20,20,14,19,20,20,20,20,18,07,20,20\\
+Dữ liệu chưa được đồng bộ hóa
+\FloatBarrier
+\begin{table}[!htb]
+\begin{minipage}{.3\linewidth}
+\begin{tabular}{ |l|p{1cm}|p{1cm}| }
+\hline
+STT&Khoảng thời gian hồi đáp (giây) & Khoảng cách bước đi (mét)\\
+\hline
+\hline
+1&17&236\\
+\hline
+2&20&71\\
+\hline
+3&20&86\\
+\hline
+4&20&145\\
+\hline
+5&20&136\\
+\hline
+6&9&93\\
+\hline
+7&1&9\\
+\hline
+8&20&104\\
+\hline
+9&20&277\\
+\hline
+10&20&240\\
+\hline
+11&5&6\\
+\hline
+12&12&11\\
+\hline
+13&20&145\\
+\hline
+14&20&97\\
+\hline
+15&14&17\\
+\hline
+16&20&0\\
+\hline
+17&2&14\\
+\hline
+18&20&171\\
+\hline
+19&20&283\\
+\hline
+20&20&283\\
+\hline
+\end{tabular}
+\end{minipage}%
+\begin{minipage}{.3\linewidth}
+\begin{tabular}{ |l|p{1cm}|p{1cm}| }
+\hline
+STT&Khoảng thời gian hồi đáp (giây) & Khoảng cách bước đi (mét)\\
+\hline
+\hline
+21&21&106\\
+\hline
+22&5&3\\
+\hline
+23&20&0\\
+\hline
+24&7&17\\
+\hline
+25&20&214\\
+\hline
+26&15&115\\
+\hline
+27&10&13\\
+\hline
+28&20&166\\
+\hline
+29&20&307\\
+\hline
+30&20&259\\
+\hline
+31&20&208\\
+\hline
+32&20&43\\
+\hline
+33&20&144\\
+\hline
+34&20&286\\
+\hline
+35&20&287\\
+\hline
+36&20&126\\
+\hline
+37&20&152\\
+\hline
+38&20&254\\
+\hline
+39&18&111\\
+\hline
+40&7&9\\
+\hline
+\end{tabular}
+\end{minipage} 
+\begin{minipage}{.3\linewidth}
+\begin{tabular}{ |l|p{1cm}|p{1cm}| }
+\hline
+STT&Khoảng thời gian hồi đáp (giây) & Khoảng cách bước đi (mét)\\
+\hline
+\hline
+41&20&139\\
+\hline
+42&20&255\\
+\hline
+43&20&294\\
+\hline
+44&20&293\\
+\hline
+45&20&269\\
+\hline
+46&20&283\\
+\hline
+47&20&267\\
+\hline
+48&20&221\\
+\hline
+49&14&68\\
+\hline
+50&6&12\\
+\hline
+51&20&165\\
+\hline
+52&20&266\\
+\hline
+53&20&259\\
+\hline
+54&20&220\\
+\hline
+55&20&168\\
+\hline
+56&13&19\\
+\hline
+57&20&0\\
+\hline
+58&15&32\\
+\hline
+59&12&32\\
+\hline
+60&4&17\\
+\hline
+\end{tabular}
+\end{minipage}
+\end{table}
 
+\begin{table}[!htb]
+\begin{minipage}{.3\linewidth}
+\begin{tabular}{ |l|p{1cm}|p{1cm}| }
+\hline
+STT&Khoảng thời gian hồi đáp (giây) & Khoảng cách bước đi (mét)\\
+\hline
+\hline
+61&20&226\\
+\hline
+62&20&337\\
+\hline
+63&20&394\\
+\hline
+64&20&224\\
+\hline
+65&11&39\\
+\hline
+66&5&10\\
+\hline
+67&20&208\\
+\hline
+68&20&340\\
+\hline
+69&20&359\\
+\hline
+70&20&259\\
+\hline
+71&20&297\\
+\hline
+72&20&325\\
+\hline
+73&20&303\\
+\hline
+74&20&302\\
+\hline
+75&20&284\\
+\hline
+76&20&287\\
+\hline
+77&20&268\\
+\hline
+78&20&199\\
+\hline
+79&11&17\\
+\hline
+80&6&12\\
+\hline
+\end{tabular}
+\end{minipage}%
+\begin{minipage}{.3\linewidth}
+\begin{tabular}{ |l|p{1cm}|p{1cm}| }
+\hline
+STT&Khoảng thời gian hồi đáp (giây) & Khoảng cách bước đi (mét)\\
+\hline
+\hline
+81&20&112\\
+\hline
+82&6&9\\
+\hline
+83&7&17\\
+\hline
+84&20&179\\
+\hline
+85&20&279\\
+\hline
+86&20&270\\
+\hline
+87&20&139\\
+\hline
+88&20&72\\
+\hline
+89&10&39\\
+\hline
+90&7&12\\
+\hline
+91&20&195\\
+\hline
+92&20&345\\
+\hline
+93&20&332\\
+\hline
+94&20&151\\
+\hline
+95&10&9\\
+\hline
+96&20&149\\
+\hline
+97&20&230\\
+\hline
+98&20&261\\
+\hline
+99&20&186\\
+\hline
+100&14&37\\
+\hline
+\end{tabular}
+\end{minipage} 
+\begin{minipage}{.3\linewidth}
+\begin{tabular}{ |l|p{1cm}|p{1cm}| }
+\hline
+STT&Khoảng thời gian hồi đáp (giây) & Khoảng cách bước đi (mét)\\
+\hline
+\hline
+101&19&20\\
+\hline
+102&20&170\\
+\hline
+103&20&236\\
+\hline
+104&20&243\\
+\hline
+105&20&265\\
+\hline
+106&18&51\\
+\hline
+107&7&14\\
+\hline
+108&20&151\\
+\hline
+109&20&201\\
+\hline 
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+\end{tabular}
+\end{minipage}
+\end{table}
+\FloatBarrier
+Dữ liệu sau khi được đồng bộ hóa\\
+\FloatBarrier
+\begin{table}[!htb]
+\begin{minipage}{.3\linewidth}
+\begin{tabular}{ |l|p{1cm}|p{1cm}| }
+\hline
+STT&Khoảng thời gian hồi đáp (giây) & Khoảng cách bước đi (mét)\\
+\hline
+\hline
+1&20&71\\
+\hline
+2&20& 86\\
+\hline
+3&20& 145\\
+\hline
+4&20& 136\\
+\hline
+5&20& 104\\
+\hline
+6&20& 277\\
+\hline
+7&20& 240\\
+\hline
+8&20& 145\\
+\hline
+9&20& 97\\
+\hline
+10&20& 0\\
+\hline
+11&20& 171\\
+\hline
+12&20& 283\\
+\hline
+13&20& 283\\
+\hline
+14&20& 0\\
+\hline
+15&20& 214\\
+\hline
+16&20& 166\\
+\hline
+17&20& 307\\
+\hline
+18&20& 259\\
+\hline
+19&20& 208\\
+\hline
+20&20& 43\\
+\hline
+\end{tabular}
+\end{minipage}%
+\begin{minipage}{.3\linewidth}
+\begin{tabular}{ |l|p{1cm}|p{1cm}| }
+\hline
+STT&Khoảng thời gian hồi đáp (giây) & Khoảng cách bước đi (mét)\\
+\hline
+\hline
+21&20& 144\\
+\hline
+22&20& 286\\
+\hline
+23&20& 287\\
+\hline
+24&20& 126\\
+\hline
+25&20& 152\\
+\hline
+26&20& 254\\
+\hline
+27&20& 139\\
+\hline
+28&20& 255\\
+\hline
+29&20& 294\\
+\hline
+30&20& 293\\
+\hline
+31&20& 269\\
+\hline
+32&20& 283\\
+\hline
+33&20& 267\\
+\hline
+34&20& 221\\
+\hline
+35&20& 165\\
+\hline
+36&20& 266\\
+\hline
+37&20& 259\\
+\hline
+38&20& 220\\
+\hline
+39&20& 168\\
+\hline
+40&20& 0\\
+\hline
+\end{tabular}
+\end{minipage} 
+\begin{minipage}{.3\linewidth}
+\begin{tabular}{ |l|p{1cm}|p{1cm}| }
+\hline
+STT&Khoảng thời gian hồi đáp (giây) & Khoảng cách bước đi (mét)\\
+\hline
+\hline
+41&20& 226\\
+\hline
+42&20& 337\\
+\hline
+43&20& 394\\
+\hline
+44&20& 224\\
+\hline
+45&20& 208\\
+\hline
+46&20& 340\\
+\hline
+47&20& 359\\
+\hline
+48&20& 259\\
+\hline
+49&20& 297\\
+\hline
+50&20& 325\\
+\hline
+51&20& 303\\
+\hline
+52&20& 302\\
+\hline
+53&20& 284\\
+\hline
+54&20& 287\\
+\hline
+55&20& 268\\
+\hline
+56&20& 199\\
+\hline
+57&20& 112\\
+\hline
+58&20& 179\\
+\hline
+59&20& 279\\
+\hline
+60&20& 270\\
+\hline
+\end{tabular}
+\end{minipage}
+\end{table}
+
+\begin{table}[!htb]
+\begin{minipage}{.5\linewidth}
+\begin{tabular}{ |l|p{1cm}|p{1cm}| }
+\hline
+STT&Khoảng thời gian hồi đáp (giây) & Khoảng cách bước đi (mét)\\
+\hline
+\hline
+61&20& 139\\
+\hline
+62&20& 72\\
+\hline
+63&20& 195\\
+\hline
+64&20& 345\\
+\hline
+65&20& 332\\
+\hline
+66&20& 151\\
+\hline
+67&20& 149\\
+\hline
+68&20& 230\\
+\hline
+69&20& 261\\
+\hline
+70&20& 186\\
+\hline
+71&20& 170\\
+\hline
+72&20& 236\\
+\hline
+73&20& 243\\
+\hline
+74&20& 265\\
+\hline
+75&20& 151\\
+\hline
+76&20& 201\\
+\hline
+77&20& 29\\
+\hline
+78&20& 125\\
+\hline
+79&20& 121\\
+\hline
+80&20& 35\\
+\hline
+\end{tabular}
+\end{minipage}%
+\begin{minipage}{.5\linewidth}
+\begin{tabular}{ |l|p{1cm}|p{1cm}| }
+\hline
+STT&Khoảng thời gian hồi đáp (giây) & Khoảng cách bước đi (mét)\\
+\hline
+\hline
+81&20& 29\\
+\hline
+82&20& 80\\
+\hline
+83&20& 46\\
+\hline
+84&20& 36\\
+\hline
+85&20& 132\\
+\hline
+86&20& 52\\
+\hline
+87&20& 44\\
+\hline
+88&20& 63\\
+\hline
+89&20& 63\\
+\hline
+90&20& 46\\
+\hline
+91&20& 46\\
+\hline
+92&21& 40\\
+\hline
+93&17& 236\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+&&\\
+\hline
+\end{tabular}
+\end{minipage} 
+\end{table}
+\FloatBarrier
 Trích ngẫu nhiên 80\% thời gian di chuyển của 24 chuyến xe trong 351 chuyến xe BX Củ Chi - BX An Sương. Trong một chuyến xe, mỗi giá trị tính bằng mét, mỗi bước di chuyển giữa các giá trị được ghi nhận sau 20 giây.\\
 \textbf{\underline{Chuyến 1}}: 
 71, 71, 86, 86, 145, 145, 136, 136, 104, 104, 277, 277, 240, 240, 145, 145, 97, 97, 0, 0, 171, 171, 283, 283, 283, 283, 0, 0, 214, 214, 166, 166, 307, 307, 259, 259, 208, 208, 43, 43, 144, 144, 286, 286, 287, 287, 126, 126, 152, 152, 254, 254, 139, 139, 255, 255, 294, 294, 293, 293, 269, 269, 283, 283, 267, 267, 221, 221, 165, 165, 266, 266, 259, 259, 220, 220, 168, 168, 0, 0, 226, 226, 337, 337, 394, 394, 224, 224, 208, 208, 340, 340, 359, 359, 259, 259, 297, 297, 325, 325, 303, 303, 302, 302, 284, 284, 287, 287, 268, 268, 199, 199, 112, 112, 179, 179, 279, 279, 270, 270, 139, 139, 72, 72, 195, 195, 345, 345, 332, 332, 151, 151, 149, 149, 230, 230, 261, 261, 186, 186, 170, 170, 236, 236, 243, 243, 265, 265, 151, 151, 201, 201, 29, 29, 125, 125, 121, 121, 35, 35, 29, 29, 80, 80, 46, 46, 36, 36, 132, 132, 52, 52, 44, 44, 63, 63, 63, 46, 46, 46, 40, 40, 23\\
@@ -724,18 +1262,21 @@ Vì các giá trị xác suất ... được tính trên mẫu và Luận Văn n
 \hline 
 \textit{\#set your working directory where your file data locates}\\
 setwd("/home/thuy/workspace/Preprocess")\\
-mydata = read.csv("Freq\_CC-AS\_80.csv",header = FALSE, sep = ",")[,1]\\
+mydata = read.csv("freqVeryHigh.csv")[,1]\\
+mydata\\
+\textit{\#returned result}\\
+\textit{\# [1]  0  1  2  3  4  5  6  7  8  9 10 11}\\
 \textit{\#use library classInt to run algorithm Jenks Natural breaks optimization}\\
 library("classInt")\\
-classIntervals(mydata, n=3, style="jenks")\\
+classIntervals(mydata, n=5, style="jenks")\\
 \textit{\#returned result}\\
-\textit{\#[2,170]  (170,345] (345,2578]}\\
-\textit{\#118         99          1}\\
+\textit{\#[0,1]  (1,3]  (3,5]  (5,8] (8,11]}\\
+\textit{\#2      2      2      3      3 }\\
 \textit{\#or use library BAMMtools to run algorithm Jenks Natural breaks optimization}\\
 library("BAMMtools")\\
-getJenksBreaks(mydata, 3)\\
+getJenksBreaks(mydata, 5)\\
 \textit{\#returned result}\\
-\textit{\#2  345 2578}\\
+\textit{\#0  2  5  8 11}\\
 \hline
 \end{tabular}
 \end{flushleft}

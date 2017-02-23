@@ -1,30 +1,15 @@
 package bk.master.classify;
 
-import java.io.File;
 
 public class Test {
 
     public static void main(String[] args) {
-        File folder = new File("/home/thuy1/git/predictUsingProbability/MongoOperator/09/location/02");
-        String outputFolder = "/home/thuy1/git/predictUsingProbability/MongoOperator/09/distance/02";
-        File[] dataFile = folder.listFiles();
-        for (File file : dataFile) {
-            Calculate.calculateDistance(file, outputFolder);
+        String[] duration = "71, 86, 145, 136, 104, 277, 240, 145, 97, 0, 171, 283, 283, 0, 214, 166, 307, 259, 208, 43, 144, 286, 287, 126, 152, 254, 139, 255, 294, 293, 269, 283, 267, 221, 165, 266, 259, 220, 168, 0, 226, 337, 394, 224, 208, 340, 359, 259, 297, 325, 303, 302, 284, 287, 268, 199, 112, 179, 279, 270, 139, 72, 195, 345, 332, 151, 149, 230, 261, 186, 170, 236, 243, 265, 151, 201, 29, 125, 121, 35, 29, 80, 46, 36, 132, 52, 44, 63, 63, 46, 46, 40, 236".split(",");
+        for (int i = 0; i < duration.length; i++) {
+            System.out.println(i+1+"&"+20+"&"+duration[i]+"\\\\");
+            System.out.println("\\hline");
         }
 
-        /*File dataFolder = new File("/home/thuy1/git/predictUsingProbability/GSOperator/newLeg/09/02/");
-        File[] dataList = dataFolder.listFiles();
-        for (File file : dataList) {
-            Path source = Paths.get(file.getAbsolutePath());
-            String fileName = FilenameUtils.getBaseName(file.getName());
-            String newFileName = fileName.substring(0, fileName.lastIndexOf("."));
-            try {
-                Files.move(source, source.resolveSibling(newFileName+".csv"));
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-        }*/
 
     }
 }

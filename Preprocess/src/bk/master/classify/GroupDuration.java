@@ -281,7 +281,7 @@ public class GroupDuration {
         if (sumDuration/DURATION_STEP_SHORT > 0) {
             int loop = (int)(sumDuration/DURATION_STEP_SHORT);
             int distance = (int)(sumDistance*DURATION_STEP_SHORT/sumDuration);
-            for (int rep = 0; rep <= loop; rep++) {
+            for (int rep = 1; rep <= loop; rep++) {
                 result.add(distance);
             }
         } else if (sumDuration%DURATION_STEP_SHORT>=15) {

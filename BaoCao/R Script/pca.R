@@ -1,4 +1,3 @@
-install.packages("classInt")
 library(classInt)
 
 my_n <- 100
@@ -9,14 +8,18 @@ system.time(classIntervals(x, n = 5, style = "jenks"))
  
 system.time(classIntervals(x, n = 5, style = "kmeans"))
 
-classIntervals(x, n = 5, style = "jenks")
-classIntervals(x, n = 5, style = "kmeans")
+getwd()
+setwd('/home/thuy1/git/predictUsingProbability/Preprocess')
+data=read.table(file="freqVerySmall.csv")[,1]
+data
+classIntervals(data, n = 5, style = "jenks")
+classIntervals(data, n = 5, style = "kmeans")
 ########################################################
 d=c(38.5, 39.0, 39.5, 40.0, 41.0, 41.5, 42.0, 42.5, 43.0, 43.5, 44.0, 45.5, 47.5)
 hist(d)
 ########################################################
   randn('seed',1) # use for reproducibility
-data=[randn(100,1)-10;randn(100,1)+10]; # normal mixture with two humps
+data=randn(100,1)-10;randn(100,1)+10; # normal mixture with two humps
 n=length(data); # number of samples
 h=std(data)*(4/3/n)^(1/5); # Silverman's rule of thumb
 phi=@(x)(exp(-.5*x.^2)/sqrt(2*pi)); # normal pdf
