@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  23 FEB 2017 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  24 FEB 2017 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -613,8 +613,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(/usr/share/texlive/texmf-dist/tex/latex/floatrow/floatrow.sty
-Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
@@ -627,63 +627,23 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen119
 \caption@hangindent=\dimen120
 )
-\c@float@type=\count102
-\float@exts=\toks22
-\float@box=\box28
-\@floatcapt=\box29
-Package floatrow Info: Modified float package code loaded on input line 455.
-Package floatrow Info: Modified rotfloat package code loaded on input line 473.
-
-\FR@everyfloat=\toks23
-\flrow@foot=\insert199
-\FB@wd=\dimen121
-\FBo@wd=\dimen122
-\FBc@wd=\dimen123
-\FBo@ht=\skip47
-\FBc@ht=\skip48
-\FBf@ht=\skip49
-\FBo@max=\skip50
-\FBc@max=\skip51
-\FBf@max=\skip52
-\c@FBl@b=\count103
-\floatbox@depth=\count104
-\c@FRobj=\count105
-\c@FRsobj=\count106
-\Xhsize=\skip53
-\sXhsize=\skip54
-\Zhsize=\skip55
-\sZhsize=\skip56
-\flrow@rowbox=\box30
-\FR@Zunitlength=\dimen124
-\c@FBcnt=\count107
-\FPOScnt=\count108
-\LTleft=\skip57
-\LTright=\skip58
-\LTleft=\skip59
-\LTright=\skip60
-\flrow@types=\toks24
-)
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-\c@ContinuedFloat=\count109
-Package caption Info: float package is loaded.
-Package caption Info: floatrow package is loaded.
+\c@ContinuedFloat=\count102
 )
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip61
-\enit@outerparindent=\dimen125
-\enit@toks=\toks25
-\enit@inbox=\box31
-\enitdp@description=\count110
+\labelindent=\skip47
+\enit@outerparindent=\dimen121
+\enit@toks=\toks22
+\enit@inbox=\box28
+\enitdp@description=\count103
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen126
-\extrarowheight=\dimen127
-\NC@list=\toks26
-\extratabsurround=\skip62
-\backup@length=\skip63
+\col@sep=\dimen122
+\extrarowheight=\dimen123
+\NC@list=\toks23
+\extratabsurround=\skip48
+\backup@length=\skip49
 )
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
@@ -693,30 +653,30 @@ Package: pbox 2011/12/07 v1.2 Dynamic parboxes
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count111
-\calc@Bcount=\count112
-\calc@Adimen=\dimen128
-\calc@Bdimen=\dimen129
-\calc@Askip=\skip64
-\calc@Bskip=\skip65
+\calc@Acount=\count104
+\calc@Bcount=\count105
+\calc@Adimen=\dimen124
+\calc@Bdimen=\dimen125
+\calc@Askip=\skip50
+\calc@Bskip=\skip51
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count113
-\calc@Cskip=\skip66
+\calc@Ccount=\count106
+\calc@Cskip=\skip52
 )
-\pb@xlen=\skip67
+\pb@xlen=\skip53
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
-\@fancybox=\box32
-\shadowsize=\dimen130
-\@Sbox=\box33
-\do@VerbBox=\toks27
-\the@fancyput=\toks28
-\this@fancyput=\toks29
-\EndVerbatimTokens=\toks30
+\@fancybox=\box29
+\shadowsize=\dimen126
+\@Sbox=\box30
+\do@VerbBox=\toks24
+\the@fancyput=\toks25
+\this@fancyput=\toks26
+\EndVerbatimTokens=\toks27
 \Verbatim@Outfile=\write4
 \Verbatim@Infile=\read1
 ) (/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
@@ -731,9 +691,9 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks31
-\footnotemargin=\dimen131
-\c@pp@next@reset=\count114
+\FN@temptoken=\toks28
+\footnotemargin=\dimen127
+\c@pp@next@reset=\count107
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -743,20 +703,20 @@ Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
 )
-\CenteringLeftskip=\skip68
-\RaggedLeftLeftskip=\skip69
-\RaggedRightLeftskip=\skip70
-\CenteringRightskip=\skip71
-\RaggedLeftRightskip=\skip72
-\RaggedRightRightskip=\skip73
-\CenteringParfillskip=\skip74
-\RaggedLeftParfillskip=\skip75
-\RaggedRightParfillskip=\skip76
-\JustifyingParfillskip=\skip77
-\CenteringParindent=\skip78
-\RaggedLeftParindent=\skip79
-\RaggedRightParindent=\skip80
-\JustifyingParindent=\skip81
+\CenteringLeftskip=\skip54
+\RaggedLeftLeftskip=\skip55
+\RaggedRightLeftskip=\skip56
+\CenteringRightskip=\skip57
+\RaggedLeftRightskip=\skip58
+\RaggedRightRightskip=\skip59
+\CenteringParfillskip=\skip60
+\RaggedLeftParfillskip=\skip61
+\RaggedRightParfillskip=\skip62
+\JustifyingParfillskip=\skip63
+\CenteringParindent=\skip64
+\RaggedLeftParindent=\skip65
+\RaggedRightParindent=\skip66
+\JustifyingParindent=\skip67
 )
 (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
@@ -781,7 +741,7 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count115
+\etb@tempcnta=\count108
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
@@ -805,49 +765,49 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks32
-\XKV@tempa@toks=\toks33
+\XKV@toks=\toks29
+\XKV@tempa@toks=\toks30
 )
-\XKV@depth=\count116
+\XKV@depth=\count109
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
-\TX@col@width=\dimen132
-\TX@old@table=\dimen133
-\TX@old@col=\dimen134
-\TX@target=\dimen135
-\TX@delta=\dimen136
-\TX@cols=\count117
-\TX@ftn=\toks34
+\TX@col@width=\dimen128
+\TX@old@table=\dimen129
+\TX@old@col=\dimen130
+\TX@target=\dimen131
+\TX@delta=\dimen132
+\TX@cols=\count110
+\TX@ftn=\toks31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen137
-\lightrulewidth=\dimen138
-\cmidrulewidth=\dimen139
-\belowrulesep=\dimen140
-\belowbottomsep=\dimen141
-\aboverulesep=\dimen142
-\abovetopsep=\dimen143
-\cmidrulesep=\dimen144
-\cmidrulekern=\dimen145
-\defaultaddspace=\dimen146
-\@cmidla=\count118
-\@cmidlb=\count119
-\@aboverulesep=\dimen147
-\@belowrulesep=\dimen148
-\@thisruleclass=\count120
-\@lastruleclass=\count121
-\@thisrulewidth=\dimen149
+\heavyrulewidth=\dimen133
+\lightrulewidth=\dimen134
+\cmidrulewidth=\dimen135
+\belowrulesep=\dimen136
+\belowbottomsep=\dimen137
+\aboverulesep=\dimen138
+\abovetopsep=\dimen139
+\cmidrulesep=\dimen140
+\cmidrulekern=\dimen141
+\defaultaddspace=\dimen142
+\@cmidla=\count111
+\@cmidlb=\count112
+\@aboverulesep=\dimen143
+\@belowrulesep=\dimen144
+\@thisruleclass=\count113
+\@lastruleclass=\count114
+\@thisrulewidth=\dimen145
 )
 (/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
-\c@r@tfl@t=\count122
-\rotFPtop=\skip82
-\rotFPbot=\skip83
-\rot@float@box=\box34
-\rot@mess@toks=\toks35
+\c@r@tfl@t=\count115
+\rotFPtop=\skip68
+\rotFPbot=\skip69
+\rot@float@box=\box31
+\rot@mess@toks=\toks32
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/transparent.sty
 Package: transparent 2007/01/08 v1.0 Transparency via pdfTeX's color stack (HO)
@@ -856,42 +816,42 @@ Package: transparent 2007/01/08 v1.0 Transparency via pdfTeX's color stack (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 ))
-\@CTframesep=\dimen150
-\@dfltCTframesep=\dimen151
-\@CTframerule=\dimen152
-\@dfltCTframerule=\dimen153
-\@CTwidth=\dimen154
-\@dfltCTwidth=\dimen155
-\@CTcaptionskip=\dimen156
-\@dfltCTcaptionskip=\dimen157
-\@CTmaxwidth=\dimen158
-\@dfltCTmaxwidth=\dimen159
-\@CTmincapwidth=\dimen160
-\@dfltCTmincapwidth=\dimen161
-\@CTfooterwidth=\dimen162
-\@dfltCTfooterwidth=\dimen163
-\@CTw=\dimen164
-\@CTfloatwidth=\dimen165
-\@CToldsep=\dimen166
-\@CToldrule=\dimen167
-\CT@t=\box35
-\@CTcurftwidth=\dimen168
+\@CTframesep=\dimen146
+\@dfltCTframesep=\dimen147
+\@CTframerule=\dimen148
+\@dfltCTframerule=\dimen149
+\@CTwidth=\dimen150
+\@dfltCTwidth=\dimen151
+\@CTcaptionskip=\dimen152
+\@dfltCTcaptionskip=\dimen153
+\@CTmaxwidth=\dimen154
+\@dfltCTmaxwidth=\dimen155
+\@CTmincapwidth=\dimen156
+\@dfltCTmincapwidth=\dimen157
+\@CTfooterwidth=\dimen158
+\@dfltCTfooterwidth=\dimen159
+\@CTw=\dimen160
+\@CTfloatwidth=\dimen161
+\@CToldsep=\dimen162
+\@CToldrule=\dimen163
+\CT@t=\box32
+\@CTcurftwidth=\dimen164
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen169
+\bigstrutjot=\dimen165
 )
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen170
-\WF@size=\dimen171
-\c@WF@wrappedlines=\count123
-\WF@box=\box36
-\WF@everypar=\toks36
+\wrapoverhang=\dimen166
+\WF@size=\dimen167
+\c@WF@wrappedlines=\count116
+\WF@box=\box33
+\WF@everypar=\toks33
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
-\c@subfigure=\count124
-\c@subtable=\count125
+\c@subfigure=\count117
+\c@subtable=\count118
 )
 
 LaTeX Warning: Unused global option(s):
@@ -904,33 +864,33 @@ LaTeX Warning: Label `DADG' multiply defined.
 )
 \openout1 = `test3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen172
-\scratchbox=\box37
-\nofMPsegments=\count127
-\nofMParguments=\count128
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen173
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count119
+\scratchdimen=\dimen168
+\scratchbox=\box34
+\nofMPsegments=\count120
+\nofMParguments=\count121
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen169
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -976,43 +936,42 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: floatrow package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package ragged2e Info: ABD: executing \RaggedRight on input line 37.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 36.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 37.
+LaTeX Info: Redefining \selectfont on input line 36.
 
 <images/bk.png, id=1, 2.12221pt x 2.14133pt>
 File: images/bk.png Graphic file (type png)
  <use images/bk.png>
-Package pdftex.def Info: images/bk.png used on input line 52.
+Package pdftex.def Info: images/bk.png used on input line 51.
 (pdftex.def)             Requested size: 85.35826pt x 86.33083pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 60.
+LaTeX Font Info:    Try loading font information for U+msa on input line 59.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 60.
+LaTeX Font Info:    Try loading font information for U+msb on input line 59.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/bk.png>]
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 94--97
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 93--96
 [][]  
  []
 
 [2]
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 100--103
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 99--102
 [][]  
  []
 
 
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 120--124
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 119--123
 []  
  []
 
@@ -1025,7 +984,7 @@ Overfull \hbox (26.27618pt too wide) in paragraph at lines 120--124
 ]
 Ch\uhorn \ohorn ng 1.
 
-Overfull \hbox (6.50323pt too wide) in paragraph at lines 157--157
+Overfull \hbox (6.50323pt too wide) in paragraph at lines 156--156
 \T5/cmr/m/n/10 kàp ti¸n ^^_ë cho qu¢ng ^^_÷íng cán l¤i hay khæng. Möc ^^_½ch Lu
 ªn V«n: dòng To¡n ^^_ành l÷ñng kinh nghi»m 
  []
@@ -1034,15 +993,15 @@ Overfull \hbox (6.50323pt too wide) in paragraph at lines 157--157
 
 ] [2]
 Ch\uhorn \ohorn ng 2.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 182.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 181.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 182.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 181.
 
-Overfull \hbox (8.61383pt too wide) in paragraph at lines 188--188
+Overfull \hbox (8.61383pt too wide) in paragraph at lines 187--187
 \T5/cmr/m/n/10 Nh÷ vªy, trong To¡n Thèng K¶, tçn t¤i c¡c ph÷ìng ph¡p nh÷ ph÷ìng
  ph¡p th½ nghi»m thèng k¶, ph÷ìng 
  []
@@ -1050,31 +1009,31 @@ Overfull \hbox (8.61383pt too wide) in paragraph at lines 188--188
 [3
 
 ]
-Overfull \hbox (10.0857pt too wide) in paragraph at lines 222--223
+Overfull \hbox (10.0857pt too wide) in paragraph at lines 221--222
 \T5/cmr/m/n/10 x¡c su§t g¡n b§t ký mët kho£ng tªp con cõa S mët x¡c su§t b¬ng c
 hi·u d i cõa nâ. Cho A = (19.5,20.1), 
  []
 
 [4]
-Overfull \hbox (7.63538pt too wide) in paragraph at lines 253--254
+Overfull \hbox (7.63538pt too wide) in paragraph at lines 252--253
 \T5/cmr/m/n/10 cè B$[]$. Sau khi quan s¡t A ta chuyºn ^^_êi c¡c x¡c su§t ti¶n n
 ghi»m cõa B$[]$ th nh c¡c x¡c su§t hªu nghi»m 
  []
 
 [5] [6] [7] [8] [9]
-Overfull \hbox (35.30176pt too wide) in paragraph at lines 492--492
+Overfull \hbox (35.30176pt too wide) in paragraph at lines 491--491
 []\T5/cmr/m/n/10 Ta th§y x¡c su§t bi¸n cè (age = youth, in-come = medium, stu-d
 ent = yes, credit_rating = fair,buys_computer 
  []
 
 
-Overfull \hbox (24.77655pt too wide) in paragraph at lines 492--492
+Overfull \hbox (24.77655pt too wide) in paragraph at lines 491--491
 \T5/cmr/m/n/10 = yes) x£y ra cao hìn so vîi x¡c su§t bi¸n cè (age = youth, in-c
 ome = medium, stu-dent = yes, credit_rating 
  []
 
 
-Overfull \hbox (16.64175pt too wide) in paragraph at lines 492--492
+Overfull \hbox (16.64175pt too wide) in paragraph at lines 491--491
 \T5/cmr/m/n/10 = fair, buys_computer = no). Do ^^_â x$[]$ = (age = youth, in-co
 me = medium, stu-dent = yes, credit_rating 
  []
@@ -1082,467 +1041,583 @@ me = medium, stu-dent = yes, credit_rating
 [10]
 Ch\uhorn \ohorn ng 3.
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 533--533
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 532--532
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (1.53993pt too wide) in paragraph at lines 533--534
+Overfull \hbox (1.53993pt too wide) in paragraph at lines 532--533
 \T5/cmr/m/n/10 chuyºn 
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 535--535
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 534--534
 []|\T5/cmr/m/n/10 106.481906666667|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 535--535
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 534--534
 []|\T5/cmr/m/n/10 10.9710116666667|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 535--535
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 534--534
 []|\T5/cmr/m/n/10 106.481858333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 537--537
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 536--536
 []|\T5/cmr/m/n/10 10.9710116666667|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 537--537
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 536--536
 []|\T5/cmr/m/n/10 106.481858333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 537--537
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 536--536
 []|\T5/cmr/m/n/10 10.9708933333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 537--537
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 536--536
 []|\T5/cmr/m/n/10 106.482023333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 539--539
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 538--538
 []|\T5/cmr/m/n/10 10.9708933333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 539--539
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 538--538
 []|\T5/cmr/m/n/10 106.482023333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 539--539
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 538--538
 []|\T5/cmr/m/n/10 10.9708166666667|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 539--539
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 538--538
 []|\T5/cmr/m/n/10 106.482206666667|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 541--541
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 540--540
 []|\T5/cmr/m/n/10 10.9708166666667|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 541--541
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 540--540
 []|\T5/cmr/m/n/10 106.482206666667|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 541--541
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 540--540
 []|\T5/cmr/m/n/10 10.9706533333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 541--541
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 540--540
 []|\T5/cmr/m/n/10 106.482398333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 543--543
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 542--542
 []|\T5/cmr/m/n/10 10.9706533333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 543--543
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 542--542
 []|\T5/cmr/m/n/10 106.482398333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 545--545
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 544--544
 []|\T5/cmr/m/n/10 10.9701433333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 545--545
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 544--544
 []|\T5/cmr/m/n/10 106.483123333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 547--547
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 546--546
 []|\T5/cmr/m/n/10 10.9701433333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 547--547
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 546--546
 []|\T5/cmr/m/n/10 106.483123333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 547--547
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 546--546
 []|\T5/cmr/m/n/10 10.9695933333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 549--549
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 548--548
 []|\T5/cmr/m/n/10 10.9695933333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 551--551
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 550--550
 []|\T5/cmr/m/n/10 10.9682416666667|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 553--553
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 552--552
 []|\T5/cmr/m/n/10 10.9682416666667|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 553--553
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 552--552
 []|\T5/cmr/m/n/10 10.9677616666667|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 553--553
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 552--552
 []|\T5/cmr/m/n/10 106.487061666667|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 555--555
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 554--554
 []|\T5/cmr/m/n/10 10.9677616666667|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 555--555
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 554--554
 []|\T5/cmr/m/n/10 106.487061666667|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 555--555
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 554--554
 []|\T5/cmr/m/n/10 10.9674233333333|  
  []
 
 
-Overfull \hbox (3.78146pt too wide) in paragraph at lines 555--555
+Overfull \hbox (3.78146pt too wide) in paragraph at lines 554--554
 []|\T5/cmr/m/n/10 106.487998333333|  
  []
 
 
-Overfull \hbox (56.35233pt too wide) in paragraph at lines 531--558
+Overfull \hbox (56.35233pt too wide) in paragraph at lines 530--557
 []  
  []
 
 [11
 
 ]
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 567--567
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 566--566
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 567--568
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 566--567
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 615--615
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 614--614
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 615--616
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 614--615
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 663--663
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 662--662
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 663--664
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 662--663
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 714--714
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 713--713
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 714--715
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 713--714
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 762--762
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 761--761
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 762--763
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 761--762
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 810--810
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 809--809
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 810--811
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 809--810
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 [12]
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 863--863
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 862--862
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 863--864
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 862--863
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 911--911
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 910--910
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 911--912
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 910--911
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 959--959
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 958--958
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 959--960
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 958--959
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 1010--1010
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 1009--1009
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 1010--1011
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 1009--1010
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 1058--1058
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 1057--1057
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
 
-Overfull \hbox (5.42787pt too wide) in paragraph at lines 1058--1059
+Overfull \hbox (5.42787pt too wide) in paragraph at lines 1057--1058
 []|\T5/cmr/m/n/10 Kho£ng 
  []
 
-[13] [14] <images/test1.png, id=91, 481.8pt x 481.8pt>
-File: images/test1.png Graphic file (type png)
- <use images/test1.png>
-Package pdftex.def Info: images/test1.png used on input line 1119.
+[13] [14] <images/test_100_1.png, id=91, 481.8pt x 481.8pt>
+File: images/test_100_1.png Graphic file (type png)
+
+<use images/test_100_1.png>
+Package pdftex.def Info: images/test_100_1.png used on input line 1118.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_80_1.png, id=92, 481.8pt x 481.8pt>
+File: images/test_80_1.png Graphic file (type png)
+
+<use images/test_80_1.png>
+Package pdftex.def Info: images/test_80_1.png used on input line 1122.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_100_2.png, id=93, 481.8pt x 481.8pt>
+File: images/test_100_2.png Graphic file (type png)
+
+<use images/test_100_2.png>
+Package pdftex.def Info: images/test_100_2.png used on input line 1126.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_80_2.png, id=94, 481.8pt x 481.8pt>
+File: images/test_80_2.png Graphic file (type png)
+
+<use images/test_80_2.png>
+Package pdftex.def Info: images/test_80_2.png used on input line 1130.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_100_3.png, id=95, 481.8pt x 481.8pt>
+File: images/test_100_3.png Graphic file (type png)
+
+<use images/test_100_3.png>
+Package pdftex.def Info: images/test_100_3.png used on input line 1134.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_80_3.png, id=96, 481.8pt x 481.8pt>
+File: images/test_80_3.png Graphic file (type png)
+
+<use images/test_80_3.png>
+Package pdftex.def Info: images/test_80_3.png used on input line 1138.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_100_4.png, id=97, 481.8pt x 481.8pt>
+File: images/test_100_4.png Graphic file (type png)
+
+<use images/test_100_4.png>
+Package pdftex.def Info: images/test_100_4.png used on input line 1142.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_80_4.png, id=98, 481.8pt x 481.8pt>
+File: images/test_80_4.png Graphic file (type png)
+
+<use images/test_80_4.png>
+Package pdftex.def Info: images/test_80_4.png used on input line 1146.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_100_5.png, id=99, 481.8pt x 481.8pt>
+File: images/test_100_5.png Graphic file (type png)
+
+<use images/test_100_5.png>
+Package pdftex.def Info: images/test_100_5.png used on input line 1150.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_80_5.png, id=100, 481.8pt x 481.8pt>
+File: images/test_80_5.png Graphic file (type png)
+
+<use images/test_80_5.png>
+Package pdftex.def Info: images/test_80_5.png used on input line 1154.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_100_6.png, id=101, 481.8pt x 481.8pt>
+File: images/test_100_6.png Graphic file (type png)
+
+<use images/test_100_6.png>
+Package pdftex.def Info: images/test_100_6.png used on input line 1158.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_80_6.png, id=102, 481.8pt x 481.8pt>
+File: images/test_80_6.png Graphic file (type png)
+
+<use images/test_80_6.png>
+Package pdftex.def Info: images/test_80_6.png used on input line 1162.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_100_7.png, id=103, 481.8pt x 481.8pt>
+File: images/test_100_7.png Graphic file (type png)
+
+<use images/test_100_7.png>
+Package pdftex.def Info: images/test_100_7.png used on input line 1166.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_80_7.png, id=104, 481.8pt x 481.8pt>
+File: images/test_80_7.png Graphic file (type png)
+
+<use images/test_80_7.png>
+Package pdftex.def Info: images/test_80_7.png used on input line 1170.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_100_8.png, id=105, 481.8pt x 481.8pt>
+File: images/test_100_8.png Graphic file (type png)
+
+<use images/test_100_8.png>
+Package pdftex.def Info: images/test_100_8.png used on input line 1174.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_80_8.png, id=106, 481.8pt x 481.8pt>
+File: images/test_80_8.png Graphic file (type png)
+
+<use images/test_80_8.png>
+Package pdftex.def Info: images/test_80_8.png used on input line 1178.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_100_9.png, id=107, 481.8pt x 481.8pt>
+File: images/test_100_9.png Graphic file (type png)
+
+<use images/test_100_9.png>
+Package pdftex.def Info: images/test_100_9.png used on input line 1182.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_80_9.png, id=108, 481.8pt x 481.8pt>
+File: images/test_80_9.png Graphic file (type png)
+
+<use images/test_80_9.png>
+Package pdftex.def Info: images/test_80_9.png used on input line 1186.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+ <images/test_100_10.png, id=109, 481.8pt x 481.8pt>
+File: images/test_100_10.png Graphic file (type png)
+
+<use images/test_100_10.png>
+Package pdftex.def Info: images/test_100_10.png used on input line 1190.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test2.png, id=92, 481.8pt x 481.8pt>
-File: images/test2.png Graphic file (type png)
- <use images/test2.png>
-Package pdftex.def Info: images/test2.png used on input line 1123.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test3.png, id=93, 481.8pt x 481.8pt>
-File: images/test3.png Graphic file (type png)
- <use images/test3.png>
-Package pdftex.def Info: images/test3.png used on input line 1127.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test4.png, id=94, 481.8pt x 481.8pt>
-File: images/test4.png Graphic file (type png)
- <use images/test4.png>
-Package pdftex.def Info: images/test4.png used on input line 1131.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test5.png, id=95, 481.8pt x 481.8pt>
-File: images/test5.png Graphic file (type png)
- <use images/test5.png>
-Package pdftex.def Info: images/test5.png used on input line 1136.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test6.png, id=96, 481.8pt x 481.8pt>
-File: images/test6.png Graphic file (type png)
- <use images/test6.png>
-Package pdftex.def Info: images/test6.png used on input line 1140.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test7.png, id=97, 481.8pt x 481.8pt>
-File: images/test7.png Graphic file (type png)
- <use images/test7.png>
-Package pdftex.def Info: images/test7.png used on input line 1144.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test8.png, id=98, 481.8pt x 481.8pt>
-File: images/test8.png Graphic file (type png)
- <use images/test8.png>
-Package pdftex.def Info: images/test8.png used on input line 1148.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test9.png, id=99, 481.8pt x 481.8pt>
-File: images/test9.png Graphic file (type png)
- <use images/test9.png>
-Package pdftex.def Info: images/test9.png used on input line 1153.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test10.png, id=100, 481.8pt x 481.8pt>
-File: images/test10.png Graphic file (type png)
- <use images/test10.png>
-Package pdftex.def Info: images/test10.png used on input line 1157.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test11.png, id=101, 481.8pt x 481.8pt>
-File: images/test11.png Graphic file (type png)
- <use images/test11.png>
-Package pdftex.def Info: images/test11.png used on input line 1161.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test12.png, id=102, 481.8pt x 481.8pt>
-File: images/test12.png Graphic file (type png)
- <use images/test12.png>
-Package pdftex.def Info: images/test12.png used on input line 1165.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test13.png, id=103, 481.8pt x 481.8pt>
-File: images/test13.png Graphic file (type png)
- <use images/test13.png>
-Package pdftex.def Info: images/test13.png used on input line 1170.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test14.png, id=104, 481.8pt x 481.8pt>
-File: images/test14.png Graphic file (type png)
- <use images/test14.png>
-Package pdftex.def Info: images/test14.png used on input line 1174.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test15.png, id=105, 481.8pt x 481.8pt>
-File: images/test15.png Graphic file (type png)
- <use images/test15.png>
-Package pdftex.def Info: images/test15.png used on input line 1178.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test16.png, id=106, 481.8pt x 481.8pt>
-File: images/test16.png Graphic file (type png)
- <use images/test16.png>
-Package pdftex.def Info: images/test16.png used on input line 1182.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test17.png, id=107, 481.8pt x 481.8pt>
-File: images/test17.png Graphic file (type png)
- <use images/test17.png>
-Package pdftex.def Info: images/test17.png used on input line 1187.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test18.png, id=108, 481.8pt x 481.8pt>
-File: images/test18.png Graphic file (type png)
- <use images/test18.png>
-Package pdftex.def Info: images/test18.png used on input line 1191.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test19.png, id=109, 481.8pt x 481.8pt>
-File: images/test19.png Graphic file (type png)
- <use images/test19.png>
-Package pdftex.def Info: images/test19.png used on input line 1195.
-(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
-
-<images/test20.png, id=110, 481.8pt x 481.8pt>
-File: images/test20.png Graphic file (type png)
- <use images/test20.png>
-Package pdftex.def Info: images/test20.png used on input line 1199.
+<images/test_80_10.png, id=110, 481.8pt x 481.8pt>
+File: images/test_80_10.png Graphic file (type png)
+ <use images/test_80_10.png>
+Package pdftex.def Info: images/test_80_10.png used on input line 1194.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
 
-LaTeX Warning: Float too large for page by 40.89098pt on input line 1202.
+LaTeX Warning: Float too large for page by 71.80315pt on input line 1197.
 
-<images/test21.png, id=111, 481.8pt x 481.8pt>
-File: images/test21.png Graphic file (type png)
- <use images/test21.png>
-Package pdftex.def Info: images/test21.png used on input line 1206.
+[15
+
+] [16 <./images/test_100_1.png> <./images/test_80_1.png> <./images/test_100_2.p
+ng> <./images/test_80_2.png> <./images/test_100_3.png> <./images/test_80_3.png>
+ <./images/test_100_4.png> <./images/test_80_4.png> <./images/test_100_5.png> <
+./images/test_80_5.png> <./images/test_100_6.png> <./images/test_80_6.png> <./i
+mages/test_100_7.png> <./images/test_80_7.png> <./images/test_100_8.png> <./ima
+ges/test_80_8.png> <./images/test_100_9.png> <./images/test_80_9.png> <./images
+/test_100_10.png> <./images/test_80_10.png>]
+<images/test_100_11.png, id=137, 481.8pt x 481.8pt>
+File: images/test_100_11.png Graphic file (type png)
+
+<use images/test_100_11.png>
+Package pdftex.def Info: images/test_100_11.png used on input line 1202.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test22.png, id=112, 481.8pt x 481.8pt>
-File: images/test22.png Graphic file (type png)
- <use images/test22.png>
-Package pdftex.def Info: images/test22.png used on input line 1210.
+<images/test_80_11.png, id=138, 481.8pt x 481.8pt>
+File: images/test_80_11.png Graphic file (type png)
+ <use images/test_80_11.png>
+Package pdftex.def Info: images/test_80_11.png used on input line 1206.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test23.png, id=113, 481.8pt x 481.8pt>
-File: images/test23.png Graphic file (type png)
- <use images/test23.png>
-Package pdftex.def Info: images/test23.png used on input line 1214.
+<images/test_100_12.png, id=139, 481.8pt x 481.8pt>
+File: images/test_100_12.png Graphic file (type png)
+
+<use images/test_100_12.png>
+Package pdftex.def Info: images/test_100_12.png used on input line 1210.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
 
-<images/test24.png, id=114, 481.8pt x 481.8pt>
-File: images/test24.png Graphic file (type png)
- <use images/test24.png>
-Package pdftex.def Info: images/test24.png used on input line 1218.
+<images/test_80_12.png, id=140, 481.8pt x 481.8pt>
+File: images/test_80_12.png Graphic file (type png)
+ <use images/test_80_12.png>
+Package pdftex.def Info: images/test_80_12.png used on input line 1214.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- [15
 
-]
-[16 <./images/test1.png> <./images/test2.png> <./images/test3.png> <./images/te
-st4.png> <./images/test5.png> <./images/test6.png> <./images/test7.png> <./imag
-es/test8.png> <./images/test9.png> <./images/test10.png> <./images/test11.png> 
-<./images/test12.png> <./images/test13.png> <./images/test14.png> <./images/tes
-t15.png> <./images/test16.png> <./images/test17.png> <./images/test18.png> <./i
-mages/test19.png> <./images/test20.png>]
-<images/finishTime_CC_AS_Order.png, id=142, 440.39531pt x 371.88937pt>
+<images/test_100_13.png, id=141, 481.8pt x 481.8pt>
+File: images/test_100_13.png Graphic file (type png)
+
+<use images/test_100_13.png>
+Package pdftex.def Info: images/test_100_13.png used on input line 1218.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_80_13.png, id=142, 481.8pt x 481.8pt>
+File: images/test_80_13.png Graphic file (type png)
+ <use images/test_80_13.png>
+Package pdftex.def Info: images/test_80_13.png used on input line 1222.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_100_14.png, id=143, 481.8pt x 481.8pt>
+File: images/test_100_14.png Graphic file (type png)
+
+<use images/test_100_14.png>
+Package pdftex.def Info: images/test_100_14.png used on input line 1226.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_80_14.png, id=144, 481.8pt x 481.8pt>
+File: images/test_80_14.png Graphic file (type png)
+ <use images/test_80_14.png>
+Package pdftex.def Info: images/test_80_14.png used on input line 1230.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_100_15.png, id=145, 481.8pt x 481.8pt>
+File: images/test_100_15.png Graphic file (type png)
+
+<use images/test_100_15.png>
+Package pdftex.def Info: images/test_100_15.png used on input line 1234.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_80_15.png, id=146, 481.8pt x 481.8pt>
+File: images/test_80_15.png Graphic file (type png)
+ <use images/test_80_15.png>
+Package pdftex.def Info: images/test_80_15.png used on input line 1238.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_100_16.png, id=147, 481.8pt x 481.8pt>
+File: images/test_100_16.png Graphic file (type png)
+
+<use images/test_100_16.png>
+Package pdftex.def Info: images/test_100_16.png used on input line 1242.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_80_16.png, id=148, 481.8pt x 481.8pt>
+File: images/test_80_16.png Graphic file (type png)
+ <use images/test_80_16.png>
+Package pdftex.def Info: images/test_80_16.png used on input line 1246.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_100_17.png, id=149, 481.8pt x 481.8pt>
+File: images/test_100_17.png Graphic file (type png)
+
+<use images/test_100_17.png>
+Package pdftex.def Info: images/test_100_17.png used on input line 1250.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_80_17.png, id=150, 481.8pt x 481.8pt>
+File: images/test_80_17.png Graphic file (type png)
+ <use images/test_80_17.png>
+Package pdftex.def Info: images/test_80_17.png used on input line 1254.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_100_18.png, id=151, 481.8pt x 481.8pt>
+File: images/test_100_18.png Graphic file (type png)
+
+<use images/test_100_18.png>
+Package pdftex.def Info: images/test_100_18.png used on input line 1258.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_80_18.png, id=152, 481.8pt x 481.8pt>
+File: images/test_80_18.png Graphic file (type png)
+ <use images/test_80_18.png>
+Package pdftex.def Info: images/test_80_18.png used on input line 1262.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_100_19.png, id=153, 481.8pt x 481.8pt>
+File: images/test_100_19.png Graphic file (type png)
+
+<use images/test_100_19.png>
+Package pdftex.def Info: images/test_100_19.png used on input line 1266.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_80_19.png, id=154, 481.8pt x 481.8pt>
+File: images/test_80_19.png Graphic file (type png)
+ <use images/test_80_19.png>
+Package pdftex.def Info: images/test_80_19.png used on input line 1270.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_100_20.png, id=155, 481.8pt x 481.8pt>
+File: images/test_100_20.png Graphic file (type png)
+
+<use images/test_100_20.png>
+Package pdftex.def Info: images/test_100_20.png used on input line 1274.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+<images/test_80_20.png, id=156, 481.8pt x 481.8pt>
+File: images/test_80_20.png Graphic file (type png)
+ <use images/test_80_20.png>
+Package pdftex.def Info: images/test_80_20.png used on input line 1278.
+(pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
+
+
+LaTeX Warning: Float too large for page by 94.22743pt on input line 1282.
+
+[17 <./images/test_100_11.png> <./images/test_80_11.png> <./images/test_100_12.
+png> <./images/test_80_12.png> <./images/test_100_13.png> <./images/test_80_13.
+png> <./images/test_100_14.png> <./images/test_80_14.png> <./images/test_100_15
+.png> <./images/test_80_15.png> <./images/test_100_16.png> <./images/test_80_16
+.png> <./images/test_100_17.png> <./images/test_80_17.png> <./images/test_100_1
+8.png> <./images/test_80_18.png> <./images/test_100_19.png> <./images/test_80_1
+9.png> <./images/test_100_20.png> <./images/test_80_20.png>]
+<images/finishTime_CC_AS_Order.png, id=181, 440.39531pt x 371.88937pt>
 File: images/finishTime_CC_AS_Order.png Graphic file (type png)
 
 <use images/finishTime_CC_AS_Order.png>
 Package pdftex.def Info: images/finishTime_CC_AS_Order.png used on input line 1
-229.
+290.
 (pdftex.def)             Requested size: 226.48395pt x 191.24994pt.
 
-<images/finishTime_CC_AS_ACC_Line.png, id=143, 550.30594pt x 371.88937pt>
+<images/finishTime_CC_AS_ACC_Line.png, id=182, 550.30594pt x 371.88937pt>
 File: images/finishTime_CC_AS_ACC_Line.png Graphic file (type png)
 
 <use images/finishTime_CC_AS_ACC_Line.png>
 Package pdftex.def Info: images/finishTime_CC_AS_ACC_Line.png used on input lin
-e 1238.
+e 1299.
 (pdftex.def)             Requested size: 317.07614pt x 214.283pt.
+ [18
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[17 <./images/test21.png> <./images/test22.png> <./images/test23.png> <./images
-/test24.png> <./images/finishTime_CC_AS_Order.png>] [18 <./images/finishTime_CC
-_AS_ACC_Line.png (PNG copy)>]
+ <./images/finishTime_CC_AS_Order.png> <./images/finishTime_CC_AS_ACC_Line.png 
+(PNG copy)>]
 Ch\uhorn \ohorn ng 4.
 
-Overfull \hbox (5.47571pt too wide) in paragraph at lines 1249--1250
+Overfull \hbox (5.47571pt too wide) in paragraph at lines 1310--1311
 \T5/cmr/m/n/10 gi£i câ thº cho c¥u häi "Dü b¡o x¡c su§t xe v· tr¤m ^^_óng gií k
 hi xe ^^_¢ ^^_i ^^_÷ñc mët 2/3 kho£ng ^^_÷íng"  
  []
@@ -1553,41 +1628,41 @@ hi xe ^^_¢ ^^_i ^^_÷ñc mët 2/3 kho£ng ^^_÷íng"
 Ch\uhorn \ohorn ng 5.
 [20
 
-] [21] <images/dragAndDrop1.png, id=165, 1149.29375pt x 656.4525pt>
+] [21] <images/dragAndDrop1.png, id=196, 1149.29375pt x 656.4525pt>
 File: images/dragAndDrop1.png Graphic file (type png)
 
 <use images/dragAndDrop1.png>
-Package pdftex.def Info: images/dragAndDrop1.png used on input line 1362.
+Package pdftex.def Info: images/dragAndDrop1.png used on input line 1423.
 (pdftex.def)             Requested size: 181.18439pt x 103.48196pt.
 
-<images/dragAndDrop2.png, id=166, 792.9625pt x 675.52374pt>
+<images/dragAndDrop2.png, id=197, 792.9625pt x 675.52374pt>
 File: images/dragAndDrop2.png Graphic file (type png)
 
 <use images/dragAndDrop2.png>
-Package pdftex.def Info: images/dragAndDrop2.png used on input line 1366.
+Package pdftex.def Info: images/dragAndDrop2.png used on input line 1427.
 (pdftex.def)             Requested size: 181.18439pt x 154.34673pt.
  [22 <./images/dragAndDrop1.png> <./images/dragAndDrop2.png>] [23
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1435--1436
+Underfull \hbox (badness 10000) in paragraph at lines 1496--1497
 []\T5/cmr/m/it/10 Jenks nat-u-ral breaks op-ti-miza-tion\T5/cmr/m/n/10 , truy c
 ªp ng y 23 th¡ng 10 n«m 2016, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 1437--1439
+Underfull \hbox (badness 2103) in paragraph at lines 1498--1500
 []\T5/cmr/m/it/10 Jenks nat-u-ral breaks op-ti-miza-tion ex-am-ple\T5/cmr/m/n/1
 0 , truy cªp ng y 18 th¡ng 2 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 1441--1443
+Underfull \hbox (badness 1087) in paragraph at lines 1502--1504
 []\T5/cmr/m/it/10 Google Maps 3 API - Data Layer: Geo-J-SON\T5/cmr/m/n/10 , tru
 y cªp ng y 6 th¡ng 11 n«m 2016, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 4805) in paragraph at lines 1453--1455
+Underfull \hbox (badness 4805) in paragraph at lines 1514--1516
 []\T5/cmr/m/it/10 Google Maps 3 API - Dis-tance Ma-trix\T5/cmr/m/n/10 , truy cª
 p ng y 6 th¡ng 11 n«m 2016, ^^_àa ch¿ 
  []
@@ -1601,13 +1676,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7764 strings out of 493029
- 107138 string characters out of 6136233
- 325298 words of memory out of 5000000
- 11085 multiletter control sequences out of 15000+600000
+ 7331 strings out of 493029
+ 102065 string characters out of 6136233
+ 313568 words of memory out of 5000000
+ 10639 multiletter control sequences out of 15000+600000
  31320 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,79p,1393b,768s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,77p,1393b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texli
@@ -1625,10 +1700,10 @@ ype1/vntex/vnr/vnr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vn
 r7.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/vntex/vnr/vnti10.pfb>
-Output written on test3.pdf (32 pages, 1242459 bytes).
+Output written on test3.pdf (32 pages, 1579437 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
+ 272 PDF objects out of 1000 (max. 8388607)
  130 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 

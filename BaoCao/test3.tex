@@ -6,8 +6,6 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
-\usepackage{floatrow}
-\floatsetup[figure]{capposition=bottom}
 \usepackage{caption}
 \usepackage{enumitem}
 \usepackage{array}
@@ -26,6 +24,7 @@
 \usepackage{wrapfig}
 \usepackage{subcaption}
 \setcounter{tocdepth}{1} % for \tableofcontents
+
 
 
 \makeatletter% http://tex.stackexchange.com/questions/29517/forcing-new-line-after-item-number-in-enumerate-environment/29518#29518
@@ -1112,115 +1111,177 @@ Trích ngẫu nhiên 80\% thời gian di chuyển của 24 chuyến xe trong 351
 ...\\
 \textbf{\underline{Chuyến 24}}: 279, 279, 17, 17, 52, 52, 48, 48, 67, 67, 141, 141, 131, 131, 131, 131, 95, 95, 157, 157, 155, 155, 196, 196, 242, 242, 219, 219, 50, 50, 172, 172, 219, 219, 243, 243, 148, 148, 74, 74, 5, 5, 105, 105, 194, 194, 68, 68, 216, 216, 224, 224, 231, 231, 61, 61, 76, 76, 228, 228, 295, 295, 306, 306, 293, 293, 260, 260, 236, 236, 279, 279, 284, 284, 232, 232, 174, 174, 75, 75, 205, 205, 103, 103, 98, 98, 232, 232, 266, 266, 257, 257, 188, 188, 60, 60, 192, 192, 228, 228, 256, 256, 236, 236, 215, 215, 23, 23, 10, 10, 100, 100, 44, 44, 132, 132, 255, 255, 290, 290, 272, 272, 216, 216, 237, 237, 281, 281, 274, 274, 272, 272, 294, 294, 189, 189, 0, 0, 41, 41, 84, 84, 65, 65, 197, 197, 247, 247, 221, 221, 121, 121, 83, 83, 138, 138, 252, 252, 223, 223, 195, 195, 135, 135, 17, 17, 0, 0, 6, 6, 15, 15, 44, 44, 121, 121, 61, 61, 206, 206, 220, 220, 148, 148, 52, 52, 164, 164, 208, 208, 248, 248, 203, 203, 179, 179, 11, 11, 0, 0, 62, 62, 112, 112, 252, 252, 307, 307, 316, 316, 168, 168, 104, 104, 87, 87, 192, 192, 148, 148, 131, 131, 91, 91, 215, 215, 215, 143, 143, 126, 126, 279, 279, 27\\
 Kham khảo \ref{trucquandichuyen} tại mục Phụ Lục xuất ra trực quan hóa giá trị các bước di chuyển của 24 chuyến dữ liệu ngẫu nhiên, ta có\\
+
 \FloatBarrier
-\begin{figure}
-		% 4 first row data
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test1}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 1-đúng giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test2}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 2-trễ giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test3}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 3-đúng giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test4}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 4-trễ giờ}
-        \end{subfigure}
-		% 4 second row data
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test5}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 5-đúng giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test6}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 6-trễ giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test7}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 7-đúng giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test8}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 8-trễ giờ}
-        \end{subfigure}
-        % 4 third row data
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test9}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 9-đúng giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test10}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 10-trễ giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test11}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 11-đúng giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test12}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 12-trễ giờ}
-        \end{subfigure}
-		% 4 fourth row data
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test13}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 13-đúng giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test14}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 14-trễ giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test15}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 15-đúng giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test16}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 16-trễ giờ}
-        \end{subfigure}
-        % 4 fifth row data
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test17}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 17-đúng giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test18}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 18-trễ giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test19}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 19-đúng giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test20}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 20-trễ giờ}
-        \end{subfigure}
-\end{figure}
-\begin{figure}\ContinuedFloat
-% 4 sixth row data
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test21}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 21-đúng giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test22}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 22-trễ giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test23}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 23-đúng giờ}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.25\textwidth}
-                \includegraphics[width=\linewidth]{test24}
-                \caption*{80\% thời gian di chuyển\\Chuyến xe 24-trễ giờ}
-        \end{subfigure}
-	\caption{Trực quan hóa 24 dòng dữ liệu ngẫu nhiên}
+\begin{figure}[!htb]
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_100_1}
+  \caption*{Toàn bộ di chuyển chuyến xe 1 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_1}
+  \caption*{80\% di chuyển chuyến xe 1 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}%
+  \includegraphics[width=\linewidth]{test_100_2}
+  \caption*{Toàn bộ di chuyển chuyến xe 2 - trễ giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_2}
+  \caption*{80\% di chuyển chuyến xe 2 - trễ giờ}
+\endminipage\\
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_100_3}
+  \caption*{Toàn bộ di chuyển chuyến xe 3 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_3}
+  \caption*{80\% di chuyển chuyến xe 3 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}%
+  \includegraphics[width=\linewidth]{test_100_4}
+  \caption*{Toàn bộ di chuyển chuyến xe 4 - trễ giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_4}
+  \caption*{80\% di chuyển chuyến xe 4 - trễ giờ}
+\endminipage\\
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_100_5}
+  \caption*{Toàn bộ di chuyển chuyến xe 5 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_5}
+  \caption*{80\% di chuyển chuyến xe 5 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}%
+  \includegraphics[width=\linewidth]{test_100_6}
+  \caption*{Toàn bộ di chuyển chuyến xe 6 - trễ giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_6}
+  \caption*{80\% di chuyển chuyến xe 6 - trễ giờ}
+\endminipage\\
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_100_7}
+  \caption*{Toàn bộ di chuyển chuyến xe 7 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_7}
+  \caption*{80\% di chuyển chuyến xe 7 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}%
+  \includegraphics[width=\linewidth]{test_100_8}
+  \caption*{Toàn bộ di chuyển chuyến xe 8 - trễ giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_8}
+  \caption*{80\% di chuyển chuyến xe 8 - trễ giờ}
+\endminipage\\
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_100_9}
+  \caption*{Toàn bộ di chuyển chuyến xe 9 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_9}
+  \caption*{80\% di chuyển chuyến xe 9 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}%
+  \includegraphics[width=\linewidth]{test_100_10}
+  \caption*{Toàn bộ di chuyển chuyến xe 10 - trễ giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_10}
+  \caption*{80\% di chuyển chuyến xe 10 - trễ giờ}
+\endminipage\\
 \end{figure}
 \FloatBarrier
+\FloatBarrier
+\begin{figure}[!htb]
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_100_11}
+  \caption*{Toàn bộ di chuyển chuyến xe 11 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_11}
+  \caption*{80\% di chuyển chuyến xe 11 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}%
+  \includegraphics[width=\linewidth]{test_100_12}
+  \caption*{Toàn bộ di chuyển chuyến xe 12 - trễ giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_12}
+  \caption*{80\% di chuyển chuyến xe 12 - trễ giờ}
+\endminipage\\
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_100_13}
+  \caption*{Toàn bộ di chuyển chuyến xe 13 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_13}
+  \caption*{80\% di chuyển chuyến xe 13 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}%
+  \includegraphics[width=\linewidth]{test_100_14}
+  \caption*{Toàn bộ di chuyển chuyến xe 14 - trễ giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_14}
+  \caption*{80\% di chuyển chuyến xe 14 - trễ giờ}
+\endminipage\\
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_100_15}
+  \caption*{Toàn bộ di chuyển chuyến xe 15 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_15}
+  \caption*{80\% di chuyển chuyến xe 15 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}%
+  \includegraphics[width=\linewidth]{test_100_16}
+  \caption*{Toàn bộ di chuyển chuyến xe 16 - trễ giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_16}
+  \caption*{80\% di chuyển chuyến xe 16 - trễ giờ}
+\endminipage\\
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_100_17}
+  \caption*{Toàn bộ di chuyển chuyến xe 17 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_17}
+  \caption*{80\% di chuyển chuyến xe 17 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}%
+  \includegraphics[width=\linewidth]{test_100_18}
+  \caption*{Toàn bộ di chuyển chuyến xe 18 - trễ giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_18}
+  \caption*{80\% di chuyển chuyến xe 18 - trễ giờ}
+\endminipage\\
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_100_19}
+  \caption*{Toàn bộ di chuyển chuyến xe 19 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_19}
+  \caption*{80\% di chuyển chuyến xe 19 - đúng giờ}
+\endminipage
+\minipage{0.25\textwidth}%
+  \includegraphics[width=\linewidth]{test_100_20}
+  \caption*{Toàn bộ di chuyển chuyến xe 20 - trễ giờ}
+\endminipage
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{test_80_20}
+  \caption*{80\% di chuyển chuyến xe 20 - trễ giờ}
+\endminipage\\
+\caption*{Trực quan hóa 20 dòng dữ liệu ngẫu nhiên}
+\end{figure}
+\FloatBarrier
+
 Kham khảo \ref{sapxepTGHT} tại mục Phụ Lục xuất ra hình vẽ sắp xếp thời gian hoàn thành lộ trình BX Củ Chi - BX An Sương xác suất xuất hiện tăng dần.\\
 \FloatBarrier
 \begin{figure}[h!]

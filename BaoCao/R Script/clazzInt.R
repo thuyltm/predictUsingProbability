@@ -16,3 +16,5 @@ classIntervals(data, n = 5, style = "jenks")
 data=read.table(file="freqVeryHigh.csv")[,1]
 data
 classIntervals(data, n = 5, style = "jenks")
+library("BAMMtools")
+getJenksBreaks(data, 5)

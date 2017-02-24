@@ -53,10 +53,11 @@ cut(e, breaks=seq(from=241.5865,to=372.9817,by=5)) -> wait4
 as.data.frame(table(wait4))
 
 setwd("/home/thuy1/git/predictUsingProbability/Preprocess")
-count.fields("data.txt", sep = ",")
-no_col <- max(count.fields("data.txt", sep = ","))
+dataFile = "data_80.txt"
+count.fields(dataFile, sep = ",")
+no_col <- max(count.fields(dataFile, sep = ","))
 no_col
-dat=read.table("data.txt", header = FALSE, sep = ",", 
+dat=read.table(dataFile, header = FALSE, sep = ",", 
                 col.names = 1:no_col, fill = TRUE)
 i=1
 for (i in 1:nrow(dat)){
@@ -65,7 +66,7 @@ for (i in 1:nrow(dat)){
   x=length(d)
   cat(paste("..", x, ".."))
   #plot(seq(0,23,by=1),d,type='b',col='red',main="Confucius Temple",xlab="Hours",ylab="Numbers of check-in")
-  png(filename=paste("test", i, ".png", sep = ""))
+  png(filename=paste("test_80_", i, ".png", sep = ""))
   temp <- plot(1:x, d, type='b', axes=FALSE,xlab = "step", ylab = "length (meters)")
   temp <- axis(side=1, at=c(1:x))
   temp <- axis(side=2, at=seq(min(d), max(d), by=100))
