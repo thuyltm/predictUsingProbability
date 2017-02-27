@@ -92,8 +92,8 @@ public class BatchJob {
             detailList.add(precentDurationTextList.toString());
             detailList.add(percentDurationList.toString());
             detailList.add(percentDistanceList.toString());
-            GroupDuration.groupToStandardDuration(legList,detailList);
-            GroupDuration.groupToStandardDuration(percentLegList,detailList);
+            GroupDuration.filterStandardResponse(legList,detailList);
+            GroupDuration.filterStandardResponse(percentLegList,detailList);
         }
         return detailList;
     }

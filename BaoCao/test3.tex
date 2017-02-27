@@ -556,7 +556,7 @@ Bước đầu & Bước kế tiếp & Vĩ độ đầu & Kinh độ đầu & V�
 \end{tabular}
 \end{flushleft}
 Khi quan sát, ta nhận thấy thông thường sau 20 giây hệ thống sẽ ghi nhận một bước chuyển mới, nhưng do trục trặc về kỹ thuật ghi nhận, vẫn thường xuyên xảy ra hiện tượng hồi đáp sớm hơn, trễ hơn so với 20 giây, cho nên ta phải làm một thao tác trung gian đồng bộ hóa 20 giây nhiều nhất có thể. Vì ta giả định những bước di chuyển hoàn toàn độc lập nhau nên ta có thể gom nhóm những bước hồi đáp không chuẩn lại thành bội số của 20 và sau đó chia đều cho 20, nếu số dư còn lại lớn hơn 15 giây thì chấp nhận hồi đáp dư đó, nếu không thì loại bỏ.\\      
-Kham khảo \ref{DragAndDrop} tại mục Phụ lục cho thao tác đồng bộ hóa 20 giây và ví dụ sau xem kết quả đồng bộ cho một chuyến được chọn ngẫu nhiên\\
+Kham khảo \ref{dongbohoa20} tại mục Phụ lục cho thao tác đồng bộ hóa 20 giây và ví dụ sau xem kết quả đồng bộ cho một chuyến được chọn ngẫu nhiên\\
 Dữ liệu chưa được đồng bộ hóa
 \FloatBarrier
 \begin{table}[!htb]
@@ -1103,13 +1103,13 @@ STT&Khoảng thời gian hồi đáp (giây) & Khoảng cách bước đi (mét)
 \FloatBarrier
 Trích ngẫu nhiên 80\% thời gian di chuyển của 24 chuyến xe trong 351 chuyến xe BX Củ Chi - BX An Sương. Trong một chuyến xe, mỗi giá trị tính bằng mét, mỗi bước di chuyển giữa các giá trị được ghi nhận sau 20 giây.\\
 \textbf{\underline{Chuyến 1}}: 
-71, 71, 86, 86, 145, 145, 136, 136, 104, 104, 277, 277, 240, 240, 145, 145, 97, 97, 0, 0, 171, 171, 283, 283, 283, 283, 0, 0, 214, 214, 166, 166, 307, 307, 259, 259, 208, 208, 43, 43, 144, 144, 286, 286, 287, 287, 126, 126, 152, 152, 254, 254, 139, 139, 255, 255, 294, 294, 293, 293, 269, 269, 283, 283, 267, 267, 221, 221, 165, 165, 266, 266, 259, 259, 220, 220, 168, 168, 0, 0, 226, 226, 337, 337, 394, 394, 224, 224, 208, 208, 340, 340, 359, 359, 259, 259, 297, 297, 325, 325, 303, 303, 302, 302, 284, 284, 287, 287, 268, 268, 199, 199, 112, 112, 179, 179, 279, 279, 270, 270, 139, 139, 72, 72, 195, 195, 345, 345, 332, 332, 151, 151, 149, 149, 230, 230, 261, 261, 186, 186, 170, 170, 236, 236, 243, 243, 265, 265, 151, 151, 201, 201, 29, 29, 125, 125, 121, 121, 35, 35, 29, 29, 80, 80, 46, 46, 36, 36, 132, 132, 52, 52, 44, 44, 63, 63, 63, 46, 46, 46, 40, 40, 23\\
+71, 86, 145, 136, 104, 277, 240, 145, 97, 0, 171, 283, 283, 0, 214, 166, 307, 259, 208, 43, 144, 286, 287, 126, 152, 254, 139, 255, 294, 293, 269, 283, 267, 221, 165, 266, 259, 220, 168, 0, 226, 337, 394, 224, 208, 340, 359, 259, 297, 325, 303, 302, 284, 287, 268, 199, 112, 179, 279, 270, 139, 72, 195, 345, 332, 151, 149, 230, 261, 186, 170, 236, 243, 265, 151, 201, 29, 125, 121, 35, 29, 80, 46, 36, 132, 52, 44, 63, 63, 46, 46, 40, 236\\
 \textbf{\underline{Chuyến 2}}:...\\
 ...\\
-\textbf{\underline{Chuyến 12}}: 104, 104, 145, 145, 124, 124, 166, 166, 194, 194, 205, 205, 188, 188, 158, 158, 107, 107, 121, 121, 91, 91, 152, 152, 218, 218, 93, 93, 100, 100, 0, 0, 167, 167, 167, 167, 250, 250, 160, 160, 144, 144, 223, 223, 215, 215, 131, 131, 114, 114, 241, 241, 206, 206, 193, 193, 0, 0, 0, 0, 169, 169, 212, 212, 192, 192, 200, 200, 257, 257, 223, 223, 198, 198, 166, 166, 135, 135, 184, 184, 105, 105, 90, 90, 151, 151, 202, 202, 192, 192, 168, 168, 177, 177, 217, 217, 168, 168, 243, 243, 211, 211, 109, 109, 161, 161, 272, 272, 287, 287, 281, 281, 248, 248, 257, 257, 166, 166, 261, 261, 250, 250, 152, 152, 238, 238, 267, 267, 190, 190, 111, 111, 0, 0, 117, 117, 138, 138, 209, 209, 182, 182, 123, 123, 58, 58, 151, 151, 222, 222, 248, 248, 218, 218, 110, 110, 0, 0, 0, 0, 111, 111, 211, 211, 61, 61, 114, 114, 83, 83, 109, 109, 26, 26, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 96, 96, 37, 37, 110, 110, 48, 48, 34, 34, 121, 121, 121, 46, 46, 33, 33, 88, 88, 64, 64, 235, 235, 183, 183, 125, 125, 220, 22\\
+\textbf{\underline{Chuyến 12}}: 104, 145, 124, 166, 194, 205, 188, 158, 107, 121, 91, 152, 218, 93, 100, 0, 167, 167, 250, 160, 144, 223, 215, 131, 114, 241, 206, 193, 0, 0, 169, 212, 192, 200, 257, 223, 198, 166, 135, 184, 105, 90, 151, 202, 192, 168, 177, 217, 168, 243, 211, 109, 161, 272, 287, 281, 248, 257, 166, 261, 250, 152, 238, 267, 190, 111, 0, 117, 138, 209, 182, 123, 58, 151, 222, 248, 218, 110, 0, 0, 111, 211, 61, 114, 83, 109, 26, 232, 232, 232, 232, 232, 232, 232, 232, 232, 96, 37, 110, 48, 34, 121, 121, 46, 33, 88, 64, 235, 183, 125, 220\\
 \textbf{\underline{Chuyến 13}}:...\\
 ...\\
-\textbf{\underline{Chuyến 24}}: 279, 279, 17, 17, 52, 52, 48, 48, 67, 67, 141, 141, 131, 131, 131, 131, 95, 95, 157, 157, 155, 155, 196, 196, 242, 242, 219, 219, 50, 50, 172, 172, 219, 219, 243, 243, 148, 148, 74, 74, 5, 5, 105, 105, 194, 194, 68, 68, 216, 216, 224, 224, 231, 231, 61, 61, 76, 76, 228, 228, 295, 295, 306, 306, 293, 293, 260, 260, 236, 236, 279, 279, 284, 284, 232, 232, 174, 174, 75, 75, 205, 205, 103, 103, 98, 98, 232, 232, 266, 266, 257, 257, 188, 188, 60, 60, 192, 192, 228, 228, 256, 256, 236, 236, 215, 215, 23, 23, 10, 10, 100, 100, 44, 44, 132, 132, 255, 255, 290, 290, 272, 272, 216, 216, 237, 237, 281, 281, 274, 274, 272, 272, 294, 294, 189, 189, 0, 0, 41, 41, 84, 84, 65, 65, 197, 197, 247, 247, 221, 221, 121, 121, 83, 83, 138, 138, 252, 252, 223, 223, 195, 195, 135, 135, 17, 17, 0, 0, 6, 6, 15, 15, 44, 44, 121, 121, 61, 61, 206, 206, 220, 220, 148, 148, 52, 52, 164, 164, 208, 208, 248, 248, 203, 203, 179, 179, 11, 11, 0, 0, 62, 62, 112, 112, 252, 252, 307, 307, 316, 316, 168, 168, 104, 104, 87, 87, 192, 192, 148, 148, 131, 131, 91, 91, 215, 215, 215, 143, 143, 126, 126, 279, 279, 27\\
+\textbf{\underline{Chuyến 24}}: 279, 17, 52, 48, 67, 141, 131, 131, 95, 157, 155, 196, 242, 219, 50, 172, 219, 243, 148, 74, 5, 105, 194, 68, 216, 224, 231, 61, 76, 228, 295, 306, 293, 260, 236, 279, 284, 232, 174, 75, 205, 103, 98, 232, 266, 257, 188, 60, 192, 228, 256, 236, 215, 23, 10, 100, 44, 132, 255, 290, 272, 216, 237, 281, 274, 272, 294, 189, 0, 41, 84, 65, 197, 247, 221, 121, 83, 138, 252, 223, 195, 135, 17, 0, 6, 15, 44, 121, 61, 206, 220, 148, 52, 164, 208, 248, 203, 179, 11, 0, 62, 112, 252, 307, 316, 168, 104, 87, 192, 148, 131, 91, 215, 215, 143, 126, 279, 279\\
 Kham khảo \ref{trucquandichuyen} tại mục Phụ Lục xuất ra trực quan hóa giá trị các bước di chuyển của 24 chuyến dữ liệu ngẫu nhiên, ta có\\
 
 \FloatBarrier
@@ -1448,6 +1448,135 @@ public static float distFrom(double lat1, double lng1, double lat2, double lng2)
 \hline
 \end{tabular}
 \end{flushleft}
+
+\item \label{dongbohoa20} Mã nguồn Java tính gom nhóm theo chuẩn 20 giây 
+\begin{flushleft}
+\begin{tabular}{ |l| }
+\hline
+function filterStandardResponse(List<Long> responseDurationList) \{\\
+\hspace{0.5cm} List<Long> nonStandardList = new ArrayList<Long>();\\
+\hspace{0.5cm} for (Long duration: responseDurationList) \{\\
+\hspace{1cm} if (duration \% 20 == 0) \{\\
+\hspace{1.5cm} break2StandardResponse(duration);\\
+\hspace{1cm} \} else \{\\
+\hspace{1.5cm} nonStandardList.add(duration); \\
+\hspace{1cm} \}\\
+\hspace{0.5cm} \}\\
+\hspace{0.5cm} sort(nonStandardList);\\
+\hspace{0.5cm} accumulate2ElmntToStandardResponse();\\
+\}\\
+\hline
+\end{tabular}
+\end{flushleft}
+\begin{flushleft}
+\begin{tabular}{ |l| }
+\hline
+function accumulate2ElmntToStandardResponse(List<Long> sortedNonStandardDurationList) \{\\
+\hspace{0.5cm} List<Long> blockIndexList = new ArrayList<Long>();\\
+\hspace{0.5cm} int maxIndex = sortedNonStandardDurationList.size();\\
+\hspace{0.5cm} for (int i = 0; i <= maxIndex - 2; i++) \{\\
+\hspace{1cm}   for (int j = 0; j <= maxIndex - 1; j++) \{\\
+\hspace{1.5cm} long duration1 = sortedDuration.get(i); \\
+\hspace{1.5cm} long duration2 = sortedDuration.get(j);\\
+\hspace{1.5cm} long sumDuration = duration1+duration2;\\
+\hspace{1.5cm} if (sumDuration \% 20 == 0 \&\& !blockList.contains(i) \&\& !blockList.contains(j)) \{\\
+\hspace{2cm} blockList.add(i);\\
+\hspace{2cm} blockList.add(j);\\
+\hspace{2cm} break2StandardResponse(duration);\\
+\hspace{1.5cm} \}\\
+\hspace{1cm} \}\\
+\hspace{0.5cm} \}\\
+\hspace{0.5cm} List<Long> newSortedNonStandardList = new ArrayList<Long>();\\
+\hspace{0.5cm} for (int i = 0; i < maxIndex; i++) \{\\
+\hspace{1.5cm}     if (!blockList.contains(i)) \{\\
+\hspace{2cm}        newSortedNonStandardList.add(sortedNonStandardDurationList.get(i));\\
+\hspace{1.5cm}     \}\\
+\hspace{0.5cm} \}\\
+\hspace{0.5cm} if (newSortedNonStandardList.size() >= 3) \{\\
+\hspace{1.5cm}      accumulate3ElmntToStandardResponse(newSortedNonStandardList);\\
+\hspace{0.5cm} \}\\
+\hline
+\end{tabular}
+\end{flushleft}
+Các hàm accumulate3ElmntToStandardResponse và accumulate4ElmntToStandardResponse tương tự như hàm accumulate2ElmntToStandardResponse để thực hiện gom nhóm 3 thành phần, 4 thành phần thành bội số 20, cuối cùng với những thành phần chưa được gom nhóm. Tiếp theo, thực hiện việc gom nhóm các thành phần liên tiếp thành bội số 20. Cuối cùng, thực hiện gom nhóm các thành phần liên tiếp sao cho chia cho 20 có số dư nhỏ nhất\\
+\begin{flushleft}
+\begin{tabular}{ |l| }
+\hline
+function accumulateSequenceElmtToStandardResponse(List<Long> sortedNonStandardDurationList) \{\\
+\hspace{0.5cm} int i = 0;\\
+\hspace{0.5cm} int j = 1;\\
+\hspace{0.5cm} int maxIndex = sortedNonStandardDurationList.size();\\
+\hspace{0.5cm} while (i<maxIndex) \{\\
+\hspace{1cm}      long sumDuration = sortedDuration.get(i);\\
+\hspace{1cm}      while (j < maxIndex) \{\\
+\hspace{1.5cm}       sumDuration += sortedDuration.get(j);\textit{\#sum of continuous elements}\\
+\hspace{1.5cm}       if (sumDuration\%20==0) \{\\
+\hspace{2cm}           break2StandardResponse(sumDuration);\\
+\hspace{2cm}           i=j+1;\textit{\#create new caculation with start index equal j+1}\\
+\hspace{2cm}           j=i+1;\\
+\hspace{2cm}           break;\\
+\hspace{1.5cm}       \} else \{\\
+\hspace{2cm}           j++;\textit{\#continue until sumDuration\%20 equal 0}\\
+\hspace{1.5cm}        \}\\
+\hspace{1cm}       \}\\
+\hspace{1cm}     if (j == maxIndex) \{\\
+\hspace{1.5cm}        break;\\
+\hspace{1cm}     \}\\
+\hspace{0.5cm} \}\\
+\hspace{0.5cm} List<Long> notAccumulateElmtList = new ArrayList<Long>();\\
+\hspace{0.5cm} while (i<maxIndex) \{\\
+\hspace{1cm}      notAccumulateElmtList.add(sortedNonStandardDurationList.get(i));\\
+\hspace{1cm}      i++;\\
+\hspace{0.5cm} \}\\
+\hspace{0.5cm} accumulateSequenceElmtWithMinRedundant(notAccumulateElmtList);\\
+\hline
+\end{tabular}
+\end{flushleft}
+
+\begin{flushleft}
+\begin{tabular}{ |l| }
+\hline
+function accumulateSequenceElmtWithMinRedundant(List<Long> sortedNonStandardDurationList) \{\\
+\hspace{0.5cm} int i = 0;\\
+\hspace{0.5cm} int j = 1;\\
+\hspace{0.5cm} int stopIndex = 0;\\
+\hspace{0.5cm} int maxIndex = sortedNonStandardDurationList.size();\\
+\hspace{0.5cm} while (i<maxIndex) \{\\
+\hspace{1cm} long sumDuration = sortedNonStandardDurationList.get(i);\\
+\hspace{1cm} stopIndex = i;\\
+\hspace{1cm} long compareNumber = 20;\\
+\hspace{1cm} if (sumDuration/20>0) \{\textit{\#if sumDuration > 20}\\
+\hspace{1.5cm}   compareNumber = 20*(sumDuration/20);\\
+\hspace{1cm} \}\\
+\hspace{1cm} long min = Math.abs(sumDuration - compareNumber);\\
+\hspace{1cm} while (j < maxIndex) \{\\
+\hspace{1.5cm}   sumDuration += sortedNonStandardDurationList.get(j);\\
+\hspace{1.5cm}   long currentCompareNumber = 20;\\
+\hspace{1.5cm}   if (sumDuration/20>0) \{\textit{\#if sumDuration > 20}\\
+\hspace{2cm}          currentCompareNumber = 20*(sumDuration/20);\\
+\hspace{1.5cm}   \}\\
+\hspace{1.5cm}   long currentMin = Math.abs(sumDuration - currentCompareNumber);\\
+\hspace{1.5cm}   if (currentMin <= min) \{\\
+\hspace{2cm}       stopIndex = j;\\
+\hspace{2cm}       min = currentMin;\\
+\hspace{1.5cm}    \}\\
+\hspace{1.5cm}   j++;\\
+\hspace{1cm} \}\\
+\hspace{1cm}  if (stopIndex != i) \{\\
+\hspace{1.5cm}     sumDuration = 0;\\
+\hspace{1.5cm}     for (int k = i; k <= stopIndex; k++) \{\\
+\hspace{2cm}         sumDuration += sortedNonStandardDurationList.get(k);\\
+\hspace{1.5cm}     \}\\  
+\hspace{1.5cm}     break2StandardResponse(sumDuration);  \\            
+\hspace{1cm}   \}\\
+\hspace{1cm}     i = stopIndex + 1;\\
+\hspace{1cm}     j = i + 1;\\
+\hspace{0.5cm} \}\\
+\hline
+\end{tabular}
+\end{flushleft}
+
+
 \end{enumerate}
 
 

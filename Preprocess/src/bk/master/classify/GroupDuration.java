@@ -10,7 +10,7 @@ import bk.master.input.model.Leg;
 
 public class GroupDuration {
     private static Long DURATION_STEP_SHORT = 20L;
-    public static void groupToStandardDuration(List<Leg> legList, List<String> outputList) {
+    public static void filterStandardResponse(List<Leg> legList, List<String> outputList) {
         List<Integer> result = new ArrayList<Integer>();
         HashMap<Long, List<Integer>> mapDurationDistance = new HashMap<Long, List<Integer>>();
         List<Long> redundantDuration = new ArrayList<Long>();
@@ -18,7 +18,7 @@ public class GroupDuration {
             Long duration = leg.getDuration()/1000;
             Integer distance = leg.getDistance();
             if (duration % DURATION_STEP_SHORT == 0) {
-               divideBigDuration(result, duration, distance);
+               break2StandardResponse(result, duration, distance);
             } else {
                 List<Integer> valueList = new ArrayList<Integer>();
                 if (mapDurationDistance.get(duration)!=null) {
@@ -34,11 +34,11 @@ public class GroupDuration {
                 return o1.compareTo(o2);
             }
         });
-        accumulateDoubleElmt(redundantDuration,mapDurationDistance,result,outputList);
+        accumulate2ElmntToStandardResponse(redundantDuration,mapDurationDistance,result,outputList);
         outputList.add(result.toString());
     }
 
-    public static void accumulateDoubleElmt(List<Long> sortedDuration,
+    public static void accumulate2ElmntToStandardResponse(List<Long> sortedDuration,
             HashMap<Long, List<Integer>> mapDurationDistance, List<Integer> result,
             List<String> outputList) {
         List<Integer> blockList = new ArrayList<Integer>();
@@ -60,7 +60,7 @@ public class GroupDuration {
                         mapDurationDistance.remove(duration2);
                     }
                     Integer sumDistance = distance1 + distance2;
-                    divideBigDuration(result, sumDuration, sumDistance);
+                    break2StandardResponse(result, sumDuration, sumDistance);
                     break;
                 }
             }
@@ -72,13 +72,13 @@ public class GroupDuration {
             }
         }
         if (redundantList.size() >= 3) {
-            accumulateTripleElmt(redundantList,mapDurationDistance,result,outputList);
+            accumulate3ElmntToStandardResponse(redundantList,mapDurationDistance,result,outputList);
         } else {
-            accumulateInfiniteSequenceElmt(redundantList,mapDurationDistance,result,outputList);
+            accumulateSequenceElmtToStandardResponse(redundantList,mapDurationDistance,result,outputList);
         }
     }
 
-    public static void accumulateTripleElmt(List<Long> sortedDuration,
+    public static void accumulate3ElmntToStandardResponse(List<Long> sortedDuration,
             HashMap<Long, List<Integer>> mapDurationDistance, List<Integer> result,
             List<String> outputList) {
         List<Integer> blockList = new ArrayList<Integer>();
@@ -108,7 +108,7 @@ public class GroupDuration {
                             mapDurationDistance.remove(duration3);
                         }
                         Integer sumDistance = distance1 + distance2 + distance3;
-                        divideBigDuration(result, sumDuration, sumDistance);
+                        break2StandardResponse(result, sumDuration, sumDistance);
                         break;
                     }
                 }
@@ -121,12 +121,12 @@ public class GroupDuration {
             }
         }
         if (redundantList.size() >= 4) {
-            accumulateFourElmt(redundantList,mapDurationDistance,result,outputList);
+            accumulate4ElmntToStandardResponse(redundantList,mapDurationDistance,result,outputList);
         } else {
-            accumulateInfiniteSequenceElmt(redundantList,mapDurationDistance,result,outputList);
+            accumulateSequenceElmtToStandardResponse(redundantList,mapDurationDistance,result,outputList);
         }
     }
-    public static void accumulateFourElmt(List<Long> sortedDuration,
+    public static void accumulate4ElmntToStandardResponse(List<Long> sortedDuration,
             HashMap<Long, List<Integer>> mapDurationDistance, List<Integer> result,
             List<String> outputList) {
         List<Integer> blockList = new ArrayList<Integer>();
@@ -163,7 +163,7 @@ public class GroupDuration {
                                 mapDurationDistance.remove(duration4);
                             }
                             Integer sumDistance = distance1 + distance2 + distance3 + distance4;
-                            divideBigDuration(result, sumDuration, sumDistance);
+                            break2StandardResponse(result, sumDuration, sumDistance);
                             break;
                         }
                     }
@@ -176,10 +176,10 @@ public class GroupDuration {
                 redundantList.add(sortedDuration.get(i));
             }
         }
-        accumulateInfiniteSequenceElmt(redundantList,mapDurationDistance,result,outputList);
+        accumulateSequenceElmtToStandardResponse(redundantList,mapDurationDistance,result,outputList);
     }
 
-    public static void accumulateInfiniteSequenceElmt(List<Long> sortedDuration,
+    public static void accumulateSequenceElmtToStandardResponse(List<Long> sortedDuration,
             HashMap<Long, List<Integer>> mapDurationDistance, List<Integer> result,
             List<String> outputList) {
          int i = 0;
@@ -199,7 +199,7 @@ public class GroupDuration {
                              mapDurationDistance.remove(duration);
                          }
                      }
-                     divideBigDuration(result, sumDuration, sumDistance);
+                     break2StandardResponse(result, sumDuration, sumDistance);
                      i=j+1;
                      j=i+1;
                      break;
@@ -216,9 +216,9 @@ public class GroupDuration {
              redundantList.add(sortedDuration.get(i));
              i++;
          }
-         getMinRedundantSequenceElmt(redundantList,mapDurationDistance,result,outputList);
+         accumulateSequenceElmtWithMinRedundant(redundantList,mapDurationDistance,result,outputList);
     }
-    public static void getMinRedundantSequenceElmt(List<Long> sortedDuration,
+    public static void accumulateSequenceElmtWithMinRedundant(List<Long> sortedDuration,
             HashMap<Long, List<Integer>> mapDurationDistance, List<Integer> result,
             List<String> outputList) {
         List<Long> outputReduntDurationList = new ArrayList<>();
@@ -259,7 +259,7 @@ public class GroupDuration {
                         mapDurationDistance.remove(duration);
                     }
                 }
-                divideBigDuration(result, sumDuration, sumDistance);
+                break2StandardResponse(result, sumDuration, sumDistance);
                 outputReduntDurationList.add(sumDuration);
             } else {
                 long duration = sortedDuration.get(i);
@@ -268,7 +268,7 @@ public class GroupDuration {
                 if (distanceList.size()==0) {
                     mapDurationDistance.remove(duration);
                 }
-                divideBigDuration(result, duration, distance);
+                break2StandardResponse(result, duration, distance);
                 outputReduntDurationList.add(sortedDuration.get(i));
             }
             i = stopIndex + 1;
@@ -276,7 +276,7 @@ public class GroupDuration {
         }
         outputList.add(outputReduntDurationList.toString());
     }
-    private static void divideBigDuration(List<Integer> result,
+    private static void break2StandardResponse(List<Integer> result,
             long sumDuration, int sumDistance) {
         if (sumDuration/DURATION_STEP_SHORT > 0) {
             int loop = (int)(sumDuration/DURATION_STEP_SHORT);
