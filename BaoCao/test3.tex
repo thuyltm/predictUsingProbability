@@ -345,6 +345,26 @@ hay là
 \]
 \item Đạo hàm $f(x) = \frac{dF(x)}{dx}$ có thể không tồn tại ở một số hữu hạn giá trị x, trong khoảng hữu hạn bất kỳ.   
 \end{itemize}
+\subsection*{Công thức Bayes và ứng dụng của nó}
+Công thức Bayes cho ta cách thức cơ bản để đánh giá bằng chứng trong các dữ liệu liên quan đến các thông số chưa biết, hoặc một số biến cố không quan sát được. Giả sử rằng một thí nghiệm ngẫu nhiên cho kết quả trong một biến cố A (hoặc phần bù của nó), ngoài ra các kết quả này phụ thuộc vào một biến cố B mà ta không trực tiếp quan sát được, nhưng xác suất có điều kiện $\mathbb{P}$(A|B) là được biết trước.\\
+Bayes nói biến cố quan sát được A có liên quan đến biến cố B không quan sát được thông qua các xác suất có điều kiện. Để cân nhắc bằng chứng cho thấy A có ảnh hưởng trên B, diễn đạt bởi $\mathbb{P}(B|A)$ đầu tiên chúng ta giả định một xác suất $\mathbb{P}$(B) mà được gọi là xác suất tiên nghiệm. Xác suất tiên nghiệm $\mathbb{P}(B)$ thể hiện mức độ tin tưởng của chúng ta vào sự xảy ra của biến cố B. Ta luôn có điều kiện sau, cho phép tính xác suất hậu nghiệm $\mathbb{P}(B|A)$, là xác suất B xảy ra sau khi quan sát A (nên có mẫu số $\mathbb{P}$(A))\\
+\[
+\mathbb{P}(B|A) = \frac{\mathbb{P}(B) \cdot \mathbb{P}(A|B)}{\mathbb{P}(A)}
+\]
+Tổng quát, giả sử $\{$B$_1$,...,B$_m\}$ là một phân vùng của không gian mẫu. Các biến cố B$_1$,...,B$_m$ không trực tiếp quan sát hay kiểm chứng được, nhưng các xác suất có điều kiện $\mathbb{P}(A|B_i)$ là được biết trước. Giả định các xác suất tiên nghiêm là $\mathbb{P}(B_i)$, thể hiện mức độ tin tưởng của ta vào sự xảy ra của biến cố B$_i$. Sau khi quan sát A ta chuyển đổi các xác suất tiên nghiệm của B$_{i}$ thành các xác suất hậu nghiệm $\mathbb{P}(B_i|A)$, theo trên\\
+\[
+\mathbb{P}(B_i|A) = \frac{\mathbb{P}(B_i) \cdot \mathbb{P}(A|B_i)}{\mathbb{P}(A)}
+\]
+Vì $\{$B$_1$,...,B$_m\}$là một phân vùng 	của $\mathcal{S}$, $\mathcal{S}=\bigcup_{j=1}^m $B$_j$, nên A = A$\mathcal{S}$ = $\bigcup_{j=1}^m$ AB$_j$, vậy\\
+\[
+\mathbb{P}(A)=\sum_{j=1}^m \mathbb{P}(AB_j) = \sum_{j=1}^m \mathbb{P}(B_j)\cdot \mathbb{P}(A|B_j)
+\]
+Công thức Bayes tổng quát là:\\
+\[ %\mathlarger{
+  \mathbb{P}(B_{i}|A)= \dfrac{\mathbb{P}(B_{i})\cdot \mathbb{P}(A|B_{i})}{\mathbb{P}(A)}
+            =\dfrac{\mathbb{P}(B_{i})\cdot \mathbb{P}(A|B_{i})}{\sum_{j=1}^{m} \mathbb{P}(B_j) \cdot \mathbb{P}(A|B_j)}
+%}
+\]
 \subsection*{Ví dụ phân loại dựa vào công thức Bayes}
 \begin{center}
 \begin{tabular}{ cccccc }
@@ -489,6 +509,61 @@ $\mathbb{P}$((age = youth, income = medium, student = yes, credit\_rating = fair
 $\times$ $\mathbb{P}$(buys\_computer = no)\\
 = 0.019 $\times$ 0.357 = 0.007\\
 Ta thấy xác suất biến cố (age = youth, income = medium, student = yes, credit\_rating = fair,buys\_computer = yes) xảy ra cao hơn so với xác suất biến cố (age = youth, income = medium, student = yes, credit\_rating = fair, buys\_computer = no). Do đó x$_{15}$ = (age = youth, income = medium, student = yes, credit\_rating = fair) được phân loại vào \textit{buys\_computer = yes}\\
+Kham khảo \cite{2WAYSOFNB}, khi khảo sát thực tế, biến hoặc giá trị của biến rất hiếm khi được phân loại trong khi giải thuật xác suất Bayes $\mathbb{P}(B|A) = \frac{\mathbb{P}(B) \cdot \mathbb{P}(A|B)}{\mathbb{P}(A)}$ làm việc với biến và giá trị biến được phân loại. Ví dụ như trong bài toán Luận Văn này, xem xét những bước di chuyển trong khoảng thời gian đều 20 giây trong 80\% tổng thời gian thời gian di chuyển để phán đoán xe có về đích đúng giờ hay không. Như vậy, biến trong bài toán này chính là những bước di chuyển chưa được phân loại, ví dụ phân loại thành những bước di chuyển rất nhỏ, nhỏ, trung bình, cao, rất cao. Đồng thời, sau khi phân loại thành các bước di chuyển thì số lần lặp lại những bước di chuyển đó đều là các con số liên tục, chưa được phân loại, ví dụ phân loại số lần lặp rất nhỏ, nhỏ, trung bình, lớn, rất lớn. Như vậy, trên thực tế, biến hoặc giá trị của biến rất hiếm khi được phân loại sẵn để thực hiện giải tương tự như ví dụ trên.\\
+Bảng số liệu sau mô tả giá trị của biến trong bài toán Luận Văn được định lượng là các con số liên tục.
+\begin{flushleft}
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{1.5cm}|}
+\hline
+Số lần thực hiện bước đi từ 0-15 (km/h)& Số lần thực hiện bước đi từ 15-30 (km/h) & Số lần thực hiện bước đi từ 30-45 (km/h) & Số lần thực hiện bước đi từ 45-60 (km/h) & Số lần thực hiện bước đi trên 60 km/h & Trạng thái đến đích \\ 
+\hline
+19 & 23 & 19 & 29 & 3 & đúng giờ\\
+\hline
+16 & 14 & 40 & 21 & 0 & đúng giờ\\
+\hline
+19 & 23 & 48 & 13 & 0 & đúng giờ\\
+\hline
+14 & 27 & 43 & 12 & 0 & đúng giờ\\
+\hline
+13 & 33 & 44 & 9 & 0 & đúng giờ \\
+\hline
+45 & 26 & 25 & 25 & 0 & trễ giờ\\
+\hline
+56 & 26 & 27 & 16 & 0 & trễ giờ\\
+\hline
+29 & 22 & 41 & 22 & 1 & trễ giờ\\
+\hline
+83 & 11 & 15 & 12 & 5 & trễ giờ\\
+\hline
+28 & 32 & 36 & 21 & 0 & trễ giờ\\
+\hline
+\end{tabular}
+\end{flushleft}
+Có hai hướng giải quyết đối với thuộc tính ở dạng con số để cuối cùng vẫn áp dụng được giải thuật xác suất Bayes $\mathbb{P}(B|A) = \frac{\mathbb{P}(B) \cdot \mathbb{P}(A|B)}{\mathbb{P}(A)}$\\
+\begin{enumerate}
+\item Cách đơn giản nhất là rời rạc hóa thuộc tính dạng con số thành dạng phân loại. Tuy nhiên, sẽ có những tranh cãi khi phân loại, ví dụ với con số 29 lần xuất hiện nên phân loại là xuất hiện trung bình hay nhiều lần. Đồng thời, khi phân loại không tốt, có xảy ra hiện tượng hai dòng có cùng mẫu giống nhau nhưng kết quả cuối lại khác nhau. Ví dụ, cùng mẫu low,medium,medium,low,very low tượng trưng với dãy số 15,30,40,15,0 và 24,31,45,12,0 cho hai kết quả đúng giờ và trễ giờ\\ 
+\begin{flushleft}
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{1.5cm}|}
+\hline
+Số lần thực hiện bước đi từ 0-15 (km/h)& Số lần thực hiện bước đi từ 15-30 (km/h) & Số lần thực hiện bước đi từ 30-45 (km/h) & Số lần thực hiện bước đi từ 45-60 (km/h) & Số lần thực hiện bước đi trên 60 km/h & Trạng thái đến đích \\ 
+\hline
+15 (low) & 30 (medium) & 40 (medium) & 15 (low) & 0 (very low) & đúng giờ\\
+\hline
+24 (low) & 31 (medium) & 45 (medium) & 12 (low) & 0 (very low) & trễ giờ\\
+\hline
+\end{tabular}
+\end{flushleft}
+\item Sử dụng hàm mật độ xác suất (probability density function pdf) cho biến liên tục. Thông thường mọi người chọn giá trị liên tục của biến đầu vào có hàm mật độ xác suất tuân theo phân phối chuẩn hoặc Gaussian. Bạn vẫn có thể chọn phân phối khác, ví dụ như Poisson, Logarithmic,.., nếu như dữ liệu của bạn tuân theo phân phối đó.    
+\end{enumerate}
+\section{Sơ lược hiểu về Gaussian Bayes classifier}
+\underline{Định nghĩa không chính thống}:\\
+Gọi X là biến đầu vào\\
+Gọi Y là biến phân loại lớp 0 hoặc 1, có phân phối xác suất $\mathrm{P_Y}(0)$=$\mathrm{P_Y}(1)$=$\frac{1}{2}$\\
+Có hàm mật độ phân phối Gaussian $\mathrm{G}(x,\mu,\sigma)$=$\frac{1}{\sqrt{2\pi\sigma^2}} * e^{-\frac{(x-u)^2}{2\sigma^2}}$\\
+Biến X có hàm mật độ phân phối Gaussian khác nhau theo mỗi phân loại, nghĩa là \\
+Hình vẽ trực quan    
+Sau đây là ví dụ về Gaussian Bayes classifier\\
+\underline{Ví dụ về Gaussian Bayes classifier}\\
+Video Gauss Bayes\\
 \section{Thuật toán Jenks natural breaks optimization (Tùy chọn)}
 Kham khảo từ \cite{JNBO}
 \section{Thuật toán Kernel Density Estimation (Tùy chọn)}
@@ -1624,8 +1699,18 @@ function accumulateSequenceElmtWithMinRedundant(List<Long> sortedNonStandardDura
 \bibitem{JNBO}
 	\emph{Jenks natural breaks optimization}, truy cập ngày 23 tháng 10 năm 2016,
 	địa chỉ \emph{https://en.wikipedia.org/wiki/Jenks\_natural\_breaks\_optimization}.\\
+\bibitem{JNBOE}
 	\emph{Jenks natural breaks optimization example}, truy cập ngày 18 tháng 2 năm 2017,
 	địa chỉ \emph{https://www.ehdp.com/vitalnet/breaks-1.htm}.
+\bibitem{2WAYSOFNB}
+	\emph{2 ways of using Naive Bayes classification for numeric attributes}, truy cập ngày 1 tháng 3 năm 2017,
+	địa chỉ \emph{http://www.simafore.com/blog/bid/107702/2-ways-of-using-Naive-Bayes-classification-for-numeric-attributes}..
+\bibitem{Gaussian classifier}
+	\emph{The Gaussian classifier}, truy cập ngày 2 tháng 3 năm 2017,
+	địa chỉ \emph{http://www.svcl.ucsd.edu/courses/ece271A/handouts/GC.pdf}.
+	
+		
+	
 \section*{Developer's Website}
 \bibitem{GeoJSON}
 	\emph{Google Maps 3 API - Data Layer: GeoJSON}, truy cập ngày 6 tháng 11 năm 2016,
