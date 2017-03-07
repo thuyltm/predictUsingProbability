@@ -3,11 +3,11 @@ package bk.master.classify;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.concurrent.ThreadLocalRandom;
@@ -17,6 +17,7 @@ import bk.master.util.ExportUtil;
 public class Check {
     public static void getReplicate(String inputFile, String outputFile) {
         Map<String, Set<String>> resultList = new HashMap<String, Set<String>>();
+        Map<String, Set<String>> filterList = new HashMap<String, Set<String>>();
         try {
             BufferedReader reader = new BufferedReader(new FileReader(inputFile));;
             String nextLine;
@@ -31,7 +32,12 @@ public class Check {
                 resultList.put(key, lineList);
             }
             reader.close();
-            ExportUtil.exportToFile(resultList, outputFile);
+            for (String key : resultList.keySet()) {
+                if (resultList.get(key).size() == 2) {
+                    filterList.put(key, resultList.get(key));
+                }
+            }
+            ExportUtil.exportToFile(filterList, outputFile);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -71,7 +77,45 @@ public class Check {
         list.remove(0);
         return randomNumberList;
     }
+    public static void evaluatePrediction(String predictFile, String realFile, String outputFile) {
+         List<Integer> predictList = new ArrayList<Integer>();
+         List<Integer> realList = new ArrayList<Integer>();
+         HashMap<Integer, List<Integer>> result = new HashMap<Integer, List<Integer>>();
+         try {
+             BufferedReader reader = new BufferedReader(new FileReader(predictFile));
+             String nextLine;
+             while ((nextLine = reader.readLine()) != null) {
+                String[] dataList = nextLine.split(" ");
+                for (String data : dataList) {
+                     predictList.add(Integer.valueOf(data));
+                }
+             }
+             reader.close();
+             reader = new BufferedReader(new FileReader(realFile));
+             while ((nextLine = reader.readLine()) != null) {
+                String[] dataList = nextLine.split(" ");
+                for (String data : dataList) {
+                    realList.add(Integer.valueOf(data));
+                }
+             }
+             reader.close();
+             int i = 0;
+             int size = predictList.size();
+             while (i < size) {
+                 Integer predict = predictList.get(i);
+                 Integer real = realList.get(i);
+                 if (predict != real) {
+                     result.put(i, Arrays.asList(predict, real));
+                 }
+                 i++;
+             }
+             ExportUtil.exportToFile(result, outputFile);
+             System.out.println("Correct Percent is " + (double)(size-result.size())/size);
+         } catch (Exception e) {
+             e.printStackTrace();
+         }
+    }
     public static void main(String[] args) {
-        shuffle("classifyRouteShort.csv", "classifyRouteSuffle.csv");
+        evaluatePrediction("predict.txt", "real.txt", "evaluatePredict.txt");
     }
 }

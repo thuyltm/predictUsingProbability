@@ -365,7 +365,7 @@ Công thức Bayes tổng quát là:\\
             =\dfrac{\mathbb{P}(B_{i})\cdot \mathbb{P}(A|B_{i})}{\sum_{j=1}^{m} \mathbb{P}(B_j) \cdot \mathbb{P}(A|B_j)}
 %}
 \]
-\subsection*{Ví dụ phân loại dựa vào công thức Bayes}
+\subsection*{Ví dụ phân loại dựa vào xác suất Bayes}
 \begin{center}
 \begin{tabular}{ cccccc }
 \specialrule{.2em}{.1em}{.1em} 
@@ -509,6 +509,7 @@ $\mathbb{P}$((age = youth, income = medium, student = yes, credit\_rating = fair
 $\times$ $\mathbb{P}$(buys\_computer = no)\\
 = 0.019 $\times$ 0.357 = 0.007\\
 Ta thấy xác suất biến cố (age = youth, income = medium, student = yes, credit\_rating = fair,buys\_computer = yes) xảy ra cao hơn so với xác suất biến cố (age = youth, income = medium, student = yes, credit\_rating = fair, buys\_computer = no). Do đó x$_{15}$ = (age = youth, income = medium, student = yes, credit\_rating = fair) được phân loại vào \textit{buys\_computer = yes}\\
+\subsection*{Vấn đề thực tế khi áp dụng xác suất Bayes}
 Kham khảo \cite{2WAYSOFNB}, khi khảo sát thực tế, biến hoặc giá trị của biến rất hiếm khi được phân loại trong khi giải thuật xác suất Bayes $\mathbb{P}(B|A) = \frac{\mathbb{P}(B) \cdot \mathbb{P}(A|B)}{\mathbb{P}(A)}$ làm việc với biến và giá trị biến được phân loại. Ví dụ như trong bài toán Luận Văn này, xem xét những bước di chuyển trong khoảng thời gian đều 20 giây trong 80\% tổng thời gian thời gian di chuyển để phán đoán xe có về đích đúng giờ hay không. Như vậy, biến trong bài toán này chính là những bước di chuyển chưa được phân loại, ví dụ phân loại thành những bước di chuyển rất nhỏ, nhỏ, trung bình, cao, rất cao. Đồng thời, sau khi phân loại thành các bước di chuyển thì số lần lặp lại những bước di chuyển đó đều là các con số liên tục, chưa được phân loại, ví dụ phân loại số lần lặp rất nhỏ, nhỏ, trung bình, lớn, rất lớn. Như vậy, trên thực tế, biến hoặc giá trị của biến rất hiếm khi được phân loại sẵn để thực hiện giải tương tự như ví dụ trên.\\
 Bảng số liệu sau mô tả giá trị của biến trong bài toán Luận Văn được định lượng là các con số liên tục.
 \begin{flushleft}
@@ -552,21 +553,80 @@ Số lần thực hiện bước đi từ 0-15 (km/h)& Số lần thực hiện 
 \hline
 \end{tabular}
 \end{flushleft}
-\item Sử dụng hàm mật độ xác suất (probability density function pdf) cho biến liên tục. Thông thường mọi người chọn giá trị liên tục của biến đầu vào có hàm mật độ xác suất tuân theo phân phối chuẩn hoặc Gaussian. Bạn vẫn có thể chọn phân phối khác, ví dụ như Poisson, Logarithmic,.., nếu như dữ liệu của bạn tuân theo phân phối đó.    
+\item Sử dụng hàm mật độ xác suất (probability density function pdf) cho biến liên tục. Thông thường mọi người chọn giá trị liên tục của biến đầu vào có hàm mật độ xác suất tuân theo phân phối chuẩn hoặc phân phối Gaussian. Bạn vẫn có thể chọn phân phối khác, ví dụ như phân phối Poisson, phân phối Logarithmic,.., nếu như dữ liệu của bạn tuân theo phân phối đó.    
 \end{enumerate}
-\section{Sơ lược hiểu về Gaussian Bayes classifier}
+\section{Sơ lược về Gaussian Bayes classifier}
 \underline{Định nghĩa không chính thống}:\\
 Gọi X là biến đầu vào\\
-Gọi Y là biến phân loại lớp 0 hoặc 1, có phân phối xác suất $\mathrm{P_Y}(0)$=$\mathrm{P_Y}(1)$=$\frac{1}{2}$\\
-Có hàm mật độ phân phối Gaussian $\mathrm{G}(x,\mu,\sigma)$=$\frac{1}{\sqrt{2\pi\sigma^2}} * e^{-\frac{(x-u)^2}{2\sigma^2}}$\\
-Biến X có hàm mật độ phân phối Gaussian khác nhau theo mỗi phân loại, nghĩa là \\
-Hình vẽ trực quan    
-Sau đây là ví dụ về Gaussian Bayes classifier\\
+Gọi Y là biến phân loại lớp 0 hoặc 1, có xác suất $\mathrm{P_Y}(0)$=$\mathrm{P_Y}(1)$=$\frac{1}{2}$\\
+Công thức hàm phân phối Gaussian 
+$
+\mathrm{G}(x,\mu,\sigma)=\frac{1}{\sqrt{2\pi\sigma^2}} * e^{-\frac{(x-\mu)^2}{2\sigma^2}}  
+$\\
+với $\mu=\frac{\sum_1^n x_i}{n}$ và $\sigma^2=\frac{\sum_1^n (x_i-\mu)^2}{n}$\\
+Biến X có hàm phân phối Gaussian khác nhau theo mỗi phân loại, nghĩa là \\
+$\mathrm{P_{X|Y}}(x|0)=\mathrm{G}(x,\mu_0,\sigma_0)$\\
+$\mathrm{P_{X|Y}}(x|1)=\mathrm{G}(x,\mu_1,\sigma_1)$\\
+Hình vẽ trực quan\\  
+\FloatBarrier
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.5\textwidth]{GaussBayesEx.png}    
+    \caption{Biến X có hàm mật độ phân phối Gaussian khác nhau theo mỗi phân loại}
+\end{figure}
+\FloatBarrier 
+Hình vẽ trên cho ta nhận xét, nếu x < $\frac{\mu_1+\mu_2}{2}$ thì phân loại x vào 0, nếu x > $\frac{\mu_1+\mu_2}{2}$ thì phân loại x vào 1.\\  
+\FloatBarrier
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.5\textwidth]{GaussBayesEx2.png}
+	\caption{Nếu x < $\frac{\mu_1+\mu_2}{2}$ thì phân loại x vào 0. Nếu x > $\frac{\mu_1+\mu_2}{2}$ thì phân loại x vào 1}
+\end{figure}
+\FloatBarrier 
 \underline{Ví dụ về Gaussian Bayes classifier}\\
-Video Gauss Bayes\\
-\section{Thuật toán Jenks natural breaks optimization (Tùy chọn)}
+Bài toán phân loại đứa trẻ (viết tắt c) hay người lớn (viết tắt a) dựa vào hai biến chiều cao[cm] (viết tắt h), cân nặng[kg] (viết tắt w). Có 4 dữ liệu adult và 12 dữ liệu child.\\
+Ta có $\mathrm{P}(a)=\frac{4}{4+12}=0.25$, $\mathrm{P}(c)=\frac{12}{4+12}=0.75$\\
+Công thức hàm phân phối Gaussian 
+$
+\mathrm{G}(x,\mu,\sigma)=\frac{1}{\sqrt{2\pi\sigma^2}} * e^{-\frac{(x-\mu)^2}{2\sigma^2}}  
+$ \\
+Với giả thiết, biến chiều cao và cân nặng độc lập nhau. Lập phân phối Gaussian cho từng biến thuộc từng phân loại\\
+\begin{enumerate}
+\item Hàm mật độ phân phối Gaussian cho phân loại người lớn
+\begin{enumerate}
+\item Biến chiều cao có phân phối Gaussian $\mathrm{G}(\mu_{h,a}, \sigma^2_{h,a})$ với $\mu_{h,a}=\frac{\sum_{i:y_i=a} h_i}{4}$, $\sigma^2_{h,a}=\frac{\sum_{i:y_i=a} (h_i-\mu_{h,a})^2}{4}$
+\item Biến cân nặng có phân phối Gaussian $\mathrm{G}(\mu_{w,a}, \sigma^2_{w,a})$ với $\mu_{w,a}=\frac{\sum_{i:y_i=a} w_i}{4}$, $\sigma^2_{w,a}=\frac{\sum_{i:y_i=a} (w_i-\mu_{w,a})^2}{4}$
+\end{enumerate}
+\item Hàm mật độ phân phối Gaussian cho phân loại đứa trẻ
+\begin{enumerate}
+\item Biến chiều cao có phân phối Gaussian $\mathrm{G}(\mu_{h,c}, \sigma^2_{h,c})$ với $\mu_{h,c}=\frac{\sum_{i:y_i=c} h_i}{4}$, $\sigma^2_{h,c}=\frac{\sum_{i:y_i=c} (h_i-\mu_{h,c})^2}{4}$
+\item Biến cân nặng có phân phối Gaussian $\mathrm{G}(\mu_{w,c}, \sigma^2_{w,c})$ với $\mu_{w,c}=\frac{\sum_{i:y_i=c} w_i}{4}$, $\sigma^2_{w,c}=\frac{\sum_{i:y_i=c} (w_i-\mu_{w,c})^2}{4}$
+\end{enumerate}
+\end{enumerate}
+Cho dữ liệu kiểm tra x có giá trị chiều cao $x_h$, giá trị cân nặng $x_w$. Hỏi nên phân loại x vào đứa trẻ hay người lớn?\\
+Để trả lời câu hỏi trên, ta cần so sánh hai xác suất $\mathrm{P}(a|x)$ và $\mathrm{P}(c|x)$, xác suất nào lớn hơn thì phân loại x vào lớp đó.\\
+Ta có:
+$
+\mathrm{P}(a|x)=\frac{\mathrm{P}(x|a)\mathrm{P}(a)}{\mathrm{P}(x|a)\mathrm{P}(a)+\mathrm{P}(x|c)\mathrm{P}(c)}
+$
+và
+$
+\mathrm{P}(c|x)=\frac{\mathrm{P}(x|c)\mathrm{P}(c)}{\mathrm{P}(x|a)\mathrm{P}(a)+\mathrm{P}(x|c)\mathrm{P}(c)}
+$\\
+Vì mẫu số giống nhau, ta chỉ cần so sánh tử số $\mathrm{P}(x|a)\mathrm{P}(a)$ và $\mathrm{P}(x|c)\mathrm{P}(c)$\\
+Ta đã có $\mathrm{P}(a)=0.25$, $\mathrm{P}(c)=0.75$.\\
+Ta cần tính\\
+$\mathrm{P}(x|a)$=$\mathrm{P}(h_x|a)\mathrm{P}(w_x|a)$ với $
+\mathrm{P}(h_x|a)=\frac{1}{\sqrt{2\pi\sigma^2_{h,a}}} * e^{-\frac{(h_x-\mu_{h,a})^2}{2\sigma_{h,a}^2}}$, $
+\mathrm{P}(w_x|a)=\frac{1}{\sqrt{2\pi\sigma^2_{w,a}}} * e^{-\frac{(w_x-\mu_{w,a})^2}{2\sigma_{w,a}^2}}$\\
+và
+$\mathrm{P}(x|c)$=$\mathrm{P}(h_x|c)\mathrm{P}(w_x|c)$ với $
+\mathrm{P}(h_x|c)=\frac{1}{\sqrt{2\pi\sigma^2_{h,c}}} * e^{-\frac{(h_x-\mu_{h,c})^2}{2\sigma_{h,c}^2}}$, $
+\mathrm{P}(w_x|c)=\frac{1}{\sqrt{2\pi\sigma^2_{w,c}}} * e^{-\frac{(w_x-\mu_{w,c})^2}{2\sigma_{w,c}^2}}$\\
+
+\section{Thuật toán Jenks natural breaks optimization (đọc thêm)}
 Kham khảo từ \cite{JNBO}
-\section{Thuật toán Kernel Density Estimation (Tùy chọn)}
+\section{Thuật toán Kernel Density Estimation (đọc thêm)}
 \chapter{HIỆN THỰC VÀ THỬ NGHIỆM}
 \section{Dữ liệu nghiên cứu}
 \subsection{Dữ liệu thô}
@@ -600,7 +660,40 @@ Ví dụ 10 dữ liệu thô:\\
 \end{tabular}
 \end{flushleft}
 \subsection{Tiền xử lý dữ liệu} 
-Kham khảo \ref{DragAndDrop} tại mục Phụ Lục để lọc ra và kiểm tra dữ liệu đang khảo sát có phải là tuyến đi BX Củ Chi - BX An Sương không.\\ Sau đó kham khảo \ref{tinhkhoangcach} tại mục Phụ Lục để tính mỗi bước di chuyển. Sau đây là ví dụ 10 bước di chuyển đầu tiên trong một chuyến đi ngẫu nhiên được chọn\\
+\subsubsection{Kiểm tra lộ trình xe buýt}
+Kham khảo \ref{DragAndDrop} tại mục Phụ Lục để lọc ra và kiểm tra dữ liệu đang khảo sát có phải là tuyến đi BX Củ Chi - BX An Sương không.\\
+\subsubsection{Chọn thời gian hoàn thành một chuyến đi}
+Theo quy định của quản lý xe, thời gian hoàn thành BX Củ Chi - BX An Sương là 45 phút, cho nên ta chỉ chọn những chuyến xe hoàn thành từ khoảng 30 phút đến 60 phút, những xe vượt quá thời gian hoàn thành trên 1 tiếng bị loại bỏ.\\ 
+Kham khảo \ref{histogramWithNormalCurve} tại mục Phụ Lục xuất ra hình vẽ phân phối tần suất thời gian hoàn thành lộ trình BX Củ Chi - BX An Sương\\
+\FloatBarrier
+\begin{figure}[h!]
+        \begin{subfigure}[b]{0.5\textwidth}
+                \label{tab:example}
+                \includegraphics[width=\linewidth]{histogramCCAS}
+        \end{subfigure}%
+\end{figure}
+\FloatBarrier
+Kham khảo \ref{sapxepTGHT} tại mục Phụ Lục xuất ra hình vẽ sắp xếp thời gian hoàn thành lộ trình BX Củ Chi - BX An Sương xác suất xuất hiện tăng dần.\\
+\FloatBarrier
+\begin{figure}[h!]
+        \begin{subfigure}[b]{0.7\textwidth}
+        		\label{tab:example2}
+                \includegraphics[width=\linewidth]{finishTime_CC_AS_Order}
+        \end{subfigure}%
+\end{figure}
+\FloatBarrier
+Kham khảo \ref{xacsuatTLTGHT} tại mục Phụ Lục xuất ra hình vẽ cho thấy xác suất tích lũy thời gian hoàn thành lộ trình BX Củ Chi - BX An Sương \\
+\FloatBarrier
+\begin{figure}[h!]
+        \begin{subfigure}[b]{0.7\textwidth}
+        		\label{tab:example2}
+                \includegraphics[width=\linewidth]{finishTime_CC_AS_ACC_Line}
+        \end{subfigure}%
+\end{figure}
+\FloatBarrier
+Ta chọn thời gian hoàn thành một chuyến đi từ BX Củ Chi đến BX An Sương trước đúng 45 phút là về đích đúng giờ, và từ hình vẽ trên ta thấy có 84\% trong 1289 chuyến xe được khảo sát đạt được thời gian về đích là 45 phút. 
+\subsubsection{Đồng bộ hóa ghi nhận mỗi bước di chuyển}
+Sau đó kham khảo \ref{tinhkhoangcach} tại mục Phụ Lục để tính mỗi bước di chuyển. Sau đây là ví dụ 10 bước di chuyển đầu tiên trong một chuyến đi ngẫu nhiên được chọn\\
 \begin{flushleft}
 \begin{tabular}{|p{1cm}|p{1cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{1cm}|p{1cm}| }
 \hline
@@ -1176,7 +1269,8 @@ STT&Khoảng thời gian hồi đáp (giây) & Khoảng cách bước đi (mét)
 \end{minipage} 
 \end{table}
 \FloatBarrier
-Trích ngẫu nhiên 80\% thời gian di chuyển của 24 chuyến xe trong 351 chuyến xe BX Củ Chi - BX An Sương. Trong một chuyến xe, mỗi giá trị tính bằng mét, mỗi bước di chuyển giữa các giá trị được ghi nhận sau 20 giây.\\
+\subsubsection{Trực quan những bước di chuyển}
+Trích ngẫu nhiên 80\% thời gian di chuyển của 24 chuyến xe BX Củ Chi - BX An Sương. Trong một chuyến xe, mỗi giá trị tính bằng mét, mỗi bước di chuyển giữa các giá trị được ghi nhận sau 20 giây.\\
 \textbf{\underline{Chuyến 1}}: 
 71, 86, 145, 136, 104, 277, 240, 145, 97, 0, 171, 283, 283, 0, 214, 166, 307, 259, 208, 43, 144, 286, 287, 126, 152, 254, 139, 255, 294, 293, 269, 283, 267, 221, 165, 266, 259, 220, 168, 0, 226, 337, 394, 224, 208, 340, 359, 259, 297, 325, 303, 302, 284, 287, 268, 199, 112, 179, 279, 270, 139, 72, 195, 345, 332, 151, 149, 230, 261, 186, 170, 236, 243, 265, 151, 201, 29, 125, 121, 35, 29, 80, 46, 36, 132, 52, 44, 63, 63, 46, 46, 40, 236\\
 \textbf{\underline{Chuyến 2}}:...\\
@@ -1356,28 +1450,142 @@ Kham khảo \ref{trucquandichuyen} tại mục Phụ Lục xuất ra trực quan
 \caption*{Trực quan hóa 20 dòng dữ liệu ngẫu nhiên}
 \end{figure}
 \FloatBarrier
+\subsubsection{Rời rạc hóa những bước di chuyển}
+Thực hiện phân loại những bước di chuyển: bước đi rất nhỏ 0-15 (km/h), bước đi nhỏ 15-30 (km/h), bước đi trung bình 30-45 (km/h), bước đi xa 45-60 (km/h), bước đi rất xa trên 60 km/h.\\
+Bảng số liệu sau mô tả 10 dữ liệu mà ta sẽ làm việc.\\
+\begin{flushleft}
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{1.5cm}|}
+\hline
+Số lần thực hiện bước đi từ 0-15 (km/h)& Số lần thực hiện bước đi từ 15-30 (km/h) & Số lần thực hiện bước đi từ 30-45 (km/h) & Số lần thực hiện bước đi từ 45-60 (km/h) & Số lần thực hiện bước đi trên 60 km/h & Trạng thái đến đích \\ 
+\hline
+19 & 23 & 19 & 29 & 3 & đúng giờ\\
+\hline
+16 & 14 & 40 & 21 & 0 & đúng giờ\\
+\hline
+19 & 23 & 48 & 13 & 0 & đúng giờ\\
+\hline
+14 & 27 & 43 & 12 & 0 & đúng giờ\\
+\hline
+13 & 33 & 44 & 9 & 0 & đúng giờ \\
+\hline
+45 & 26 & 25 & 25 & 0 & trễ giờ\\
+\hline
+56 & 26 & 27 & 16 & 0 & trễ giờ\\
+\hline
+29 & 22 & 41 & 22 & 1 & trễ giờ\\
+\hline
+83 & 11 & 15 & 12 & 5 & trễ giờ\\
+\hline
+28 & 32 & 36 & 21 & 0 & trễ giờ\\
+\hline
+\end{tabular}
+\end{flushleft}
+Tôi làm việc với 190 dữ liệu với 95 dữ liệu về đích đúng giờ và 95 dữ liệu về đích trễ giờ, như vậy ta có 
+$\mathrm{P}$(về đích đúng giờ) = $\mathrm{P}$(về đích trễ giờ) = 0.5  
+\section{Áp dụng Gaussian Bayes classify để dự đoán xác suất xe buýt về trạm đúng thời gian}
+Density 
+\FloatBarrier
+\begin{figure}[!htb]
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{DensityVerySmallStep_OnTime}
+\endminipage
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{DensityVerySmallStep_LateTime}
+\endminipage
+\caption*{Density VerySmallStep}
+\end{figure}
+\FloatBarrier
+Nếu gộp lại \\
+\FloatBarrier
+\begin{figure}[h]
+    \begin{subfigure}[b]{0.7\textwidth}
+        \includegraphics[width=\textwidth]{DensityVerySmallStep.png}
+    \end{subfigure}
+\end{figure}
+\FloatBarrier
+Density 
+\FloatBarrier
+\begin{figure}[!htb]
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{DensitySmallStep_OnTime}
+\endminipage
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{DensitySmallStep_LateTime}
+\endminipage
+\caption*{Density SmallStep}
+\end{figure}
+\FloatBarrier
+Nếu gộp lại \\
+\FloatBarrier
+\begin{figure}[h]
+    \begin{subfigure}[b]{0.7\textwidth}
+        \includegraphics[width=\textwidth]{DensitySmallStep.png}
+    \end{subfigure}
+\end{figure}
+\FloatBarrier
 
-Kham khảo \ref{sapxepTGHT} tại mục Phụ Lục xuất ra hình vẽ sắp xếp thời gian hoàn thành lộ trình BX Củ Chi - BX An Sương xác suất xuất hiện tăng dần.\\
+Density 
 \FloatBarrier
-\begin{figure}[h!]
-        \begin{subfigure}[b]{0.5\textwidth}
-                \label{tab:example}
-                \includegraphics[width=\linewidth]{finishTime_CC_AS_Order}
-        \end{subfigure}%
+\begin{figure}[!htb]
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{DensityMediumStep_OnTime}
+\endminipage
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{DensityMediumStep_LateTime}
+\endminipage
+\caption*{Density Medium Step}
 \end{figure}
 \FloatBarrier
-Kham khảo \ref{xacsuatTLTGHT} tại mục Phụ Lục xuất ra hình vẽ cho thấy xác suất tích lũy thời gian hoàn thành lộ trình BX Củ Chi - BX An Sương \\
+Nếu gộp lại \\
 \FloatBarrier
-\begin{figure}[h!]
-        \begin{subfigure}[b]{0.7\textwidth}
-        		\label{tab:example2}
-                \includegraphics[width=\linewidth]{finishTime_CC_AS_ACC_Line}
-        \end{subfigure}%
+\begin{figure}[h]
+    \begin{subfigure}[b]{0.7\textwidth}
+        \includegraphics[width=\textwidth]{DensityMediumStep.png}
+    \end{subfigure}
 \end{figure}
 \FloatBarrier
-\section{Thu thập thông tin rút ra từ dữ liệu lịch sử}
-Theo bài toán đặt ra, ta sẽ lấy thông tin dữ liệu 2/3 chuyến và phân loại thời gian đến trạm đích: đúng giờ và trễ.
-\section{Tiến hành dự đoán xác suất xe buýt về trạm đúng thời gian}
+
+
+Density 
+\FloatBarrier
+\begin{figure}[!htb]
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{DensityHighStep_OnTime}
+\endminipage
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{DensityHighStep_LateTime}
+\endminipage
+\caption*{Density HighStep}
+\end{figure}
+\FloatBarrier
+Nếu gộp lại \\
+\FloatBarrier
+\begin{figure}[h]
+    \begin{subfigure}[b]{0.7\textwidth}
+        \includegraphics[width=\textwidth]{DensityHighStep.png}
+    \end{subfigure}
+\end{figure}
+\FloatBarrier
+Density 
+\FloatBarrier
+\begin{figure}[!htb]
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{DensityVeryHighStep_OnTime}
+\endminipage
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{DensityVeryHighStep_LateTime}
+\endminipage
+\caption*{Density VeryHighStep}
+\end{figure}
+\FloatBarrier
+Nếu gộp lại \\
+\FloatBarrier
+\begin{figure}[h]
+    \begin{subfigure}[b]{0.7\textwidth}
+        \includegraphics[width=\textwidth]{DensityVeryHighStep.png}
+    \end{subfigure}
+\end{figure}
+\FloatBarrier
 \section{Kết luận}
 \chapter{KẾT LUẬN}
 \section{Tổng kết}
@@ -1413,6 +1621,20 @@ library("BAMMtools")\\
 getJenksBreaks(mydata, 5)\\
 \textit{\#returned result}\\
 \textit{\#0  2  5  8 11}\\
+\hline
+\end{tabular}
+\end{flushleft}
+\item \label{histogramWithNormalCurve} Mã nguồn R vẽ histogram dữ liệu
+\begin{flushleft}
+\begin{tabular}{  |l| }
+\hline 
+\textit{\#set your working directory where your file data locates}\\
+setwd("/home/thuy1/git/predictUsingProbability/Preprocess")\\
+data=read.table(file="CC\_AS\_FinishTime.csv")[,1]\\
+hist(data,breaks=12, prob=TRUE,\\
+\hspace{1cm} xlab="Thời gian hoàn thành BX Củ Chi đến BX An Sương",\\
+\hspace{1cm} main="Biểu đồ phân phối thời gian hoàn thành $\textbackslash$n BX Củ Chi đến BX An Sương")\\
+curve(dnorm(x, mean=mean(data), sd=sd(data)), add=TRUE)\\
 \hline
 \end{tabular}
 \end{flushleft}
@@ -1490,6 +1712,107 @@ ggplot(mydata, aes(x = mydata\$X1, y = mydata\$X2)) +\\
 \hline
 \end{tabular}
 \end{flushleft}
+
+\item Mã nguồn R vẽ đường density chồng lên histogram
+\begin{flushleft}
+\begin{tabular}{  |l| }
+\hline 
+\textit{\#set your working directory where your file data locates}\\
+setwd('/home/thuy1/git/predictUsingProbability/Preprocess')\\
+lateTime=read.table(file="freqVerySmall\_LateTime.csv")[,1]\\
+hist(lateTime, probability = TRUE,\\
+     main="the Gaussian smoothing kernel of VerySmall Step $\textbackslash$n belonged to class LateTime",\\
+     ylab="density", xlab="the occurrences of VerySmall Step"\\
+     )\\
+lines(density(lateTime, kernel=c("gaussian")), col="blue")\\
+legend("topright", inset=.05, c("lateTime"), fill=c("blue"), horiz=TRUE)\\
+onTime=read.table(file="freqVerySmall\_OnTime.csv")[,1]\\
+hist(onTime, probability = TRUE,\\
+     main="the Gaussian smoothing kernel of VerySmall Step $\textbackslash$n belonged to class OnTime",\\
+     ylab="density", xlab="the occurrences of VerySmall Step"\\
+     )
+lines(density(onTime, kernel=c("gaussian")), col="green")\\
+legend("topright", inset=.05, \\
+       c("onTime"), fill=c("green"), horiz=TRUE)\\
+\hline
+\end{tabular}
+\end{flushleft}
+
+\item Mã nguồn R vẽ kết quả đồ họa hai hàm density chồng lên nhau
+\begin{flushleft}
+\begin{tabular}{  |l| }
+\hline 
+\textit{\#set your working directory where your file data locates}\\
+setwd('/home/thuy1/git/predictUsingProbability/Preprocess')\\
+\textit{\#load the occurrences of very high step length belonged to class onTime}\\
+onTime=read.table(file="freqVeryhigh\_OnTime.csv")[,1]\\
+density(onTime, kernel=c("gaussian"))\\
+plot(density(onTime, kernel=c("gaussian")),ylim=c(0.0, 1),\\
+\hspace{.5cm} main="Density of the occurrences of very high step\\
+\hspace{1.7cm} length $\textbackslash$n using the Gaussian smoothing kernel",\\
+\hspace{.5cm}     ylab="density", xlab="the occurrences of very high step length",\\
+\hspace{.5cm}     col="green")\\
+\textit{\#load the occurrences of very high step length belonged to class lateTime}\\
+lateTime=read.table(file="freqVeryhigh\_LateTime.csv")[,1]\\
+density(lateTime, kernel=c("gaussian"))\\
+lines(density(lateTime, kernel=c("gaussian")),col="yellow")\\
+\textit{\#load add comment into the picture}\\
+legend("topright", inset=.05, title="density",\\
+\hspace{.7cm} c("onTime","lateTime"), fill=c("green","yellow"), horiz=TRUE)\\
+\hline
+\end{tabular}
+\end{flushleft}
+\item Mã nguồn R chạy giải thuật FRBCS.W
+\begin{flushleft}
+\begin{tabular}{  |l| }
+\hline 
+library(frbs)\\
+\textit{\#set your working directory where your file data locates}\\
+setwd('/home/thuy1/git/predictUsingProbability/Preprocess')\\
+data=read.table(file="classifyRoute.csv", header=FALSE, sep=",",\\
+\hspace{1cm} col.names = c("X1","X2","X3","X4","X5","Clazz"));\\
+\textit{\#The dataset is shuffled}\\
+dataShuffled <- data[sample(nrow(data)),]\\
+\textit{\#the last column is the output variable/attribute and it must be expressed in numbers (numerical data)}\\
+dataShuffled[,6] <- unclass(dataShuffled[,6])\\
+\textit{\#dataset divided into training and testing data}\\
+\textit{\#100 first records is training data}\\
+tra.data <- dataShuffled[1:100,]\\
+\textit{\#90 last records is testing data and their output variable/attribute is removed}\\
+tst.data <- dataShuffled[100:nrow(dataShuffled),1:5]\\
+\textit{\#make the output variable/attribute of testing data an 1-column matrix}\\
+real.data <- matrix(dataShuffled[100:nrow(dataShuffled),6], ncol = 1)\\
+\textit{\#return the range [min, max] of every input variable/attribute}\\
+range.data.input <- matrix(apply(data[, -ncol(data)], 2, range), nrow = 2)\\
+range.data.input\\
+\textit{\#\hspace{1cm}[,1]\hspace{0.5cm}[,2]\hspace{0.5cm}[,3]\hspace{0.5cm}[,4]\hspace{0.5cm}[,5]}\\
+\textit{\#[1,]\hspace{0.5cm}4\hspace{0.8cm}8\hspace{0.8cm}15\hspace{0.8cm}3\hspace{0.8cm}0}\\
+\textit{\#[2,]\hspace{0.5cm}83\hspace{0.6cm}74\hspace{0.7cm}68\hspace{0.7cm}35\hspace{0.7cm}11}\\
+\textit{\# Set the method and its parameters. In this case we use FRBCS.W algorithm}\\
+method.type <- "FRBCS.W"\\
+control <- list(num.labels = 7, type.mf = "GAUSSIAN", type.tnorm = "MIN",\\
+\hspace{2.3cm}  type.snorm = "MAX", type.implication.func = "ZADEH")\\
+\textit{\# Learning step: Generate fuzzy model}\\
+object.cls <- frbs.learn(tra.data, range.data.input, method.type, control)\\
+
+\textit{\# Predicting step: Predict newdata}\\
+res.test <- predict(object.cls, tst.data)\\
+\textit{\# Display the FRBS model}\\
+summary(object.cls)\\
+\textit{\# Plot the membership functions}\\
+plotMF(object.cls)\\
+\hline
+\end{tabular}
+\end{flushleft}
+Hình vẽ thể hiện giải thuật FRBCS.W
+\FloatBarrier
+\begin{figure}[h!]
+        \begin{subfigure}[b]{0.7\textwidth}
+        		\label{tab:example2}
+                \includegraphics[width=\linewidth]{FRBCSW}
+        \end{subfigure}%
+\end{figure}
+\FloatBarrier
 \item \label{DragAndDrop} Ứng dụng bản demo "Drag And Drop data layer GeoJSON" \footnote{https://developers.google.com/maps/documentation/javascript/examples/layer-data-dragndrop} của Google Map API để kiểm tra lộ trình\\
 \FloatBarrier
 \begin{figure}[h]
@@ -1708,7 +2031,9 @@ function accumulateSequenceElmtWithMinRedundant(List<Long> sortedNonStandardDura
 \bibitem{Gaussian classifier}
 	\emph{The Gaussian classifier}, truy cập ngày 2 tháng 3 năm 2017,
 	địa chỉ \emph{http://www.svcl.ucsd.edu/courses/ece271A/handouts/GC.pdf}.
-	
+\bibitem{Gaussian classifier}
+	\emph{Naive Bayes 3: Gaussian example}, truy cập ngày 2 tháng 3 năm 2017,
+	địa chỉ \emph{https://www.youtube.com/watch?v=r1in0YNetG8}.	
 		
 	
 \section*{Developer's Website}
