@@ -555,7 +555,7 @@ Số lần thực hiện bước đi từ 0-15 (km/h)& Số lần thực hiện 
 \end{flushleft}
 \item Sử dụng hàm mật độ xác suất (probability density function pdf) cho biến liên tục. Thông thường mọi người chọn giá trị liên tục của biến đầu vào có hàm mật độ xác suất tuân theo phân phối chuẩn hoặc phân phối Gaussian. Bạn vẫn có thể chọn phân phối khác, ví dụ như phân phối Poisson, phân phối Logarithmic,.., nếu như dữ liệu của bạn tuân theo phân phối đó.    
 \end{enumerate}
-\section{Sơ lược về Gaussian Bayes classifier}
+\section{Sơ lược về phân loại Gaussian Bayes}
 \underline{Định nghĩa không chính thống}:\\
 Gọi X là biến đầu vào\\
 Gọi Y là biến phân loại lớp 0 hoặc 1, có xác suất $\mathrm{P_Y}(0)$=$\mathrm{P_Y}(1)$=$\frac{1}{2}$\\
@@ -583,7 +583,7 @@ Hình vẽ trên cho ta nhận xét, nếu x < $\frac{\mu_1+\mu_2}{2}$ thì phâ
 	\caption{Nếu x < $\frac{\mu_1+\mu_2}{2}$ thì phân loại x vào 0. Nếu x > $\frac{\mu_1+\mu_2}{2}$ thì phân loại x vào 1}
 \end{figure}
 \FloatBarrier 
-\underline{Ví dụ về Gaussian Bayes classifier}\\
+\underline{Ví dụ về phân loại Gaussian Bayes}\\
 Bài toán phân loại đứa trẻ (viết tắt c) hay người lớn (viết tắt a) dựa vào hai biến chiều cao[cm] (viết tắt h), cân nặng[kg] (viết tắt w). Có 4 dữ liệu adult và 12 dữ liệu child.\\
 Ta có $\mathrm{P}(a)=\frac{4}{4+12}=0.25$, $\mathrm{P}(c)=\frac{12}{4+12}=0.75$\\
 Công thức hàm phân phối Gaussian 
@@ -624,9 +624,39 @@ $\mathrm{P}(x|c)$=$\mathrm{P}(h_x|c)\mathrm{P}(w_x|c)$ với $
 \mathrm{P}(h_x|c)=\frac{1}{\sqrt{2\pi\sigma^2_{h,c}}} * e^{-\frac{(h_x-\mu_{h,c})^2}{2\sigma_{h,c}^2}}$, $
 \mathrm{P}(w_x|c)=\frac{1}{\sqrt{2\pi\sigma^2_{w,c}}} * e^{-\frac{(w_x-\mu_{w,c})^2}{2\sigma_{w,c}^2}}$\\
 
-\section{Thuật toán Jenks natural breaks optimization (đọc thêm)}
-Kham khảo từ \cite{JNBO}
-\section{Thuật toán Kernel Density Estimation (đọc thêm)}
+\section{Thuật toán Kernel Density Estimation}
+Hàm kernel có các thuộc tính giống hàm mật độ xác suất (pdf) với một thuộc tính được cộng thêm là hàm kernel bắt buộc phải hàm chẵn (even function), nghĩa là với mọi giá trị x và -x trong miền giá trị f, ta có: f(x) = f(-x). Nói cách khác, hàm chẵn đối xứng qua trục tung y, ví dụ như |x|, $x^2$, cos(x). Với sự thuận tiện trong Toán học, phân phối chuẩn thường được dùng là hàm kernel.\\
+Trong thống kê, thuật toán Kernel Desity Estimation (KDE) là phương pháp không tham số (non-parametric method) dự đoán hàm mật độ xác suất pdf của biến ngẫu nhiên liên tục. Phương pháp không tham số nghĩa là không giả định biến ngẫu nhiên x tuân theo bất kỳ phân phối nào bởi vì kích thước dữ liệu quá nhỏ nên định lý trung tâm (central limit theorem) không được sử dụng để giả định phân phối. KDE là phương pháp cơ bản để làm trơn dữ liệu, dựa vào dữ liệu mẫu giới hạn để suy luận tổng thể.\\
+Điều quan trọng, tại mỗi điểm dữ liệu, hàm kernel được tạo sao cho mỗi điểm dữ liệu là trung tâm của hàm, điều này bảo đảm hàm kernel đối xứng qua điểm dữ liệu. Sau đó, tại mỗi điểm dữ liệu, thực hiện dự đoán hàm mật độ xác suất pdf sao cho f(x) thỏa mãn tính chất f(x) > 0 và $\int_{-t}^t f(x) = 1$ với x $\in$ [-t,t].\\
+Ví dụ để làm rõ điều trên, ta nhìn hình vẽ dưới đây:\\
+\FloatBarrier
+\begin{figure}[h!]
+        \begin{subfigure}[b]{0.5\textwidth}
+                \label{tab:example}
+                \includegraphics[width=\linewidth]{500px-Comparison_of_1D_histogram_and_KDE}
+        \end{subfigure}%
+\end{figure}
+\FloatBarrier
+Xét tại 6 điểm dữ liệu $x_1$ = -2.1, $x_2$ = -1.3, $x_3$ = -0.4, $x_4$ = 1.9, $x_5$ = 5.1, $x_6$ = 6. Đối với histogram (hình vẽ bên trái), sẽ có 6 khoảng nhỏ, mỗi khoảng có kích thước chiều rộng 2, chiều cao tùy thuộc vào số lượng điểm dữ liệu rơi vào khoảng đó, cứ mỗi điểm rơi vào thì khoảng có có chiều cao cộng thêm 1/12. Đối với KDE (hình vẽ bên phải), ta sử dụng phân phối chuẩn với độ sai lệch (variance 2.25) trên mỗi điểm dữ liệu $x_i$ (được thể hiện đường màu đỏ). Cộng lại các kernel này tạo ra KDE (được thể hiện đường màu xanh). KDE khá giống như histogram, ngoại trừ có thêm tính liên tục hay tính trơn nhờ sử dụng kernel thích hợp.\\  
+Tóm lại, những bước tạo thành KDE:\\
+\begin{enumerate}
+\item Chọn hàm kernel, thường là phân phối chuẩn (Gaussian), phân phối đều (hình chữ nhật hay hình tam giác)
+\item Tại mỗi điểm dữ liệu $x_i$, xây dựng hàm kernel thu nhỏ $\frac{1}{h}K[\frac{(x-x_i)}{h}]$, trong đó K là hàm kernel được chọn, tham số h được gọi là bandwidth, hoặc tham số trơn. 
+\item Cộng tất cả các hàm kernel thu nhỏ riêng lẻ và chia cho n, điều này thể hiện xác suất của $\frac{1}{n}$ đối với mỗi $x_i$. Đồng thời, điều này đảm bảo rằng tích phân trên miền giá trị của KDE bằng 1.\\  
+\[
+\hat{f(x)} = \frac{1}{n}\frac{1}{h}\sum_{i=1}^{n} K(\frac{x-x_i}{h})
+\]
+The density() function in R computes the values of the kernel density estimate.  Applying the plot() function to an object created by density() will plot the estimate.  Applying the summary() function to the object will reveal useful statistics about the estimate.
+\end{enumerate}
+Choosing the Bandwidth
+
+It turns out that the choosing the bandwidth is the most difficult step in creating a good kernel density estimate that captures the underlying distribution of the variable (Trosset, Page 166).  Choosing the bandwidth is a complicated topic that is better addressed in a more advanced book or paper, but here are some useful guidelines:
+
+    A small h results in a small standard deviation, and the kernel places most of the probability on the datum.  Use this when the sample size is large and the data are tightly packed.
+    A large h results in a large standard deviation, and the kernel spreads more of the probability from the datum to its neighbouring values.  Use this when the sample size is small and the data are sparse.
+
+The bandwidth of the kernel is a free parameter which exhibits a strong influence on the resulting estimate. To illustrate its effect, we take a simulated random sample from the standard normal distribution (plotted at the blue spikes in the rug plot on the horizontal axis). The grey curve is the true density (a normal density with mean 0 and variance 1). In comparison, the red curve is undersmoothed since it contains too many spurious data artifacts arising from using a bandwidth h = 0.05, which is too small. The green curve is oversmoothed since using the bandwidth h = 2 obscures much of the underlying structure. The black curve with a bandwidth of h = 0.337 is considered to be optimally smoothed since its density estimate is close to the true density.\\
+There is a tremendous amount of literature on how best to choose the bandwidth, and I will not go into detail about that in this post.  There are 2 methods that are common in R: nrd0 and SJ, which refers to the method by Sheather \& Jones.  These are string arguments for the option 'bw' in the density() function.  The default in density() is bw = 'nrd0'.
 \chapter{HIỆN THỰC VÀ THỬ NGHIỆM}
 \section{Dữ liệu nghiên cứu}
 \subsection{Dữ liệu thô}
@@ -1600,30 +1630,6 @@ Vì các giá trị xác suất ... được tính trên mẫu và Luận Văn n
 \pagebreak
 \chapter{PHỤ LỤC}
 \begin{enumerate}[label=\textbf{PL\arabic*}]
-\item Mã nguồn R chạy giải thuật Jenks Natural breaks optimization
-\begin{flushleft}
-\begin{tabular}{  |l| }
-\hline 
-\textit{\#set your working directory where your file data locates}\\
-setwd("/home/thuy/workspace/Preprocess")\\
-mydata = read.csv("freqVeryHigh.csv")[,1]\\
-mydata\\
-\textit{\#returned result}\\
-\textit{\# [1]  0  1  2  3  4  5  6  7  8  9 10 11}\\
-\textit{\#use library classInt to run algorithm Jenks Natural breaks optimization}\\
-library("classInt")\\
-classIntervals(mydata, n=5, style="jenks")\\
-\textit{\#returned result}\\
-\textit{\#[0,1]  (1,3]  (3,5]  (5,8] (8,11]}\\
-\textit{\#2      2      2      3      3 }\\
-\textit{\#or use library BAMMtools to run algorithm Jenks Natural breaks optimization}\\
-library("BAMMtools")\\
-getJenksBreaks(mydata, 5)\\
-\textit{\#returned result}\\
-\textit{\#0  2  5  8 11}\\
-\hline
-\end{tabular}
-\end{flushleft}
 \item \label{histogramWithNormalCurve} Mã nguồn R vẽ histogram dữ liệu
 \begin{flushleft}
 \begin{tabular}{  |l| }
@@ -1762,57 +1768,6 @@ legend("topright", inset=.05, title="density",\\
 \hline
 \end{tabular}
 \end{flushleft}
-\item Mã nguồn R chạy giải thuật FRBCS.W
-\begin{flushleft}
-\begin{tabular}{  |l| }
-\hline 
-library(frbs)\\
-\textit{\#set your working directory where your file data locates}\\
-setwd('/home/thuy1/git/predictUsingProbability/Preprocess')\\
-data=read.table(file="classifyRoute.csv", header=FALSE, sep=",",\\
-\hspace{1cm} col.names = c("X1","X2","X3","X4","X5","Clazz"));\\
-\textit{\#The dataset is shuffled}\\
-dataShuffled <- data[sample(nrow(data)),]\\
-\textit{\#the last column is the output variable/attribute and it must be expressed in numbers (numerical data)}\\
-dataShuffled[,6] <- unclass(dataShuffled[,6])\\
-\textit{\#dataset divided into training and testing data}\\
-\textit{\#100 first records is training data}\\
-tra.data <- dataShuffled[1:100,]\\
-\textit{\#90 last records is testing data and their output variable/attribute is removed}\\
-tst.data <- dataShuffled[100:nrow(dataShuffled),1:5]\\
-\textit{\#make the output variable/attribute of testing data an 1-column matrix}\\
-real.data <- matrix(dataShuffled[100:nrow(dataShuffled),6], ncol = 1)\\
-\textit{\#return the range [min, max] of every input variable/attribute}\\
-range.data.input <- matrix(apply(data[, -ncol(data)], 2, range), nrow = 2)\\
-range.data.input\\
-\textit{\#\hspace{1cm}[,1]\hspace{0.5cm}[,2]\hspace{0.5cm}[,3]\hspace{0.5cm}[,4]\hspace{0.5cm}[,5]}\\
-\textit{\#[1,]\hspace{0.5cm}4\hspace{0.8cm}8\hspace{0.8cm}15\hspace{0.8cm}3\hspace{0.8cm}0}\\
-\textit{\#[2,]\hspace{0.5cm}83\hspace{0.6cm}74\hspace{0.7cm}68\hspace{0.7cm}35\hspace{0.7cm}11}\\
-\textit{\# Set the method and its parameters. In this case we use FRBCS.W algorithm}\\
-method.type <- "FRBCS.W"\\
-control <- list(num.labels = 7, type.mf = "GAUSSIAN", type.tnorm = "MIN",\\
-\hspace{2.3cm}  type.snorm = "MAX", type.implication.func = "ZADEH")\\
-\textit{\# Learning step: Generate fuzzy model}\\
-object.cls <- frbs.learn(tra.data, range.data.input, method.type, control)\\
-
-\textit{\# Predicting step: Predict newdata}\\
-res.test <- predict(object.cls, tst.data)\\
-\textit{\# Display the FRBS model}\\
-summary(object.cls)\\
-\textit{\# Plot the membership functions}\\
-plotMF(object.cls)\\
-\hline
-\end{tabular}
-\end{flushleft}
-Hình vẽ thể hiện giải thuật FRBCS.W
-\FloatBarrier
-\begin{figure}[h!]
-        \begin{subfigure}[b]{0.7\textwidth}
-        		\label{tab:example2}
-                \includegraphics[width=\linewidth]{FRBCSW}
-        \end{subfigure}%
-\end{figure}
-\FloatBarrier
 \item \label{DragAndDrop} Ứng dụng bản demo "Drag And Drop data layer GeoJSON" \footnote{https://developers.google.com/maps/documentation/javascript/examples/layer-data-dragndrop} của Google Map API để kiểm tra lộ trình\\
 \FloatBarrier
 \begin{figure}[h]
@@ -2019,12 +1974,6 @@ function accumulateSequenceElmtWithMinRedundant(List<Long> sortedNonStandardDura
 	\emph{Data Mining: Concepts and Techniques (3rd ed.)},
 	Morgan Kaufmann Publishers, USA.
 \section*{Website}
-\bibitem{JNBO}
-	\emph{Jenks natural breaks optimization}, truy cập ngày 23 tháng 10 năm 2016,
-	địa chỉ \emph{https://en.wikipedia.org/wiki/Jenks\_natural\_breaks\_optimization}.\\
-\bibitem{JNBOE}
-	\emph{Jenks natural breaks optimization example}, truy cập ngày 18 tháng 2 năm 2017,
-	địa chỉ \emph{https://www.ehdp.com/vitalnet/breaks-1.htm}.
 \bibitem{2WAYSOFNB}
 	\emph{2 ways of using Naive Bayes classification for numeric attributes}, truy cập ngày 1 tháng 3 năm 2017,
 	địa chỉ \emph{http://www.simafore.com/blog/bid/107702/2-ways-of-using-Naive-Bayes-classification-for-numeric-attributes}..

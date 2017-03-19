@@ -7,23 +7,22 @@
 \contentsline {section}{\numberline {1.6}C\IeC {\'\acircumflex }u tr\IeC {\'u}c lu\IeC {\d \acircumflex }n v\IeC {\u a}n}{2}
 \contentsline {chapter}{\numberline {2}C\IeC {\OHORN } S\IeC {\h \OHORN } L\IeC {\'Y} THUY\IeC {\'\ECIRCUMFLEX }T}{3}
 \contentsline {section}{\numberline {2.1}L\IeC {\'y} thuy\IeC {\'\ecircumflex }t x\IeC {\'a}c su\IeC {\'\acircumflex }t c\IeC {\ohorn } b\IeC {\h a}n}{3}
-\contentsline {section}{\numberline {2.2}S\IeC {\ohorn } l\IeC {\uhorn }\IeC {\d \ohorn }c v\IeC {\`\ecircumflex } Gaussian Bayes classifier}{11}
-\contentsline {section}{\numberline {2.3}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n Jenks natural breaks optimization (\IeC {\dj }\IeC {\d o}c th\IeC {\^e}m)}{12}
-\contentsline {section}{\numberline {2.4}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n Kernel Density Estimation (\IeC {\dj }\IeC {\d o}c th\IeC {\^e}m)}{12}
-\contentsline {chapter}{\numberline {3}HI\IeC {\d \ECIRCUMFLEX }N TH\IeC {\d \UHORN }C V\IeC {\`A} TH\IeC {\h \UHORN } NGHI\IeC {\d \ECIRCUMFLEX }M}{13}
-\contentsline {section}{\numberline {3.1}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u nghi\IeC {\^e}n c\IeC {\'\uhorn }u}{13}
-\contentsline {subsection}{\numberline {3.1.1}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u th\IeC {\^o}}{13}
-\contentsline {subsection}{\numberline {3.1.2}Ti\IeC {\`\ecircumflex }n x\IeC {\h \uhorn } l\IeC {\'y} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{13}
-\contentsline {subsubsection}{Ki\IeC {\h \ecircumflex }m tra l\IeC {\d \ocircumflex } tr\IeC {\`\i }nh xe bu\IeC {\'y}t}{13}
-\contentsline {subsubsection}{Ch\IeC {\d o}n th\IeC {\`\ohorn }i gian ho\IeC {\`a}n th\IeC {\`a}nh m\IeC {\d \ocircumflex }t chuy\IeC {\'\ecircumflex }n \IeC {\dj }i}{13}
-\contentsline {subsubsection}{\IeC {\DJ }\IeC {\`\ocircumflex }ng b\IeC {\d \ocircumflex } h\IeC {\'o}a ghi nh\IeC {\d \acircumflex }n m\IeC {\~\ocircumflex }i b\IeC {\uhorn }\IeC {\'\ohorn }c di chuy\IeC {\h \ecircumflex }n}{15}
-\contentsline {subsubsection}{Tr\IeC {\d \uhorn }c quan nh\IeC {\~\uhorn }ng b\IeC {\uhorn }\IeC {\'\ohorn }c di chuy\IeC {\h \ecircumflex }n}{18}
-\contentsline {subsubsection}{R\IeC {\`\ohorn }i r\IeC {\d a}c h\IeC {\'o}a nh\IeC {\~\uhorn }ng b\IeC {\uhorn }\IeC {\'\ohorn }c di chuy\IeC {\h \ecircumflex }n}{21}
-\contentsline {section}{\numberline {3.2}\IeC {\'A}p d\IeC {\d u}ng Gaussian Bayes classify \IeC {\dj }\IeC {\h \ecircumflex } d\IeC {\d \uhorn } \IeC {\dj }o\IeC {\'a}n x\IeC {\'a}c su\IeC {\'\acircumflex }t xe bu\IeC {\'y}t v\IeC {\`\ecircumflex } tr\IeC {\d a}m \IeC {\dj }\IeC {\'u}ng th\IeC {\`\ohorn }i gian}{21}
-\contentsline {section}{\numberline {3.3}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{26}
-\contentsline {chapter}{\numberline {4}K\IeC {\'\ECIRCUMFLEX }T LU\IeC {\d \ACIRCUMFLEX }N}{27}
-\contentsline {section}{\numberline {4.1}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t}{27}
-\contentsline {section}{\numberline {4.2}\IeC {\DJ }\IeC {\'o}ng g\IeC {\'o}p c\IeC {\h u}a \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{27}
-\contentsline {section}{\numberline {4.3}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{27}
-\contentsline {chapter}{\numberline {5}PH\IeC {\d U} L\IeC {\d U}C}{28}
+\contentsline {section}{\numberline {2.2}S\IeC {\ohorn } l\IeC {\uhorn }\IeC {\d \ohorn }c v\IeC {\`\ecircumflex } ph\IeC {\^a}n lo\IeC {\d a}i Gaussian Bayes}{11}
+\contentsline {section}{\numberline {2.3}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n Kernel Density Estimation}{12}
+\contentsline {chapter}{\numberline {3}HI\IeC {\d \ECIRCUMFLEX }N TH\IeC {\d \UHORN }C V\IeC {\`A} TH\IeC {\h \UHORN } NGHI\IeC {\d \ECIRCUMFLEX }M}{15}
+\contentsline {section}{\numberline {3.1}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u nghi\IeC {\^e}n c\IeC {\'\uhorn }u}{15}
+\contentsline {subsection}{\numberline {3.1.1}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u th\IeC {\^o}}{15}
+\contentsline {subsection}{\numberline {3.1.2}Ti\IeC {\`\ecircumflex }n x\IeC {\h \uhorn } l\IeC {\'y} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{15}
+\contentsline {subsubsection}{Ki\IeC {\h \ecircumflex }m tra l\IeC {\d \ocircumflex } tr\IeC {\`\i }nh xe bu\IeC {\'y}t}{15}
+\contentsline {subsubsection}{Ch\IeC {\d o}n th\IeC {\`\ohorn }i gian ho\IeC {\`a}n th\IeC {\`a}nh m\IeC {\d \ocircumflex }t chuy\IeC {\'\ecircumflex }n \IeC {\dj }i}{15}
+\contentsline {subsubsection}{\IeC {\DJ }\IeC {\`\ocircumflex }ng b\IeC {\d \ocircumflex } h\IeC {\'o}a ghi nh\IeC {\d \acircumflex }n m\IeC {\~\ocircumflex }i b\IeC {\uhorn }\IeC {\'\ohorn }c di chuy\IeC {\h \ecircumflex }n}{17}
+\contentsline {subsubsection}{Tr\IeC {\d \uhorn }c quan nh\IeC {\~\uhorn }ng b\IeC {\uhorn }\IeC {\'\ohorn }c di chuy\IeC {\h \ecircumflex }n}{20}
+\contentsline {subsubsection}{R\IeC {\`\ohorn }i r\IeC {\d a}c h\IeC {\'o}a nh\IeC {\~\uhorn }ng b\IeC {\uhorn }\IeC {\'\ohorn }c di chuy\IeC {\h \ecircumflex }n}{23}
+\contentsline {section}{\numberline {3.2}\IeC {\'A}p d\IeC {\d u}ng Gaussian Bayes classify \IeC {\dj }\IeC {\h \ecircumflex } d\IeC {\d \uhorn } \IeC {\dj }o\IeC {\'a}n x\IeC {\'a}c su\IeC {\'\acircumflex }t xe bu\IeC {\'y}t v\IeC {\`\ecircumflex } tr\IeC {\d a}m \IeC {\dj }\IeC {\'u}ng th\IeC {\`\ohorn }i gian}{23}
+\contentsline {section}{\numberline {3.3}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{28}
+\contentsline {chapter}{\numberline {4}K\IeC {\'\ECIRCUMFLEX }T LU\IeC {\d \ACIRCUMFLEX }N}{29}
+\contentsline {section}{\numberline {4.1}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t}{29}
+\contentsline {section}{\numberline {4.2}\IeC {\DJ }\IeC {\'o}ng g\IeC {\'o}p c\IeC {\h u}a \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{29}
+\contentsline {section}{\numberline {4.3}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{29}
+\contentsline {chapter}{\numberline {5}PH\IeC {\d U} L\IeC {\d U}C}{30}
 \contentsline {chapter}{DANH M\IeC {\d U}C KHAM KH\IeC {\h A}O}{37}
