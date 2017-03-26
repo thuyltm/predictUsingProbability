@@ -625,38 +625,71 @@ $\mathrm{P}(x|c)$=$\mathrm{P}(h_x|c)\mathrm{P}(w_x|c)$ với $
 \mathrm{P}(w_x|c)=\frac{1}{\sqrt{2\pi\sigma^2_{w,c}}} * e^{-\frac{(w_x-\mu_{w,c})^2}{2\sigma_{w,c}^2}}$\\
 
 \section{Thuật toán Kernel Density Estimation}
-Hàm kernel có các thuộc tính giống hàm mật độ xác suất (pdf) với một thuộc tính được cộng thêm là hàm kernel bắt buộc phải hàm chẵn (even function), nghĩa là với mọi giá trị x và -x trong miền giá trị f, ta có: f(x) = f(-x). Nói cách khác, hàm chẵn đối xứng qua trục tung y, ví dụ như |x|, $x^2$, cos(x). Với sự thuận tiện trong Toán học, phân phối chuẩn thường được dùng là hàm kernel.\\
-Trong thống kê, thuật toán Kernel Desity Estimation (KDE) là phương pháp không tham số (non-parametric method) dự đoán hàm mật độ xác suất pdf của biến ngẫu nhiên liên tục. Phương pháp không tham số nghĩa là không giả định biến ngẫu nhiên x tuân theo bất kỳ phân phối nào bởi vì kích thước dữ liệu quá nhỏ nên định lý trung tâm (central limit theorem) không được sử dụng để giả định phân phối. KDE là phương pháp cơ bản để làm trơn dữ liệu, dựa vào dữ liệu mẫu giới hạn để suy luận tổng thể.\\
-Điều quan trọng, tại mỗi điểm dữ liệu, hàm kernel được tạo sao cho mỗi điểm dữ liệu là trung tâm của hàm, điều này bảo đảm hàm kernel đối xứng qua điểm dữ liệu. Sau đó, tại mỗi điểm dữ liệu, thực hiện dự đoán hàm mật độ xác suất pdf sao cho f(x) thỏa mãn tính chất f(x) > 0 và $\int_{-t}^t f(x) = 1$ với x $\in$ [-t,t].\\
-Ví dụ để làm rõ điều trên, ta nhìn hình vẽ dưới đây:\\
+\underline{Định nghĩa hàm Kernel}:\\
+Hàm kernel có các thuộc tính giống hàm mật độ xác suất (pdf) với một thuộc tính được cộng thêm là hàm kernel bắt buộc phải hàm chẵn (even function), nghĩa là với mọi giá trị x và -x trong miền trục hoành của f, ta có: f(x) = f(-x). Nói cách khác, hàm chẵn đối xứng qua trục tung y, ví dụ như |x|, $x^2$, cos(x). Với sự thuận tiện trong Toán học, phân phối chuẩn thường được dùng là hàm kernel.\\
+\underline{Định nghĩa thuật toán Kernel Density Estimation (KDE)}:\\
+Trong thống kê, thuật toán Kernel Density Estimation (KDE) là phương pháp không tham số (non-parametric method) dự đoán hàm mật độ xác suất pdf của biến ngẫu nhiên liên tục. KDE là phương pháp cơ bản để làm trơn dữ liệu trên mẫu dữ liệu giới hạn để dựa vào đó suy luận tổng thể.\\
+\underline{Phương pháp không tham số}:\\
+Phương pháp không tham số được sử dụng trong thống kê để mô hình hóa và phân tích biến dữ liệu dán nhãn (nominal variable, ví dụ "nam" và "nữ") hoặc biến dữ liệu khó định lượng (ordinal variable, ví dụ "hạnh phúc" và "rất hạnh phúc") với số lượng nhỏ. Phương pháp không tham số được sử dụng khi dữ liệu chưa biết trước tuân theo phân phối nào, hoặc không tuân theo phân phối chuẩn hoặc có kích thước quá nhỏ để có thể ứng dụng định lý trung tâm (central limit theorem). \\
+\underline{Từng bước thực hiện thuật toán Kernel Density Estimation (KDE)}:\\
+Những bước tạo thành KDE:\\
+\begin{enumerate}
+\item Chọn hàm kernel, thường chọn phân phối chuẩn (Gaussian), phân phối đều (hình chữ nhật hay hình tam giác)
+\item Tại mỗi điểm dữ liệu $x_i$, xây dựng hàm kernel thu nhỏ (scaled kernel) $K_h = \frac{1}{h}K[\frac{(x-x_i)}{h}]$, trong đó K là hàm kernel được chọn, tham số h được gọi là bandwidth, hoặc tham số làm trơn. 
+\item Cộng tất cả các hàm kernel thu nhỏ và chia cho n, điều này thể hiện xác suất $\frac{1}{n}$ đối với mỗi $x_i$. Đồng thời, điều này đảm bảo rằng tích phân KDE trên miền giá trị x bằng 1.\\  
+\[
+\hat{f}(x_i) = \hat{p}_\textit{\tiny\tiny KDE}(x_i) = \frac{1}{n}\sum_{i=1}^{n} K_h = \frac{1}{n}\frac{1}{h}\sum_{i=1}^{n} K(\frac{x-x_i}{h})
+\]
+\end{enumerate}
+Chú ý bước 2, tại mỗi điểm dữ liệu, hàm kernel thu nhỏ được tạo ra sao cho mỗi điểm dữ liệu là trung tâm của hàm, điều này bảo đảm hàm kernel đối xứng qua điểm dữ liệu. Hàm pdf dự đoán bằng cách cộng các hàm kernel thu nhỏ sao đó chia cho số lượng dữ liệu để bảo đảm hai tính chất của hàm mật độ xác suất pdf $\hat{p}_\textit{\tiny\tiny KDE}$(x), cụ thể: $\hat{p}_\textit{\tiny\tiny KDE}$(x) > 0 và $\int_{-\infty}^{\infty} \hat{p}_\textit{\tiny\tiny KDE}(x)dx = 1$.\\
+Ví dụ để làm rõ điều trên, ta nhìn hình vẽ dưới đây:
 \FloatBarrier
-\begin{figure}[h!]
-        \begin{subfigure}[b]{0.5\textwidth}
-                \label{tab:example}
-                \includegraphics[width=\linewidth]{500px-Comparison_of_1D_histogram_and_KDE}
-        \end{subfigure}%
+\begin{figure}[!htb]
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{500px-Comparison_of_1D_histogram_and_KDE}
+\endminipage
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{KDE1}
+\endminipage
 \end{figure}
 \FloatBarrier
 Xét tại 6 điểm dữ liệu $x_1$ = -2.1, $x_2$ = -1.3, $x_3$ = -0.4, $x_4$ = 1.9, $x_5$ = 5.1, $x_6$ = 6. Đối với histogram (hình vẽ bên trái), sẽ có 6 khoảng nhỏ, mỗi khoảng có kích thước chiều rộng 2, chiều cao tùy thuộc vào số lượng điểm dữ liệu rơi vào khoảng đó, cứ mỗi điểm rơi vào thì khoảng có có chiều cao cộng thêm 1/12. Đối với KDE (hình vẽ bên phải), ta sử dụng phân phối chuẩn với độ sai lệch (variance 2.25) trên mỗi điểm dữ liệu $x_i$ (được thể hiện đường màu đỏ). Cộng lại các kernel này tạo ra KDE (được thể hiện đường màu xanh). KDE khá giống như histogram, ngoại trừ có thêm tính liên tục hay tính trơn nhờ sử dụng kernel thích hợp.\\  
-Tóm lại, những bước tạo thành KDE:\\
-\begin{enumerate}
-\item Chọn hàm kernel, thường là phân phối chuẩn (Gaussian), phân phối đều (hình chữ nhật hay hình tam giác)
-\item Tại mỗi điểm dữ liệu $x_i$, xây dựng hàm kernel thu nhỏ $\frac{1}{h}K[\frac{(x-x_i)}{h}]$, trong đó K là hàm kernel được chọn, tham số h được gọi là bandwidth, hoặc tham số trơn. 
-\item Cộng tất cả các hàm kernel thu nhỏ riêng lẻ và chia cho n, điều này thể hiện xác suất của $\frac{1}{n}$ đối với mỗi $x_i$. Đồng thời, điều này đảm bảo rằng tích phân trên miền giá trị của KDE bằng 1.\\  
+\underline{Chọn băng thông}:\\
+Việc chọn bandwidth là một việc khó để giải thuật KDE thể hiện tốt phân phối của biến, và sẽ không viết chi tiết ở đây. Chọn bandwidth h lớn thì làm trơn quá và che phủ cấu trúc dữ liệu, trong khi bandwidth h nhỏ thì hình dạng phân phối có nhiều gai nhọn và rất khó để thông dịch. Như hình dưới đây:
+\FloatBarrier
+\begin{figure}[!h]
+  \begin{subfigure}[b]{0.7\textwidth}
+	   \label{tab:example}
+        \includegraphics[width=\linewidth]{KDE2}
+  \end{subfigure}%
+\end{figure}
+\FloatBarrier
+Bandwidth của kernel là tham số tự do, nhưng có ảnh hưởng lớn đến hiệu quả dự đoán. Ví dụ, lấy mẫu ngẫu nhiên (những đường vạch màu xanh da trời trên trục ngang) biết trước có phân phối chuẩn thể hiện màu xám có trung bình mẫu bằng 0 và độ sai lệch bằng 1 (biểu diễn bởi đường xám). Với bandwidth h = 0.05 có kernel thể hiện đường cong màu đỏ, hoặc với bandwidth h = 2 có kernel thể hiện màu xanh lá đều dự đoán lệch quá xa so với kết quả biết trước, gọi đường kernel màu đỏ làm trơn quá mức (over smooth) và gọi đường kernel màu xanh lá làm trơn dưới mức (under smooth), trong khi với bandwidth h = 0.337 có kernel thể hiện đường màu đen có dự đoán gần giống với kết quả, được gọi là làm trơn tối ưu (optimal smooth).\\
+\FloatBarrier
+\begin{figure}[!h]
+  \begin{subfigure}[b]{0.5\textwidth}
+	   \label{tab:example}
+        \includegraphics[width=\linewidth]{220px-Comparison_of_1D_bandwidth_selectors}
+  \end{subfigure}%
+\end{figure}
+\FloatBarrier
+MISE (mean integrated squared error) là tiêu chuẩn thông thường sử dụng để lựa chọn tham số bandwidth:
 \[
-\hat{f(x)} = \frac{1}{n}\frac{1}{h}\sum_{i=1}^{n} K(\frac{x-x_i}{h})
+MSIE = E[\int(\hat{f}(x)-f(x))^2dx] = E[\int(\hat{p}_\textit{\tiny\tiny KDE}(x) - p(x))^2dx] = 
+\underbrace{E[\int(\hat{p}_\textit{\tiny\tiny KDE}(x) - p(x))dx]^2}_{\text{bias}} + 
+\underbrace{var(\hat{p}_\textit{\tiny\tiny KDE}(x))}_{\text{variance}}
 \]
-The density() function in R computes the values of the kernel density estimate.  Applying the plot() function to an object created by density() will plot the estimate.  Applying the summary() function to the object will reveal useful statistics about the estimate.
-\end{enumerate}
-Choosing the Bandwidth
-
-It turns out that the choosing the bandwidth is the most difficult step in creating a good kernel density estimate that captures the underlying distribution of the variable (Trosset, Page 166).  Choosing the bandwidth is a complicated topic that is better addressed in a more advanced book or paper, but here are some useful guidelines:
-
-    A small h results in a small standard deviation, and the kernel places most of the probability on the datum.  Use this when the sample size is large and the data are tightly packed.
-    A large h results in a large standard deviation, and the kernel spreads more of the probability from the datum to its neighbouring values.  Use this when the sample size is small and the data are sparse.
-
-The bandwidth of the kernel is a free parameter which exhibits a strong influence on the resulting estimate. To illustrate its effect, we take a simulated random sample from the standard normal distribution (plotted at the blue spikes in the rug plot on the horizontal axis). The grey curve is the true density (a normal density with mean 0 and variance 1). In comparison, the red curve is undersmoothed since it contains too many spurious data artifacts arising from using a bandwidth h = 0.05, which is too small. The green curve is oversmoothed since using the bandwidth h = 2 obscures much of the underlying structure. The black curve with a bandwidth of h = 0.337 is considered to be optimally smoothed since its density estimate is close to the true density.\\
-There is a tremendous amount of literature on how best to choose the bandwidth, and I will not go into detail about that in this post.  There are 2 methods that are common in R: nrd0 and SJ, which refers to the method by Sheather \& Jones.  These are string arguments for the option 'bw' in the density() function.  The default in density() is bw = 'nrd0'.
+Bias còn được gọi là lỗi hệ thống, lỗi được gây khi tiến hành nghiên cứu ví dụ như chọn hay loại bỏ đối tượng được nghiên cứu, do lỗi thiết bị hay đo đạc, phân loại sai, hoặc thậm chí cách thức được chọn nghiên cứu không đúng hướng ngay từ đâu.\\ Variance được gọi là lỗi mang tính chất ngẫu nhiên, không dự đoán và không biết trước để tránh và có thể không lặp lại nếu tiếp tục thí nghiệm một lần nữa, khác với bias, lỗi sẽ lặp lại như vậy nếu vẫn tiến hành theo cách cũ. Chọn bandwidth h tốt là làm nhỏ nhất giá trị MISE.\\
+Khi chọn bandwidth h lớn làm giảm lỗi ngẫu nhiên, nhưng làm tăng lỗi hệ thống. Trong khi bandwidth h nhỏ làm giảm lỗi hệ thống, nhưng làm tăng lỗi ngẫu nhiên. Hai hình vẽ sau thể hiện điều này 
+\FloatBarrier
+\begin{figure}[!h]
+  \begin{subfigure}[b]{0.5\textwidth}
+	   \label{tab:example}
+        \includegraphics[width=\linewidth]{KDE3}
+  \end{subfigure}%
+\end{figure}
+\FloatBarrier
+Nếu ta giả sử dữ liệu nghiên cứu tuân theo phân phối chuẩn và ta chọn Gaussian làm kernel cho giải thuật KDE, thì ta có thể biết giá trị tối ưu của h là $h^1$ = 1.06$\sigma N^{-\frac{1}{5}}$.
 \chapter{HIỆN THỰC VÀ THỬ NGHIỆM}
 \section{Dữ liệu nghiên cứu}
 \subsection{Dữ liệu thô}
@@ -1983,8 +2016,15 @@ function accumulateSequenceElmtWithMinRedundant(List<Long> sortedNonStandardDura
 \bibitem{Gaussian classifier}
 	\emph{Naive Bayes 3: Gaussian example}, truy cập ngày 2 tháng 3 năm 2017,
 	địa chỉ \emph{https://www.youtube.com/watch?v=r1in0YNetG8}.	
-		
-	
+\bibitem{DKE1}
+	\emph{L7: Kernel density estimation}, truy cập ngày 26 tháng 3 năm 2017,
+	địa chỉ \emph{http://www.stat.washington.edu/courses/stat539/spring13/Handouts/tamu-csce-666-pr\_l7-annotated.pdf}.	
+\bibitem{DKE2}
+	\emph{Kernel density estimation Wikipedia}, truy cập ngày 26 tháng 3 năm 2017,
+	địa chỉ \emph{https://en.wikipedia.org/wiki/Kernel\_density\_estimation}.
+\bibitem{DKE3}
+	\emph{Exploratory Data Analysis: Kernel Density Estimation in R on Ozone Pollution Data in New York and Ozonopolis}, truy cập ngày 26 tháng 3 năm 2017,
+	địa chỉ \emph{https://www.r-bloggers.com/exploratory-data-analysis-kernel-density-estimation-in-r-on-ozone-pollution-data-in-new-york-and-ozonopolis/}.
 \section*{Developer's Website}
 \bibitem{GeoJSON}
 	\emph{Google Maps 3 API - Data Layer: GeoJSON}, truy cập ngày 6 tháng 11 năm 2016,
