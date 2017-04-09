@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  26 MAR 2017 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  9 APR 2017 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -857,38 +857,7 @@ Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
 LaTeX Warning: Unused global option(s):
     [13pt].
 
-(./test3.aux
-
-LaTeX Warning: Label `tab:example' multiply defined.
-
-
-LaTeX Warning: Label `sub@tab:example' multiply defined.
-
-
-LaTeX Warning: Label `tab:example' multiply defined.
-
-
-LaTeX Warning: Label `sub@tab:example' multiply defined.
-
-
-LaTeX Warning: Label `tab:example' multiply defined.
-
-
-LaTeX Warning: Label `sub@tab:example' multiply defined.
-
-
-LaTeX Warning: Label `tab:example2' multiply defined.
-
-
-LaTeX Warning: Label `sub@tab:example2' multiply defined.
-
-
-LaTeX Warning: Label `Gaussian classifier' multiply defined.
-
-
-LaTeX Warning: Label `DADG' multiply defined.
-
-)
+No file test3.aux.
 \openout1 = `test3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -905,7 +874,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
 LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
 \scratchdimen=\dimen168
@@ -1002,11 +971,12 @@ Overfull \hbox (26.27618pt too wide) in paragraph at lines 119--123
 []  
  []
 
-[3] [4] [5] [6] [7] (./test3.toc)
+[3] [4] [5] [6] [7]
+No file test3.toc.
 \tf@toc=\write5
 \openout5 = `test3.toc'.
 
- [8
+[8
 
 ]
 Ch\uhorn \ohorn ng 1.
@@ -1020,6 +990,9 @@ Overfull \hbox (6.50323pt too wide) in paragraph at lines 156--156
 
 ] [2]
 Ch\uhorn \ohorn ng 2.
+
+LaTeX Warning: Citation `TKCNUDR' on page 3 undefined on input line 179.
+
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 181.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -1032,6 +1005,9 @@ Overfull \hbox (8.61383pt too wide) in paragraph at lines 187--187
 \T5/cmr/m/n/10 Nh÷ vªy, trong To¡n Thèng K¶, tçn t¤i c¡c ph÷ìng ph¡p nh÷ ph÷ìng
  ph¡p th½ nghi»m thèng k¶, ph÷ìng 
  []
+
+
+LaTeX Warning: Citation `TKCNUDR' on page 3 undefined on input line 194.
 
 [3
 
@@ -1047,7 +1023,14 @@ Overfull \hbox (7.63538pt too wide) in paragraph at lines 252--253
 ghi»m cõa B$[]$ th nh c¡c x¡c su§t hªu nghi»m 
  []
 
-[5] [6]
+
+LaTeX Warning: Citation `TKCNUDR' on page 5 undefined on input line 268.
+
+[5]
+
+LaTeX Warning: Citation `TKCNUDR' on page 6 undefined on input line 270.
+
+[6]
 Overfull \hbox (7.63538pt too wide) in paragraph at lines 353--354
 \T5/cmr/m/n/10 cè B$[]$. Sau khi quan s¡t A ta chuyºn ^^_êi c¡c x¡c su§t ti¶n n
 ghi»m cõa B$[]$ th nh c¡c x¡c su§t hªu nghi»m 
@@ -1070,6 +1053,9 @@ Overfull \hbox (16.64175pt too wide) in paragraph at lines 511--511
 \T5/cmr/m/n/10 = fair, buys_computer = no). Do ^^_â x$[]$ = (age = youth, in-co
 me = medium, stu-dent = yes, credit_rating 
  []
+
+
+LaTeX Warning: Citation `2WAYSOFNB' on page 10 undefined on input line 513.
 
 
 Overfull \hbox (34.39781pt too wide) in paragraph at lines 516--541
@@ -1185,6 +1171,13 @@ Package pdftex.def Info: images/KDE3.png used on input line 688.
 
 [15 <./images/KDE3.png (PNG copy)>]
 Ch\uhorn \ohorn ng 3.
+
+LaTeX Warning: Reference `DragAndDrop' on page 16 undefined on input line 727.
+
+
+LaTeX Warning: Reference `histogramWithNormalCurve' on page 16 undefined on inp
+ut line 730.
+
 <images/histogramCCAS.png, id=107, 447.92343pt x 371.88937pt>
 File: images/histogramCCAS.png Graphic file (type png)
 
@@ -1197,13 +1190,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16
 
-] <images/finishTime_CC_AS_Order.png, id=111, 440.39531pt x 371.88937pt>
+]
+
+LaTeX Warning: Reference `sapxepTGHT' on page 17 undefined on input line 739.
+
+<images/finishTime_CC_AS_Order.png, id=111, 440.39531pt x 371.88937pt>
 File: images/finishTime_CC_AS_Order.png Graphic file (type png)
 
 <use images/finishTime_CC_AS_Order.png>
 Package pdftex.def Info: images/finishTime_CC_AS_Order.png used on input line 7
 44.
 (pdftex.def)             Requested size: 317.07614pt x 267.76013pt.
+
+
+LaTeX Warning: Reference `xacsuatTLTGHT' on page 17 undefined on input line 748
+.
 
 <images/finishTime_CC_AS_ACC_Line.png, id=112, 550.30594pt x 371.88937pt>
 File: images/finishTime_CC_AS_ACC_Line.png Graphic file (type png)
@@ -1217,6 +1218,17 @@ e 753.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [17 <./images/histogramCCAS.png> <./images/finishTime_CC_AS_Order.png>]
+
+LaTeX Warning: Reference `tinhkhoangcach' on page 18 undefined on input line 75
+9.
+
+
+Overfull \hbox (3.33734pt too wide) in paragraph at lines 759--759
+\T5/cmr/m/n/10 Sau ^^_â kham kh£o [] t¤i möc Phö Löc ^^_º t½nh méi b÷îc di chuy
+ºn. Sau ^^_¥y l  v½ dö 10 b÷îc di chuyºn 
+ []
+
+
 Overfull \hbox (5.42787pt too wide) in paragraph at lines 763--763
 []|\T5/cmr/m/n/10 Kho£ng 
  []
@@ -1387,6 +1399,9 @@ Overfull \hbox (56.35233pt too wide) in paragraph at lines 761--788
  []
 
 
+LaTeX Warning: Reference `dongbohoa20' on page 18 undefined on input line 790.
+
+
 Overfull \hbox (5.42787pt too wide) in paragraph at lines 797--797
 []|\T5/cmr/m/n/10 Kho£ng 
  []
@@ -1498,115 +1513,120 @@ Overfull \hbox (5.42787pt too wide) in paragraph at lines 1288--1289
 
 [20
 
-] <images/test_100_1.png, id=128, 481.8pt x 481.8pt>
-File: images/test_100_1.png Graphic file (type png)
+]
 
-<use images/test_100_1.png>
+LaTeX Warning: Reference `trucquandichuyen' on page 21 undefined on input line 
+1345.
+
+<images/test_100_1.png, id=128, 481.8pt x 481.8pt>
+File: images/test_100_1.png Graphic file (type png)
+ <use images/test_100_1.png>
 Package pdftex.def Info: images/test_100_1.png used on input line 1350.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_80_1.png, id=129, 481.8pt x 481.8pt>
-File: images/test_80_1.png Graphic file (type png)
 
-<use images/test_80_1.png>
+<images/test_80_1.png, id=129, 481.8pt x 481.8pt>
+File: images/test_80_1.png Graphic file (type png)
+ <use images/test_80_1.png>
 Package pdftex.def Info: images/test_80_1.png used on input line 1354.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_100_2.png, id=130, 481.8pt x 481.8pt>
-File: images/test_100_2.png Graphic file (type png)
 
-<use images/test_100_2.png>
+<images/test_100_2.png, id=130, 481.8pt x 481.8pt>
+File: images/test_100_2.png Graphic file (type png)
+ <use images/test_100_2.png>
 Package pdftex.def Info: images/test_100_2.png used on input line 1358.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_80_2.png, id=131, 481.8pt x 481.8pt>
-File: images/test_80_2.png Graphic file (type png)
 
-<use images/test_80_2.png>
+<images/test_80_2.png, id=131, 481.8pt x 481.8pt>
+File: images/test_80_2.png Graphic file (type png)
+ <use images/test_80_2.png>
 Package pdftex.def Info: images/test_80_2.png used on input line 1362.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_100_3.png, id=132, 481.8pt x 481.8pt>
-File: images/test_100_3.png Graphic file (type png)
 
-<use images/test_100_3.png>
+<images/test_100_3.png, id=132, 481.8pt x 481.8pt>
+File: images/test_100_3.png Graphic file (type png)
+ <use images/test_100_3.png>
 Package pdftex.def Info: images/test_100_3.png used on input line 1366.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_80_3.png, id=133, 481.8pt x 481.8pt>
-File: images/test_80_3.png Graphic file (type png)
 
-<use images/test_80_3.png>
+<images/test_80_3.png, id=133, 481.8pt x 481.8pt>
+File: images/test_80_3.png Graphic file (type png)
+ <use images/test_80_3.png>
 Package pdftex.def Info: images/test_80_3.png used on input line 1370.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_100_4.png, id=134, 481.8pt x 481.8pt>
-File: images/test_100_4.png Graphic file (type png)
 
-<use images/test_100_4.png>
+<images/test_100_4.png, id=134, 481.8pt x 481.8pt>
+File: images/test_100_4.png Graphic file (type png)
+ <use images/test_100_4.png>
 Package pdftex.def Info: images/test_100_4.png used on input line 1374.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_80_4.png, id=135, 481.8pt x 481.8pt>
-File: images/test_80_4.png Graphic file (type png)
 
-<use images/test_80_4.png>
+<images/test_80_4.png, id=135, 481.8pt x 481.8pt>
+File: images/test_80_4.png Graphic file (type png)
+ <use images/test_80_4.png>
 Package pdftex.def Info: images/test_80_4.png used on input line 1378.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_100_5.png, id=136, 481.8pt x 481.8pt>
-File: images/test_100_5.png Graphic file (type png)
 
-<use images/test_100_5.png>
+<images/test_100_5.png, id=136, 481.8pt x 481.8pt>
+File: images/test_100_5.png Graphic file (type png)
+ <use images/test_100_5.png>
 Package pdftex.def Info: images/test_100_5.png used on input line 1382.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_80_5.png, id=137, 481.8pt x 481.8pt>
-File: images/test_80_5.png Graphic file (type png)
 
-<use images/test_80_5.png>
+<images/test_80_5.png, id=137, 481.8pt x 481.8pt>
+File: images/test_80_5.png Graphic file (type png)
+ <use images/test_80_5.png>
 Package pdftex.def Info: images/test_80_5.png used on input line 1386.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_100_6.png, id=138, 481.8pt x 481.8pt>
-File: images/test_100_6.png Graphic file (type png)
 
-<use images/test_100_6.png>
+<images/test_100_6.png, id=138, 481.8pt x 481.8pt>
+File: images/test_100_6.png Graphic file (type png)
+ <use images/test_100_6.png>
 Package pdftex.def Info: images/test_100_6.png used on input line 1390.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_80_6.png, id=139, 481.8pt x 481.8pt>
-File: images/test_80_6.png Graphic file (type png)
 
-<use images/test_80_6.png>
+<images/test_80_6.png, id=139, 481.8pt x 481.8pt>
+File: images/test_80_6.png Graphic file (type png)
+ <use images/test_80_6.png>
 Package pdftex.def Info: images/test_80_6.png used on input line 1394.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_100_7.png, id=140, 481.8pt x 481.8pt>
-File: images/test_100_7.png Graphic file (type png)
 
-<use images/test_100_7.png>
+<images/test_100_7.png, id=140, 481.8pt x 481.8pt>
+File: images/test_100_7.png Graphic file (type png)
+ <use images/test_100_7.png>
 Package pdftex.def Info: images/test_100_7.png used on input line 1398.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_80_7.png, id=141, 481.8pt x 481.8pt>
-File: images/test_80_7.png Graphic file (type png)
 
-<use images/test_80_7.png>
+<images/test_80_7.png, id=141, 481.8pt x 481.8pt>
+File: images/test_80_7.png Graphic file (type png)
+ <use images/test_80_7.png>
 Package pdftex.def Info: images/test_80_7.png used on input line 1402.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_100_8.png, id=142, 481.8pt x 481.8pt>
-File: images/test_100_8.png Graphic file (type png)
 
-<use images/test_100_8.png>
+<images/test_100_8.png, id=142, 481.8pt x 481.8pt>
+File: images/test_100_8.png Graphic file (type png)
+ <use images/test_100_8.png>
 Package pdftex.def Info: images/test_100_8.png used on input line 1406.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_80_8.png, id=143, 481.8pt x 481.8pt>
-File: images/test_80_8.png Graphic file (type png)
 
-<use images/test_80_8.png>
+<images/test_80_8.png, id=143, 481.8pt x 481.8pt>
+File: images/test_80_8.png Graphic file (type png)
+ <use images/test_80_8.png>
 Package pdftex.def Info: images/test_80_8.png used on input line 1410.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_100_9.png, id=144, 481.8pt x 481.8pt>
-File: images/test_100_9.png Graphic file (type png)
 
-<use images/test_100_9.png>
+<images/test_100_9.png, id=144, 481.8pt x 481.8pt>
+File: images/test_100_9.png Graphic file (type png)
+ <use images/test_100_9.png>
 Package pdftex.def Info: images/test_100_9.png used on input line 1414.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_80_9.png, id=145, 481.8pt x 481.8pt>
-File: images/test_80_9.png Graphic file (type png)
 
-<use images/test_80_9.png>
+<images/test_80_9.png, id=145, 481.8pt x 481.8pt>
+File: images/test_80_9.png Graphic file (type png)
+ <use images/test_80_9.png>
 Package pdftex.def Info: images/test_80_9.png used on input line 1418.
 (pdftex.def)             Requested size: 113.24197pt x 113.23772pt.
- <images/test_100_10.png, id=146, 481.8pt x 481.8pt>
+
+<images/test_100_10.png, id=146, 481.8pt x 481.8pt>
 File: images/test_100_10.png Graphic file (type png)
 
 <use images/test_100_10.png>
@@ -1959,89 +1979,92 @@ File: images/dragAndDrop2.png Graphic file (type png)
 Package pdftex.def Info: images/dragAndDrop2.png used on input line 1813.
 (pdftex.def)             Requested size: 181.18439pt x 154.34673pt.
  [33 <./images/dragAndDrop1.png> <./images/dragAndDrop2.png>]
-Overfull \hbox (11.78343pt too wide) in paragraph at lines 1858--1886
+Overfull \hbox (11.78343pt too wide) in paragraph at lines 1907--1935
 []  
  []
 
-
-Overfull \hbox (0.67746pt too wide) in paragraph at lines 1887--1887
+[34]
+Overfull \hbox (0.67746pt too wide) in paragraph at lines 1936--1936
 \T5/cmr/m/n/10 t÷ìng tü nh÷ h m ac-cu-mu-late2ElmntToStandardResponse ^^_º thüc
  hi»n gom nhâm 3 th nh ph¦n, 
  []
 
 
-Overfull \hbox (40.94298pt too wide) in paragraph at lines 1889--1920
+Overfull \hbox (40.94298pt too wide) in paragraph at lines 1938--1969
 []  
  []
 
-[34]
-Overfull \hbox (37.1939pt too wide) in paragraph at lines 1923--1963
+[35]
+Overfull \hbox (37.1939pt too wide) in paragraph at lines 1972--2012
 []  
  []
 
-[35] [36] [37
+[36] [37] [38
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2014--2016
+Underfull \hbox (badness 10000) in paragraph at lines 2063--2065
 []\T5/cmr/m/it/10 The Gaus-sian clas-si-fier\T5/cmr/m/n/10 , truy cªp ng y 2 th
 ¡ng 3 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2017--2019
+Underfull \hbox (badness 10000) in paragraph at lines 2066--2068
 []\T5/cmr/m/it/10 Naive Bayes 3: Gaus-sian ex-am-ple\T5/cmr/m/n/10 , truy cªp n
 g y 2 th¡ng 3 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2020--2022
+Underfull \hbox (badness 10000) in paragraph at lines 2069--2071
 []\T5/cmr/m/it/10 L7: Ker-nel den-sity es-ti-ma-tion\T5/cmr/m/n/10 , truy cªp n
 g y 26 th¡ng 3 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 6592) in paragraph at lines 2023--2025
+Underfull \hbox (badness 6592) in paragraph at lines 2072--2074
 []\T5/cmr/m/it/10 Kernel den-sity es-ti-ma-tion Wikipedia\T5/cmr/m/n/10 , truy 
 cªp ng y 26 th¡ng 3 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 2026--2028
+Underfull \hbox (badness 1527) in paragraph at lines 2075--2077
 []\T5/cmr/m/it/10 Exploratory Data Anal-y-sis: Ker-nel Den-sity Es-ti-ma-tion i
 n R on Ozone Pol-lu-tion Data in 
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 2026--2028
+Underfull \hbox (badness 2495) in paragraph at lines 2075--2077
 \T5/cmr/m/it/10 New York and Ozo-nop-o-lis\T5/cmr/m/n/10 , truy cªp ng y 26 th¡
 ng 3 n«m 2017, ^^_àa ch¿ \T5/cmr/m/it/10 https://www.r- 
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 2030--2032
+Underfull \hbox (badness 1087) in paragraph at lines 2079--2081
 []\T5/cmr/m/it/10 Google Maps 3 API - Data Layer: Geo-J-SON\T5/cmr/m/n/10 , tru
 y cªp ng y 6 th¡ng 11 n«m 2016, ^^_àa ch¿ 
  []
 
-[38
+[39
 
 
 ]
-Underfull \hbox (badness 3884) in paragraph at lines 2042--2044
+Underfull \hbox (badness 3884) in paragraph at lines 2091--2093
 []\T5/cmr/m/it/10 Google Maps 3 API - Dis-tance Ma-trix\T5/cmr/m/n/10 , truy cª
 p ng y 6 th¡ng 11 n«m 2016, ^^_àa ch¿ 
  []
 
-[39] (./test3.aux)
+[40] (./test3.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 7456 strings out of 493029
- 106097 string characters out of 6136233
- 313617 words of memory out of 5000000
- 10740 multiletter control sequences out of 15000+600000
+ 7453 strings out of 493029
+ 106073 string characters out of 6136233
+ 313315 words of memory out of 5000000
+ 10741 multiletter control sequences out of 15000+600000
  32964 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,12n,77p,1393b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2066,10 +2089,10 @@ e/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/vntex/vnr/vnr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/v
 ntex/vnr/vnti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti7.
 pfb>
-Output written on test3.pdf (47 pages, 2300385 bytes).
+Output written on test3.pdf (48 pages, 2302236 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
+ 366 PDF objects out of 1000 (max. 8388607)
+ 178 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  341 words of extra memory for PDF output out of 10000 (max. 10000000)
 

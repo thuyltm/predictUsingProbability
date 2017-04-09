@@ -25,4 +25,4 @@
 \contentsline {section}{\numberline {4.2}\IeC {\DJ }\IeC {\'o}ng g\IeC {\'o}p c\IeC {\h u}a \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{30}
 \contentsline {section}{\numberline {4.3}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{30}
 \contentsline {chapter}{\numberline {5}PH\IeC {\d U} L\IeC {\d U}C}{31}
-\contentsline {chapter}{DANH M\IeC {\d U}C KHAM KH\IeC {\h A}O}{38}
+\contentsline {chapter}{DANH M\IeC {\d U}C KHAM KH\IeC {\h A}O}{39}

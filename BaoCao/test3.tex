@@ -1816,6 +1816,55 @@ legend("topright", inset=.05, title="density",\\
 \end{figure}
 \FloatBarrier
 
+\item Cách thức kết nối R với Java\\
+Thiết lập trên hệ điều hành Ubuntu:
+\begin{itemize}
+\item Cài Oracle JDK 8:\\
+\begin{flushleft}
+\begin{tabular}{  |l| }
+\hline 
+\hspace{.1cm} sudo add-apt-repository ppa:webupd8team/java\\
+\hspace{.1cm} sudo apt-get install oracle-java8-installer\\
+\hspace{.1cm} sudo update-alternatives --config java\\
+\textit{\#Chọn đường dẫn Java mặc định /usr/lib/jvm/java-8-oracle/jre/bin/java}\\
+\hline
+\end{tabular}
+\end{flushleft}
+\item Cài môi trường R\\
+\begin{flushleft}
+\begin{tabular}{  |l| }
+\hline 
+\hspace{.1cm} sudo apt-get install r-base\\
+\textit{\#cài đặt công cụ lập trình R, ví dụ RStudio, sau đó chạy các câu lệnh sau}\\
+\hspace{.1cm} install.packages("rJava")\\
+\textit{\#Nếu bước cài đặt môi trường JDK không đúng, sẽ báo lỗi}\\
+\textit{\#"configure: error: Cannot compile a simple JNI program.}\\
+\textit{\#Make sure you have Java Development Kit installed and correctly registered in R."}\\
+\hspace{.1cm} R.home()\\ 
+\textit{\#Lấy đường dẫn của R\_HOME}\\
+\hline
+\end{tabular}
+\end{flushleft}
+\item Thiết lập kết nối R sử dụng công cụ lập trình Eclipse
+\begin{flushleft}
+\begin{tabular}{  |l| }
+\hline 
+\textit{\#Thêm thư viện R, sử dụng "Configure Build Path"}\\
+\hspace{.1cm} Thêm /home/thuy1/R/i686-pc-linux-gnu-library/3.3/rJava/jri/JRI.jar \\
+\hspace{.1cm} vào tab Libraries\\
+\textit{\#Trước khi chạy cần phải thiết lập biến môi trường kết nối đến R,}\\
+\textit{\#sử dụng Run Configuration}\\
+\hspace{.1cm} Thêm -Djava.library.path=/home/thuy1/R/i686-pc-linux-gnu-library/3.3/rJava/jri/ \\
+\hspace{.1cm} vào tab VM Arguments\\
+\hspace{.1cm} Thêm R\_HOME vào tab Environment\\
+\hline
+\end{tabular}
+\end{flushleft}
+
+
+  
+\end{itemize}
+ 
 \item \label{tinhkhoangcach} Mã nguồn Java tính khoảng cách giữa 2 tọa độ
 \begin{flushleft}
 \begin{tabular}{ |l| }
