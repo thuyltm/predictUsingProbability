@@ -29,7 +29,7 @@ object.reg <- frbs.learn(data.train, range.data, method.type, control)
 
 ## Predicting step: Predict for newdata
 res.test <- predict(object.reg, data.tst)
-
+res.test
 ## Display the FRBS model
 summary(object.reg)
 

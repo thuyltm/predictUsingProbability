@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  7 MAY 2017 20:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  11 JUN 2017 10:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -875,6 +875,12 @@ LaTeX Warning: Label `tab:example' multiply defined.
 
 
 LaTeX Warning: Label `sub@tab:example' multiply defined.
+
+
+LaTeX Warning: Label `tab:example2' multiply defined.
+
+
+LaTeX Warning: Label `sub@tab:example2' multiply defined.
 
 
 LaTeX Warning: Label `tab:example2' multiply defined.
@@ -1925,117 +1931,126 @@ Ch\uhorn \ohorn ng 4.
 ]
 Ch\uhorn \ohorn ng 5.
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 1683.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 1704.
 
 [31
 
 ]
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 1771.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 1778.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 1792.
 
 
 LaTeX Warning: Command \textbackslash invalid in math mode on input line 1799.
 
-[32] <images/dragAndDrop1.png, id=261, 1149.29375pt x 656.4525pt>
-File: images/dragAndDrop1.png Graphic file (type png)
 
-<use images/dragAndDrop1.png>
-Package pdftex.def Info: images/dragAndDrop1.png used on input line 1817.
-(pdftex.def)             Requested size: 181.18439pt x 103.48196pt.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 1820.
 
-<images/dragAndDrop2.png, id=262, 792.9625pt x 675.52374pt>
-File: images/dragAndDrop2.png Graphic file (type png)
-
-<use images/dragAndDrop2.png>
-Package pdftex.def Info: images/dragAndDrop2.png used on input line 1821.
-(pdftex.def)             Requested size: 181.18439pt x 154.34673pt.
- [33 <./images/dragAndDrop1.png> <./images/dragAndDrop2.png>]
-Overfull \hbox (11.78343pt too wide) in paragraph at lines 1915--1943
+[32]
+Overfull \hbox (36.066pt too wide) in paragraph at lines 1836--1874
 []  
  []
 
-[34]
-Overfull \hbox (0.67746pt too wide) in paragraph at lines 1944--1944
+<images/FRBCSW.png, id=261, 424.58624pt x 371.88937pt>
+File: images/FRBCSW.png Graphic file (type png)
+ <use images/FRBCSW.png>
+Package pdftex.def Info: images/FRBCSW.png used on input line 1880.
+(pdftex.def)             Requested size: 317.07614pt x 277.73602pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33] <images/dragAndDrop1.png, id=265, 1149.29375pt x 656.4525pt>
+File: images/dragAndDrop1.png Graphic file (type png)
+
+<use images/dragAndDrop1.png>
+Package pdftex.def Info: images/dragAndDrop1.png used on input line 1889.
+(pdftex.def)             Requested size: 181.18439pt x 103.48196pt.
+
+<images/dragAndDrop2.png, id=266, 792.9625pt x 675.52374pt>
+File: images/dragAndDrop2.png Graphic file (type png)
+
+<use images/dragAndDrop2.png>
+Package pdftex.def Info: images/dragAndDrop2.png used on input line 1893.
+(pdftex.def)             Requested size: 181.18439pt x 154.34673pt.
+ [34 <./images/FRBCSW.png> <./images/dragAndDrop1.png> <./images/dragAndDrop2.p
+ng>]
+Overfull \hbox (11.78343pt too wide) in paragraph at lines 1987--2015
+[]  
+ []
+
+[35]
+Overfull \hbox (0.67746pt too wide) in paragraph at lines 2016--2016
 \T5/cmr/m/n/10 t÷ìng tü nh÷ h m ac-cu-mu-late2ElmntToStandardResponse ^^_º thüc
  hi»n gom nhâm 3 th nh ph¦n, 
  []
 
 
-Overfull \hbox (40.94298pt too wide) in paragraph at lines 1946--1977
+Overfull \hbox (40.94298pt too wide) in paragraph at lines 2018--2049
 []  
  []
 
-[35]
-Overfull \hbox (37.1939pt too wide) in paragraph at lines 1980--2020
+[36]
+Overfull \hbox (37.1939pt too wide) in paragraph at lines 2052--2092
 []  
  []
 
-[36] [37] [38
+[37] [38] [39
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2071--2073
+Underfull \hbox (badness 10000) in paragraph at lines 2143--2145
 []\T5/cmr/m/it/10 The Gaus-sian clas-si-fier\T5/cmr/m/n/10 , truy cªp ng y 2 th
 ¡ng 3 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2074--2076
+Underfull \hbox (badness 10000) in paragraph at lines 2146--2148
 []\T5/cmr/m/it/10 Naive Bayes 3: Gaus-sian ex-am-ple\T5/cmr/m/n/10 , truy cªp n
 g y 2 th¡ng 3 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2077--2079
+Underfull \hbox (badness 10000) in paragraph at lines 2149--2151
 []\T5/cmr/m/it/10 L7: Ker-nel den-sity es-ti-ma-tion\T5/cmr/m/n/10 , truy cªp n
 g y 26 th¡ng 3 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 6592) in paragraph at lines 2080--2082
+Underfull \hbox (badness 6592) in paragraph at lines 2152--2154
 []\T5/cmr/m/it/10 Kernel den-sity es-ti-ma-tion Wikipedia\T5/cmr/m/n/10 , truy 
 cªp ng y 26 th¡ng 3 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 2083--2085
+Underfull \hbox (badness 1527) in paragraph at lines 2155--2157
 []\T5/cmr/m/it/10 Exploratory Data Anal-y-sis: Ker-nel Den-sity Es-ti-ma-tion i
 n R on Ozone Pol-lu-tion Data in 
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 2083--2085
+Underfull \hbox (badness 2495) in paragraph at lines 2155--2157
 \T5/cmr/m/it/10 New York and Ozo-nop-o-lis\T5/cmr/m/n/10 , truy cªp ng y 26 th¡
 ng 3 n«m 2017, ^^_àa ch¿ \T5/cmr/m/it/10 https://www.r- 
  []
 
-
-Underfull \hbox (badness 1087) in paragraph at lines 2087--2089
-[]\T5/cmr/m/it/10 Google Maps 3 API - Data Layer: Geo-J-SON\T5/cmr/m/n/10 , tru
-y cªp ng y 6 th¡ng 11 n«m 2016, ^^_àa ch¿ 
- []
-
-[39
+[40
 
 
 ]
-Underfull \hbox (badness 3884) in paragraph at lines 2099--2101
+Underfull \hbox (badness 3884) in paragraph at lines 2174--2176
 []\T5/cmr/m/it/10 Google Maps 3 API - Dis-tance Ma-trix\T5/cmr/m/n/10 , truy cª
 p ng y 6 th¡ng 11 n«m 2016, ^^_àa ch¿ 
  []
 
-[40] (./test3.aux)
+[41] (./test3.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7457 strings out of 493029
- 106113 string characters out of 6136233
- 313618 words of memory out of 5000000
- 10741 multiletter control sequences out of 15000+600000
+ 7463 strings out of 493029
+ 106218 string characters out of 6136233
+ 313624 words of memory out of 5000000
+ 10746 multiletter control sequences out of 15000+600000
  32964 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,12n,77p,1284b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2060,10 +2075,10 @@ e/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/vntex/vnr/vnr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/v
 ntex/vnr/vnti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti7.
 pfb>
-Output written on test3.pdf (48 pages, 2305852 bytes).
+Output written on test3.pdf (49 pages, 2322634 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
+ 372 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 341 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 346 words of extra memory for PDF output out of 10000 (max. 10000000)
 
