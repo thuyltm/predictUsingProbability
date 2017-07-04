@@ -201,8 +201,8 @@ Ngoài ra, tôi có đưa thêm một số giả định trong khi xem xét mẫ
 \item  Chúng ta chỉ dự đoán được một phần trong nhiều hiện tượng mà ta gặp phải. Xem xét tất cả các chuyến xe trên mọi điều kiện không thể kiểm soát được trên thực tế là quá tốn kém và không thực tế. Cho nên các yếu tố bên ngoài như thời điểm xuất phát, thời tiết, điều kiện mặt đường,... được coi là các yếu tố độc lập để giảm sự phức tạp giải bài toán.
 \end{itemize}  
 \subsection*{Biến cố và không gian mẫu: Diễn tả hình thức của thí nghiệm}
-Kham khảo trang 52, 55, 59, 60, 61, 63 chương 3 từ sách \cite{TKCNUDR}
-Ta thấy cùng một tuyến đường xe buýt 74 cố định, từ BX Củ Chi - BX An Sương, các chuyến xe trong cùng tháng 9 có thời gian hoàn thành khác nhau, không biết trước được một cách chắc chắn. Nguyên nhân là do những yếu tố bên ngoài như mặt đường, thời tiết, giờ cao điểm, thấp điểm,..đều có ảnh hưởng đến kết quả. Toán Thống Kê giúp ta có phương pháp làm việc trên dữ liệu có tính ngẫu nhiên như vậy.\\
+Kham khảo trang 52, 55, 59, 60, 61, 63 chương 3 từ sách \cite{TKCNUDR}\\
+Ta thấy cùng một tuyến đường xe buýt 74 cố định, từ BX Củ Chi - BX An Sương, các chuyến xe trong cùng tháng 9 có thời gian hoàn thành khác nhau, không biết trước được một cách chắc chắn. Nguyên nhân là do những yếu tố bên ngoài như mặt đường, thời tiết, giờ cao điểm, thấp điểm,..đều có ảnh hưởng đến kết quả. Toán Thống Kê giúp ta có phương pháp làm việc trên dữ  liệu có tính ngẫu nhiên như vậy.\\
 \textbf{Không gian mẫu} là tập hợp của tất cả các kết cục có thể của một thí nghiệm cụ thể. Chẳng hạn, thí nghiệm tung một đồng xu, kết quả ngẫu nhiên là ngửa (Head, $\mathcal{H}$) hoặc sấp (Tail, $\mathcal{T}$), cho ta không gian mẫu $\mathcal{S= \{H,T}\}$. Các \textbf{biến cố sơ cấp} hay \textbf{điểm mẫu} là những phần tử của $\mathcal{S}$.\\
 \subsection*{Xác suất của biến cố}
 Thông thường chúng ta gộp tất cả các biến cố vào một tập $\mathcal{Q}$ := $\{ A: A \subset \mathcal{S}$ là một biến cố$\}$, gọi là tập các biến cố.\\
@@ -246,33 +246,12 @@ Nếu A và B là các biến cố độc lập thì
 \]
 hay tương đương với 
 \[
-\mathbb{P}(AB)=\mathbb{P}(A\cap B)=\mathbb{P}(A)\cdot\mathbb{P}(B_j)
+\mathbb{P}(AB)=\mathbb{P}(A\cap B)=\mathbb{P}(A)\cdot\mathbb{P}(B)
 \]
 nghĩa là xác suất hai biến cố độc lâp đồng thời xảy ra bằng tích các xác suất riêng lẻ.\\
 Tổng quát, các biến cố $A_{1}, A_{2},..., A_{n}$ là n biến cố \textbf{độc lập lẫn nhau} thì
 \[
 \mathbb{P}\left[\bigcap_{i=1}^n A_j \right] = \prod_{i=1}^n \mathbb{P}[A_i]
-\]
-
-\subsection*{Công thức Bayes và ứng dụng của nó}
-Công thức Bayes cho ta cách thức cơ bản để đánh giá bằng chứng trong các dữ liệu liên quan đến các thông số chưa biết, hoặc một số biến cố không quan sát được. Giả sử rằng một thí nghiệm ngẫu nhiên cho kết quả trong một biến cố A (hoặc phần bù của nó), ngoài ra các kết quả này phụ thuộc vào một biến cố B mà ta không trực tiếp quan sát được, nhưng xác suất có điều kiện $\mathbb{P}$(A|B) là được biết trước.\\
-Bayes nói biến cố quan sát được A có liên quan đến biến cố B không quan sát được thông qua các xác suất có điều kiện. Để cân nhắc bằng chứng cho thấy A có ảnh hưởng trên B, diễn đạt bởi $\mathbb{P}(B|A)$ đầu tiên chúng ta giả định một xác suất $\mathbb{P}$(B) mà được gọi là xác suất tiên nghiệm. Xác suất tiên nghiệm $\mathbb{P}(B)$ thể hiện mức độ tin tưởng của chúng ta vào sự xảy ra của biến cố B. Ta luôn có điều kiện sau, cho phép tính xác suất hậu nghiệm $\mathbb{P}(B|A)$, là xác suất B xảy ra sau khi quan sát A (nên có mẫu số $\mathbb{P}$(A))\\
-\[
-\mathbb{P}(B|A) = \frac{\mathbb{P}(B) \cdot \mathbb{P}(A|B)}{\mathbb{P}(A)}
-\]
-Tổng quát, giả sử $\{$B$_1$,...,B$_m\}$ là một phân vùng của không gian mẫu. Các biến cố B$_1$,...,B$_m$ không trực tiếp quan sát hay kiểm chứng được, nhưng các xác suất có điều kiện $\mathbb{P}(A|B_i)$ là được biết trước. Giả định các xác suất tiên nghiêm là $\mathbb{P}(B_i)$, thể hiện mức độ tin tưởng của ta vào sự xảy ra của biến cố B$_i$. Sau khi quan sát A ta chuyển đổi các xác suất tiên nghiệm của B$_{i}$ thành các xác suất hậu nghiệm $\mathbb{P}(B_i|A)$, theo trên\\
-\[
-\mathbb{P}(B_i|A) = \frac{\mathbb{P}(B_i) \cdot \mathbb{P}(A|B_i)}{\mathbb{P}(A)}
-\]
-Vì $\{$B$_1$,...,B$_m\}$là một phân vùng 	của $\mathcal{S}$, $\mathcal{S}=\bigcup_{j=1}^m $B$_j$, nên A = A$\mathcal{S}$ = $\bigcup_{j=1}^m$ AB$_j$, vậy\\
-\[
-\mathbb{P}(A)=\sum_{j=1}^m \mathbb{P}(AB_j) = \sum_{j=1}^m \mathbb{P}(B_j)\cdot \mathbb{P}(A|B_j)
-\]
-Công thức Bayes tổng quát là:\\
-\[ %\mathlarger{
-  \mathbb{P}(B_{i}|A)= \dfrac{\mathbb{P}(B_{i})\cdot \mathbb{P}(A|B_{i})}{\mathbb{P}(A)}
-            =\dfrac{\mathbb{P}(B_{i})\cdot \mathbb{P}(A|B_{i})}{\sum_{j=1}^{m} \mathbb{P}(B_j) \cdot \mathbb{P}(A|B_j)}
-%}
 \]
 \subsection*{Biến ngẫu nhiên}
 Kham khảo trang 62, 63 chương 3 từ sách \cite{TKCNUDR}\\
@@ -333,18 +312,18 @@ F_{X}(x) = \mathbb{P}[X\leq x] = \mathbb{P}[{\omega \in S: X(\omega) \leq x}]=\s
 \[
 F(x) = \mathbb{P}(X \leq x) = \int_{-\infty}^{x} f(u)d(u), \infty < x < -\infty 
 \]
-F(x) gọi là hàm phân phối (tích lũy) xác suất (c.d.f) của X, f(u) là hàm mật độ của X\\
+F($x$) gọi là hàm phân phối (tích lũy) xác suất (c.d.f) của X, f(u) là hàm mật độ của X\\
 Tính chất của hàm phân phối xác suất F gồm:
 \begin{itemize}
 \item F liên tục, và
-\item $\lim_{x->-\infty}$ F(x)=0, $\lim_{x->-\infty}$F(x)=1
-\item F không giảm, nghĩa là nếu $x$ thì F($x_1$) $\leq$ F($x_2$), và
-\item Quan hệ với f: hàm phân phối xác suất F(x) có đạo hàm $\frac{dF(x)}{dx}$ = f(x)     
+\item $\lim_{x->-\infty}F(x)=0$, $\lim_{x->\infty}F(x)=1$
+\item F không giảm, nghĩa là nếu $x_1$ < $x_2$ thì F($x_1$) $\leq$ F($x_2$), và
+\item Quan hệ với f: hàm phân phối xác suất F($x$) có đạo hàm $\frac{dF(x)}{dx}$ = $f(x)$   
 \end{itemize}
 \end{itemize}
 Tính chất của hàm mật độ xác suất f gồm:
 \begin{itemize}
-\item f(u) $\geq$ 0, $\forall$u, hay đường biểu diễn f nằm trên phần dương. Hơn thế $\int_{-\infty}^{\infty} f(u)du$ = 1 = F(x)
+\item f(u) $\geq$ 0, $\forall$u, hay đường biểu diễn f nằm trên phần dương. Hơn thế $\int_{-\infty}^{\infty} f(u)du$ = 1 = F($x$)
 \item Xác suất của biến cố "a $\leq$ X $\leq$ b" là diện tích giới hạn bởi hàm mật độ, trục hoành và 2 đường thẳng u = a và u = b:
 \[
 \mathbb{P}(a \leq X \leq b) = \mathbb{P}(a \le X \le b) = \mathbb{P}(a \leq X \le b) = \int_{a}^{b} f(u)du = F(b) - F(a)
@@ -565,13 +544,56 @@ Số lần thực hiện bước đi từ 0-15 (km/h)& Số lần thực hiện 
 \end{flushleft}
 \item Sử dụng hàm mật độ xác suất (probability density function pdf) cho biến liên tục. Thông thường mọi người chọn giá trị liên tục của biến đầu vào có hàm mật độ xác suất tuân theo phân phối chuẩn hoặc phân phối Gaussian. Bạn vẫn có thể chọn phân phối khác, ví dụ như phân phối Poisson, phân phối Logarithmic,.., nếu như dữ liệu của bạn tuân theo phân phối đó.    
 \end{enumerate}
+\section{Phân phối chuẩn (Gauss)}
+Kham khảo trang 87 đến trang 92 từ sách \cite{TKCNUDR}\\
+Phân phối Gauss (hay phân phối chuẩn) có ký hiệu là $\textbf{N}(\mu,\sigma^2)$ chiếm một vai trò trung tâm trong lý thuyết thống kê. Hàm mật độ của $\textbf{N}(\mu,\sigma^2)$ được cho bởi công thức
+\[
+f(x)=n(x,\mu,\sigma)=\frac{1}{\sigma\sqrt{2\pi}} * e^{-\frac{(x-\mu)^2}{2\sigma^2}} \qquad \qquad \qquad -\infty < x < \infty, \mu \in \mathbb{R}, \sigma^2 > 0
+\]
+Biến ngẫu nhiên $\mathit{X}$ có hàm mật độ là hàm Gauss $f(x)$, xem hình dưới đây, thì ta nói X có phân phối chuẩn. Ký hiệu $\mathit{X} \thicksim \textbf{N}(\mu,\sigma)$\\
+\FloatBarrier
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.5\textwidth]{Normal_Distribution_PDF.png}    
+    \caption{Hàm mật độ của $\textbf{N}(\mu,\sigma)$ với $\mu=10, \sigma=1,2,3$}
+\end{figure}
+\FloatBarrier
+\FloatBarrier
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.5\textwidth]{Empirical_Rule.png}    
+    \caption{Hàm mật độ của $\textbf{N}(\mu,\sigma)$}
+\end{figure}
+\FloatBarrier
+Đồ thị của $f(x)$ là một đường cong hình chuông đối xứng qua đường thẳng $\mathit{X} = \mu$. Sự phân phối của hàm mật độ được xác định bởi phương sai $\sigma^2$, theo nghĩa là hầu hết diện tích đường cong $f(x)$ (rõ hơn là 99.7\% diện tích) ở giữa hai đường thẳng $\mu-3\sigma$, $\mu+3\sigma$. Khi chúng ta di chuyển xa khỏi giá trị trung bình trong cả hai hướng, đường cong chuẩn tiếp cận trục hoành.\\
+Biến ngẫu nhiên $\mathit{Z}$ tuân theo phân phối Gauss chuẩn tắc khi hàm mật độ của $\mathit{Z}$ là hàm số Gauss
+\[
+f(x) = n(x,0,1)=\frac{1}{\sqrt{2\pi}} * e^{-\frac{(x)^2}{2}}
+\] 
+Ký hiệu $\mathit{Z} \thicksim \textbf{N}(0,1)$. Giá trị kỳ vọng và phương sai của $\mathit{Z}$ tương ứng là $\textbf{E}(\mathit{Z})$ = 0 và $\textbf{V}(\mathit{Z})$ = 1. Hàm phân phối của biến $\mathit{Z} \thicksim \textbf{N}(0,1)$ là
+\[
+\Phi(x)= F(x) = \mathbb{P}[Z \leq x] = \int_{-\infty}^{x} f(t)d(t)
+\] 
+\FloatBarrier
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.5\textwidth]{standardNormalCDF.png}    
+    \caption{Hàm tích lũy xác suất $\Phi(x)$ của phân phối Gauss chuẩn}
+\end{figure}
+\FloatBarrier
+Hàm $\Phi(x)$ hình trên còn được gọi là hàm phân phối Gauss chuẩn tắc, cho ta diện tích khu vực trên trục $x$, bên dưới đường cong hàm mật độ của $\mathit(Z)$ và bên trái của giá trị $x$.\\
+Việc tính diện tích (xác suất) phía dưới đường cong $f(x)$ của một biến $\mathit{X} \thicksim \textbf{N}(\mu,\sigma^2)$ cho mỗi cặp tham số $\mu$ và $\sigma$ là không thực tế. Ta có thể sử dụng biến chuẩn hóa - phép biến đổi $\mathit{Z}$ của X, cho bởi
+\[
+Z = \frac{X-\mu}{\sigma}
+\]
+Khi đó $\mathit{Z} \thicksim \textbf{N}(0,1)$.
 \section{Sơ lược về phân loại Gaussian Bayes}
 \underline{Định nghĩa không chính thống}:\\
 Gọi X là biến đầu vào\\
 Gọi Y là biến phân loại lớp 0 hoặc 1, có xác suất $\mathrm{P_Y}(0)$=$\mathrm{P_Y}(1)$=$\frac{1}{2}$\\
 Công thức hàm phân phối Gaussian 
 $
-\mathrm{G}(x,\mu,\sigma)=\frac{1}{\sqrt{2\pi\sigma^2}} * e^{-\frac{(x-\mu)^2}{2\sigma^2}}  
+\mathrm{G}(x,\mu,\sigma)=\frac{1}{\sigma\sqrt{2\pi}} * e^{-\frac{(x-\mu)^2}{2\sigma^2}}  
 $\\
 với $\mu=\frac{\sum_1^n x_i}{n}$ và $\sigma^2=\frac{\sum_1^n (x_i-\mu)^2}{n}$\\
 Biến X có hàm phân phối Gaussian khác nhau theo mỗi phân loại, nghĩa là \\
@@ -636,7 +658,7 @@ $\mathrm{P}(x|c)$=$\mathrm{P}(h_x|c)\mathrm{P}(w_x|c)$ với $
 
 \section{Thuật toán Kernel Density Estimation}
 \underline{Định nghĩa hàm Kernel}:\\
-Hàm kernel có các thuộc tính giống hàm mật độ xác suất (pdf) với một thuộc tính được cộng thêm là hàm kernel bắt buộc phải hàm chẵn (even function), nghĩa là với mọi giá trị x và -x trong miền trục hoành của f, ta có: f(x) = f(-x). Nói cách khác, hàm chẵn đối xứng qua trục tung y, ví dụ như |x|, $x^2$, cos(x). Với sự thuận tiện trong Toán học, phân phối chuẩn thường được dùng là hàm kernel.\\
+Hàm kernel có các thuộc tính giống hàm mật độ xác suất (pdf) với một thuộc tính được cộng thêm là hàm kernel bắt buộc phải hàm chẵn (even function), nghĩa là với mọi giá trị $x$ và -$x$ trong miền trục hoành của f, ta có: $f(x) = f(-x)$. Nói cách khác, hàm chẵn đối xứng qua trục tung y, ví dụ như |$x$|, $x^2$, cos($x$). Với sự thuận tiện trong Toán học, phân phối chuẩn thường được dùng là hàm kernel.\\
 \underline{Định nghĩa thuật toán Kernel Density Estimation (KDE)}:\\
 Trong thống kê, thuật toán Kernel Density Estimation (KDE) là phương pháp không tham số (non-parametric method) dự đoán hàm mật độ xác suất pdf của biến ngẫu nhiên liên tục. KDE là phương pháp cơ bản để làm trơn dữ liệu trên mẫu dữ liệu giới hạn để dựa vào đó suy luận tổng thể.\\
 \underline{Phương pháp không tham số}:\\
