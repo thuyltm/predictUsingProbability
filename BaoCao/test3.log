@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  4 JUL 2017 17:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  5 JUL 2017 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2074,7 +2074,7 @@ Here is how much of TeX's memory you used:
  10763 multiletter control sequences out of 15000+600000
  34709 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,77p,1284b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,77p,1272b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
@@ -2096,7 +2096,7 @@ tex/vnr/vnr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr6.pfb
 ive/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/vntex/vnr/vnr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/v
 nr/vnti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti7.pfb>
-Output written on test3.pdf (50 pages, 2358638 bytes).
+Output written on test3.pdf (50 pages, 2358497 bytes).
 PDF statistics:
  384 PDF objects out of 1000 (max. 8388607)
  186 compressed objects within 2 object streams

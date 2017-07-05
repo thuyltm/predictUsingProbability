@@ -15,7 +15,7 @@
 %	PACKAGES AND THEMES
 %----------------------------------------------------------------------------------------
 
-\documentclass{beamer}
+\documentclass[t]{beamer}
 
 \mode<presentation> {
 
@@ -282,20 +282,21 @@ STT&Khoảng cách thời gian hồi đáp (giây) & Khoảng cách bước đi 
 \frametitle{Cơ sở lý thuyết}
 \begin{minipage}{0.48\linewidth}
 \begin{itemize}
-\item Định nghĩa Thống Kê
+\item Thống Kê
 \item Không gian mẫu và biến cố
 \item Xác suất của biến cố
 \item Xác suất có điều kiện và sự độc lập của các biến cố
 \item Biến ngẫu nhiên
 \item Biến ngẫu nhiên rời rạc
+\item Biến ngẫu nhiên liên tục
 \end{itemize}
 \end{minipage}%
 \hfill
 \begin{minipage}{0.49\linewidth}
 \begin{itemize}
-\item Biến ngẫu nhiên liên tục
 \item Xác suất Bayes
 \item Vấn đề thực tế khi áp dụng xác suất Bayes
+\item Phân phối chuẩn Gauss
 \item Phân loại Gaussian Bayes
 \item Thuật toán Kernel Density Estimation 
 \end{itemize}
@@ -305,7 +306,7 @@ STT&Khoảng cách thời gian hồi đáp (giây) & Khoảng cách bước đi 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Cơ sở lý thuyết - Định nghĩa Thống Kê}
+\frametitle{Cơ sở lý thuyết - Thống Kê}
 \begin{block}{Unofficial definition of statistics}
 Statistics is the science of problem-solving in the presence of \textbf{\underline{variability}}.
 \end{block}
@@ -475,6 +476,53 @@ Bayes’ theorem describes the probability of an event, based on prior knowledge
 $\mathbb{P}(B|A) = \frac{\mathbb{P}(B) \cdot \mathbb{P}(A|B)}{\mathbb{P}(A)}$
 \end{block}
 \end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[t]
+\frametitle{Cơ sở lý thuyết - Vấn đề thực tế khi áp dụng xác suất Bayes}
+Biến hoặc giá trị biến rtrên thực tế \underline{rất hiếm khi được phân loại}, trong khi giải thuật xác suất Bayes $\mathbb{P}(B|A) = \frac{\mathbb{P}(B) \cdot \mathbb{P}(A|B)}{\mathbb{P}(A)}$ làm việc với biến và giá trị biến được phân loại.\\
+Trong Luận Văn này:
+\begin{itemize}
+\item Biến là những bước di chuyển
+\item Giá trị biến là số lần lặp lại những bước di chuyển đó
+\end{itemize}
+\end{frame}
+
+
+%------------------------------------------------
+
+\begin{frame}[t]
+\frametitle{Cơ sở lý thuyết - Vấn đề thực tế khi áp dụng xác suất Bayes}
+Có hai hướng giải quyết đối với thuộc tính ở dạng con số
+\begin{itemize}
+\item Rời rạc hóa thuộc tính dạng con số thành dạng phân loại => Dễ tranh cãi
+\item Sử dụng hàm mật độ xác suất cho biến liên tục
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[t]
+\frametitle{Cơ sở lý thuyết - Phân phối chuẩn (Gauss)}
+Biến ngẫu nhiên $\mathit{X}$ có hàm mật độ là hàm
+\[
+f(x)=n(x,\mu,\sigma)=\frac{1}{\sigma\sqrt{2\pi}} * e^{-\frac{(x-\mu)^2}{2\sigma^2}} -\infty < x < \infty, \mu \in \mathbb{R}, \sigma^2 > 0
+\]
+Ký hiệu $\mathit{X} \thicksim \textbf{N}(\mu,\sigma)$\\
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[t]
+\frametitle{Cơ sở lý thuyết - Phân phối chuẩn (Gauss)}
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.5\textwidth]{Normal_Distribution_PDF.png}   
+    \caption*{Hàm mật độ của $\textbf{N}(\mu,\sigma)$ với $\mu=10, \sigma=1,2,3$} 
+\end{figure}
+\end{frame}
+
 %------------------------------------------------
 
 \begin{frame}[t]
@@ -499,21 +547,27 @@ Nếu x < $\frac{\mu_1+\mu_2}{2}$ thì phân loại x vào 0, nếu x > $\frac{\
 %------------------------------------------------
 
 \begin{frame}[t]
-\frametitle{Cơ sở lý thuyết -- Thuật toán Kernel Density Estimation}
-\begin{block}{Định nghĩa}
-In statistics, \underline{kernel} density estimation (KDE) is \underline{a non-parametric way} to estimate \underline{the probability density function} of a random variable based on a finite data sample.
+\frametitle{Cơ sở lý thuyết -- Thuật toán Kernel Density Estimation\footnote{https://chemicalstatistician.wordpress.com/2013/06/09/exploratory-data-analysis-kernel-density-estimation-in-r-on-ozone-pollution-data-in-new-york-and-ozonopolis/}}
+\begin{block}{What is Kernel Density Estimation?}
+In statistics, \underline{kernel} density estimation (KDE) is \underline{a non-parametric way} to estimate \underline{the probability density function} of a continuous random variable based on a finite data sample.
 \end{block}
+\begin{itemize}
+\item A kernel is a special type of probability density function (PDF) with the added property that it must be even. 
+\item Non-parametric models differ from parametric models in that the model structure is not specified a priori but is instead determined from data. The term non-parametric is not meant to imply that such models completely lack parameters but that the number and nature of the parameters are flexible and not fixed in advance.
+\end{itemize}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}[t]
 \frametitle{Cơ sở lý thuyết -- Thuật toán Kernel Density Estimation}
-Những bước tạo thành Kernel Density Estimation
+Constructing a Kernel Density Estimate: Step by Step
 \begin{enumerate}
-\item Chọn hàm kernel, thường chọn phân phối chuẩn hay phân phối đều
-\item Tại mỗi điểm dữ liệu $x_1$, xây dựng hàm kernel thu nhỏ (scaled kernel) $K_h = \frac{1}{h}K[\frac{(x-x_1)}{h}]$
-\item Cộng tất cả các hàm kernel thu nhỏ và chia cho n
+\item Choose a kernel, the common ones are normal (Gaussian), uniform (rectangular) and triangular.
+\item At each datum, $x_i$, build the scaled kernel function\\
+$K_h = \frac{1}{h}K[\frac{(x-x_1)}{h}]$\\
+where $K()$ is your chosen kernel function. The paramter $h$ is called the bandwidth, the window width, or the smoothing paramter.
+\item Add all of the individual scaled kernel functions and divide by $n$; this places a probability of $\frac{1}{n}$ to each $x_i$. It also ensures that the kernel density estimate integrates to 1 over its support set.\\
 \[
 \hat{f}(x_i) = \hat{p}_{KDE}(x_i) = \frac{1}{n}\sum_{i=1}^{n} K_h = \frac{1}{n}\frac{1}{h}\sum_{i=1}^{n} K(\frac{x-x_i}{h})
 \]
@@ -523,11 +577,19 @@ Những bước tạo thành Kernel Density Estimation
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Cơ sở lý thuyết -- Thuật toán Kernel Density Estimation}
+\frametitle{Cơ sở lý thuyết -- Thuật toán Kernel Density Estimation\footnote{https://en.wikipedia.org/wiki/Kernel\_density\_estimation}}
 Thuật toán Kernel Density Estimation
 \begin{center}
 \includegraphics[height=2in,width=3in]{500px-Comparison_of_1D_histogram_and_KDE.png}
 \end{center}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Cơ sở lý thuyết -- Thuật toán Kernel Density Estimation}
+Choosing the Bandwidth\\
+It turns out that the choosing the bandwidth is the most difficult step in creating a good kernel density estiamte that captures the underlying distribution of the variable.\\
 \end{frame}
 
 %------------------------------------------------
