@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  5 JUL 2017 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  7 JUL 2017 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,20 +897,20 @@ LaTeX Warning: Label `DADG' multiply defined.
 )
 \openout1 = `test3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
@@ -972,39 +972,39 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package ragged2e Info: ABD: executing \RaggedRight on input line 36.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 35.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 36.
+LaTeX Info: Redefining \selectfont on input line 35.
 
 <images/bk.png, id=1, 2.12221pt x 2.14133pt>
 File: images/bk.png Graphic file (type png)
  <use images/bk.png>
-Package pdftex.def Info: images/bk.png used on input line 51.
+Package pdftex.def Info: images/bk.png used on input line 50.
 (pdftex.def)             Requested size: 85.35826pt x 86.33083pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 59.
+LaTeX Font Info:    Try loading font information for U+msa on input line 58.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 59.
+LaTeX Font Info:    Try loading font information for U+msb on input line 58.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/bk.png>]
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 93--96
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 92--95
 [][]  
  []
 
 [2]
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 99--102
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 98--101
 [][]  
  []
 
 
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 119--123
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 118--122
 []  
  []
 
@@ -1019,22 +1019,22 @@ Ch\uhorn \ohorn ng 1.
 [1
 
 ]
-Overfull \hbox (1.47668pt too wide) in paragraph at lines 179--179
+Overfull \hbox (1.47668pt too wide) in paragraph at lines 178--178
 []\T5/cmr/m/n/10 Quan s¡t v  nhªn th§y tr¶n thüc t¸ khæng tçn t¤i hai chuy¸n xe
  còng lë tr¼nh câ nhúng b÷îc di chuyºn 
  []
 
 [2]
 Ch\uhorn \ohorn ng 2.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 191.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 190.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 191.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 190.
 
-Overfull \hbox (8.61383pt too wide) in paragraph at lines 197--197
+Overfull \hbox (8.61383pt too wide) in paragraph at lines 196--196
 \T5/cmr/m/n/10 Nh÷ vªy, trong To¡n Thèng K¶, tçn t¤i c¡c ph÷ìng ph¡p nh÷ ph÷ìng
  ph¡p th½ nghi»m thèng k¶, ph÷ìng 
  []
@@ -1042,54 +1042,54 @@ Overfull \hbox (8.61383pt too wide) in paragraph at lines 197--197
 [3
 
 ]
-Overfull \hbox (1.39337pt too wide) in paragraph at lines 205--205
+Overfull \hbox (1.39337pt too wide) in paragraph at lines 204--204
 []\T5/cmr/m/n/10 Ta th§y còng mët tuy¸n ^^_÷íng xe buþt 74 cè ^^_ành, tø BX Cõ 
 Chi - BX An S÷ìng, c¡c chuy¸n xe trong 
  []
 
 
-Overfull \hbox (10.0857pt too wide) in paragraph at lines 231--232
+Overfull \hbox (10.0857pt too wide) in paragraph at lines 230--231
 \T5/cmr/m/n/10 x¡c su§t g¡n b§t ký mët kho£ng tªp con cõa S mët x¡c su§t b¬ng c
 hi·u d i cõa nâ. Cho A = (19.5,20.1), 
  []
 
 [4] [5] [6]
-Overfull \hbox (7.63538pt too wide) in paragraph at lines 342--343
+Overfull \hbox (7.63538pt too wide) in paragraph at lines 341--342
 \T5/cmr/m/n/10 cè B$[]$. Sau khi quan s¡t A ta chuyºn ^^_êi c¡c x¡c su§t ti¶n n
 ghi»m cõa B$[]$ th nh c¡c x¡c su§t hªu nghi»m 
  []
 
 [7] [8] [9]
-Overfull \hbox (35.30176pt too wide) in paragraph at lines 500--500
+Overfull \hbox (35.30176pt too wide) in paragraph at lines 499--499
 []\T5/cmr/m/n/10 Ta th§y x¡c su§t bi¸n cè (age = youth, in-come = medium, stu-d
 ent = yes, credit_rating = fair,buys_computer 
  []
 
 
-Overfull \hbox (24.77655pt too wide) in paragraph at lines 500--500
+Overfull \hbox (24.77655pt too wide) in paragraph at lines 499--499
 \T5/cmr/m/n/10 = yes) x£y ra cao hìn so vîi x¡c su§t bi¸n cè (age = youth, in-c
 ome = medium, stu-dent = yes, credit_rating 
  []
 
 
-Overfull \hbox (16.64175pt too wide) in paragraph at lines 500--500
+Overfull \hbox (16.64175pt too wide) in paragraph at lines 499--499
 \T5/cmr/m/n/10 = fair, buys_computer = no). Do ^^_â x$[]$ = (age = youth, in-co
 me = medium, stu-dent = yes, credit_rating 
  []
 
 
-Overfull \hbox (34.39781pt too wide) in paragraph at lines 505--530
+Overfull \hbox (34.39781pt too wide) in paragraph at lines 504--529
 []  
  []
 
 
-Overfull \hbox (4.73203pt too wide) in paragraph at lines 533--533
+Overfull \hbox (4.73203pt too wide) in paragraph at lines 532--532
 \T5/cmr/m/n/10 m¨u gièng nhau nh÷ng k¸t qu£ cuèi l¤i kh¡c nhau. V½ dö, còng m¨u
  low,medium,medium,low,very 
  []
 
 
-Overfull \hbox (59.39784pt too wide) in paragraph at lines 535--544
+Overfull \hbox (59.39784pt too wide) in paragraph at lines 534--543
 []  
  []
 
@@ -1098,14 +1098,14 @@ File: images/Normal_Distribution_PDF.png Graphic file (type png)
 
 <use images/Normal_Distribution_PDF.png>
 Package pdftex.def Info: images/Normal_Distribution_PDF.png used on input line 
-557.
+556.
 (pdftex.def)             Requested size: 226.48395pt x 235.05193pt.
 
 <images/Empirical_Rule.png, id=79, 263.48438pt x 191.21437pt>
 File: images/Empirical_Rule.png Graphic file (type png)
 
 <use images/Empirical_Rule.png>
-Package pdftex.def Info: images/Empirical_Rule.png used on input line 564.
+Package pdftex.def Info: images/Empirical_Rule.png used on input line 563.
 (pdftex.def)             Requested size: 226.48395pt x 164.37112pt.
 
 
@@ -1116,24 +1116,24 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/standardNormalCDF.png Graphic file (type png)
 
 <use images/standardNormalCDF.png>
-Package pdftex.def Info: images/standardNormalCDF.png used on input line 580.
+Package pdftex.def Info: images/standardNormalCDF.png used on input line 579.
 (pdftex.def)             Requested size: 226.48395pt x 235.05193pt.
  [12 <./images/Empirical_Rule.png> <./images/standardNormalCDF.png>]
 <images/GaussBayesEx.png, id=93, 1169.36874pt x 430.60875pt>
 File: images/GaussBayesEx.png Graphic file (type png)
 
 <use images/GaussBayesEx.png>
-Package pdftex.def Info: images/GaussBayesEx.png used on input line 606.
+Package pdftex.def Info: images/GaussBayesEx.png used on input line 605.
 (pdftex.def)             Requested size: 226.48395pt x 83.40001pt.
 
 <images/GaussBayesEx2.png, id=94, 1132.23pt x 508.90125pt>
 File: images/GaussBayesEx2.png Graphic file (type png)
 
 <use images/GaussBayesEx2.png>
-Package pdftex.def Info: images/GaussBayesEx2.png used on input line 614.
+Package pdftex.def Info: images/GaussBayesEx2.png used on input line 613.
 (pdftex.def)             Requested size: 226.48395pt x 101.79398pt.
 
-Overfull \hbox (19.86101pt too wide) in paragraph at lines 629--630
+Overfull \hbox (19.86101pt too wide) in paragraph at lines 628--629
 []\T5/cmr/m/n/10 Bi¸n chi·u cao câ ph¥n phèi Gaus-sian $\OT1/cmr/m/n/10 G(\OML/
 cmm/m/it/10 ^^V[]; ^^[[]\OT1/cmr/m/n/10 )$ \T5/cmr/m/n/10 vîi $\OML/cmm/m/it/10
  ^^V[] \OT1/cmr/m/n/10 = []$\T5/cmr/m/n/10 , $\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m
@@ -1141,7 +1141,7 @@ cmm/m/it/10 ^^V[]; ^^[[]\OT1/cmr/m/n/10 )$ \T5/cmr/m/n/10 vîi $\OML/cmm/m/it/10
  []
 
 
-Overfull \hbox (27.4428pt too wide) in paragraph at lines 630--631
+Overfull \hbox (27.4428pt too wide) in paragraph at lines 629--630
 []\T5/cmr/m/n/10 Bi¸n c¥n n°ng câ ph¥n phèi Gaus-sian $\OT1/cmr/m/n/10 G(\OML/c
 mm/m/it/10 ^^V[]; ^^[[]\OT1/cmr/m/n/10 )$ \T5/cmr/m/n/10 vîi $\OML/cmm/m/it/10 
 ^^V[] \OT1/cmr/m/n/10 = []$\T5/cmr/m/n/10 , $\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m/
@@ -1150,7 +1150,7 @@ n/10 = []$
 
 [13 <./images/GaussBayesEx.png (PNG copy)> <./images/GaussBayesEx2.png (PNG cop
 y)>]
-Overfull \hbox (14.93036pt too wide) in paragraph at lines 634--635
+Overfull \hbox (14.93036pt too wide) in paragraph at lines 633--634
 []\T5/cmr/m/n/10 Bi¸n chi·u cao câ ph¥n phèi Gaus-sian $\OT1/cmr/m/n/10 G(\OML/
 cmm/m/it/10 ^^V[]; ^^[[]\OT1/cmr/m/n/10 )$ \T5/cmr/m/n/10 vîi $\OML/cmm/m/it/10
  ^^V[] \OT1/cmr/m/n/10 = []$\T5/cmr/m/n/10 , $\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m
@@ -1158,7 +1158,7 @@ cmm/m/it/10 ^^V[]; ^^[[]\OT1/cmr/m/n/10 )$ \T5/cmr/m/n/10 vîi $\OML/cmm/m/it/10
  []
 
 
-Overfull \hbox (22.51215pt too wide) in paragraph at lines 635--636
+Overfull \hbox (22.51215pt too wide) in paragraph at lines 634--635
 []\T5/cmr/m/n/10 Bi¸n c¥n n°ng câ ph¥n phèi Gaus-sian $\OT1/cmr/m/n/10 G(\OML/c
 mm/m/it/10 ^^V[]; ^^[[]\OT1/cmr/m/n/10 )$ \T5/cmr/m/n/10 vîi $\OML/cmm/m/it/10 
 ^^V[] \OT1/cmr/m/n/10 = []$\T5/cmr/m/n/10 , $\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m/
@@ -1172,16 +1172,16 @@ File: images/500px-Comparison_of_1D_histogram_and_KDE.png Graphic file (type pn
 g)
  <use images/500px-Comparison_of_1D_histogram_and_KDE.png>
 Package pdftex.def Info: images/500px-Comparison_of_1D_histogram_and_KDE.png us
-ed on input line 681.
+ed on input line 680.
 (pdftex.def)             Requested size: 226.48395pt x 113.24246pt.
 
 <images/KDE1.png, id=104, 710.655pt x 550.055pt>
 File: images/KDE1.png Graphic file (type png)
  <use images/KDE1.png>
-Package pdftex.def Info: images/KDE1.png used on input line 684.
+Package pdftex.def Info: images/KDE1.png used on input line 683.
 (pdftex.def)             Requested size: 226.48395pt x 175.29938pt.
 
-Overfull \hbox (2.55975pt too wide) in paragraph at lines 690--691
+Overfull \hbox (2.55975pt too wide) in paragraph at lines 689--690
 \T5/cmr/m/n/10 vi¸t chi ti¸t ð ^^_¥y. Chån band-width h lîn th¼ l m trìn qu¡ v 
  che phõ c§u tróc dú li»u, trong khi band- 
  []
@@ -1189,7 +1189,7 @@ Overfull \hbox (2.55975pt too wide) in paragraph at lines 690--691
 <images/KDE2.png, id=105, 781.92125pt x 526.96875pt>
 File: images/KDE2.png Graphic file (type png)
  <use images/KDE2.png>
-Package pdftex.def Info: images/KDE2.png used on input line 695.
+Package pdftex.def Info: images/KDE2.png used on input line 694.
 (pdftex.def)             Requested size: 317.07614pt x 213.68652pt.
 
 [15 <./images/500px-Comparison_of_1D_histogram_and_KDE.png> <./images/KDE1.png 
@@ -1200,13 +1200,13 @@ File: images/220px-Comparison_of_1D_bandwidth_selectors.png Graphic file (type
 png)
  <use images/220px-Comparison_of_1D_bandwidth_selectors.png>
 Package pdftex.def Info: images/220px-Comparison_of_1D_bandwidth_selectors.png 
-used on input line 704.
+used on input line 703.
 (pdftex.def)             Requested size: 226.48395pt x 226.49533pt.
 
 <images/KDE3.png, id=111, 895.345pt x 340.27126pt>
 File: images/KDE3.png Graphic file (type png)
  <use images/KDE3.png>
-Package pdftex.def Info: images/KDE3.png used on input line 720.
+Package pdftex.def Info: images/KDE3.png used on input line 719.
 (pdftex.def)             Requested size: 226.48395pt x 86.07486pt.
 
 [16 <./images/220px-Comparison_of_1D_bandwidth_selectors.png> <./images/KDE3.pn
@@ -1216,7 +1216,7 @@ Ch\uhorn \ohorn ng 3.
 File: images/histogramCCAS.png Graphic file (type png)
 
 <use images/histogramCCAS.png>
-Package pdftex.def Info: images/histogramCCAS.png used on input line 767.
+Package pdftex.def Info: images/histogramCCAS.png used on input line 766.
 (pdftex.def)             Requested size: 226.48395pt x 188.03813pt.
 
 
@@ -1229,7 +1229,7 @@ File: images/finishTime_CC_AS_Order.png Graphic file (type png)
 
 <use images/finishTime_CC_AS_Order.png>
 Package pdftex.def Info: images/finishTime_CC_AS_Order.png used on input line 7
-76.
+75.
 (pdftex.def)             Requested size: 317.07614pt x 267.76013pt.
 
 <images/finishTime_CC_AS_ACC_Line.png, id=122, 550.30594pt x 371.88937pt>
@@ -1237,7 +1237,7 @@ File: images/finishTime_CC_AS_ACC_Line.png Graphic file (type png)
 
 <use images/finishTime_CC_AS_ACC_Line.png>
 Package pdftex.def Info: images/finishTime_CC_AS_ACC_Line.png used on input lin
-e 785.
+e 784.
 (pdftex.def)             Requested size: 317.07614pt x 214.283pt.
 
 
@@ -1796,6 +1796,13 @@ png> <./images/test_100_14.png> <./images/test_80_14.png> <./images/test_100_15
 .png> <./images/test_100_17.png> <./images/test_80_17.png> <./images/test_100_1
 8.png> <./images/test_80_18.png> <./images/test_100_19.png> <./images/test_80_1
 9.png> <./images/test_100_20.png> <./images/test_80_20.png>]
+Overfull \hbox (1.9412pt too wide) in paragraph at lines 1549--1549
+\T5/cmr/m/n/10 ^^_i nhä 15-30 (km/h), bi¸n $\OML/cmm/m/it/10 X[]$ \T5/cmr/m/n/1
+0 l  b÷îc ^^_i trung b¼nh 30-45 (km/h), bi¸n $\OML/cmm/m/it/10 X[]$ \T5/cmr/m/n
+/10 l  b÷îc ^^_i xa 45-60 (km/h), 
+ []
+
+
 Overfull \hbox (34.39781pt too wide) in paragraph at lines 1552--1577
 []  
  []
@@ -1805,7 +1812,7 @@ File: images/DensityVerySmallStep_OnTime.png Graphic file (type png)
 
 <use images/DensityVerySmallStep_OnTime.png>
 Package pdftex.def Info: images/DensityVerySmallStep_OnTime.png used on input l
-ine 1585.
+ine 1584.
 (pdftex.def)             Requested size: 226.48395pt x 226.48279pt.
 
 <images/DensityVerySmallStep_LateTime.png, id=228, 481.8pt x 481.8pt>
@@ -1813,7 +1820,7 @@ File: images/DensityVerySmallStep_LateTime.png Graphic file (type png)
 
 <use images/DensityVerySmallStep_LateTime.png>
 Package pdftex.def Info: images/DensityVerySmallStep_LateTime.png used on input
- line 1588.
+ line 1587.
 (pdftex.def)             Requested size: 226.48395pt x 226.48279pt.
 
 <images/DensityVerySmallStep.png, id=229, 481.8pt x 481.8pt>
@@ -1821,7 +1828,7 @@ File: images/DensityVerySmallStep.png Graphic file (type png)
 
 <use images/DensityVerySmallStep.png>
 Package pdftex.def Info: images/DensityVerySmallStep.png used on input line 159
-7.
+6.
 (pdftex.def)             Requested size: 317.07614pt x 317.08472pt.
 
 
@@ -1837,7 +1844,7 @@ File: images/DensitySmallStep_OnTime.png Graphic file (type png)
 
 <use images/DensitySmallStep_OnTime.png>
 Package pdftex.def Info: images/DensitySmallStep_OnTime.png used on input line 
-1605.
+1604.
 (pdftex.def)             Requested size: 226.48395pt x 226.48279pt.
 
 <images/DensitySmallStep_LateTime.png, id=234, 481.8pt x 481.8pt>
@@ -1845,14 +1852,14 @@ File: images/DensitySmallStep_LateTime.png Graphic file (type png)
 
 <use images/DensitySmallStep_LateTime.png>
 Package pdftex.def Info: images/DensitySmallStep_LateTime.png used on input lin
-e 1608.
+e 1607.
 (pdftex.def)             Requested size: 226.48395pt x 226.48279pt.
 
 <images/DensitySmallStep.png, id=235, 481.8pt x 481.8pt>
 File: images/DensitySmallStep.png Graphic file (type png)
 
 <use images/DensitySmallStep.png>
-Package pdftex.def Info: images/DensitySmallStep.png used on input line 1617.
+Package pdftex.def Info: images/DensitySmallStep.png used on input line 1616.
 (pdftex.def)             Requested size: 317.07614pt x 317.08472pt.
 
 
@@ -1860,27 +1867,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [26 <./images/DensityVerySmallStep.png (PNG copy)> <./images/DensitySmallStep_O
 nTime.png (PNG copy)> <./images/DensitySmallStep_LateTime.png (PNG copy)>]
-<images/DensityMediumStep_OnTime.png, id=239, 481.8pt x 481.8pt>
+<images/DensityMediumStep_OnTime.png, id=242, 481.8pt x 481.8pt>
 File: images/DensityMediumStep_OnTime.png Graphic file (type png)
 
 <use images/DensityMediumStep_OnTime.png>
 Package pdftex.def Info: images/DensityMediumStep_OnTime.png used on input line
- 1626.
+ 1625.
 (pdftex.def)             Requested size: 226.48395pt x 226.48279pt.
 
-<images/DensityMediumStep_LateTime.png, id=240, 481.8pt x 481.8pt>
+<images/DensityMediumStep_LateTime.png, id=243, 481.8pt x 481.8pt>
 File: images/DensityMediumStep_LateTime.png Graphic file (type png)
 
 <use images/DensityMediumStep_LateTime.png>
 Package pdftex.def Info: images/DensityMediumStep_LateTime.png used on input li
-ne 1629.
+ne 1628.
 (pdftex.def)             Requested size: 226.48395pt x 226.48279pt.
 
-<images/DensityMediumStep.png, id=241, 481.8pt x 481.8pt>
+<images/DensityMediumStep.png, id=244, 481.8pt x 481.8pt>
 File: images/DensityMediumStep.png Graphic file (type png)
 
 <use images/DensityMediumStep.png>
-Package pdftex.def Info: images/DensityMediumStep.png used on input line 1638.
+Package pdftex.def Info: images/DensityMediumStep.png used on input line 1637.
 (pdftex.def)             Requested size: 317.07614pt x 317.08472pt.
 
 
@@ -1888,27 +1895,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [27 <./images/DensitySmallStep.png (PNG copy)> <./images/DensityMediumStep_OnTi
 me.png (PNG copy)> <./images/DensityMediumStep_LateTime.png (PNG copy)>]
-<images/DensityHighStep_OnTime.png, id=245, 481.8pt x 481.8pt>
+<images/DensityHighStep_OnTime.png, id=248, 481.8pt x 481.8pt>
 File: images/DensityHighStep_OnTime.png Graphic file (type png)
 
 <use images/DensityHighStep_OnTime.png>
 Package pdftex.def Info: images/DensityHighStep_OnTime.png used on input line 1
-648.
+646.
 (pdftex.def)             Requested size: 226.48395pt x 226.48279pt.
 
-<images/DensityHighStep_LateTime.png, id=246, 481.8pt x 481.8pt>
+<images/DensityHighStep_LateTime.png, id=249, 481.8pt x 481.8pt>
 File: images/DensityHighStep_LateTime.png Graphic file (type png)
 
 <use images/DensityHighStep_LateTime.png>
 Package pdftex.def Info: images/DensityHighStep_LateTime.png used on input line
- 1651.
+ 1649.
 (pdftex.def)             Requested size: 226.48395pt x 226.48279pt.
 
-<images/DensityHighStep.png, id=247, 481.8pt x 481.8pt>
+<images/DensityHighStep.png, id=250, 481.8pt x 481.8pt>
 File: images/DensityHighStep.png Graphic file (type png)
 
 <use images/DensityHighStep.png>
-Package pdftex.def Info: images/DensityHighStep.png used on input line 1660.
+Package pdftex.def Info: images/DensityHighStep.png used on input line 1658.
 (pdftex.def)             Requested size: 317.07614pt x 317.08472pt.
 
 
@@ -1916,27 +1923,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [28 <./images/DensityMediumStep.png (PNG copy)> <./images/DensityHighStep_OnTim
 e.png (PNG copy)> <./images/DensityHighStep_LateTime.png (PNG copy)>]
-<images/DensityVeryHighStep_OnTime.png, id=251, 481.8pt x 481.8pt>
+<images/DensityVeryHighStep_OnTime.png, id=254, 481.8pt x 481.8pt>
 File: images/DensityVeryHighStep_OnTime.png Graphic file (type png)
 
 <use images/DensityVeryHighStep_OnTime.png>
 Package pdftex.def Info: images/DensityVeryHighStep_OnTime.png used on input li
-ne 1668.
+ne 1666.
 (pdftex.def)             Requested size: 226.48395pt x 226.48279pt.
 
-<images/DensityVeryHighStep_LateTime.png, id=252, 481.8pt x 481.8pt>
+<images/DensityVeryHighStep_LateTime.png, id=255, 481.8pt x 481.8pt>
 File: images/DensityVeryHighStep_LateTime.png Graphic file (type png)
 
 <use images/DensityVeryHighStep_LateTime.png>
 Package pdftex.def Info: images/DensityVeryHighStep_LateTime.png used on input 
-line 1671.
+line 1669.
 (pdftex.def)             Requested size: 226.48395pt x 226.48279pt.
 
-<images/DensityVeryHighStep.png, id=253, 481.8pt x 481.8pt>
+<images/DensityVeryHighStep.png, id=256, 481.8pt x 481.8pt>
 File: images/DensityVeryHighStep.png Graphic file (type png)
 
 <use images/DensityVeryHighStep.png>
-Package pdftex.def Info: images/DensityVeryHighStep.png used on input line 1680
+Package pdftex.def Info: images/DensityVeryHighStep.png used on input line 1678
 .
 (pdftex.def)             Requested size: 317.07614pt x 317.08472pt.
 
@@ -1945,161 +1952,164 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [29 <./images/DensityHighStep.png (PNG copy)> <./images/DensityVeryHighStep_OnT
 ime.png (PNG copy)> <./images/DensityVeryHighStep_LateTime.png (PNG copy)>]
-[30 <./images/DensityVeryHighStep.png (PNG copy)>]
+[30 <./images/DensityVeryHighStep.png (PNG copy)>] [31]
 Ch\uhorn \ohorn ng 4.
-[31
+[32
 
 ]
 Ch\uhorn \ohorn ng 5.
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 1726.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 1738.
 
-[32
+[33
 
 ]
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 1814.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 1826.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 1821.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 1833.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 1842.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 1854.
 
-[33]
-Overfull \hbox (36.066pt too wide) in paragraph at lines 1858--1896
+[34]
+Overfull \hbox (36.066pt too wide) in paragraph at lines 1885--1923
 []  
  []
 
-<images/FRBCSW.png, id=270, 424.58624pt x 371.88937pt>
+[35] <images/FRBCSW.png, id=280, 424.58624pt x 371.88937pt>
 File: images/FRBCSW.png Graphic file (type png)
- <use images/FRBCSW.png>
-Package pdftex.def Info: images/FRBCSW.png used on input line 1902.
+
+<use images/FRBCSW.png>
+Package pdftex.def Info: images/FRBCSW.png used on input line 1929.
 (pdftex.def)             Requested size: 317.07614pt x 277.73602pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[34] <images/dragAndDrop1.png, id=274, 1149.29375pt x 656.4525pt>
+[36] <images/dragAndDrop1.png, id=284, 1149.29375pt x 656.4525pt>
 File: images/dragAndDrop1.png Graphic file (type png)
 
 <use images/dragAndDrop1.png>
-Package pdftex.def Info: images/dragAndDrop1.png used on input line 1911.
+Package pdftex.def Info: images/dragAndDrop1.png used on input line 1938.
 (pdftex.def)             Requested size: 181.18439pt x 103.48196pt.
 
-<images/dragAndDrop2.png, id=275, 792.9625pt x 675.52374pt>
+<images/dragAndDrop2.png, id=285, 792.9625pt x 675.52374pt>
 File: images/dragAndDrop2.png Graphic file (type png)
 
 <use images/dragAndDrop2.png>
-Package pdftex.def Info: images/dragAndDrop2.png used on input line 1915.
+Package pdftex.def Info: images/dragAndDrop2.png used on input line 1942.
 (pdftex.def)             Requested size: 181.18439pt x 154.34673pt.
- [35 <./images/FRBCSW.png> <./images/dragAndDrop1.png> <./images/dragAndDrop2.p
+ [37 <./images/FRBCSW.png> <./images/dragAndDrop1.png> <./images/dragAndDrop2.p
 ng>]
-Overfull \hbox (11.78343pt too wide) in paragraph at lines 2009--2037
+Overfull \hbox (11.78343pt too wide) in paragraph at lines 2036--2064
 []  
  []
 
-[36]
-Overfull \hbox (0.67746pt too wide) in paragraph at lines 2038--2038
+[38]
+Overfull \hbox (0.67746pt too wide) in paragraph at lines 2065--2065
 \T5/cmr/m/n/10 t÷ìng tü nh÷ h m ac-cu-mu-late2ElmntToStandardResponse ^^_º thüc
  hi»n gom nhâm 3 th nh ph¦n, 
  []
 
 
-Overfull \hbox (40.94298pt too wide) in paragraph at lines 2040--2071
+Overfull \hbox (40.94298pt too wide) in paragraph at lines 2067--2098
 []  
  []
 
-[37]
-Overfull \hbox (37.1939pt too wide) in paragraph at lines 2074--2114
+[39]
+Overfull \hbox (37.1939pt too wide) in paragraph at lines 2101--2141
 []  
  []
 
-[38] [39] [40
+[40] [41] [42
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2165--2167
+Underfull \hbox (badness 10000) in paragraph at lines 2192--2194
 []\T5/cmr/m/it/10 The Gaus-sian clas-si-fier\T5/cmr/m/n/10 , truy cªp ng y 2 th
 ¡ng 3 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2168--2170
+Underfull \hbox (badness 10000) in paragraph at lines 2195--2197
 []\T5/cmr/m/it/10 Naive Bayes 3: Gaus-sian ex-am-ple\T5/cmr/m/n/10 , truy cªp n
 g y 2 th¡ng 3 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2171--2173
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2200
 []\T5/cmr/m/it/10 L7: Ker-nel den-sity es-ti-ma-tion\T5/cmr/m/n/10 , truy cªp n
 g y 26 th¡ng 3 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 6592) in paragraph at lines 2174--2176
+Underfull \hbox (badness 6592) in paragraph at lines 2201--2203
 []\T5/cmr/m/it/10 Kernel den-sity es-ti-ma-tion Wikipedia\T5/cmr/m/n/10 , truy 
 cªp ng y 26 th¡ng 3 n«m 2017, ^^_àa ch¿ 
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 2177--2179
+Underfull \hbox (badness 1527) in paragraph at lines 2204--2206
 []\T5/cmr/m/it/10 Exploratory Data Anal-y-sis: Ker-nel Den-sity Es-ti-ma-tion i
 n R on Ozone Pol-lu-tion Data in 
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 2177--2179
+Underfull \hbox (badness 2495) in paragraph at lines 2204--2206
 \T5/cmr/m/it/10 New York and Ozo-nop-o-lis\T5/cmr/m/n/10 , truy cªp ng y 26 th¡
 ng 3 n«m 2017, ^^_àa ch¿ \T5/cmr/m/it/10 https://www.r- 
  []
 
-[41
+[43
 
 
 ]
-Underfull \hbox (badness 3884) in paragraph at lines 2196--2198
+Underfull \hbox (badness 3884) in paragraph at lines 2223--2225
 []\T5/cmr/m/it/10 Google Maps 3 API - Dis-tance Ma-trix\T5/cmr/m/n/10 , truy cª
 p ng y 6 th¡ng 11 n«m 2016, ^^_àa ch¿ 
  []
 
-[42] (./test3.aux)
+[44] (./test3.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7486 strings out of 493029
- 106776 string characters out of 6136233
- 313624 words of memory out of 5000000
- 10763 multiletter control sequences out of 15000+600000
- 34709 words of font info for 69 fonts, out of 8000000 for 9000
+ 7501 strings out of 493029
+ 106935 string characters out of 6136233
+ 313678 words of memory out of 5000000
+ 10773 multiletter control sequences out of 15000+600000
+ 36599 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,77p,1272b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,77p,1272b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/vntex/vnr/vnr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vn
-tex/vnr/vnr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr6.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/vntex/vnr/vnr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/v
-nr/vnti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti7.pfb>
-Output written on test3.pdf (50 pages, 2358497 bytes).
+dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/vntex/vnr/vnbx10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/vntex/vnr/vnbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/v
+ntex/vnr/vnr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr6.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/vntex/vnr/vnr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex
+/vnr/vnr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti7.pfb>
+Output written on test3.pdf (52 pages, 2377729 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
+ 398 PDF objects out of 1000 (max. 8388607)
+ 196 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  361 words of extra memory for PDF output out of 10000 (max. 10000000)
 

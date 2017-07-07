@@ -26,7 +26,6 @@
 \setcounter{tocdepth}{1} % for \tableofcontents
 
 
-
 \makeatletter% http://tex.stackexchange.com/questions/29517/forcing-new-line-after-item-number-in-enumerate-environment/29518#29518
 \def\step{%
    \@ifnextchar[ \@step{\@noitemargtrue\@step[\@itemlabel]}}
@@ -786,7 +785,8 @@ Kham khảo \ref{xacsuatTLTGHT} tại mục Phụ Lục xuất ra hình vẽ cho
         \end{subfigure}%
 \end{figure}
 \FloatBarrier
-Ta chọn thời gian hoàn thành một chuyến đi từ BX Củ Chi đến BX An Sương trước đúng 45 phút là về đích đúng giờ, và từ hình vẽ trên ta thấy có 84\% trong 1289 chuyến xe được khảo sát đạt được thời gian về đích là 45 phút. 
+Ta chọn thời gian hoàn thành một chuyến đi từ BX Củ Chi đến BX An Sương trước đúng 45 phút là về đích đúng giờ, và từ hình vẽ trên ta thấy có 84\% trong 1289 chuyến xe được khảo sát đạt được thời gian về đích là 45 phút.\\
+Như vậy ta có $\mathrm{P}$(về đích đúng giờ) = 0.84 và $\mathrm{P}$(về đích trễ giờ) = 0.16
 \subsubsection{Đồng bộ hóa ghi nhận mỗi bước di chuyển}
 Sau đó kham khảo \ref{tinhkhoangcach} tại mục Phụ Lục để tính mỗi bước di chuyển. Sau đây là ví dụ 10 bước di chuyển đầu tiên trong một chuyến đi ngẫu nhiên được chọn\\
 \begin{flushleft}
@@ -1545,9 +1545,9 @@ Kham khảo \ref{trucquandichuyen} tại mục Phụ Lục xuất ra trực quan
 \caption*{Trực quan hóa 20 dòng dữ liệu ngẫu nhiên}
 \end{figure}
 \FloatBarrier
-\subsubsection{Rời rạc hóa những bước di chuyển}
-Thực hiện phân loại những bước di chuyển: bước đi rất nhỏ 0-15 (km/h), bước đi nhỏ 15-30 (km/h), bước đi trung bình 30-45 (km/h), bước đi xa 45-60 (km/h), bước đi rất xa trên 60 km/h.\\
-Bảng số liệu sau mô tả 10 dữ liệu mà ta sẽ làm việc.\\
+\section{Rời rạc hóa những bước di chuyển}
+Thực hiện phân loại những bước di chuyển: biến $X_1$ là bước đi rất nhỏ 0-15 (km/h), biến $X_2$ là bước đi nhỏ 15-30 (km/h), biến $X_3$ là bước đi trung bình 30-45 (km/h), biến $X_4$ là bước đi xa 45-60 (km/h), biến $X_5$ là bước đi rất xa trên 60 km/h.\\
+Bảng số liệu sau mô tả 10 dữ liệu mà ta sẽ làm việc.
 \begin{flushleft}
 \begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{1.5cm}|}
 \hline
@@ -1575,10 +1575,9 @@ Số lần thực hiện bước đi từ 0-15 (km/h)& Số lần thực hiện 
 \hline
 \end{tabular}
 \end{flushleft}
-Tôi làm việc với 190 dữ liệu với 95 dữ liệu về đích đúng giờ và 95 dữ liệu về đích trễ giờ, như vậy ta có 
-$\mathrm{P}$(về đích đúng giờ) = $\mathrm{P}$(về đích trễ giờ) = 0.5  
-\section{Áp dụng Gaussian Bayes classify để dự đoán xác suất xe buýt về trạm đúng thời gian}
-Density 
+Như đã nói phần trên, ta có $\mathrm{P}$(về đích đúng giờ) = 0.84 và $\mathrm{P}$(về đích trễ giờ) = 0.16
+\section{Vẽ hàm mật độ xác suất của các biến}
+Kham khảo \ref{density}, \ref{densityOverlap} tại mục Phụ lục, dùng giải thuật Kernel Density Estimation để vẽ hàm mật độ xác suất của các biến dưới đây:
 \FloatBarrier
 \begin{figure}[!htb]
 \minipage{0.5\textwidth}
@@ -1587,7 +1586,7 @@ Density
 \minipage{0.5\textwidth}
   \includegraphics[width=\linewidth]{DensityVerySmallStep_LateTime}
 \endminipage
-\caption*{Density VerySmallStep}
+\caption*{Hàm mật độ xác suất của biến $X_1$ bước đi 0-15 km/h}
 \end{figure}
 \FloatBarrier
 Nếu gộp lại \\
@@ -1595,10 +1594,10 @@ Nếu gộp lại \\
 \begin{figure}[h]
     \begin{subfigure}[b]{0.7\textwidth}
         \includegraphics[width=\textwidth]{DensityVerySmallStep.png}
+        \caption*{Hàm mật độ xác suất của biến $X_1$ bước đi 0-15 km/h}
     \end{subfigure}
 \end{figure}
 \FloatBarrier
-Density 
 \FloatBarrier
 \begin{figure}[!htb]
 \minipage{0.5\textwidth}
@@ -1607,7 +1606,7 @@ Density
 \minipage{0.5\textwidth}
   \includegraphics[width=\linewidth]{DensitySmallStep_LateTime}
 \endminipage
-\caption*{Density SmallStep}
+\caption*{Hàm mật độ xác suất của biến $X_2$ bước đi 15-30 km/h}
 \end{figure}
 \FloatBarrier
 Nếu gộp lại \\
@@ -1616,10 +1615,10 @@ Nếu gộp lại \\
     \begin{subfigure}[b]{0.7\textwidth}
         \includegraphics[width=\textwidth]{DensitySmallStep.png}
     \end{subfigure}
+    \caption*{Hàm mật độ xác suất của biến $X_2$ bước đi 15-30 km/h}
 \end{figure}
 \FloatBarrier
 
-Density 
 \FloatBarrier
 \begin{figure}[!htb]
 \minipage{0.5\textwidth}
@@ -1628,7 +1627,7 @@ Density
 \minipage{0.5\textwidth}
   \includegraphics[width=\linewidth]{DensityMediumStep_LateTime}
 \endminipage
-\caption*{Density Medium Step}
+\caption*{Hàm mật độ xác suất của biến $X_3$ bước đi 30-45 km/h}
 \end{figure}
 \FloatBarrier
 Nếu gộp lại \\
@@ -1637,11 +1636,10 @@ Nếu gộp lại \\
     \begin{subfigure}[b]{0.7\textwidth}
         \includegraphics[width=\textwidth]{DensityMediumStep.png}
     \end{subfigure}
+\caption*{Hàm mật độ xác suất của biến $X_3$ bước đi 30-45 km/h}
 \end{figure}
 \FloatBarrier
 
-
-Density 
 \FloatBarrier
 \begin{figure}[!htb]
 \minipage{0.5\textwidth}
@@ -1650,7 +1648,7 @@ Density
 \minipage{0.5\textwidth}
   \includegraphics[width=\linewidth]{DensityHighStep_LateTime}
 \endminipage
-\caption*{Density HighStep}
+\caption*{Hàm mật độ xác suất của biến $X_4$ bước đi 45-60 km/h}
 \end{figure}
 \FloatBarrier
 Nếu gộp lại \\
@@ -1659,9 +1657,9 @@ Nếu gộp lại \\
     \begin{subfigure}[b]{0.7\textwidth}
         \includegraphics[width=\textwidth]{DensityHighStep.png}
     \end{subfigure}
+\caption*{Hàm mật độ xác suất của biến $X_4$ bước đi 45-60 km/h}
 \end{figure}
 \FloatBarrier
-Density 
 \FloatBarrier
 \begin{figure}[!htb]
 \minipage{0.5\textwidth}
@@ -1670,7 +1668,7 @@ Density
 \minipage{0.5\textwidth}
   \includegraphics[width=\linewidth]{DensityVeryHighStep_LateTime}
 \endminipage
-\caption*{Density VeryHighStep}
+\caption*{Hàm mật độ xác suất của biến $X_5$ trên 60 km/h}
 \end{figure}
 \FloatBarrier
 Nếu gộp lại \\
@@ -1679,30 +1677,44 @@ Nếu gộp lại \\
     \begin{subfigure}[b]{0.7\textwidth}
         \includegraphics[width=\textwidth]{DensityVeryHighStep.png}
     \end{subfigure}
+\caption*{Hàm mật độ xác suất của biến $X_5$ trên 60 km/h}
 \end{figure}
 \FloatBarrier
-\section{Tìm xác suất của điểm mới khi sử dụng hàm density của R}
+\section{Tìm xác suất của điểm mới}
 Nếu sử dụng nhân Gaussian trong thuật toán Kernel Density Estimation, ta có công thức tính xác suất của điểm mới 
 \[
 \hat{f}(x_i) = \hat{p}_\textit{\tiny\tiny KDE}(x_i) = \frac{1}{n}\sum_{i=1}^{n} K_h = \frac{1}{n}\frac{1}{h}\sum_{i=1}^{n} K(\frac{x-x_i}{h})
 \]
-Nếu muốn hiện thực bằng dòng lệnh R, kham khảo từ \cite{FPDNPU} \\
-Với xs là các điểm lấy mẫu, h là bandwidth, viết hàm tính myKDE cho điểm mới t\\
-\begin{tabular}{ |l| } 
- \hline
-d <- density(xs)\\
-h = d\$bw\\
-myKDE <- function(t)\{\\
-\hspace{1cm}kernelValues <- rep(0,length(xs))\\
-\hspace{1cm}for(i in 1:length(xs))\{\\
-\hspace{2cm}transformed = (t - xs[i]) / h\\
-\hspace{2cm}kernelValues[i] <- dnorm(transformed, mean = 0, sd = 1) / h\\
-\hspace{1cm}\}\\
-\hspace{1cm}return(sum(kernelValues) / length(xs))\\
-\}\\
-\hline
-\end{tabular}
+Nếu muốn hiện thực bằng dòng lệnh R, kham khảo \ref{calculateNewPoint}
 \section{Kết luận}
+\underline{Bài toán}: Dự đoán xác suất xe buýt tuyến 72 lộ trình xuất phát từ BX Củ Chi về trạm đích BX An Sương đúng giờ (hạn mức 45 phút)\\
+\underline{Cách giải}:
+\begin{itemize}
+\item Chỉ giữ lại các bước di chuyển trong 80\% thời gian đầu
+\item Dữ liệu làm việc là dữ liệu sau khi được đồng bộ hóa khoảng cách thời gian hồi đáp (20 giây)
+\item Bài toán này sẽ có 5 biến: 
+\begin{itemize}
+\item $X_1$: bước di chuyển 0-15 km/h
+\item $X_2$: bước di chuyển 15-30 km/h
+\item $X_3$: bước di chuyển 30-45 km/h
+\item $X_4$: bước di chuyển 45-60 km/h
+\item $X_5$: bước di chuyển 60 km/h
+\end{itemize}
+\item Ta chọn thời gian hoàn thành trước đúng 45 phút là về đích đúng giờ\\
+Như vậy ta có $\mathrm{P}$(về đích đúng giờ) = 0.84 và $\mathrm{P}$(về đích trễ giờ) = 0.16
+\item Dùng giải thuật Kernel Density Estimation để vẽ hàm mật độ xác suất của các biến
+\item Sử dụng công thức Bayes tổng quát 
+\[ %\mathlarger{
+  \mathbb{P}(B_{i}|A)= \dfrac{\mathbb{P}(B_{i})\cdot \mathbb{P}(A|B_{i})}{\mathbb{P}(A)}
+            =\dfrac{\mathbb{P}(B_{i})\cdot \mathbb{P}(A|B_{i})}{\sum_{j=1}^{m} \mathbb{P}(B_j) \cdot \mathbb{P}(A|B_j)}
+%}
+\]
+các biến cố $A_{1}, A_{2},..., A_{n}$ là n biến cố \textbf{độc lập lẫn nhau} thì
+\[
+\mathbb{P}\left[\bigcap_{i=1}^n A_j \right] = \prod_{i=1}^n \mathbb{P}[A_i]
+\]
+\end{itemize}
+
 \chapter{KẾT LUẬN}
 \section{Tổng kết}
 Trình bày của chương mở đầu đã nói hết cho phần tổng kết. Tác giả nhắc lại đề tài Luận Văn: Dùng Thống Kê định lượng kinh nghiệm di chuyển trên một lộ trình quen thuộc, dự đoán xác suất xe buýt về trạm đích đúng giờ. Chương mở đầu đã trình bày cách nghiên cứu bài toán và nêu sơ lược các bước trong phương pháp giải. Các chương tiếp theo để khẳng định sử dụng xác suất Bayes là hợp lý để giải bài toán tìm xác suất xe buýt về trạm đúng giờ. 
@@ -1803,7 +1815,7 @@ ggplot(mydata, aes(x = mydata\$X1, y = mydata\$X2)) +\\
 \end{tabular}
 \end{flushleft}
 
-\item Mã nguồn R vẽ đường density chồng lên histogram
+\item \label{density} Mã nguồn R vẽ đường density chồng lên histogram
 \begin{flushleft}
 \begin{tabular}{  |l| }
 \hline 
@@ -1828,7 +1840,7 @@ legend("topright", inset=.05, \\
 \end{tabular}
 \end{flushleft}
 
-\item Mã nguồn R vẽ kết quả đồ họa hai hàm density chồng lên nhau
+\item \label{densityOverlap} Mã nguồn R vẽ kết quả đồ họa hai hàm density chồng lên nhau
 \begin{flushleft}
 \begin{tabular}{  |l| }
 \hline 
@@ -1853,6 +1865,21 @@ legend("topright", inset=.05, title="density",\\
 \end{tabular}
 \end{flushleft}
 
+\item \label{calculateNewPoint} Với xs là các điểm lấy mẫu, h là bandwidth, viết hàm tính myKDE cho điểm mới t\\
+\begin{tabular}{ |l| } 
+ \hline
+d <- density(xs)\\
+h = d\$bw\\
+myKDE <- function(t)\{\\
+\hspace{1cm}kernelValues <- rep(0,length(xs))\\
+\hspace{1cm}for(i in 1:length(xs))\{\\
+\hspace{2cm}transformed = (t - xs[i]) / h\\
+\hspace{2cm}kernelValues[i] <- dnorm(transformed, mean = 0, sd = 1) / h\\
+\hspace{1cm}\}\\
+\hspace{1cm}return(sum(kernelValues) / length(xs))\\
+\}\\
+\hline
+\end{tabular}
 \item Mã nguồn R chạy giải thuật FRBCS.W
 \begin{flushleft}
 \begin{tabular}{  |l| }
