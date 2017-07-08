@@ -284,6 +284,7 @@ STT&Khoảng cách thời gian hồi đáp (giây) & Khoảng cách bước đi 
 \begin{itemize}
 \item Thống Kê
 \item Không gian mẫu và biến cố
+\item Tần số và tần suất
 \item Xác suất của biến cố
 \item Xác suất có điều kiện và sự độc lập của các biến cố
 \item Biến ngẫu nhiên
@@ -333,6 +334,36 @@ Các biến cố sơ cấp hay điểm mẫu là những phần tử của $\mat
 
 \end{frame}
 
+%------------------------------------------------
+
+\begin{frame}[t]
+\frametitle{Cơ sở lý thuyết - Tần số và tần suất}
+Xét một biến ngẫu nhiên X, nhận các giá trị $x_1, x_2, ..., x_{m-1}, x_m$ với $x_1 < x_2 < ... < x_{m-1} < x_m$\\
+Giả sử rằng ta đã thực hiện n quan sát khác nhau trên X.\\
+Khi đó tần số của $x_i (i=1,...,m)$ là số lượng quan sát nhận giá trị $x_i$\\
+Tần suất f được tính
+\[
+f_i \geq 0 \quad \text{và} \sum_{i=1,2,...,m} f_i=n
+\]
+Tần suất p được tính
+\[
+p_i=\frac{f_i}{n} (i=1,...,m)
+\]
+Tần suất tích lũy là tổng các tần suất của các giá trị nhỏ hơn hoặc bằng $x_i$, được tính bởi\\
+\[
+P_i = \sum_{j=1}^i p_j
+\]
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}[t]
+\frametitle{Cơ sở lý thuyết - Tần số và tần suất}
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.5\textwidth]{TanSoVaTanSuat.png}   
+    \caption*{Ví dụ về tần suất và tần suất tích lũy} 
+\end{figure}
+\end{frame}
 
 %------------------------------------------------
 
@@ -481,7 +512,7 @@ $\mathbb{P}(B|A) = \frac{\mathbb{P}(B) \cdot \mathbb{P}(A|B)}{\mathbb{P}(A)}$
 
 \begin{frame}[t]
 \frametitle{Cơ sở lý thuyết - Vấn đề thực tế khi áp dụng xác suất Bayes}
-Biến hoặc giá trị biến rtrên thực tế \underline{rất hiếm khi được phân loại}, trong khi giải thuật xác suất Bayes $\mathbb{P}(B|A) = \frac{\mathbb{P}(B) \cdot \mathbb{P}(A|B)}{\mathbb{P}(A)}$ làm việc với biến và giá trị biến được phân loại.\\
+Biến hoặc giá trị biến trên thực tế \underline{rất hiếm khi được phân loại}, trong khi giải thuật xác suất Bayes $\mathbb{P}(B|A) = \frac{\mathbb{P}(B) \cdot \mathbb{P}(A|B)}{\mathbb{P}(A)}$ làm việc với biến và giá trị biến được phân loại.\\
 Trong Luận Văn này:
 \begin{itemize}
 \item Biến là những bước di chuyển

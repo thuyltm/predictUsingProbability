@@ -6,24 +6,24 @@
 \contentsline {section}{\numberline {1.5}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } k\IeC {\'\ecircumflex }t qu\IeC {\h a} thu \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{2}
 \contentsline {chapter}{\numberline {2}C\IeC {\OHORN } S\IeC {\h \OHORN } L\IeC {\'Y} THUY\IeC {\'\ECIRCUMFLEX }T}{3}
 \contentsline {section}{\numberline {2.1}L\IeC {\'y} thuy\IeC {\'\ecircumflex }t x\IeC {\'a}c su\IeC {\'\acircumflex }t c\IeC {\ohorn } b\IeC {\h a}n}{3}
-\contentsline {section}{\numberline {2.2}Ph\IeC {\^a}n ph\IeC {\'\ocircumflex }i chu\IeC {\h \acircumflex }n (Gauss)}{11}
-\contentsline {section}{\numberline {2.3}S\IeC {\ohorn } l\IeC {\uhorn }\IeC {\d \ohorn }c v\IeC {\`\ecircumflex } ph\IeC {\^a}n lo\IeC {\d a}i Gaussian Bayes}{13}
-\contentsline {section}{\numberline {2.4}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n Kernel Density Estimation}{14}
-\contentsline {chapter}{\numberline {3}HI\IeC {\d \ECIRCUMFLEX }N TH\IeC {\d \UHORN }C V\IeC {\`A} TH\IeC {\h \UHORN } NGHI\IeC {\d \ECIRCUMFLEX }M}{17}
-\contentsline {section}{\numberline {3.1}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u nghi\IeC {\^e}n c\IeC {\'\uhorn }u}{17}
-\contentsline {subsection}{\numberline {3.1.1}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u th\IeC {\^o}}{17}
-\contentsline {subsection}{\numberline {3.1.2}Ti\IeC {\`\ecircumflex }n x\IeC {\h \uhorn } l\IeC {\'y} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{17}
-\contentsline {subsubsection}{Ki\IeC {\h \ecircumflex }m tra l\IeC {\d \ocircumflex } tr\IeC {\`\i }nh xe bu\IeC {\'y}t}{17}
-\contentsline {subsubsection}{Ch\IeC {\d o}n th\IeC {\`\ohorn }i gian ho\IeC {\`a}n th\IeC {\`a}nh m\IeC {\d \ocircumflex }t chuy\IeC {\'\ecircumflex }n \IeC {\dj }i}{17}
-\contentsline {subsubsection}{\IeC {\DJ }\IeC {\`\ocircumflex }ng b\IeC {\d \ocircumflex } h\IeC {\'o}a ghi nh\IeC {\d \acircumflex }n m\IeC {\~\ocircumflex }i b\IeC {\uhorn }\IeC {\'\ohorn }c di chuy\IeC {\h \ecircumflex }n}{19}
-\contentsline {subsubsection}{Tr\IeC {\d \uhorn }c quan nh\IeC {\~\uhorn }ng b\IeC {\uhorn }\IeC {\'\ohorn }c di chuy\IeC {\h \ecircumflex }n}{22}
-\contentsline {section}{\numberline {3.2}R\IeC {\`\ohorn }i r\IeC {\d a}c h\IeC {\'o}a nh\IeC {\~\uhorn }ng b\IeC {\uhorn }\IeC {\'\ohorn }c di chuy\IeC {\h \ecircumflex }n}{25}
-\contentsline {section}{\numberline {3.3}V\IeC {\~e} h\IeC {\`a}m m\IeC {\d \acircumflex }t \IeC {\dj }\IeC {\d \ocircumflex } x\IeC {\'a}c su\IeC {\'\acircumflex }t c\IeC {\h u}a c\IeC {\'a}c bi\IeC {\'\ecircumflex }n}{25}
-\contentsline {section}{\numberline {3.4}T\IeC {\`\i }m x\IeC {\'a}c su\IeC {\'\acircumflex }t c\IeC {\h u}a \IeC {\dj }i\IeC {\h \ecircumflex }m m\IeC {\'\ohorn }i}{30}
-\contentsline {section}{\numberline {3.5}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{30}
-\contentsline {chapter}{\numberline {4}K\IeC {\'\ECIRCUMFLEX }T LU\IeC {\d \ACIRCUMFLEX }N}{32}
-\contentsline {section}{\numberline {4.1}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t}{32}
-\contentsline {section}{\numberline {4.2}\IeC {\DJ }\IeC {\'o}ng g\IeC {\'o}p c\IeC {\h u}a \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{32}
-\contentsline {section}{\numberline {4.3}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{32}
-\contentsline {chapter}{\numberline {5}PH\IeC {\d U} L\IeC {\d U}C}{33}
-\contentsline {chapter}{DANH M\IeC {\d U}C KHAM KH\IeC {\h A}O}{43}
+\contentsline {section}{\numberline {2.2}Ph\IeC {\^a}n ph\IeC {\'\ocircumflex }i chu\IeC {\h \acircumflex }n (Gauss)}{12}
+\contentsline {section}{\numberline {2.3}S\IeC {\ohorn } l\IeC {\uhorn }\IeC {\d \ohorn }c v\IeC {\`\ecircumflex } ph\IeC {\^a}n lo\IeC {\d a}i Gaussian Bayes}{14}
+\contentsline {section}{\numberline {2.4}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n Kernel Density Estimation}{15}
+\contentsline {chapter}{\numberline {3}HI\IeC {\d \ECIRCUMFLEX }N TH\IeC {\d \UHORN }C V\IeC {\`A} TH\IeC {\h \UHORN } NGHI\IeC {\d \ECIRCUMFLEX }M}{18}
+\contentsline {section}{\numberline {3.1}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u nghi\IeC {\^e}n c\IeC {\'\uhorn }u}{18}
+\contentsline {subsection}{\numberline {3.1.1}D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u th\IeC {\^o}}{18}
+\contentsline {subsection}{\numberline {3.1.2}Ti\IeC {\`\ecircumflex }n x\IeC {\h \uhorn } l\IeC {\'y} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{18}
+\contentsline {subsubsection}{Ki\IeC {\h \ecircumflex }m tra l\IeC {\d \ocircumflex } tr\IeC {\`\i }nh xe bu\IeC {\'y}t}{18}
+\contentsline {subsubsection}{Ch\IeC {\d o}n th\IeC {\`\ohorn }i gian ho\IeC {\`a}n th\IeC {\`a}nh m\IeC {\d \ocircumflex }t chuy\IeC {\'\ecircumflex }n \IeC {\dj }i}{18}
+\contentsline {subsubsection}{\IeC {\DJ }\IeC {\`\ocircumflex }ng b\IeC {\d \ocircumflex } h\IeC {\'o}a ghi nh\IeC {\d \acircumflex }n m\IeC {\~\ocircumflex }i b\IeC {\uhorn }\IeC {\'\ohorn }c di chuy\IeC {\h \ecircumflex }n}{20}
+\contentsline {subsubsection}{Tr\IeC {\d \uhorn }c quan nh\IeC {\~\uhorn }ng b\IeC {\uhorn }\IeC {\'\ohorn }c di chuy\IeC {\h \ecircumflex }n}{23}
+\contentsline {section}{\numberline {3.2}R\IeC {\`\ohorn }i r\IeC {\d a}c h\IeC {\'o}a nh\IeC {\~\uhorn }ng b\IeC {\uhorn }\IeC {\'\ohorn }c di chuy\IeC {\h \ecircumflex }n}{26}
+\contentsline {section}{\numberline {3.3}V\IeC {\~e} h\IeC {\`a}m m\IeC {\d \acircumflex }t \IeC {\dj }\IeC {\d \ocircumflex } x\IeC {\'a}c su\IeC {\'\acircumflex }t c\IeC {\h u}a c\IeC {\'a}c bi\IeC {\'\ecircumflex }n}{26}
+\contentsline {section}{\numberline {3.4}T\IeC {\`\i }m x\IeC {\'a}c su\IeC {\'\acircumflex }t c\IeC {\h u}a \IeC {\dj }i\IeC {\h \ecircumflex }m m\IeC {\'\ohorn }i}{31}
+\contentsline {section}{\numberline {3.5}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{31}
+\contentsline {chapter}{\numberline {4}K\IeC {\'\ECIRCUMFLEX }T LU\IeC {\d \ACIRCUMFLEX }N}{33}
+\contentsline {section}{\numberline {4.1}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t}{33}
+\contentsline {section}{\numberline {4.2}\IeC {\DJ }\IeC {\'o}ng g\IeC {\'o}p c\IeC {\h u}a \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{33}
+\contentsline {section}{\numberline {4.3}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{33}
+\contentsline {chapter}{\numberline {5}PH\IeC {\d U} L\IeC {\d U}C}{34}
+\contentsline {chapter}{DANH M\IeC {\d U}C KHAM KH\IeC {\h A}O}{44}

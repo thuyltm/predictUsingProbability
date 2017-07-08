@@ -203,6 +203,78 @@ Ngoài ra, tôi có đưa thêm một số giả định trong khi xem xét mẫ
 Kham khảo trang 52, 55, 59, 60, 61, 63 chương 3 từ sách \cite{TKCNUDR}\\
 Ta thấy cùng một tuyến đường xe buýt 74 cố định, từ BX Củ Chi - BX An Sương, các chuyến xe trong cùng tháng 9 có thời gian hoàn thành khác nhau, không biết trước được một cách chắc chắn. Nguyên nhân là do những yếu tố bên ngoài như mặt đường, thời tiết, giờ cao điểm, thấp điểm,..đều có ảnh hưởng đến kết quả. Toán Thống Kê giúp ta có phương pháp làm việc trên dữ  liệu có tính ngẫu nhiên như vậy.\\
 \textbf{Không gian mẫu} là tập hợp của tất cả các kết cục có thể của một thí nghiệm cụ thể. Chẳng hạn, thí nghiệm tung một đồng xu, kết quả ngẫu nhiên là ngửa (Head, $\mathcal{H}$) hoặc sấp (Tail, $\mathcal{T}$), cho ta không gian mẫu $\mathcal{S= \{H,T}\}$. Các \textbf{biến cố sơ cấp} hay \textbf{điểm mẫu} là những phần tử của $\mathcal{S}$.\\
+Một cách để mô tả một phân phối các giá trị mẫu, đặc biệt hữu ích trong các mẫu lớn, là xây dựng một phân phối tần số (tần suất) của các giá trị mẫu. Ta phân biệt giữa hai loại tần suất, cụ thể là tần suất của các biến rời rạc và các biến liên tục. Một biến ngẫu nhiên X được gọi là rời rạc nếu nó chỉ nhận hữu hạn hoặc vô hạn đếm các giá trị khác nhau. Ví dụ, số thẻ máy tính bị lỗi trong một hàng sản xuất là một biến ngẫu nhiên rời rạc. Một biến ngẫu nhiên được gọi là liên tục nếu về mặt lý thuyết, nó có thể nhận tất cả các giá trị có thể trong một khoảng số thực cho trước. Ví dụ, điện áp đầu ra của một nguồn điện là một biến ngẫu nhiên liên tục.
+\subsection*{Tần suất của biến ngẫu nhiên rời rạc}
+Xét một biến ngẫu nhiên X, nhận các giá trị $x_1, x_2, ..., x_{m-1}, x_m$ với $x_1 < x_2 < ... < x_{m-1} < x_m$\\
+Giả sử rằng ta đã thực hiện n quan sát khác nhau trên X. Khi đó tần số của $x_i (i=1,...,m)$ là số lượng quan sát nhận giá trị $x_i$. Ta kí hiệu tần số của $x_i$ bởi $f_i$. Dễ thấy rằng \\
+\[
+f_i \geq 0 \quad \text{và} \sum_{i=1,2,...,m} f_i=n
+\]
+Tập các cặp có thứ tự {($x_i, f_i$)} tạo nên phân bố tần số hay phân phối tần số của X. Một khái niệm rất có ích là tần suất, được định nghĩa bởi \\
+\[
+p_i=\frac{f_i}{n} (i=1,...,m)
+\]
+Hiển nhiên $p_i \geq 0$ và $\sum_{i=1,2,...,m} p_i = 1$.
+\begin{center}
+\begin{tabular}{ rccccc }
+\specialrule{.1em}{.05em}{.05em} 
+Giá trị & Tần số & Tần suất \\
+\hline
+$x_1$ & $f_1$ & $p_1=\frac{f_1}{n}$ \\
+$x_2$ & $f_2$ & $p_2=\frac{f_2}{n}$ \\
+.&&.\\
+.&&.\\
+.&&.\\
+$x_m$ & $f_m$ & $p_m=\frac{f_m}{n}$ \\
+\hline
+Tổng & n & 1\\
+\specialrule{.1em}{.05em}{.05em} 
+\end{tabular}
+\end{center}
+Ngoài tần số và tần suất, tần số tích lũy của một biến cũng là một khái niệm hữu ích. Tần số tích lũy của $x_i$ là tổng của các tần số của các giá trị nhỏ hơn và bằng $x_i$, được tính bằng $F_i=\sum_{j=1,2,...,i}f_i$. Còn tần suất tích lũy là tổng các tần suất của các giá trị nhỏ hơn hoặc bằng $x_i$, được tính bởi\\
+\[
+P_i = \sum_{j=1}^i p_j
+\]
+\begin{center}
+\begin{tabular}{ rccccc }
+\specialrule{.1em}{.05em}{.05em} 
+Giá trị & Tần suất p & Tần suất tích lũy P \\
+\hline
+$x_1$ & $p_1$ & $P_1 = p_1$ \\
+$x_2$ & $p_2$ & $P_2 = p_1 + p_2$ \\
+.&&.\\
+.&&.\\
+.&&.\\
+$x_m$ & $p_m$ & $P_m = p_1 + p_2 + ... + p_m = 1$ \\
+\hline
+Tổng & 1 & \\
+\specialrule{.1em}{.05em}{.05em} 
+\end{tabular}
+\end{center}
+\subsection*{Tần suất của biến ngẫu nhiên liên tục}
+Với trường hợp biến ngẫu nhiên liên tục, ta phân hoạch toàn bộ tập giá trị của biến quan sát thành $m$ khoảng con. Nói chung, nếu tập giá trị của X nằm giữa L và H, ta xác định các số
+\[
+b_0, b_1, b_2, ..., b_{m-1}, b_m
+\]
+sao cho L = $b_0 \leq b_1 \leq ... \leq b_{m-2} \leq b_m$ = H\\
+Các trị $b_0, b_1, b_2, ..., b_{m-1}, b_m$ được gọi là các cận của m khoảng con\\
+Sau đó ta phân loại các giá trị X vào khoảng ($b_{i-1}$, $b_i$) nếu ($b_{i-1} < X \leq b_i (i=1,...,m)$). Nếu X = $b_0$, ta gán nó vào khoảng con đầu tiên.    
+\begin{center}
+\begin{tabular}{ rccccc }
+\specialrule{.1em}{.05em}{.05em} 
+Khoảng con & Điểm giữa & Tần số & Tần suất & Tần số tích lũy & Tần suất tích lũy \\
+\hline
+$b_0-b_1$ & $\bar{b_1}$ & $f_1$ & $p_1=\frac{f_1}{n}$ & $F_1=f_1$ & $P_1=p_1$ \\
+$b_1-b_2$ & $\bar{b_2}$ & $f_2$ & $p_2=\frac{f_2}{n}$ & $F_2=f_1+f_2$ & $P_2=p_1+p_2$ \\
+.&&.\\
+.&&.\\
+.&&.\\
+$b_{m-1} - b_m$ & $\bar{b_m}$ & $f_m$ & $p_m=\frac{f_m}{n}$ & $F_m=f_1+...+f_m$ & $P_2=p_1+...+p_m=1$\\
+\hline
+Tổng & & n & 1\\
+\specialrule{.1em}{.05em}{.05em} 
+\end{tabular}
+\end{center}
 \subsection*{Xác suất của biến cố}
 Thông thường chúng ta gộp tất cả các biến cố vào một tập $\mathcal{Q}$ := $\{ A: A \subset \mathcal{S}$ là một biến cố$\}$, gọi là tập các biến cố.\\
 Xét một hàm $\mathbb{P}: \mathcal{Q} \rightarrow \mathbb{R}$ xác định trên $\mathcal{Q}$, gán cho mỗi biến cố A một số thực, ký hiệu A $\mapsto$ $\mathbb{P}$[A], $\mathbb{P}$[A] (hay $\mathbb{P}$(A)) là khả năng hoặc cơ hội mà biến cố A xảy ra. $\mathbb{P}$ được gọi là hàm xác suất khi thỏa mãn những tiên đề cơ bản sau đây:\\
