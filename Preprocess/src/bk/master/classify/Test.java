@@ -1,15 +1,58 @@
 package bk.master.classify;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import bk.master.util.ExportUtil;
 
 public class Test {
 
     public static void main(String[] args) {
-        String[] duration = "71, 86, 145, 136, 104, 277, 240, 145, 97, 0, 171, 283, 283, 0, 214, 166, 307, 259, 208, 43, 144, 286, 287, 126, 152, 254, 139, 255, 294, 293, 269, 283, 267, 221, 165, 266, 259, 220, 168, 0, 226, 337, 394, 224, 208, 340, 359, 259, 297, 325, 303, 302, 284, 287, 268, 199, 112, 179, 279, 270, 139, 72, 195, 345, 332, 151, 149, 230, 261, 186, 170, 236, 243, 265, 151, 201, 29, 125, 121, 35, 29, 80, 46, 36, 132, 52, 44, 63, 63, 46, 46, 40, 236".split(",");
-        for (int i = 0; i < duration.length; i++) {
-            System.out.println(i+1+"&"+20+"&"+duration[i]+"\\\\");
-            System.out.println("\\hline");
+        List<String> classifyR = new ArrayList<String>();
+        List<String> classifyRouteSuffle = new ArrayList<String>();
+        Map<String, String> calculateOnTime = new HashMap<String, String>();
+        List<String> wrongResult = new ArrayList<String>();
+        List<String> correctResult = new ArrayList<String>();
+        BufferedReader br;
+        try {
+            br = new BufferedReader(new FileReader("classifyR.csv"));
+            String line;
+            while ((line = br.readLine()) != null) {
+                classifyR.add(line);
+            }
+            br.close();
+            br = new BufferedReader(new FileReader("classifyRouteSuffle.csv"));
+            while ((line = br.readLine()) != null) {
+                classifyRouteSuffle.add(line);
+            }
+            br.close();
+            br = new BufferedReader(new FileReader("calculateOnTime.csv"));
+            while ((line = br.readLine()) != null) {
+                String pattern = line.substring(0, line.lastIndexOf(","));
+                String prob = line.substring(line.lastIndexOf(","));
+                calculateOnTime.put(pattern, prob);
+            }
+            br.close();
+            int size = classifyR.size();
+            for (int i = 0; i < size; i++) {
+                String predict = classifyR.get(i);
+                String real = classifyRouteSuffle.get(i);
+                String pattern = predict.substring(0, predict.lastIndexOf(","));
+                String prob = calculateOnTime.get(pattern);
+                if (!predict.equalsIgnoreCase(real)) {
+                    wrongResult.add(real+prob);
+                } else {
+                    correctResult.add(predict+prob);
+                }
+            }
+            ExportUtil.exportAccumulateFile(wrongResult, "wrongResult.txt");
+            ExportUtil.exportAccumulateFile(correctResult, "correctResult.txt");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-
-
     }
 }

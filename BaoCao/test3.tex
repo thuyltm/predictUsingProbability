@@ -1786,7 +1786,74 @@ các biến cố $A_{1}, A_{2},..., A_{n}$ là n biến cố \textbf{độc lậ
 \mathbb{P}\left[\bigcap_{i=1}^n A_j \right] = \prod_{i=1}^n \mathbb{P}[A_i]
 \]
 \end{itemize}
+Cụ thể như sau:\\
+Cho dữ liệu kiểm tra $x$ có giá trị $x_1$, $x_2$, $x_3$, $x_4$, $x_5$\\
+\[
+\mathrm{P}(onTime|x) = \frac{\mathrm{P}(x|onTime)\mathrm{P}(onTime)}{\mathrm{P}(x|onTime)\mathrm{P}(onTime)+\mathrm{P}(x|lateTime)\mathrm{P}(lateTime)}
+\]
+Do các biến cố $X_1, X_2, X_3, X_4, X_5$ là các biến cố độc lập lẫn nhau cho nên\\
+$\mathrm{P}(x|onTime) = \mathrm{P}(x_1|onTime)\mathrm{P}(x_2|onTime)\mathrm{P}(x_3|onTime)\mathrm{P}(x_4|onTime)\mathrm{P}(x_5|onTime)$ \\
+và $\mathrm{P}(x|lateTime) = \mathrm{P}(x_1|lateTime)\mathrm{P}(x_2|lateTime)\mathrm{P}(x_3|lateTime)\mathrm{P}(x_4|lateTime)\mathrm{P}(x_5|lateTime)$
+Kham khảo \ref{calculateNewPoint} để chạy phân loại dữ liệu kiểm tra\\
+\section{Kết quả}
+Lấy ngẫu nhiên 190 mẫu trong 996 mẫu dữ liệu huấn luyện ra kiểm tra phân loại thì thấy sai 45 mẫu, tức là sai 24\%\\
+Một số kết quả dự đoán đúng
+\begin{flushleft}
+\begin{tabular}{|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{2.5cm}|p{5cm}|}
+\hline
+$X_1$& $X_2$ & $X_3$ & $X_4$ & $X_5$ & Kết quả thực tế & Xác suất dự đoán đúng giờ \\ 
+\hline
+10 & 48 & 39 & 9 & 0 & onTime & 0.867886884048324\\
+\hline
+14 & 36 & 32 & 12 & 4 & onTime & 0.975384350213014\\
+\hline
+26 & 15 & 48 & 15 & 0 & onTime & 0.787585539441556\\
+\hline
+33 & 17 & 44 & 11 & 3 & onTime & 0.724957571656855\\
+\hline
+23 & 44 & 42 & 9 & 0 & lateTime & 0.382959767057761\\
+\hline
+30 & 42 & 34 & 11 & 1 & lateTime & 0.210249084300825\\
+\hline
+44 & 15 & 21 & 35 & 0 & lateTime & 9.45802157172484e-10\\
+\hline
+51 & 39 & 55 & 12 & 0 & lateTime & 6.84176417466922e-28\\
+\hline
+56 & 44 & 35 & 6 & 0 & lateTime & 2.02430903076165e-49\\
+\hline
+73 & 18 & 34 & 28 & 3 & lateTime & 7.63586294825022e-162\\
+\hline
+\end{tabular}
+\end{flushleft}
+Một số kết quả dự đoán sai
 
+\begin{flushleft}
+\begin{tabular}{|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{2.5cm}|p{5cm}|}
+\hline
+$X_1$& $X_2$ & $X_3$ & $X_4$ & $X_5$ & Kết quả thực tế & Xác suất dự đoán đúng giờ \\ 
+\hline
+19 & 34 & 41 & 16 & 1 & lateTime & 0.839811262772558\\
+\hline
+13 & 30 & 60 & 9 & 0 & lateTime & 0.956048124887834\\
+\hline
+20 & 26 & 52 & 12 & 0 & lateTime & 0.926660526069996\\
+\hline
+23 & 34 & 22 & 23 & 0 & onTime & 0.462938246287487\\
+\hline
+36 & 24 & 25 & 16 & 6 & onTime & 0.291143171211406\\
+\hline
+24 & 29 & 41 & 16 & 1 & lateTime & 0.758174017995704\\
+\hline
+24 & 31 & 45 & 12 & 0 & lateTime & 0.760021675231651\\
+\hline
+23 & 30 & 44 & 15 & 0 & lateTime & 0.809102556309718\\
+\hline
+13 & 31 & 68 & 3 & 0 & lateTime & 0.882496024826019\\
+\hline
+21 & 42 & 36 & 13 & 1 & lateTime & 0.621148813952554\\
+\hline
+\end{tabular}
+\end{flushleft}
 \chapter{KẾT LUẬN}
 \section{Tổng kết}
 Trình bày của chương mở đầu đã nói hết cho phần tổng kết. Tác giả nhắc lại đề tài Luận Văn: Dùng Thống Kê định lượng kinh nghiệm di chuyển trên một lộ trình quen thuộc, dự đoán xác suất xe buýt về trạm đích đúng giờ. Chương mở đầu đã trình bày cách nghiên cứu bài toán và nêu sơ lược các bước trong phương pháp giải. Các chương tiếp theo để khẳng định sử dụng xác suất Bayes là hợp lý để giải bài toán tìm xác suất xe buýt về trạm đúng giờ. 
@@ -1952,6 +2019,49 @@ myKDE <- function(t)\{\\
 \}\\
 \hline
 \end{tabular}
+
+\item \label{phanloaiR} Mã nguồn R chạy giải thuật phân loại
+\begin{flushleft}
+\begin{tabular}{  |l| }
+\hline 
+setwd('/home/thuy1/git/predictUsingProbability/Preprocess')\\
+freqVerySmall\_OnTime=read.table(file="freqVerySmall\_OnTime.csv")[,1]\\
+plot(density(freqVerySmall\_OnTime, kernel=c("gaussian")),\\
+\hspace{1cm}     main="the Gaussian smoothing kernel of Very Small Step",\\
+\hspace{1cm}     ylab="density", xlab="the occurrences of Very Small step",\\
+\hspace{1cm}     col="green",\\
+\hspace{1cm}     xlim=c(-10,100))\\
+rug(freqVerySmall\_OnTime)\\
+freqVerySmall\_OnTime\_KDE<-density(freqVerySmall\_OnTime)\\
+freqVerySmall\_OnTime\_BW=freqVerySmall\_OnTime\_KDE\$bw\\
+freqVerySmall\_OnTime\_KDE\_Estimation<-function(t)\{\\
+\hspace{0.5cm}  kernelValues <- rep(0,length(freqVerySmall\_OnTime))\\
+\hspace{0.5cm}  for(i in 1:length(freqVerySmall\_OnTime)) \{\\
+\hspace{1cm}    transformed = (t - freqVerySmall\_OnTime[i]) / freqVerySmall\_OnTime\_BW\\
+\hspace{1cm}    kernelValues[i] = dnorm(transformed, mean = 0, sd = 1) / freqVerySmall\_OnTime\_BW\\
+\hspace{0.5cm}  \}\\
+\hspace{0.5cm}  return(sum(kernelValues)/length(freqVerySmall\_OnTime))\\
+\}\\
+classify <- function(x, output) \{\\
+\hspace{1cm}  p\_X\_OnTime <- freqVerySmall\_OnTime\_KDE\_Estimation(x[1])*\\
+\hspace{2cm} freqSmall\_OnTime\_KDE\_Estimation(x[2])*\\
+\hspace{2cm} freqMedium\_OnTime\_KDE\_Estimation(x[3])*\\
+\hspace{2cm} freqHigh\_OnTime\_KDE\_Estimation(x[4])*\\
+\hspace{2cm} freqVeryHigh\_OnTime\_KDE\_Estimation(x[5])\\
+\hspace{1cm}  p\_X\_LateTime <- freqVerySmall\_LateTime\_KDE\_Estimation(x[1])*\\
+\hspace{2cm} freqSmall\_LateTime\_KDE\_Estimation(x[2])*\\
+\hspace{2cm} freqMedium\_LateTime\_KDE\_Estimation(x[3])*\\
+\hspace{2cm} freqHigh\_LateTime\_KDE\_Estimation(x[4])*\\
+\hspace{2cm} freqVeryHigh\_LateTime\_KDE\_Estimation(x[5])\\
+\hspace{1cm}  p\_onTime\_x=$\frac{\text{p\_X\_OnTime*p\_onTime}}{\text{(p\_X\_OnTime*p\_onTime+p\_X\_LateTime*p\_lateTime)}}$\\
+\hspace{1cm}  p\_lateTime\_x=$\frac{\text{p\_X\_LateTime*p\_lateTime}}{\text{(p\_X\_OnTime*p\_onTime+p\_X\_LateTime*p\_lateTime)}}$\\
+\hspace{1cm}  class=ifelse(p\_onTime\_x>p\_lateTime\_x,"onTime","lateTime")\\
+\hspace{1cm}  cat(paste(x[1],x[2], x[3], x[4], x[5], class, sep=","), file= output, append = T, fill = T)\\
+\}\\
+apply(testData, 1, classify, output = 'classify.txt')\\
+\hline
+\end{tabular}
+\end{flushleft}
 \item Mã nguồn R chạy giải thuật FRBCS.W
 \begin{flushleft}
 \begin{tabular}{  |l| }

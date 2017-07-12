@@ -21,9 +21,10 @@
 \contentsline {section}{\numberline {3.3}V\IeC {\~e} h\IeC {\`a}m m\IeC {\d \acircumflex }t \IeC {\dj }\IeC {\d \ocircumflex } x\IeC {\'a}c su\IeC {\'\acircumflex }t c\IeC {\h u}a c\IeC {\'a}c bi\IeC {\'\ecircumflex }n}{26}
 \contentsline {section}{\numberline {3.4}T\IeC {\`\i }m x\IeC {\'a}c su\IeC {\'\acircumflex }t c\IeC {\h u}a \IeC {\dj }i\IeC {\h \ecircumflex }m m\IeC {\'\ohorn }i}{31}
 \contentsline {section}{\numberline {3.5}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{31}
+\contentsline {section}{\numberline {3.6}K\IeC {\'\ecircumflex }t qu\IeC {\h a}}{32}
 \contentsline {chapter}{\numberline {4}K\IeC {\'\ECIRCUMFLEX }T LU\IeC {\d \ACIRCUMFLEX }N}{33}
 \contentsline {section}{\numberline {4.1}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t}{33}
 \contentsline {section}{\numberline {4.2}\IeC {\DJ }\IeC {\'o}ng g\IeC {\'o}p c\IeC {\h u}a \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{33}
 \contentsline {section}{\numberline {4.3}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{33}
 \contentsline {chapter}{\numberline {5}PH\IeC {\d U} L\IeC {\d U}C}{34}
-\contentsline {chapter}{DANH M\IeC {\d U}C KHAM KH\IeC {\h A}O}{44}
+\contentsline {chapter}{DANH M\IeC {\d U}C KHAM KH\IeC {\h A}O}{45}
