@@ -52,7 +52,7 @@ public class Check {
                 data.add(nextLine);
             }
             reader.close();
-            Set<Integer> randomIndexList = generateRandomNotRepeat(190);
+            Set<Integer> randomIndexList = generateRandomNotRepeat(165);
             for (Integer randomIndex : randomIndexList) {
                 suffleData.add(data.get(randomIndex));
             }

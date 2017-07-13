@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import au.com.bytecode.opencsv.CSVReader;
 import bk.master.util.ExportUtil;
 
 public class Test {
@@ -19,13 +20,13 @@ public class Test {
         List<String> correctResult = new ArrayList<String>();
         BufferedReader br;
         try {
-            br = new BufferedReader(new FileReader("classifyR.csv"));
+            br = new BufferedReader(new FileReader("classify.csv"));
             String line;
             while ((line = br.readLine()) != null) {
                 classifyR.add(line);
             }
             br.close();
-            br = new BufferedReader(new FileReader("classifyRouteSuffle.csv"));
+            br = new BufferedReader(new FileReader("classifyRoute_AS-CC_Suffle.csv"));
             while ((line = br.readLine()) != null) {
                 classifyRouteSuffle.add(line);
             }
