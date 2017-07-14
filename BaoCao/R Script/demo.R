@@ -191,7 +191,7 @@ calculateOnTime <- function(x, output) {
   p_onTime_x=(p_X_OnTime*p_onTime)/(p_X_OnTime*p_onTime+p_X_LateTime*p_lateTime)
   cat(paste(x[1],x[2], x[3], x[4], x[5], p_onTime_x, sep=","), file= output, append = T, fill = T)
 }
-apply(testData, 1, calculateOnTime, output = 'calculateOnTime.txt')
+apply(testData, 1, calculateOnTime, output = 'calculateOnTime.csv')
 classify <- function(x, output) {
   p_X_OnTime <- freqVerySmall_OnTime_KDE_Estimation(x[1])*freqSmall_OnTime_KDE_Estimation(x[2])*
     freqMedium_OnTime_KDE_Estimation(x[3])*freqHigh_OnTime_KDE_Estimation(x[4])*freqVeryHigh_OnTime_KDE_Estimation(x[5])
@@ -202,4 +202,4 @@ classify <- function(x, output) {
   class=ifelse(p_onTime_x>p_lateTime_x,"onTime","lateTime")
   cat(paste(x[1],x[2], x[3], x[4], x[5], class, sep=","), file= output, append = T, fill = T)
 }
-apply(testData, 1, classify, output = 'classify.txt')
+apply(testData, 1, classify, output = 'classify.csv')

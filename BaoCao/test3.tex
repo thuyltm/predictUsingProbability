@@ -425,6 +425,29 @@ Công thức Bayes tổng quát là:\\
             =\dfrac{\mathbb{P}(B_{i})\cdot \mathbb{P}(A|B_{i})}{\sum_{j=1}^{m} \mathbb{P}(B_j) \cdot \mathbb{P}(A|B_j)}
 %}
 \]
+\subsection*{Công thức đánh giá kết quả phân loại dựa vào xác suất Bayes}
+Nhìn vào ma trận dưới đây\\
+\begin{tabular}{ |c|c|c| }
+\hline
+Actual class $\textbackslash$ Predict class & C\_1 & $\neg$ C\_1 \\
+\hline
+C\_1 & True positive (TP) & False positive (FN)\\
+\hline
+$\neg$ C\_1 & False negative (FP) & True negative (TN)\\
+\hline
+\end{tabular}\\
+Tưởng tượng một kiểm tra sự xuất hiện bệnh trên mỗi người. Nếu kết quả kiểm tra là người đó có bệnh thì phân loại là positive, ngược lại là negative. Tuy nhiên, kết quả kiểm tra của mỗi người vẫn có thể không đúng với thực tế bệnh có xuất hiện trên người đó, cho nên mới có phân loại kết quả kiểm tra như sau: 
+\begin{itemize}
+\item True positive (viết tắt TP): Người đó có bệnh và kết quả kiểm tra là có bệnh, phân loại đúng
+\item False positive (viết tắt FP): Người đó không có bệnh nhưng kết quả kiểm tra là có bệnh, phân loại sai
+\item True negative (viết tắt TN): Người đó không có bệnh và kết quả kiểm tra cũng là không có bệnh, phân loại đúng
+\item False negative (viết tắt FN): Người đó có bệnh nhưng kết quả kiểm tra là không có bệnh, phân loại sai
+\end{itemize}     
+Ta có một số công thức đánh giá kết quả phân loại dựa vào xác suất Bayes\\
+Gọi P = TP + FN và N = FP + TN\\
+Độ chính xác = $\dfrac{TP+TN}{P+N}$\\
+Lỗi sai = $\dfrac{FP+FN}{P+N}$ = 1 - Độ chính xác
+
 \subsection*{Ví dụ phân loại dựa vào xác suất Bayes}
 \begin{center}
 \begin{tabular}{ cccccc }
@@ -1796,7 +1819,7 @@ $\mathrm{P}(x|onTime) = \mathrm{P}(x_1|onTime)\mathrm{P}(x_2|onTime)\mathrm{P}(x
 và $\mathrm{P}(x|lateTime) = \mathrm{P}(x_1|lateTime)\mathrm{P}(x_2|lateTime)\mathrm{P}(x_3|lateTime)\mathrm{P}(x_4|lateTime)\mathrm{P}(x_5|lateTime)$
 Kham khảo \ref{calculateNewPoint} để chạy phân loại dữ liệu kiểm tra\\
 \section{Kết quả}
-Lấy ngẫu nhiên 190 mẫu trong 996 mẫu dữ liệu huấn luyện ra kiểm tra phân loại thì thấy sai 45 mẫu, tức là sai 24\%\\
+Lấy ngẫu nhiên 190 mẫu trong 996 mẫu dữ liệu huấn luyện ra kiểm tra phân loại\\
 Một số kết quả dự đoán đúng
 \begin{flushleft}
 \begin{tabular}{|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{2.5cm}|p{5cm}|}
@@ -1826,7 +1849,6 @@ $X_1$& $X_2$ & $X_3$ & $X_4$ & $X_5$ & Kết quả thực tế & Xác suất d�
 \end{tabular}
 \end{flushleft}
 Một số kết quả dự đoán sai
-
 \begin{flushleft}
 \begin{tabular}{|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{2.5cm}|p{5cm}|}
 \hline
@@ -1854,6 +1876,10 @@ $X_1$& $X_2$ & $X_3$ & $X_4$ & $X_5$ & Kết quả thực tế & Xác suất d�
 \hline
 \end{tabular}
 \end{flushleft}
+Ta thấy ở dòng 2, dù xác suất dự đoán đúng giờ cho chuyến xe đó lên tới 0.956048124887834 tiệm cận với 1 nhưng chuyến xe đó cuối cùng về đích trễ giờ. Vậy là trên thực tế biến cố trễ giờ dù có xác suất rất nhỏ nhưng vẫn xảy ra. Hay ở dòng 5, dù xác suất dự đoán đúng giờ rất thấp 0.291143171211406 nhưng cuối cùng chuyến xe đó cuối cùng về đích đúng giờ.\\
+\underline{Kết luận} Xác suất phù hợp để dự đoán một biến cố xảy ra trên thực tế, chấp nhận yếu tố ngẫu nhiên xảy ra ảnh hưởng đến kết quả dự đoán.\\
+Đánh giá kết quả dự đoán trên mẫu: Độ chính xác là 0.7631579 và sai số là 0.23684211\\ 
+Kiểm tra trên tập mẫu khác, vì tác giả đã lấy hết mẫu di chuyển từ BX Củ Chi đến BX An Sương mang đi huấn luyện nên đành phải lấy mẫu di chuyển từ BX An Sương đến BX Củ Chi để kiểm tra. Với số lượng mẫu kiểm tra là 165 mẫu di chuyển từ BX An Sương đến BX Củ Chi, đánh giá kết quả dự đoán: Độ chính xác là 0.74545455 và sai số là 0.25454545
 \chapter{KẾT LUẬN}
 \section{Tổng kết}
 Trình bày của chương mở đầu đã nói hết cho phần tổng kết. Tác giả nhắc lại đề tài Luận Văn: Dùng Thống Kê định lượng kinh nghiệm di chuyển trên một lộ trình quen thuộc, dự đoán xác suất xe buýt về trạm đích đúng giờ. Chương mở đầu đã trình bày cách nghiên cứu bài toán và nêu sơ lược các bước trong phương pháp giải. Các chương tiếp theo để khẳng định sử dụng xác suất Bayes là hợp lý để giải bài toán tìm xác suất xe buýt về trạm đúng giờ. 
