@@ -83,6 +83,8 @@
 %\floatsetup[figure]{capposition=bottom}
 \usepackage{caption}
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{color, colortbl}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
 
 
 %----------------------------------------------------------------------------------------
@@ -868,45 +870,42 @@ Do các biến cố $X_1, X_2, X_3, X_4, X_5$ là các biến cố độc lập 
 $\mathrm{P}(x|onTime) = \mathrm{P}(x_1|onTime)\mathrm{P}(x_2|onTime)\mathrm{P}(x_3|onTime)\mathrm{P}(x_4|onTime)\mathrm{P}(x_5|onTime)$ \\
 và $\mathrm{P}(x|lateTime) = \mathrm{P}(x_1|lateTime)\mathrm{P}(x_2|lateTime)\mathrm{P}(x_3|lateTime)\mathrm{P}(x_4|lateTime)\mathrm{P}(x_5|lateTime)$
 \end{frame}
+
 %------------------------------------------------
+\begin{frame}
+\frametitle{Kết luận}
+\begin{tabular}{ |c|c|c| }
+\hline
+Actual class $\textbackslash$ Predict class & C\_1 & $\neg$ C\_1 \\
+\hline
+C\_1 & True positive (TP) & False positive (FN)\\
+\hline
+$\neg$ C\_1 & False negative (FP) & True negative (TN)\\
+\hline
+\end{tabular}\\
+Ta có một số công thức đánh giá kết quả phân loại dựa vào xác suất Bayes\\
+Gọi P = TP + FN và N = FP + TN\\
+\center
+\begin{tabular}{ cl }
+Độ chính xác & = $\dfrac{TP+TN}{P+N}$ \\
+& \\
+Lỗi sai & = $\dfrac{FP+FN}{P+N}$ = 1 - Độ chính xác\\
+\end{tabular}\\
+\end{frame}
+
+%------------------------------------------------
+
 \begin{frame}
 \frametitle{Kết quả}
-Lấy ngẫu nhiên 190 mẫu trong 996 mẫu dữ liệu huấn luyện ra kiểm tra phân loại thì thấy sai 45 mẫu, tức là sai 24\%\\
-Một số kết quả dự đoán đúng
-\begin{flushleft}
-\begin{tabular}{|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{1.6cm}|p{5cm}|}
-\hline
-$X_1$& $X_2$ & $X_3$ & $X_4$ & $X_5$ & Kết quả thực tế & Xác suất dự đoán đúng giờ \\ 
-\hline
-10 & 48 & 39 & 9 & 0 & onTime & 0.867886884048324\\
-\hline
-14 & 36 & 32 & 12 & 4 & onTime & 0.975384350213014\\
-\hline
-26 & 15 & 48 & 15 & 0 & onTime & 0.787585539441556\\
-\hline
-33 & 17 & 44 & 11 & 3 & onTime & 0.724957571656855\\
-\hline
-23 & 44 & 42 & 9 & 0 & lateTime & 0.382959767057761\\
-\hline
-30 & 42 & 34 & 11 & 1 & lateTime & 0.210249084300825\\
-\hline
-44 & 15 & 21 & 35 & 0 & lateTime & 9.45802157172484e-10\\
-\hline
-51 & 39 & 55 & 12 & 0 & lateTime & 6.84176417466922e-28\\
-\hline
-56 & 44 & 35 & 6 & 0 & lateTime & 2.02430903076165e-49\\
-\hline
-73 & 18 & 34 & 28 & 3 & lateTime & 7.63586294825022e-162\\
-\hline
-\end{tabular}
-\end{flushleft}
+Lấy ngẫu nhiên 190 mẫu trong 996 mẫu dữ liệu huấn luyện ra kiểm tra phân loại thì kết quả dự đoán: Độ chính xác là 0.7631579 và sai số là 0.23684211\\
+Với số lượng mẫu kiểm tra là 165 mẫu di chuyển ngược lại từ BX An Sương đến BX Củ Chi thì kết quả dự đoán: Độ chính xác là 0.74545455 và sai số là 0.25454545\\
 \end{frame}
+
 %------------------------------------------------
+
 \begin{frame}
-\frametitle{Danh mục các tài liệu kham khảo}
-
+\frametitle{Kết quả}
 Một số kết quả dự đoán sai
-
 \begin{flushleft}
 \begin{tabular}{|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}|p{1.6cm}|p{5cm}|}
 \hline
@@ -914,15 +913,15 @@ $X_1$& $X_2$ & $X_3$ & $X_4$ & $X_5$ & Kết quả thực tế & Xác suất d�
 \hline
 19 & 34 & 41 & 16 & 1 & lateTime & 0.839811262772558\\
 \hline
-13 & 30 & 60 & 9 & 0 & lateTime & 0.956048124887834\\
-\hline
-36 & 24 & 25 & 16 & 6 & onTime & 0.291143171211406\\
+\rowcolor{LightCyan} 13 & 30 & 60 & 9 & 0 & lateTime & 0.956048124887834\\
 \hline
 23 & 34 & 22 & 23 & 0 & onTime & 0.462938246287487\\
 \hline
 20 & 26 & 52 & 12 & 0 & lateTime & 0.926660526069996\\
 \hline
 24 & 29 & 41 & 16 & 1 & lateTime & 0.758174017995704\\
+\hline
+\rowcolor{LightCyan} 36 & 24 & 25 & 16 & 6 & onTime & 0.291143171211406\\
 \hline
 24 & 31 & 45 & 12 & 0 & lateTime & 0.760021675231651\\
 \hline
@@ -935,7 +934,18 @@ $X_1$& $X_2$ & $X_3$ & $X_4$ & $X_5$ & Kết quả thực tế & Xác suất d�
 \end{tabular}
 \end{flushleft}
 \end{frame}
+%------------------------------------------------
 
+\begin{frame}
+\frametitle{Kết quả}
+Từ bảng kết quả trên, ta thấy
+\begin{itemize}
+\item Dù chuyến xe có xác suất dự đoán đúng giờ rất cao 0.956048124887834 nhưng cuối cùng về đích trễ giờ.\\
+$\rightarrow$ Trên thực tế biến cố trễ giờ dù có xác suất rất nhỏ xảy ra nhưng vẫn xảy ra 
+\item Dù chuyến xe có xác suất dự đoán đúng giờ rất thấp 0.291143171211406 nhưng cuối cùng về đích đúng giờ.
+\end{itemize}
+\underline{Kết luận} Xác suất phù hợp để dự đoán một biến cố xảy ra trên thực tế, chấp nhận yếu tố ngẫu nhiên xảy ra ảnh hưởng đến kết quả dự đoán.\\
+\end{frame}
 
 %------------------------------------------------
 \begin{frame}

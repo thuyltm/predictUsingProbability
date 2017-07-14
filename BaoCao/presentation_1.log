@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  12 JUL 2017 16:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  14 JUL 2017 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1251,75 +1251,89 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count157
 \@thisrulewidth=\dimen263
 )
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen264
+\extrarowheight=\dimen265
+\NC@list=\toks45
+\extratabsurround=\skip57
+\backup@length=\skip58
+)
+\everycr=\toks46
+\minrowclearance=\skip59
+)
 
 Package hyperref Warning: Composite letter `\textdotbelow+i'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 94.
+(hyperref)                removing `\textdotbelow' on input line 96.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\UHORN'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 102.
+(hyperref)                removing `\textdotbelow' on input line 104.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\UHORN' on input line 102.
+(hyperref)                removing `\UHORN' on input line 104.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ACIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 102.
+(hyperref)                removing `\textacute' on input line 104.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ACIRCUMFLEX' on input line 102.
+(hyperref)                removing `\ACIRCUMFLEX' on input line 104.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ECIRCUMFLEX'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 102.
+(hyperref)                removing `\textasciigrave' on input line 104.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ECIRCUMFLEX' on input line 102.
+(hyperref)                removing `\ECIRCUMFLEX' on input line 104.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+A'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 102.
+(hyperref)                removing `\textdotbelow' on input line 104.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\OHORN'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 102.
+(hyperref)                removing `\textasciigrave' on input line 104.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\OHORN' on input line 102.
+(hyperref)                removing `\OHORN' on input line 104.
 
 (./presentation_1.aux)
 \openout1 = `presentation_1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 102.
-LaTeX Font Info:    Try loading font information for T5+cmr on input line 102.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 104.
+LaTeX Font Info:    Try loading font information for T5+cmr on input line 104.
  (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    ... okay on input line 104.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1357,16 +1371,16 @@ LaTeX Font Info:    ... okay on input line 102.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count158
-\scratchdimen=\dimen264
+\scratchdimen=\dimen266
 \scratchbox=\box53
 \nofMPsegments=\count159
 \nofMParguments=\count160
-\everyMPshowfont=\toks45
+\everyMPshowfont=\toks47
 \MPscratchCnt=\count161
-\MPscratchDim=\dimen265
+\MPscratchDim=\dimen267
 \MPnumerator=\count162
 \makeMPintoPDFobject=\count163
-\everyMPtoPDFconversion=\toks46
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1384,7 +1398,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 102.
+Package hyperref Info: Link coloring OFF on input line 104.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1394,72 +1408,72 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count164
 )
-LaTeX Info: Redefining \ref on input line 102.
-LaTeX Info: Redefining \pageref on input line 102.
-LaTeX Info: Redefining \nameref on input line 102.
+LaTeX Info: Redefining \ref on input line 104.
+LaTeX Info: Redefining \pageref on input line 104.
+LaTeX Info: Redefining \nameref on input line 104.
 
 (./presentation_1.out) (./presentation_1.out)
 \@outlinefile=\write5
 \openout5 = `presentation_1.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 102.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 104.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 102.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 104.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T5/cmr/m/n on input line 102.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 102.
+(Font)                  OT1/cmss/m/n --> T5/cmr/m/n on input line 104.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T5/cmss/bx/n on input line 102.
+(Font)                  OT1/cmr/bx/n --> T5/cmss/bx/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T5/cmss/bx/n on input line 102.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 102.
+(Font)                  OT1/cmr/bx/n --> T5/cmss/bx/n on input line 104.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T5/cmss/m/n on input line 102.
+(Font)                  OT1/cmss/m/n --> T5/cmss/m/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T5/cmss/m/n on input line 102.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 102.
+(Font)                  OT1/cmss/bx/n --> T5/cmss/m/n on input line 104.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T5/cmss/m/it on input line 102.
+(Font)                  OT1/cmr/m/it --> T5/cmss/m/it on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T5/cmss/m/it on input line 102.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 102.
+(Font)                  OT1/cmr/bx/it --> T5/cmss/m/it on input line 104.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 102.
+(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 102.
+(Font)                  OT1/cmtt/m/n --> T5/cmtt/m/n on input line 104.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T5/cmss/m/n --> T5/cmss/bx/n on input line 102.
+(Font)                  T5/cmss/m/n --> T5/cmss/bx/n on input line 104.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T5/cmss/m/it --> T5/cmss/bx/it on input line 102.
+(Font)                  T5/cmss/m/it --> T5/cmss/bx/it on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T5/cmr/bx/n on input line 102.
+(Font)                  OT1/cmss/bx/n --> T5/cmr/bx/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T5/cmss/bx/n --> T5/cmss/bx/n on input line 102.
+(Font)                  T5/cmss/bx/n --> T5/cmss/bx/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T5/cmss/m/n --> T5/cmss/bx/n on input line 102.
+(Font)                  T5/cmss/m/n --> T5/cmss/bx/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T5/cmss/m/it --> T5/cmss/bx/it on input line 102.
+(Font)                  T5/cmss/m/it --> T5/cmss/bx/it on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T5/cmtt/m/n --> T5/cmtt/bx/n on input line 102.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 102.
+(Font)                  T5/cmtt/m/n --> T5/cmtt/bx/n on input line 104.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 104.
 LaTeX Font Info:    Encoding `T5' has changed to `OT1' for symbol font
 (Font)              `pureletters' in the math version `normal' on input line 10
-2.
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  T5/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 10
-2.
+4.
 LaTeX Font Info:    Encoding `T5' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 102.
+(Font)              `pureletters' in the math version `bold' on input line 104.
 
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T5/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 1
-02.
+04.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 102.
+ut line 104.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -1485,7 +1499,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 102.
+LaTeX Info: Redefining \includegraphics on input line 104.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1497,17 +1511,17 @@ Package caption Info: End \AtBeginDocument code.
 ] [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 158.
+LaTeX Font Info:    Try loading font information for U+msa on input line 160.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 158.
+LaTeX Font Info:    Try loading font information for U+msb on input line 160.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 158.
+line 160.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1516,172 +1530,172 @@ thkerncmss.
 [4
 
 ]
-Overfull \hbox (6.66986pt too wide) in paragraph at lines 246--246
-[]\T5/cmss/m/n/10.95 Kho£ng
+Overfull \hbox (6.66986pt too wide) in paragraph at lines 248--248
+[]|\T5/cmss/m/n/10.95 Kho£ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 thíi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 gian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 hçi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 ^^_¡p
  []
 
 
-Overfull \hbox (6.66986pt too wide) in paragraph at lines 246--246
-[]\T5/cmss/m/n/10.95 Kho£ng
+Overfull \hbox (6.66986pt too wide) in paragraph at lines 248--248
+[]|\T5/cmss/m/n/10.95 Kho£ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 b÷îc
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 ^^_i
  []
 
 
-Overfull \hbox (11.19823pt too wide) in paragraph at lines 246--246
+Overfull \hbox (12.79819pt too wide) in paragraph at lines 248--248
 [][]  
  []
 
 
-Overfull \hbox (6.66986pt too wide) in paragraph at lines 246--246
-[]\T5/cmss/m/n/10.95 Kho£ng
+Overfull \hbox (6.66986pt too wide) in paragraph at lines 248--248
+[]|\T5/cmss/m/n/10.95 Kho£ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 thíi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 gian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 hçi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 ^^_¡p
  []
 
 
-Overfull \hbox (6.66986pt too wide) in paragraph at lines 246--246
-[]\T5/cmss/m/n/10.95 Kho£ng
+Overfull \hbox (6.66986pt too wide) in paragraph at lines 248--248
+[]|\T5/cmss/m/n/10.95 Kho£ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 b÷îc
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 ^^_i
  []
 
 
-Overfull \hbox (11.19823pt too wide) in paragraph at lines 246--246
+Overfull \hbox (12.79819pt too wide) in paragraph at lines 248--248
 [][]  
  []
 
 
-Overfull \hbox (6.66986pt too wide) in paragraph at lines 246--246
-[]\T5/cmss/m/n/10.95 Kho£ng
+Overfull \hbox (6.66986pt too wide) in paragraph at lines 248--248
+[]|\T5/cmss/m/n/10.95 Kho£ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 thíi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 gian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 hçi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 ^^_¡p
  []
 
 
-Overfull \hbox (6.66986pt too wide) in paragraph at lines 246--246
-[]\T5/cmss/m/n/10.95 Kho£ng
+Overfull \hbox (6.66986pt too wide) in paragraph at lines 248--248
+[]|\T5/cmss/m/n/10.95 Kho£ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 b÷îc
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \T5/cmss/m/n/10.95 ^^_i
  []
 
 
-Overfull \hbox (11.19823pt too wide) in paragraph at lines 246--246
+Overfull \hbox (12.79819pt too wide) in paragraph at lines 248--248
 [][]  
  []
 
 
-Overfull \vbox (21.95465pt too high) detected at line 246
+Overfull \vbox (22.35464pt too high) detected at line 248
  []
 
 [5
@@ -1690,13 +1704,13 @@ Overfull \vbox (21.95465pt too high) detected at line 246
 File: images/test_80_1.png Graphic file (type png)
 
 <use images/test_80_1.png>
-Package pdftex.def Info: images/test_80_1.png used on input line 263.
+Package pdftex.def Info: images/test_80_1.png used on input line 265.
 (pdftex.def)             Requested size: 164.30028pt x 164.29503pt.
  <images/test_80_2.png, id=160, 481.8pt x 481.8pt>
 File: images/test_80_2.png Graphic file (type png)
 
 <use images/test_80_2.png>
-Package pdftex.def Info: images/test_80_2.png used on input line 263.
+Package pdftex.def Info: images/test_80_2.png used on input line 265.
 (pdftex.def)             Requested size: 167.72658pt x 167.72092pt.
  [6
 
@@ -1709,7 +1723,7 @@ Package pdftex.def Info: images/test_80_2.png used on input line 263.
 ] [10
 
 ]
-Overfull \vbox (2.92064pt too high) detected at line 356
+Overfull \vbox (2.92064pt too high) detected at line 358
  []
 
 [11
@@ -1718,7 +1732,7 @@ Overfull \vbox (2.92064pt too high) detected at line 356
 File: images/TanSoVaTanSuat.png Graphic file (type png)
 
 <use images/TanSoVaTanSuat.png>
-Package pdftex.def Info: images/TanSoVaTanSuat.png used on input line 366.
+Package pdftex.def Info: images/TanSoVaTanSuat.png used on input line 368.
 (pdftex.def)             Requested size: 171.14764pt x 122.53093pt.
  [12
 
@@ -1732,13 +1746,13 @@ Package pdftex.def Info: images/TanSoVaTanSuat.png used on input line 366.
 ] [16
 
 ]
-Overfull \vbox (29.95958pt too high) detected at line 455
+Overfull \vbox (29.95958pt too high) detected at line 457
  []
 
 [17
 
 ]
-Overfull \vbox (1.1027pt too high) detected at line 479
+Overfull \vbox (1.1027pt too high) detected at line 481
  []
 
 [18
@@ -1754,15 +1768,15 @@ Overfull \vbox (1.1027pt too high) detected at line 479
 ]
 
 LaTeX Font Warning: Font shape `T5/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 544.
+(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 546.
 
 
 LaTeX Font Warning: Font shape `T5/cmss/m/it' in size <8> not available
-(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 544.
+(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 546.
 
 
 LaTeX Font Warning: Font shape `T5/cmss/m/it' in size <6> not available
-(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 544.
+(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 546.
 
 [23
 
@@ -1771,20 +1785,20 @@ File: images/Normal_Distribution_PDF.png Graphic file (type png)
 
 <use images/Normal_Distribution_PDF.png>
 Package pdftex.def Info: images/Normal_Distribution_PDF.png used on input line 
-555.
+557.
 (pdftex.def)             Requested size: 171.14764pt x 177.61963pt.
 
 
 LaTeX Font Warning: Font shape `T5/cmss/m/it' in size <10> not available
-(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 555.
+(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 557.
 
 
 LaTeX Font Warning: Font shape `T5/cmss/m/it' in size <7> not available
-(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 555.
+(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 557.
 
 
 LaTeX Font Warning: Font shape `T5/cmss/m/it' in size <5> not available
-(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 555.
+(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 557.
 
 [24
 
@@ -1793,18 +1807,18 @@ LaTeX Font Warning: Font shape `T5/cmss/m/it' in size <5> not available
 File: images/GaussBayesEx2.png Graphic file (type png)
 
 <use images/GaussBayesEx2.png>
-Package pdftex.def Info: images/GaussBayesEx2.png used on input line 576.
+Package pdftex.def Info: images/GaussBayesEx2.png used on input line 578.
 (pdftex.def)             Requested size: 171.14764pt x 76.92204pt.
  [25
 
  <./images/GaussBayesEx2.png (PNG copy)>]
 
 LaTeX Font Warning: Font shape `T5/cmss/m/it' in size <14.4> not available
-(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 589.
+(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 591.
 
 
 LaTeX Font Warning: Font shape `T5/cmss/m/it' in size <9> not available
-(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 589.
+(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 591.
 
 [26
 
@@ -1817,7 +1831,7 @@ File: images/500px-Comparison_of_1D_histogram_and_KDE.png Graphic file (type pn
 g)
  <use images/500px-Comparison_of_1D_histogram_and_KDE.png>
 Package pdftex.def Info: images/500px-Comparison_of_1D_histogram_and_KDE.png us
-ed on input line 616.
+ed on input line 618.
 (pdftex.def)             Requested size: 216.8129pt x 144.5483pt.
  [28
 
@@ -1830,12 +1844,12 @@ File: images/220px-Comparison_of_1D_bandwidth_selectors.png Graphic file (type
 png)
  <use images/220px-Comparison_of_1D_bandwidth_selectors.png>
 Package pdftex.def Info: images/220px-Comparison_of_1D_bandwidth_selectors.png 
-used on input line 634.
+used on input line 636.
 (pdftex.def)             Requested size: 216.82146pt x 144.5454pt.
  [30
 
  <./images/220px-Comparison_of_1D_bandwidth_selectors.png>]
-Overfull \vbox (4.58946pt too high) detected at line 666
+Overfull \vbox (4.58946pt too high) detected at line 668
  []
 
 [31
@@ -1843,182 +1857,182 @@ Overfull \vbox (4.58946pt too high) detected at line 666
 ] <images/test1.png, id=880, 481.8pt x 481.8pt>
 File: images/test1.png Graphic file (type png)
  <use images/test1.png>
-Package pdftex.def Info: images/test1.png used on input line 683.
+Package pdftex.def Info: images/test1.png used on input line 685.
 (pdftex.def)             Requested size: 164.30028pt x 164.29503pt.
 File: images/test_80_1.png Graphic file (type png)
 
 <use images/test_80_1.png>
-Package pdftex.def Info: images/test_80_1.png used on input line 683.
+Package pdftex.def Info: images/test_80_1.png used on input line 685.
 (pdftex.def)             Requested size: 167.72658pt x 167.72092pt.
  [32
 
  <./images/test1.png>]
-Overfull \hbox (6.66986pt too wide) in paragraph at lines 772--772
-[]\T5/cmss/m/n/10.95 Kho£ng
+Overfull \hbox (6.66986pt too wide) in paragraph at lines 774--774
+[]|\T5/cmss/m/n/10.95 Kho£ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 thíi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 gian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 hçi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 ^^_¡p
  []
 
 
-Overfull \hbox (6.66986pt too wide) in paragraph at lines 772--772
-[]\T5/cmss/m/n/10.95 Kho£ng
+Overfull \hbox (6.66986pt too wide) in paragraph at lines 774--774
+[]|\T5/cmss/m/n/10.95 Kho£ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 b÷îc
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 ^^_i
  []
 
 
-Overfull \hbox (11.19823pt too wide) in paragraph at lines 772--772
+Overfull \hbox (12.79819pt too wide) in paragraph at lines 774--774
 [][]  
  []
 
 
-Overfull \hbox (6.66986pt too wide) in paragraph at lines 772--772
-[]\T5/cmss/m/n/10.95 Kho£ng
+Overfull \hbox (6.66986pt too wide) in paragraph at lines 774--774
+[]|\T5/cmss/m/n/10.95 Kho£ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 thíi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 gian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 hçi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 ^^_¡p
  []
 
 
-Overfull \hbox (6.66986pt too wide) in paragraph at lines 772--772
-[]\T5/cmss/m/n/10.95 Kho£ng
+Overfull \hbox (6.66986pt too wide) in paragraph at lines 774--774
+[]|\T5/cmss/m/n/10.95 Kho£ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 b÷îc
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 ^^_i
  []
 
 
-Overfull \hbox (11.19823pt too wide) in paragraph at lines 772--772
+Overfull \hbox (12.79819pt too wide) in paragraph at lines 774--774
 [][]  
  []
 
 
-Overfull \hbox (6.66986pt too wide) in paragraph at lines 772--772
-[]\T5/cmss/m/n/10.95 Kho£ng
+Overfull \hbox (6.66986pt too wide) in paragraph at lines 774--774
+[]|\T5/cmss/m/n/10.95 Kho£ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 thíi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 gian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 hçi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 ^^_¡p
  []
 
 
-Overfull \hbox (6.66986pt too wide) in paragraph at lines 772--772
-[]\T5/cmss/m/n/10.95 Kho£ng
+Overfull \hbox (6.66986pt too wide) in paragraph at lines 774--774
+[]|\T5/cmss/m/n/10.95 Kho£ng
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 c¡ch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 b÷îc
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--772
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T5/cmss/m/n/10.95 ^^_i
  []
 
 
-Overfull \hbox (11.19823pt too wide) in paragraph at lines 772--772
+Overfull \hbox (12.79819pt too wide) in paragraph at lines 774--774
 [][]  
  []
 
 
-Overfull \vbox (35.55466pt too high) detected at line 772
+Overfull \vbox (35.95465pt too high) detected at line 774
  []
 
 [33
@@ -2031,7 +2045,7 @@ File: images/finishTime_CC_AS_ACC_Line.png Graphic file (type png)
 
 <use images/finishTime_CC_AS_ACC_Line.png>
 Package pdftex.def Info: images/finishTime_CC_AS_ACC_Line.png used on input lin
-e 797.
+e 799.
 (pdftex.def)             Requested size: 216.81006pt x 144.54257pt.
  [35
 
@@ -2040,11 +2054,11 @@ e 797.
 File: images/DensityVerySmallStep.png Graphic file (type png)
 
 <use images/DensityVerySmallStep.png>
-Package pdftex.def Info: images/DensityVerySmallStep.png used on input line 807
+Package pdftex.def Info: images/DensityVerySmallStep.png used on input line 809
 .
 (pdftex.def)             Requested size: 289.08957pt x 195.12793pt.
 
-Overfull \vbox (23.28499pt too high) detected at line 807
+Overfull \vbox (23.28499pt too high) detected at line 809
  []
 
 [36
@@ -2054,7 +2068,7 @@ Overfull \vbox (23.28499pt too high) detected at line 807
 File: images/DensitySmallStep.png Graphic file (type png)
 
 <use images/DensitySmallStep.png>
-Package pdftex.def Info: images/DensitySmallStep.png used on input line 817.
+Package pdftex.def Info: images/DensitySmallStep.png used on input line 819.
 (pdftex.def)             Requested size: 289.08957pt x 195.12793pt.
  [37
 
@@ -2063,7 +2077,7 @@ Package pdftex.def Info: images/DensitySmallStep.png used on input line 817.
 File: images/DensityMediumStep.png Graphic file (type png)
 
 <use images/DensityMediumStep.png>
-Package pdftex.def Info: images/DensityMediumStep.png used on input line 827.
+Package pdftex.def Info: images/DensityMediumStep.png used on input line 829.
 (pdftex.def)             Requested size: 289.08957pt x 195.12793pt.
  [38
 
@@ -2072,7 +2086,7 @@ Package pdftex.def Info: images/DensityMediumStep.png used on input line 827.
 File: images/DensityHighStep.png Graphic file (type png)
 
 <use images/DensityHighStep.png>
-Package pdftex.def Info: images/DensityHighStep.png used on input line 837.
+Package pdftex.def Info: images/DensityHighStep.png used on input line 839.
 (pdftex.def)             Requested size: 289.08957pt x 195.12793pt.
  [39
 
@@ -2081,7 +2095,7 @@ Package pdftex.def Info: images/DensityHighStep.png used on input line 837.
 File: images/DensityVeryHighStep.png Graphic file (type png)
 
 <use images/DensityVeryHighStep.png>
-Package pdftex.def Info: images/DensityVeryHighStep.png used on input line 846.
+Package pdftex.def Info: images/DensityVeryHighStep.png used on input line 848.
 
 (pdftex.def)             Requested size: 289.08957pt x 195.12793pt.
  [40
@@ -2089,7 +2103,7 @@ Package pdftex.def Info: images/DensityVeryHighStep.png used on input line 846.
  <./images/DensityVeryHighStep.png (PNG copy)>] [41
 
 ]
-Overfull \hbox (7.11197pt too wide) in paragraph at lines 870--870
+Overfull \hbox (7.11197pt too wide) in paragraph at lines 872--872
 \T5/cmr/m/n/10.95 P\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x[]\OMS/cm
 sy/m/n/10.95 j\OT1/mathkerncmss/m/sl/10.95 lateTime\OT1/cmss/m/n/10.95 )\T5/cmr
 /m/n/10.95 P\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x[]\OMS/cmsy/m/n/
@@ -2105,37 +2119,31 @@ mss/m/sl/10.95 lateTime\OT1/cmss/m/n/10.95 )$
 [42
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 903--903
-[]\T5/cmss/m/n/10.95 K¸t qu£
- []
 
-
-Overfull \hbox (14.85217pt too wide) in paragraph at lines 903--903
-[]  
- []
-
-
-Overfull \vbox (7.81181pt too high) detected at line 903
- []
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 894.
 
 [43
 
+] [44
+
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 937--937
-[]\T5/cmss/m/n/10.95 K¸t qu£
+Underfull \hbox (badness 10000) in paragraph at lines 936--936
+[]|\T5/cmss/m/n/10.95 K¸t qu£
  []
 
 
-Overfull \hbox (14.85217pt too wide) in paragraph at lines 937--937
+Overfull \hbox (18.05212pt too wide) in paragraph at lines 936--936
 []  
  []
 
-[44
+[45
 
-] [45
+] [46
+
+] [47
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>] [4
-6
+8
 
 ]
 \tf@nav=\write6
@@ -2147,20 +2155,20 @@ Overfull \hbox (14.85217pt too wide) in paragraph at lines 937--937
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 962.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 962.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 972.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 972.
  (./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 962.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 962.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 972.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 972.
 Package rerunfilecheck Info: File `presentation_1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 962.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 972.
  ) 
 Here is how much of TeX's memory you used:
- 19227 strings out of 493029
- 359714 string characters out of 6136233
- 440823 words of memory out of 5000000
- 22181 multiletter control sequences out of 15000+600000
+ 19327 strings out of 493029
+ 360932 string characters out of 6136233
+ 437801 words of memory out of 5000000
+ 22271 multiletter control sequences out of 15000+600000
  49277 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,56p,666b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2184,10 +2192,10 @@ ss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss8.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/vntex/vnr/vnss9.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/vntex/vnr/vnssi10.pfb>
-Output written on presentation_1.pdf (46 pages, 629860 bytes).
+Output written on presentation_1.pdf (48 pages, 633791 bytes).
 PDF statistics:
- 1386 PDF objects out of 1440 (max. 8388607)
- 1267 compressed objects within 13 object streams
- 96 named destinations out of 1000 (max. 500000)
+ 1440 PDF objects out of 1440 (max. 8388607)
+ 1318 compressed objects within 14 object streams
+ 100 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

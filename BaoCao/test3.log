@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  14 JUL 2017 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.11)  14 JUL 2017 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1962,7 +1962,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31 <./images/DensityHighStep.png (PNG copy)> <./images/DensityVeryHighStep_OnT
 ime.png (PNG copy)> <./images/DensityVeryHighStep_LateTime.png (PNG copy)>]
-[32 <./images/DensityVeryHighStep.png (PNG copy)>] [33] [34]
+[32 <./images/DensityVeryHighStep.png (PNG copy)>]
+Overfull \hbox (40.93927pt too wide) in paragraph at lines 1879--1879
+\T5/cmr/m/n/10 x£y ra nh÷ng v¨n x£y ra. Hay ð dáng 5, dò chuy¸n xe câ x¡c su§t 
+dü ^^_o¡n ^^_óng gií r§t th§p 0.291143171211406 
+ []
+
+[33] [34]
 Ch\uhorn \ohorn ng 4.
 [35
 
@@ -2121,7 +2127,7 @@ xlive/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/vntex/vnr/vnr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex
 /vnr/vnr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti7.pfb>
-Output written on test3.pdf (56 pages, 2392588 bytes).
+Output written on test3.pdf (56 pages, 2392562 bytes).
 PDF statistics:
  412 PDF objects out of 1000 (max. 8388607)
  205 compressed objects within 3 object streams
