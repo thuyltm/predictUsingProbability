@@ -1,5 +1,6 @@
 setwd('/home/thuy1/git/predictUsingProbability/Preprocess')
 freqVerySmall_OnTime=read.table(file="freqVerySmall_OnTime.csv")[,1]
+png(filename="/home/thuy1/git/predictUsingProbability/BaoCao/images/DensityVerySmallStep_LateTime.png")
 plot(density(freqVerySmall_OnTime, kernel=c("gaussian")),
      main="the Gaussian smoothing kernel of Very Small Step",
      ylab="density", xlab="the occurrences of Very Small step",

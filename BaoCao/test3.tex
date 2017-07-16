@@ -165,7 +165,16 @@ Ngoài ra, tác giả muốn nhấn mạnh về kết quả dự đoán chỉ ma
 Luận Văn nhấn mạnh việc hiểu được định nghĩa xác suất, hiểu được các sự kiện xảy ra trên thực tế không bao giờ được dự đoán chắc chắn 100\% xảy ra, mà chỉ dự đoán khả năng có thể xảy ra. Đến đây, tác giả mong đợi người đọc hiểu được ý nghĩa ứng dụng thực tế của Luận Văn.\\
 Tác giả nhắc lại đề tài Luận Văn: Dùng Thống Kê định lượng kinh nghiệm di chuyển trên một lộ trình quen thuộc, dự đoán xác suất xe buýt về trạm đích đúng giờ.
 \section{Phương pháp nghiên cứu}
-Phương pháp nghiên cứu là thu thập số lượng dữ liệu mẫu di chuyển giới hạn, quan sát các bước di chuyển được ghi nhận cách nhau 20 giây trên 2/3 lộ trình đi từ BX Củ Chi - BX An Sương, trực quan hóa dữ liệu này, cộng thêm kiến thức lập luận thực tế ví dụ như nếu chuyến đi đó có nhiều bước di chuyển dài trong từng khoảng 20 giây thì chuyến đi đó có khả năng về trạm đúng giờ và chấp nhận xác suất, cho biết khả năng xảy ra, chấp nhận có yếu tố ngẫu nhiên xảy ra ảnh hưởng đến kết quả dự đoán. Quan sát dữ liệu cho ta khởi đầu cách tiếp cận, lấy cảm hứng kiến thức xác suất và thống kê để tìm ra phương pháp giải bài toán.  
+\textbf{\underline{Giả thiết}}:\\
+\begin{enumerate}
+\item Tác động của ngoại cảnh độc lập với các bước di chuyển trong 1 chuyến đi nên lấy ngẫu nhiên mẫu tháng 9, 10, 11 năm 2016
+\item Các bước di chuyển độc lập lẫn nhau để đồng bộ hóa các bước di chuyển cách nhau 20 giây và sử dụng Bayes cho các biến cố quan sát $X_1$, $X_2$, $X_3$, $X_4$, $X_5$ để dự đoán xác suất biến cố trong tương lai (đúng giờ hoặc trễ giờ) xảy ra 
+\end{enumerate}
+\textbf{\underline{Phương pháp giải}}:
+\begin{enumerate}
+\item Sử dụng xác suất để dự đoán hiện tượng xảy ra trên thực tế, có yếu tố ngẫu nhiên bên ngoài ảnh hưởng đến kết quả dự đoán 
+\item Sử dụng kiến thức thống kê để kết quả tính toán từ mẫu ngẫu nhiên giới hạn có thể ước lượng, xài được cho tổng thể với xác suất xảy ra cao 
+\end{enumerate}
 \section{Một số kết quả thu được}
 Tác giả nói qua sơ lược phương pháp giải bài toán, có thể lúc này người đọc chưa hiểu hết.\\
 \textbf{\underline{Bước 1}}: Tuyến xe buýt 74 ngẫu nhiên được chọn và chọn lộ trình cố định BX Củ Chi - BX An Sương. Không sử dụng sức mạnh tính toán hiệu năng cao trên kích thước dữ liệu siêu lớn. Chọn mẫu dữ liệu có số lượng giới hạn và ngẫu nhiên.\\
@@ -1884,9 +1893,19 @@ Kiểm tra trên tập mẫu khác, vì tác giả đã lấy hết mẫu di chu
 \section{Tổng kết}
 Trình bày của chương mở đầu đã nói hết cho phần tổng kết. Tác giả nhắc lại đề tài Luận Văn: Dùng Thống Kê định lượng kinh nghiệm di chuyển trên một lộ trình quen thuộc, dự đoán xác suất xe buýt về trạm đích đúng giờ. Chương mở đầu đã trình bày cách nghiên cứu bài toán và nêu sơ lược các bước trong phương pháp giải. Các chương tiếp theo để khẳng định sử dụng xác suất Bayes là hợp lý để giải bài toán tìm xác suất xe buýt về trạm đúng giờ. 
 \section{Đóng góp của đề tài}
-Tác giả không đặt mục tiêu tham vọng giải bài toán này có thể đem ra ứng dụng thực tế được vì bản thân tác giả không phải là nhà thống kê, không có nhiều kinh nghiệm làm việc với kích thước mẫu rất nhỏ có thể đưa ra dự đoán đúng trên kích thước quần thể. Nhưng thông qua Luận Văn, tác giả chứng minh được sử dụng kiến thức Thống Kê cơ bản (không chứng minh công thức Toán học vì tác giả không phải là nhà Toán học), giải được bài toán của Luận Văn.
+Tác giả không đặt mục tiêu tham vọng giải bài toán này có thể đem ra ứng dụng thực tế được vì bản thân tác giả không phải là nhà thống kê, không có nhiều kinh nghiệm làm việc với kích thước mẫu rất nhỏ có thể đưa ra dự đoán đúng trên kích thước quần thể. Nhưng thông qua Luận Văn, tác giả chứng minh được cách dễ dàng nhất để giải được bài toán.
 \section{Hướng phát triển}
-Tác giả không muốn đề cập cách giải bài toán của Luận Văn với dữ liệu cực lớn mà muốn đề cập đến sử dụng kiến thức Thống Kê giải với dữ liệu mẫu ngẫu nhiên, kích thước rất nhỏ. Với phương châm như vậy, tác giả chia sẽ một số phát hiện để nếu có ai hứng thú muốn phát triển đề tài của Luận Văn này. Tác giả đã phát hiện ngoài sử dụng phương pháp xác suất Bayes để phân loại, có rất nhiều thuật toán khác trong Thống Kê để phân loại. Ví dụ như thuật toán FRBCS.W giúp phân loại dữ liệu của tác giả đúng đến 75\% (nhưng tác giả không trình bày bằng chứng ở đây vì nó nằm ngoài mục tiêu trình bày sử dụng phương pháp Bayes của Luận Văn). Còn muốn tìm thời gian xe buýt về trạm đích khi học các dữ liệu mẫu giới hạn trong quá khứ thì tác giả tìm được các thuật toán ước lượng hồi quy trong Thống Kê như thuật toán Wang and Mendel, giúp ta làm điều này, nhưng tác giả cũng không trình bày ở đây.\\
+Tác giả không muốn đề cập cách giải bài toán của Luận Văn với dữ liệu cực lớn mà muốn đề cập đến sử dụng kiến thức Thống Kê giải với dữ liệu mẫu ngẫu nhiên, kích thước rất nhỏ.\\
+Làm sao để kết quả thu được (dự báo về trạm đúng giờ/trễ giờ) từ mẫu có thể có ý nghĩa được trên thực tế?\\
+Nếu áp dụng phương pháp thống kê thì cần trả lời các câu hỏi sau
+\begin{itemize}
+\item Lấy mẫu như thế nào để là đại diện cho tổng thể di chuyển từ BX Củ Chi đến BX An Sương\\ 
+$\rightarrow$ Thống kê mô tả có thể được sử dụng để tổng hợp các dữ liệu mẫu
+\item Số lượng mẫu đại diện là bao nhiêu? Vì số lượng mẫu đại diện thể hiện mức độ ước lượng chính xác cho thực tế\\
+$\rightarrow$ Thống kê suy luận để ước tính
+\item Suy luận trên mẫu như thế nào để mở rộng dự báo trên tổng thể?
+\end{itemize}  
+ Với phương châm như vậy, tác giả chia sẽ một số phát hiện để nếu có ai hứng thú muốn phát triển đề tài của Luận Văn này. Tác giả đã phát hiện ngoài sử dụng phương pháp xác suất Bayes để phân loại, có rất nhiều thuật toán khác trong Thống Kê để phân loại. Ví dụ như thuật toán phân loại bằng cách tạo vùng nhập nhằng với trọng số (fuzzy rule-based classification with weight factor) FRBCS.W giúp phân loại dữ liệu của tác giả chính xác đến 0,721212121 (nhưng tác giả không trình bày bằng chứng ở đây vì nó nằm ngoài mục tiêu trình bày sử dụng phương pháp Bayes của Luận Văn). Còn muốn tìm thời gian xe buýt về trạm đích khi học các dữ liệu mẫu giới hạn trong quá khứ thì tác giả tìm được các thuật toán tạo ra vùng nhập nhằng (fuzzy region) để ước lượng với dữ liệu đầu vào và đầu ra là các con số như thuật toán Wang and Mendel, giúp ta làm điều này, nhưng tác giả cũng không trình bày ở đây.\\
 Nếu có tham vọng muốn bài toán của Luận Văn này được triển khai trên thực tế, thì người đọc cần bổ sung thêm kiến thức Thống Kê như làm thế nào tạo ra thiết kế thực nghiệm, tiêu chuẩn lựa chọn mô hình để rút ra kết luận có tính thuyết phục hơn.
 \pagebreak
 \chapter{PHỤ LỤC}
@@ -2122,6 +2141,7 @@ control <- list(num.labels = 7, type.mf = "GAUSSIAN", type.tnorm = "MIN",\\
 object.cls <- frbs.learn(tra.data, range.data.input, method.type, control)\\
 \textit{\# Predicting step: Predict newdata}\\
 res.test <- predict(object.cls, tst.data)\\
+outputData <- cbind(tst.data, res.test)\\
 \textit{\# Display the FRBS model}\\
 summary(object.cls)\\
 \textit{\# Plot the membership functions}\\
@@ -2414,22 +2434,6 @@ function accumulateSequenceElmtWithMinRedundant(List<Long> sortedNonStandardDura
 \bibitem{FPDNPU}
 	\emph{Find-the-probability-density-of-a-new-data-point-using-density-function-in-r}, truy cập ngày 4 tháng 6 năm 2017,
 	địa chỉ \emph{https://stackoverflow.com/questions/28077500/find-the-probability-density-of-a-new-data-point-using-density-function-in-r}
-\section*{Developer's Website}
-\bibitem{GeoJSON}
-	\emph{Google Maps 3 API - Data Layer: GeoJSON}, truy cập ngày 6 tháng 11 năm 2016,
-	địa chỉ \emph{https://developers.google.com/maps/documentation/javascript/examples/layer-data-style}.	
-\bibitem{DADG}
-	\emph{Google Maps 3 API - Click on feature (from geojson)}, truy cập ngày 6 tháng 11 năm 2016,
-	địa chỉ \emph{http://stackoverflow.com/questions/29309856/google-maps-3-api-click-on-feature-from-geojson-and-check-if-it-contains-loc}.
-\bibitem{DADG}
-	\emph{Google Maps 3 API - Data Layer: Drag and Drop GeoJSON}, truy cập ngày 6 tháng 11 năm 2016,
-	địa chỉ \emph{https://developers.google.com/maps/documentation/javascript/examples/layer-data-dragndrop}.		
-\bibitem{WID}
-	\emph{Google Maps 3 API - Waypoints in directions}, truy cập ngày 6 tháng 11 năm 2016,
-	địa chỉ \emph{https://developers.google.com/maps/documentation/javascript/examples/directions-waypoints}.	
-\bibitem{DM}
-	\emph{Google Maps 3 API - Distance Matrix}, truy cập ngày 6 tháng 11 năm 2016,
-	địa chỉ \emph{https://developers.google.com/maps/documentation/javascript/examples/distance-matrix}.	
 \end{thebibliography}
 \pagebreak
 \end{document}

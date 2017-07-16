@@ -85,6 +85,7 @@
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage{color, colortbl}
 \definecolor{LightCyan}{rgb}{0.88,1,1}
+\usepackage[normalem]{ulem}
 
 
 %----------------------------------------------------------------------------------------
@@ -110,6 +111,7 @@
 \begin{frame}{Nội dung}
 \begin{enumerate}
 \item Giới thiệu đề tài
+\item Động lực giải bài toán
 \item Dữ liệu
 \item Phương pháp nghiên cứu
 \item Cơ sở lý thuyết
@@ -125,7 +127,27 @@
 Dự đoán xác suất xe buýt tuyến 72 \\ lộ trình xuất phát từ BX Củ Chi về trạm đích BX An Sương \\ đúng giờ (hạn mức 45 phút)
 \end{frame}
 
-%------------------------------------------------
+%----------------------------------------------------------------------------------------
+\begin{frame}[t]{ Động lực giải bài toán}
+Thực tế, các bác tài xế bắt buộc thời gian hoàn thành một chuyến đi trong thời hạn nhất định, nếu trễ giờ sẽ bị phạt.\\
+Nếu có \textbf{\underline{nhu cầu}} dự đoán xác suất về trạm đúng giờ thì giải bài toán
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}[t]{ Dữ liệu}
+
+In the book "How to lie with Statistics", author Darrell Huff gives the reader five simple questions with which arm yourself against statistics\footnote{http://idiolect.org.uk/notes/?p=665}:
+\begin{enumerate}
+\item Who say so?
+\item How does he know?
+\item What's missing?
+\item Did somebody change the subject?
+\item Does it make sense?
+\end{enumerate}
+The originator of the data is from Smart BK Traffic of HCM University Of Technology, Vietnam
+\end{frame}
+
+%------------------------------------------------------------------------------------------
 
 \begin{frame}[t]
 \frametitle{Dữ liệu thô}
@@ -268,14 +290,18 @@ STT&Khoảng cách thời gian hồi đáp (giây) & Khoảng cách bước đi 
 
 \begin{frame}
 \frametitle{Phương pháp nghiên cứu}
-\begin{itemize}
-\item số lượng dữ liệu mẫu giới hạn
-\item các bước di chuyển cách nhau 20 giây
-\item 80\% lộ trình từ BX Củ Chi - BX An Sương
-\item trực quan hóa dữ liệu
-\item nếu có nhiều bước di chuyển dài thì xác suất về trạm đúng giờ cao
-\item chấp nhận có yếu tố ngẫu nhiên ảnh hưởng đến kết quả dự đoán 
-\end{itemize}
+\textbf{\underline{Giả thiết}}:\\
+\begin{enumerate}
+\item Tác động của ngoại cảnh độc lập với các bước di chuyển trong 1 chuyến đi\\
+$\rightarrow$ lấy ngẫu nhiên mẫu tháng 9, 10, 11
+\item Các bước di chuyển độc lập lẫn nhau\\
+$\rightarrow$ sử dụng Bayes cho các biến cố quan sát $X_1$, $X_2$, $X_3$, $X_4$, $X_5$ để dự đoán xác suất biến cố trong tương lai (đúng giờ hoặc trễ giờ) xảy ra
+\end{enumerate}
+\textbf{\underline{Phương pháp giải}}:
+\begin{enumerate}
+\item Sử dụng xác suất để dự đoán hiện tượng xảy ra trên thực tế, có yếu tố ngẫu nhiên bên ngoài ảnh hưởng đến kết quả dự đoán 
+\item \sout{Sử dụng kiến thức thống kê để kết quả tính toán từ mẫu ngẫu nhiên, giới hạn có thể ước lượng và xài được cho tổng thể với xác suất xảy ra cao} 
+\end{enumerate}
 \end{frame}
 
 %------------------------------------------------
@@ -934,6 +960,7 @@ $X_1$& $X_2$ & $X_3$ & $X_4$ & $X_5$ & Kết quả thực tế & Xác suất d�
 \end{tabular}
 \end{flushleft}
 \end{frame}
+
 %------------------------------------------------
 
 \begin{frame}
@@ -944,20 +971,31 @@ Từ bảng kết quả trên, ta thấy
 $\rightarrow$ Trên thực tế biến cố trễ giờ dù có xác suất rất nhỏ xảy ra nhưng vẫn xảy ra 
 \item Dù chuyến xe có xác suất dự đoán đúng giờ rất thấp 0.291143171211406 nhưng cuối cùng về đích đúng giờ.
 \end{itemize}
-\underline{Kết luận} Xác suất phù hợp để dự đoán một biến cố xảy ra trên thực tế, chấp nhận yếu tố ngẫu nhiên xảy ra ảnh hưởng đến kết quả dự đoán.\\
+\underline{Kết luận} Xác suất phù hợp để dự đoán một biến cố xảy ra trên thực tế. Chấp nhận yếu tố ngẫu nhiên (yếu tố bên ngoài) tác động làm cho biến cố có xác suất xảy ra nhỏ nhất nhưng vẫn có thể xảy ra.\\
 \end{frame}
 
 %------------------------------------------------
+
+\begin{frame}
+\frametitle{Hướng phát triển}
+Làm sao để \underline{kết quả thu được} (dự báo về trạm đúng giờ/trễ giờ) từ mẫu có thể có ý nghĩa được trên thực tế?\\
+Áp dụng phương pháp thống kê
+\begin{itemize}
+\item Lấy mẫu như thế nào để là \underline{đại diện cho tổng thể} di chuyển từ BX Củ Chi đến BX An Sương\\ 
+$\rightarrow$ Thống kê mô tả có thể được sử dụng để tổng hợp các dữ liệu mẫu
+\item Số lượng mẫu đại diện là bao nhiêu? Vì số lượng mẫu đại diện thể hiện mức độ ước lượng chính xác cho thực tế\\
+$\rightarrow$ Thống kê suy luận để ước tính
+\item Suy luận trên mẫu như thế nào để mở rộng dự báo trên tổng thể?  
+\end{itemize}
+ 
+\end{frame}
+
+%------------------------------------------------
+
 \begin{frame}
 \frametitle{Danh mục các tài liệu kham khảo}
 \begin{thebibliography}{}
 \bibitem{timeDependentGraph} Người dịch: Nguyễn Văn Minh Mẫn \emph{Thống kê Công nghiệp hiện đại với ứng dụng viết trên R, MINITAB và JMP}. Nhà xuất bản Bách Khoa Hà Nội,2016.
-\bibitem{Gaussian classifier}
-	\emph{Naive Bayes 3: Gaussian example}, truy cập ngày 2 tháng 3 năm 2017,
-	địa chỉ \emph{https://www.youtube.com/watch?v=r1in0YNetG8}.	
-\bibitem{DKE2}
-	\emph{Exploratory Data Analysis: Kernel Density Estimation in R on Ozone Pollution Data in New York and Ozonopolis}, truy cập ngày 26 tháng 3 năm 2017,
-	địa chỉ \emph{https://www.r-bloggers.com/exploratory-data-analysis-kernel-density-estimation-in-r-on-ozone-pollution-data-in-new-york-and-ozonopolis/}.
 \end{thebibliography}
 \end{frame}
 

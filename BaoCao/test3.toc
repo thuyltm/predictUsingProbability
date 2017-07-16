@@ -26,5 +26,5 @@
 \contentsline {section}{\numberline {4.1}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t}{35}
 \contentsline {section}{\numberline {4.2}\IeC {\DJ }\IeC {\'o}ng g\IeC {\'o}p c\IeC {\h u}a \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{35}
 \contentsline {section}{\numberline {4.3}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{35}
-\contentsline {chapter}{\numberline {5}PH\IeC {\d U} L\IeC {\d U}C}{36}
-\contentsline {chapter}{DANH M\IeC {\d U}C KHAM KH\IeC {\h A}O}{47}
+\contentsline {chapter}{\numberline {5}PH\IeC {\d U} L\IeC {\d U}C}{37}
+\contentsline {chapter}{DANH M\IeC {\d U}C KHAM KH\IeC {\h A}O}{48}

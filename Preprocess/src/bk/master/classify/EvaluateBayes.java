@@ -79,13 +79,9 @@ public class EvaluateBayes {
 
     public static float calculateAccuracy(String direction) {
         int tp = calculateTruePositive(direction, "onTime");
-        System.out.println(tp);
         int fp = calculateFalsePositive(direction, "lateTime");
-        System.out.println(fp);
         int tn = calculateTruePositive(direction, "lateTime");
-        System.out.println(tn);
         int fn = calculateFalsePositive(direction, "onTime");
-        System.out.println(fn);
         return (float)(tp+tn)/(tp+fp+tn+fn);
     }
 

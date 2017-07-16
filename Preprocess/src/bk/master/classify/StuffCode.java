@@ -63,6 +63,38 @@ public class StuffCode {
             e.printStackTrace();
         }
     }
+    public static void compareResult4OtherMethod() {
+        List<String> realData = new ArrayList<String>();
+        List<String> predictData = new ArrayList<String>();
+        List<String> wrongResult = new ArrayList<String>();
+        List<String> correctResult = new ArrayList<String>();
+        BufferedReader br;
+        try {
+            br = new BufferedReader(new FileReader("classifyRoute_AS-CC_Suffle.csv"));
+            String line;
+            while ((line = br.readLine()) != null) {
+                realData.add(line);
+            }
+            br.close();
+            br = new BufferedReader(new FileReader("classify4OtherMethod.csv"));
+            while ((line = br.readLine()) != null) {
+                predictData.add(line);
+            }
+            br.close();
+            int size = realData.size();
+            for (int i = 0; i < size; i++) {
+                if (realData.get(i).equals(predictData.get(i))) {
+                    correctResult.add(realData.get(i));
+                } else {
+                    wrongResult.add(realData.get(i));
+                }
+            }
+            ExportUtil.exportAccumulateFile(wrongResult, "wrongResult4OtherMethod.txt");
+            ExportUtil.exportAccumulateFile(correctResult, "correctResult4OtherMethod.txt");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     public static void compareResult() {
         List<String> classifyR = new ArrayList<String>();
         List<String> classifyRouteSuffle = new ArrayList<String>();
